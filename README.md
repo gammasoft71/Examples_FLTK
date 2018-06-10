@@ -1,7 +1,7 @@
 
-# Gtkmm Examples
+# Fltk Examples
 
-Shows how to use Gtkmm controls (c++14).
+Shows how to use Fltk controls (c++14).
 
 ## Hello World
 
