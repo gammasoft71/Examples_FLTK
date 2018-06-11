@@ -23,17 +23,17 @@ Shows how to use Fltk controls (c++14).
 
 [RadioButton](src/RadioButton) Shows how to create a Fltk RadioButton with Fl_Round_Button.
 
-[TextBox](src/TextBox) Shows how to create a Fltk TextBox with Gtk::Entry.
+[TextBox](src/TextBox) Shows how to create a Fltk TextBox with Fl_Input.
 
-[TrackBar](src/TrackBar) Shows how to create a Fltk TrackBar with Gtk::Scale.
+[TrackBar](src/TrackBar) Shows how to create a Fltk TrackBar with Fl_Slider.
 
 ## Containers
 
-[Form](src/Form) Shows how to create a simple Fltk Form with Gtk::Window.
+[Form](src/Form) Shows how to create a simple Fltk Form with Fl_Window.
 
-[GroupBox](src/GroupBox) Shows how to create a simple Fltk GroupBox with Gtk::Frame.
+[GroupBox](src/GroupBox) Shows how to create a simple Fltk GroupBox with Fl_Group.
 
-[Panel](src/Panel) Shows how to create a simple Fltk Panel with Gtk::Frame.
+[Panel](src/Panel) Shows how to create a simple Fltk Panel with Fl_Frame.
 
 [TabControl](src/TabControl) Shows how to create a simple Fltk TabControl with TabPages with NSTabView and Gtk::Notebook.
 
