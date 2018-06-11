@@ -26,7 +26,7 @@ add_subdirectory("src/TrackBar")
 # Containers
 #add_subdirectory("src/ColoredTabPages")
 add_subdirectory("src/Form")
-#add_subdirectory("src/GroupBox")
+add_subdirectory("src/GroupBox")
 add_subdirectory("src/Panel")
 #add_subdirectory("src/TabControl")
 
