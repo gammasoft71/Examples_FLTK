@@ -11,7 +11,7 @@ public:
   
   void draw() override {
     this->Fl_Check_Button::draw();
-    if (this->i) draw_box(FL_FLAT_BOX, this->x() + 5, this->y() + (this->h() - 14) / 2 + 3, 8, 8, FL_SELECTION_COLOR);
+    if (this->i) draw_box(FL_FLAT_BOX, this->x() + 5, this->y() + (this->h() - 14) / 2 + 3, 8, 8, FL_FOREGROUND_COLOR);
   }
   
 private:
