@@ -13,6 +13,7 @@ public:
     this->label1.labelcolor(fl_rgb_color(0x00, 0x80, 0x00));
   }
   
+private:
   Fl_Box label1 {5, 100, 290, 100, "Hello, World!"};
 };
 

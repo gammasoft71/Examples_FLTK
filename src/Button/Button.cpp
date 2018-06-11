@@ -25,6 +25,7 @@ public:
     this->label2.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
   }
   
+private:
   Fl_Button button1 {50, 50, 75, 25, "button1"};
   Fl_Button button2 {50, 100, 200, 75, "button2"};
   Fl_Box label1 {50, 200, 200, 20, "button1 clicked 0 times"};

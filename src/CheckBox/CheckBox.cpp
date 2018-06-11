@@ -33,6 +33,7 @@ public:
     this->checkBox3.indeterminate(true);
   }
   
+private:
   Fl_CheckBox checkBox1 {30, 30, 110, 23, "Checked"};
   Fl_CheckBox checkBox2 {30, 60, 110, 23, "Unchecked"};
   Fl_CheckBox checkBox3 {30, 90, 110, 23, "Indeterminate"};

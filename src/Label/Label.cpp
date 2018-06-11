@@ -10,6 +10,7 @@ public:
     this->label1.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
   }
   
+private:
   Fl_Box label1 {10, 10, 75, 25, "label1"};
 };
 

@@ -21,6 +21,7 @@ public:
       this->Fl_Window::hide();
   }
   
+private:
   Fl_Button button {10, 10, 75, 25, "Close"};
 };
 
