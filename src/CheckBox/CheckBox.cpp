@@ -6,21 +6,16 @@ class CheckBox : public Fl_Check_Button {
 public:
   CheckBox(int x, int y, int w, int h, const char* l = 0) : Fl_Check_Button(x, y, w, h, l) {}
   
-  void value(int v) {
-    this->Fl_Check_Button::value(v);
-    this->state = v;
-  }
-  
-  int value() const {return this->state;}
+  void indeterminate(bool i) {this->i = i;}
+  bool indeterminate() const {return this->i;}
   
   void draw() override {
     this->Fl_Check_Button::draw();
-    if (this->state == -1)
-      draw_box(FL_FLAT_BOX, this->x() + 5, this->y() + (this->h() - 14) / 2 + 3, 8, 8, FL_SELECTION_COLOR);
+    if (this->i) draw_box(FL_FLAT_BOX, this->x() + 5, this->y() + (this->h() - 14) / 2 + 3, 8, 8, FL_SELECTION_COLOR);
   }
   
 private:
-  int state = 0;
+  bool i = false;
 };
 
 class Form : public Fl_Window {
@@ -35,7 +30,7 @@ public:
     this->checkBox2.value(0);
 
     this->checkBox3.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
-    this->checkBox3.value(-1);
+    this->checkBox3.indeterminate(true);
   }
   
   CheckBox checkBox1 {30, 30, 110, 23, "Checked"};
