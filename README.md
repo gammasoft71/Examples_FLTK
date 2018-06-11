@@ -15,13 +15,13 @@ Shows how to use Fltk controls (c++14).
 
 [Button](src/Button) Shows how to create a Fltk Button and Event Click with Fl_Button.
 
-[CheckBox](src/CheckBox) Shows how to create a Fltk CheckBox with Gtk::CheckButton.
+[CheckBox](src/CheckBox) Shows how to create a Fltk CheckBox with Fl_Check_Button.
 
 [Label](src/Label) Shows how to create a Fltk Label with Fl_Box.
 
-[ProgressBar](src/ProgressBar) Shows how to create a Fltk ProgressBar with Gtk::ProgressBar.
+[ProgressBar](src/ProgressBar) Shows how to create a Fltk ProgressBar with Fl_Progress.
 
-[RadioButton](src/RadioButton) Shows how to create a Fltk RadioButton with Gtk::RadioButton.
+[RadioButton](src/RadioButton) Shows how to create a Fltk RadioButton with Fl_Round_Button.
 
 [TextBox](src/TextBox) Shows how to create a Fltk TextBox with Gtk::Entry.
 

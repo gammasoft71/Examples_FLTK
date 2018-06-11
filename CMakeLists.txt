@@ -20,7 +20,7 @@ add_subdirectory("src/CheckBox")
 add_subdirectory("src/Label")
 add_subdirectory("src/ProgressBar")
 add_subdirectory("src/RadioButton")
-#add_subdirectory("src/TextBox")
+add_subdirectory("src/TextBox")
 #add_subdirectory("src/TrackBar")
 
 # Containers
