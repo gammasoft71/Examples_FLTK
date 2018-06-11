@@ -1,0 +1,51 @@
+#include <FL/Fl.H>
+#include <FL/Fl_Check_Button.H>
+#include <FL/Fl_Window.H>
+
+class CheckBox : public Fl_Check_Button {
+public:
+  CheckBox(int x, int y, int w, int h, const char* l = 0) : Fl_Check_Button(x, y, w, h, l) {}
+  
+  void value(int v) {
+    this->Fl_Check_Button::value(v);
+    this->state = v;
+  }
+  
+  int value() const {return this->state;}
+  
+  void draw() override {
+    this->Fl_Check_Button::draw();
+    if (this->state == -1)
+      draw_box(FL_FLAT_BOX, this->x() + 5, this->y() + (this->h() - 14) / 2 + 3, 8, 8, FL_SELECTION_COLOR);
+  }
+  
+private:
+  int state = 0;
+};
+
+class Form : public Fl_Window {
+public:
+  Form() : Fl_Window(200, 100, 300, 300, "CheckBox example") {
+    this->resizable(this);
+    
+    this->checkBox1.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    this->checkBox1.value(1);
+    
+    this->checkBox2.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    this->checkBox2.value(0);
+
+    this->checkBox3.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    this->checkBox3.value(-1);
+  }
+  
+  CheckBox checkBox1 {30, 30, 110, 23, "Checked"};
+  CheckBox checkBox2 {30, 60, 110, 23, "Unchecked"};
+  CheckBox checkBox3 {30, 90, 110, 23, "Indeterminate"};
+};
+
+int main(int argc, char *argv[]) {
+  Form form;
+  form.show(argc, argv);
+  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
+  return Fl::run();
+}
