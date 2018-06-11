@@ -17,7 +17,7 @@ Shows how to use Fltk controls (c++14).
 
 [CheckBox](src/CheckBox) Shows how to create a Fltk CheckBox with Gtk::CheckButton.
 
-[Label](src/Label) Shows how to create a Fltk Label with Gtk::Label.
+[Label](src/Label) Shows how to create a Fltk Label with Fl_Box.
 
 [ProgressBar](src/ProgressBar) Shows how to create a Fltk ProgressBar with Gtk::ProgressBar.
 
