@@ -27,7 +27,7 @@ add_subdirectory("src/TrackBar")
 #add_subdirectory("src/ColoredTabPages")
 add_subdirectory("src/Form")
 #add_subdirectory("src/GroupBox")
-#add_subdirectory("src/Panel")
+add_subdirectory("src/Panel")
 #add_subdirectory("src/TabControl")
 
 # Menus and Toolbars
