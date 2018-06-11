@@ -4,7 +4,7 @@
 
 class Form : public Fl_Window {
 public:
-  Form() : Fl_Window(200, 100, 640, 480, "Label example") {
+  Form() : Fl_Window(200, 100, 300, 300, "Label example") {
     this->resizable(this);
     
     this->label1.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
