@@ -15,5 +15,6 @@ endif ()
 
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
+
 add_executable(Application ${GUI_OPTION} Application.cpp)
 target_link_libraries(Application ${FLTK_LIBRARIES})

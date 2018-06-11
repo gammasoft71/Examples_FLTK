@@ -15,5 +15,6 @@ endif ()
 
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
+
 add_executable(Form ${GUI_OPTION} Form.cpp)
 target_link_libraries(Form ${FLTK_LIBRARIES})
