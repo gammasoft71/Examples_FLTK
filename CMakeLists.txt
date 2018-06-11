@@ -15,7 +15,7 @@ add_subdirectory("src/Application")
 #add_subdirectory("src/ApplicationWithMessageLoop")
 
 # Common Controls
-#add_subdirectory("src/Button")
+add_subdirectory("src/Button")
 #add_subdirectory("src/CheckBox")
 add_subdirectory("src/Label")
 #add_subdirectory("src/ProgressBar")
