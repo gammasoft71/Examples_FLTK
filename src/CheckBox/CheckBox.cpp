@@ -2,9 +2,9 @@
 #include <FL/Fl_Check_Button.H>
 #include <FL/Fl_Window.H>
 
-class CheckBox : public Fl_Check_Button {
+class Fl_CheckBox : public Fl_Check_Button {
 public:
-  CheckBox(int x, int y, int w, int h, const char* l = 0) : Fl_Check_Button(x, y, w, h, l) {}
+  Fl_CheckBox(int x, int y, int w, int h, const char* l = 0) : Fl_Check_Button(x, y, w, h, l) {}
   
   void indeterminate(bool i) {this->i = i;}
   bool indeterminate() const {return this->i;}
@@ -33,9 +33,9 @@ public:
     this->checkBox3.indeterminate(true);
   }
   
-  CheckBox checkBox1 {30, 30, 110, 23, "Checked"};
-  CheckBox checkBox2 {30, 60, 110, 23, "Unchecked"};
-  CheckBox checkBox3 {30, 90, 110, 23, "Indeterminate"};
+  Fl_CheckBox checkBox1 {30, 30, 110, 23, "Checked"};
+  Fl_CheckBox checkBox2 {30, 60, 110, 23, "Unchecked"};
+  Fl_CheckBox checkBox3 {30, 90, 110, 23, "Indeterminate"};
 };
 
 int main(int argc, char *argv[]) {
