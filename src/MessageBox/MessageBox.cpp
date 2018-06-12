@@ -20,7 +20,7 @@ public:
         ((Form*)form)->labelDialogResult.copy_label("DialogResult = Cancel");
     }, this);
 
-    this->labelDialogResult.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    this->labelDialogResult.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
   }
   
 private:

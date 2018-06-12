@@ -19,7 +19,7 @@ public:
         ((Form*)form)->label.copy_label((std::string("Path = ") + folderBrowserDialog.filename()).c_str());
     }, this);
 
-    this->label.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    this->label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
   }
   
 private:
