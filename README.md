@@ -1,7 +1,7 @@
 
 # Fltk Examples
 
-Shows how to use Fltk controls (c++14).
+Shows how to use Fltk controls only by programming code (c++17).
 
 ## Hello World
 

@@ -31,6 +31,10 @@ public:
 
     this->checkBox3.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
     this->checkBox3.indeterminate(true);
+    this->checkBox3.callback([](Fl_Widget* sender, void* form) {
+      ((Fl_CheckBox*)sender)->indeterminate(false);
+      ((Fl_CheckBox*)sender)->redraw();
+    }, this);
   }
   
 private:

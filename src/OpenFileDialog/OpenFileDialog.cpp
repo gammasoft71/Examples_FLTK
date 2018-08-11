@@ -24,8 +24,8 @@ public:
   }
   
 private:
-  Fl_Button button {10, 10, 75, 25, "open..."};
-  Fl_Box label {10, 50, 280, 20, ""};
+  Fl_Button button {10, 10, 75, 25, "Open..."};
+  Fl_Box label {10, 50, 280, 20, "File = "};
 };
 
 int main(int argc, char *argv[]) {
