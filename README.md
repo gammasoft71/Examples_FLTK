@@ -17,7 +17,11 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 [CheckBox](src/CheckBox) Shows how to create a Fltk CheckBox with Fl_Check_Button.
 
+[ComboBox](src/ComboBox) Shows how to create a Fltk ComboBox with Fl_Input_Choice.
+
 [Label](src/Label) Shows how to create a Fltk Label with Fl_Box.
+
+[PictureBox](src/PictureBox) Shows how to create a Fltk PictureBox with Fl_Box.
 
 [ProgressBar](src/ProgressBar) Shows how to create a Fltk ProgressBar with Fl_Progress.
 

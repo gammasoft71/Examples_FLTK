@@ -1,20 +1,20 @@
 #include <FL/Fl.H>
-#include <FL/Fl_Box.H>
-#include <FL/Fl_PNG_Image.H>
+#include <FL/Fl_Input_Choice.H>
 #include <FL/Fl_Window.H>
 
 class Form : public Fl_Window {
 public:
-  Form() : Fl_Window(200, 100, 300, 300, "Picture example") {
-    this->pictureBox1.image(&this->picture);
-    
+  Form() : Fl_Window(200, 100, 300, 300, "ComboBox example") {
     this->resizable(this);
+    
+    this->comboBox1.add("item1");
+    this->comboBox1.add("item2");
+    this->comboBox1.add("item3");
+    this->comboBox1.value(1);
   }
   
 private:
-  Fl_Box pictureBox1 {10, 10, 280, 280};
-  Fl_PNG_Image picture {"Resources/Logo.png"};
-
+  Fl_Input_Choice comboBox1 {10, 10, 75, 25};
 };
 
 int main(int argc, char *argv[]) {
