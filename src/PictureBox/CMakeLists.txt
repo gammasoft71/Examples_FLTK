@@ -16,6 +16,7 @@ endif ()
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
 
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Resources/Logo.png ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/Resources/Logo.png COPYONLY)
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Resources/Logo.png ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/Debug/Resources/Logo.png COPYONLY)
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Resources/Logo.png ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/Release/Resources/Logo.png COPYONLY)
 
