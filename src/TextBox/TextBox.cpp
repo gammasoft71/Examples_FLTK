@@ -7,12 +7,14 @@ public:
   Form() : Fl_Window(200, 100, 300, 300, "TextBox example") {
     this->resizable(this);
     
-    this->textBox1.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
     this->textBox1.value("textBox1");
+    
+    this->textBox2.value("textBox2");
   }
   
 private:
   Fl_Input textBox1 {10, 10, 75, 25};
+  Fl_Input textBox2 {10, 50, 75, 25};
 };
 
 int main(int argc, char *argv[]) {
