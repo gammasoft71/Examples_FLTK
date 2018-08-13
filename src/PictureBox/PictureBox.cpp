@@ -7,7 +7,7 @@ class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "Picture example") {
     this->pictureBox1.image(&this->picture);
-    this->pictureBox1.box(FL_BORDER_BOX);
+    this->pictureBox1.box(FL_BORDER_FRAME);
     
     this->resizable(this);
   }
@@ -15,7 +15,6 @@ public:
 private:
   Fl_Box pictureBox1 {10, 10, 280, 280};
   Fl_PNG_Image picture {"Resources/Logo.png"};
-
 };
 
 int main(int argc, char *argv[]) {
