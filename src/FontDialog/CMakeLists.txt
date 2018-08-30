@@ -16,5 +16,5 @@ endif ()
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
 
-add_executable(FontDialog ${GUI_OPTION} FontDialog.cpp)
+add_executable(FontDialog ${GUI_OPTION} FontDialog.cpp Fl_font_chooser.h)
 target_link_libraries(FontDialog ${FLTK_LIBRARIES})

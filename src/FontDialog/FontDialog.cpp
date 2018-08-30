@@ -1,44 +1,32 @@
-#include <string>
-#include <FL/Fl.H>
+#include "Fl_font_chooser.h"
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Button.H>
-#include <FL/Fl_Native_File_Chooser.H>
 #include <FL/Fl_Window.H>
-
-class Fl_Font_Chooser {
-public:
-  Fl_Font_Chooser() {
-    this->dialog.set_modal();
-  }
-  
-  int show() {
-    this->dialog.show();
-    return 0;
-  }
-  
-private:
-  Fl_Window dialog {100, 200, 640, 480, "Fonts"};
-};
 
 class Form : public Fl_Window {
 public:
-  Form() : Fl_Window(200, 100, 400, 400, "FontDialog example") {
+  Form() : Fl_Window(200, 100, 400, 400, "Font Example") {
     this->resizable(this);
-    
+    this->end();
     this->button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
     this->button.callback([](Fl_Widget* sender, void* form) {
-      Fl_Font_Chooser fontdialog;
-      if (fontdialog.show() == 0) {
-        
+      Fl_Font font = ((Form*)form)->label.labelfont();
+      int size = ((Form*)form)->label.labelsize();
+      if (fl_font_chooser("Font", font, size) == 1) {
+        ((Form*)form)->label.labelfont(font);
+        ((Form*)form)->label.labelsize(size);
+        ((Form*)form)->label.redraw();
       }
     }, this);
 
+    this->label.box(FL_FLAT_BOX);
     this->label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
   }
   
 private:
   Fl_Button button {10, 10, 75, 25, "Font..."};
-  Fl_Box label {10, 50, 380, 340, "The quick brown fox jumps over the lazy dog.\n"
+  Fl_Box label {10, 50, 380, 340,
+    "The quick brown fox jumps over the lazy dog.\n"
     "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.\n"
     "0123456789+-*/%~^&|=<>≤≥±÷≠{{[()]}},;:.?¿!¡\n"
     "àçéèêëïî@@°_#§$ù£€æœøπµ©®∞\\\"'\n"
