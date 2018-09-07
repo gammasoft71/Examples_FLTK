@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 3.0)
 project(SaveFileDialog)
 
 find_package(FLTK REQUIRED)

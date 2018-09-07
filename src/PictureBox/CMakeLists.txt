@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 3.0)
 project(PictureBox)
 
 find_package(FLTK REQUIRED)
