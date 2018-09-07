@@ -15,7 +15,11 @@ public:
       Fl_Native_File_Chooser saveFileDialog;
       saveFileDialog.type(Fl_Native_File_Chooser::BROWSE_SAVE_FILE);
       saveFileDialog.filter("Text File\t*.txt");
+#if defined(_WIN32)
+      saveFileDialog.directory((std::string(getenv("HOMEPATH")) + "\\Desktop").c_str());
+#else
       saveFileDialog.directory((std::string(getenv("HOME")) + "/Desktop").c_str());
+#endif
       saveFileDialog.preset_file("Myfile.txt");
       saveFileDialog.options(Fl_Native_File_Chooser::SAVEAS_CONFIRM | Fl_Native_File_Chooser::NEW_FOLDER);
       if (saveFileDialog.show() == 0)

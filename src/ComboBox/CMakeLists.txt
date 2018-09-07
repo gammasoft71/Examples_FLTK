@@ -7,6 +7,7 @@ link_libraries(${FLTK_LIBRARIES})
 
 if (MSVC)
   set(GUI_OPTION WIN32)
+  set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /ENTRY:mainCRTStartup")
 elseif (APPLE)
   set(GUI_OPTION MACOSX_BUNDLE)
 endif ()

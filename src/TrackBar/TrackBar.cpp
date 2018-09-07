@@ -13,7 +13,7 @@ public:
     this->trackBar.type(FL_HOR_NICE_SLIDER);
     this->trackBar.maximum(200);
     this->trackBar.callback([](Fl_Widget* sender, void* form) {
-      ((Form*)form)->progressBar.value(((Form*)form)->trackBar.value());
+      ((Form*)form)->progressBar.value((float)((Form*)form)->trackBar.value());
       ((Form*)form)->label.copy_label(std::to_string((int)((Form*)form)->trackBar.value()).c_str());
     }, this);
     this->trackBar.value(100);

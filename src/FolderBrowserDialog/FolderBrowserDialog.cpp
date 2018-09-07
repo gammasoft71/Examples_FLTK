@@ -14,7 +14,11 @@ public:
     this->button.callback([](Fl_Widget* sender, void* form) {
       Fl_Native_File_Chooser folderBrowserDialog;
       folderBrowserDialog.type(Fl_Native_File_Chooser::BROWSE_DIRECTORY);
+#if defined(_WIN32)
+      folderBrowserDialog.directory((std::string(getenv("HOMEPATH")) + "\\Desktop").c_str());
+#else
       folderBrowserDialog.directory((std::string(getenv("HOME")) + "/Desktop").c_str());
+#endif
       if (folderBrowserDialog.show() == 0)
         ((Form*)form)->label.copy_label((std::string("Path = ") + folderBrowserDialog.filename()).c_str());
     }, this);
