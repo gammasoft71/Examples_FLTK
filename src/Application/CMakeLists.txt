@@ -1,20 +1,15 @@
-cmake_minimum_required(VERSION 3.5)
-
-project(Application VERSION 1.0.0)
-
-set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-if(MSVC)
-  set(GUI_OPTION WIN32)
-elseif (APPLE)
-  set(GUI_OPTION MACOSX_BUNDLE)
-elseif(UNIX)
-  set(GUI_OPTION )
-endif ()
+project(Application)
 
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
+link_libraries(${FLTK_LIBRARIES})
 
+if (MSVC)
+  set(GUI_OPTION WIN32)
+elseif (APPLE)
+  set(GUI_OPTION MACOSX_BUNDLE)
+endif ()
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(Application ${GUI_OPTION} Application.cpp)
-target_link_libraries(Application ${FLTK_LIBRARIES})

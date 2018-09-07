@@ -1,4 +1,4 @@
-#include "Fl_font_chooser.h"
+#include "Fl_font_chooser.H"
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Button.H>
 #include <FL/Fl_Window.H>
