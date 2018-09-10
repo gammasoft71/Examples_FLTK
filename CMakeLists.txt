@@ -12,6 +12,7 @@ add_subdirectory("src/HelloWorld")
 
 # Application and messages
 add_subdirectory("src/Application")
+add_subdirectory("src/ApplicationIdle")
 #add_subdirectory("src/ApplicationWithMessageLoop")
 
 # Common Controls
@@ -26,7 +27,6 @@ add_subdirectory("src/TextBox")
 add_subdirectory("src/TrackBar")
 
 # Containers
-add_subdirectory("src/ColoredTabPages")
 add_subdirectory("src/Form")
 add_subdirectory("src/GroupBox")
 add_subdirectory("src/Panel")
@@ -46,5 +46,12 @@ add_subdirectory("src/OpenFileDialog")
 add_subdirectory("src/MessageBox")
 add_subdirectory("src/SaveFileDialog")
 
+# Events
+add_subdirectory("src/FormClick")
+
 # Other
+add_subdirectory("src/ColoredForms")
+add_subdirectory("src/ColoredTabPages")
 #add_subdirectory("src/Drawing")
+add_subdirectory("src/GroupBoxAndCheckBox")
+add_subdirectory("src/GroupBoxAndRadioButton")
