@@ -29,5 +29,6 @@ int main(int argc, char *argv[]) {
   Form form;
   form.show(argc, argv);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
+  fl_message_hotspot(0);
   return Fl::run();
 }
