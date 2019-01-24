@@ -5,6 +5,8 @@
 #include <FL/Fl_Native_File_Chooser.H>
 #include <FL/Fl_Window.H>
 
+using namespace std;
+
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "SaveFileDialog example") {
@@ -16,14 +18,14 @@ public:
       saveFileDialog.type(Fl_Native_File_Chooser::BROWSE_SAVE_FILE);
       saveFileDialog.filter("Text File\t*.txt");
 #if defined(_WIN32)
-      saveFileDialog.directory((std::string(getenv("HOMEPATH")) + "\\Desktop").c_str());
+      saveFileDialog.directory((string(getenv("HOMEPATH")) + "\\Desktop").c_str());
 #else
-      saveFileDialog.directory((std::string(getenv("HOME")) + "/Desktop").c_str());
+      saveFileDialog.directory((string(getenv("HOME")) + "/Desktop").c_str());
 #endif
       saveFileDialog.preset_file("Myfile.txt");
       saveFileDialog.options(Fl_Native_File_Chooser::SAVEAS_CONFIRM | Fl_Native_File_Chooser::NEW_FOLDER);
       if (saveFileDialog.show() == 0)
-        ((Form*)form)->label.copy_label((std::string("File = ") + saveFileDialog.filename()).c_str());
+        ((Form*)form)->label.copy_label((string("File = ") + saveFileDialog.filename()).c_str());
     }, this);
 
     this->label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);

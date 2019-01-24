@@ -6,6 +6,8 @@
 #include <FL/Fl_Button.H>
 #include <FL/Fl_Window.H>
 
+using namespace std;
+
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "Main Form") {
@@ -16,7 +18,7 @@ public:
     
     this->button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
     this->button.callback([](Fl_Widget* sender, void* form) {
-      std::shared_ptr<Fl_Window> coloredForm = std::make_shared<Fl_Window>(((Form*)form)->x, ((Form*)form)->y, 300, 300);
+      shared_ptr<Fl_Window> coloredForm = make_shared<Fl_Window>(((Form*)form)->x, ((Form*)form)->y, 300, 300);
       coloredForm->color(((Form*)form)->iterator->first);
       coloredForm->copy_label(((Form*)form)->iterator->second.c_str());
 
@@ -41,9 +43,9 @@ public:
 
 private:
   Fl_Button button {10, 10, 75, 25, "Create"};
-  std::map<Fl_Color, std::string> colors {{FL_BLACK, "FL_BLACK"}, {FL_RED, "FL_RED"}, {FL_GREEN, "FL_GREEN"}, {FL_YELLOW, "FL_YELLOW"}, {FL_BLUE, "FL_BLUE"}, {FL_MAGENTA, "FL_MAGENTA"}, {FL_CYAN, "FL_CYAN"}, {FL_DARK_RED, "FL_DARK_RED"}, {FL_DARK_GREEN, "FL_DARK_GREEN"}, {FL_DARK_YELLOW, "FL_DARK_YELLOW"}, {FL_DARK_BLUE, "FL_DARK_BLUE"}, {FL_DARK_MAGENTA, "FL_DARK_MAGENTA"}, {FL_DARK_CYAN, "FL_DARK_CYAN"}, {FL_WHITE, "FL_WHITE"}};
-  std::map<Fl_Color, std::string>::iterator iterator = colors.begin();
-  std::vector<std::shared_ptr<Fl_Window>> colored_forms;
+  map<Fl_Color, string> colors {{FL_BLACK, "FL_BLACK"}, {FL_RED, "FL_RED"}, {FL_GREEN, "FL_GREEN"}, {FL_YELLOW, "FL_YELLOW"}, {FL_BLUE, "FL_BLUE"}, {FL_MAGENTA, "FL_MAGENTA"}, {FL_CYAN, "FL_CYAN"}, {FL_DARK_RED, "FL_DARK_RED"}, {FL_DARK_GREEN, "FL_DARK_GREEN"}, {FL_DARK_YELLOW, "FL_DARK_YELLOW"}, {FL_DARK_BLUE, "FL_DARK_BLUE"}, {FL_DARK_MAGENTA, "FL_DARK_MAGENTA"}, {FL_DARK_CYAN, "FL_DARK_CYAN"}, {FL_WHITE, "FL_WHITE"}};
+  map<Fl_Color, string>::iterator iterator = colors.begin();
+  vector<shared_ptr<Fl_Window>> colored_forms;
   int x = 40;
   int y = 40;
 };

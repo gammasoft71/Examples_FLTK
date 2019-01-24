@@ -5,6 +5,8 @@
 #include <FL/Fl_Native_File_Chooser.H>
 #include <FL/Fl_Window.H>
 
+using namespace std;
+
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "OpenFileDialog example") {
@@ -16,12 +18,12 @@ public:
       openFileDialog.type(Fl_Native_File_Chooser::BROWSE_FILE);
       openFileDialog.filter("Text File\t*.txt");
 #if defined(_WIN32)
-      openFileDialog.directory((std::string(getenv("HOMEPATH")) + "\\Desktop").c_str());
+      openFileDialog.directory((string(getenv("HOMEPATH")) + "\\Desktop").c_str());
 #else
-      openFileDialog.directory((std::string(getenv("HOME")) + "/Desktop").c_str());
+      openFileDialog.directory((string(getenv("HOME")) + "/Desktop").c_str());
 #endif
       if (openFileDialog.show() == 0)
-        ((Form*)form)->label.copy_label((std::string("File = ") + openFileDialog.filename()).c_str());
+        ((Form*)form)->label.copy_label((string("File = ") + openFileDialog.filename()).c_str());
     }, this);
 
     this->label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);

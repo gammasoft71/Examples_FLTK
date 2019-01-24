@@ -4,6 +4,8 @@
 #include <FL/Fl.H>
 #include <FL/Fl_Window.H>
 
+using namespace std;
+using namespace std::chrono;
 using namespace std::chrono_literals;
 
 class Form : public Fl_Window {
@@ -12,18 +14,18 @@ public:
     this->resizable(this);
 
     Fl::add_idle([](void* form) {
-      static std::chrono::high_resolution_clock::time_point lastIdleTime;
-      std::chrono::milliseconds elapsedTime = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - lastIdleTime);
+      static high_resolution_clock::time_point lastIdleTime;
+      high_resolution_clock::duration elapsedTime = high_resolution_clock::now() - lastIdleTime;
       if (elapsedTime >= 100ms) {
         ((Form*)form)->OnApplicationIdle();
-        lastIdleTime = std::chrono::high_resolution_clock::now();
+        lastIdleTime = high_resolution_clock::now();
       }
     }, this);
   }
   
 private:
   void OnApplicationIdle() {
-    this->copy_label(std::to_string(++this->counter).c_str());
+    this->copy_label(to_string(++this->counter).c_str());
   }
 
   int counter = 0;

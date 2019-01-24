@@ -5,6 +5,8 @@
 #include <FL/Fl_Slider.H>
 #include <FL/Fl_Window.H>
 
+using namespace std;
+
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "TrackBar example") {
@@ -14,7 +16,7 @@ public:
     this->trackBar.maximum(200);
     this->trackBar.callback([](Fl_Widget* sender, void* form) {
       ((Form*)form)->progressBar.value((float)((Form*)form)->trackBar.value());
-      ((Form*)form)->label.copy_label(std::to_string((int)((Form*)form)->trackBar.value()).c_str());
+      ((Form*)form)->label.copy_label(to_string((int)((Form*)form)->trackBar.value()).c_str());
     }, this);
     this->trackBar.value(100);
     this->trackBar.do_callback();

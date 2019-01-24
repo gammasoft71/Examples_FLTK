@@ -5,6 +5,8 @@
 #include <FL/Fl_Button.H>
 #include <FL/Fl_Window.H>
 
+using namespace std;
+
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 230, 130, "Timer example") {
@@ -24,8 +26,8 @@ public:
   
 private:
   static void OnTimerTick(void* form) {
-    std::stringstream stream;
-    stream << std::fixed << std::setprecision(1) << (double)++((Form*)form)->timer / 10;
+    stringstream stream;
+    stream << fixed << setprecision(1) << (double)++((Form*)form)->timer / 10;
     ((Form*)form)->label.copy_label(stream.str().c_str());
     if (((Form*)form)->enableTimer) Fl::repeat_timeout(0.1, OnTimerTick, form);
   }

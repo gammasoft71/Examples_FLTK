@@ -4,6 +4,8 @@
 #include <FL/Fl_Button.H>
 #include <FL/Fl_Window.H>
 
+using namespace std;
+
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "Label example") {
@@ -11,13 +13,13 @@ public:
     
     this->button1.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
     this->button1.callback([](Fl_Widget* sender, void* form) {
-      std::string result = "button1 clicked " + std::to_string(++((Form*)form)->button1Clicked) + " times";
+      string result = "button1 clicked " + to_string(++((Form*)form)->button1Clicked) + " times";
       ((Form*)form)->label1.copy_label(result.c_str());
     }, this);
     
     this->button2.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
     this->button2.callback([](Fl_Widget* sender, void* form) {
-      std::string result = "button2 clicked " + std::to_string(++((Form*)form)->button2Clicked) + " times";
+      string result = "button2 clicked " + to_string(++((Form*)form)->button2Clicked) + " times";
       ((Form*)form)->label2.copy_label(result.c_str());
     }, this);
 
