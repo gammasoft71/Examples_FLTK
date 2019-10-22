@@ -8,8 +8,16 @@ public:
     this->resizable(this);
     
     this->textBox1.value("textBox1");
+    this->textBox1.when(FL_WHEN_CHANGED);
+    this->textBox1.callback([](Fl_Widget* sender, void* form) {
+      ((Form*)form)->textBox2.value(((Form*)form)->textBox1.value());
+    }, this);
     
     this->textBox2.value("textBox2");
+    this->textBox2.when(FL_WHEN_CHANGED);
+    this->textBox2.callback([](Fl_Widget* sender, void* form) {
+      ((Form*)form)->textBox1.value(((Form*)form)->textBox2.value());
+    }, this);
   }
   
 private:

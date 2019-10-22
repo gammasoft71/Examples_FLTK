@@ -19,7 +19,7 @@ public:
     }, this);
     
     this->label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
-    this->label.labelfont(FL_HELVETICA_BOLD_ITALIC);
+    this->label.labelfont(FL_HELVETICA_ITALIC);
     this->label.labelsize(64);
     this->label.labelcolor(fl_rgb_color(30, 144, 255));
   }
