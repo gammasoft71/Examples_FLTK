@@ -5,11 +5,12 @@
 #include <memory>
 #include <FL/Fl.H>
 #include <FL/Fl_Box.H>
+#include <FL/Fl_Color_Chooser.H>
 #include <FL/Fl_Return_Button.H>
 #include <FL/Fl_Hold_Browser.H>
 #include <FL/Fl_Window.H>
 
-inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, const char* fontset = nullptr) {
+inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, Fl_Color& color, const char* fontset = nullptr) {
   using namespace std;
   using namespace std::literals;
 
@@ -46,15 +47,25 @@ inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, const cha
       this->fontView.box(FL_DOWN_BOX);
       this->fontView.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       
-      this->ok.callback([](Fl_Widget* sender, void* fontChooser) {
+      this->buttonOk.callback([](Fl_Widget* sender, void* fontChooser) {
         ((Fl_Font_Chooser*)fontChooser)->result = 1;
         ((Fl_Font_Chooser*)fontChooser)->dialog.hide();
       }, this);
       
-      this->cancel.shortcut(FL_Escape);
-      this->cancel.callback([](Fl_Widget* sender, void* fontChooser) {
+      this->buttonCancel.shortcut(FL_Escape);
+      this->buttonCancel.callback([](Fl_Widget* sender, void* fontChooser) {
         ((Fl_Font_Chooser*)fontChooser)->result = 0;
         ((Fl_Font_Chooser*)fontChooser)->dialog.hide();
+      }, this);
+
+      this->buttonColor.callback([](Fl_Widget* sender, void* fontChooser) {
+        uchar r = 0, g = 0, b = 0;
+        Fl::get_color(((Fl_Font_Chooser*)fontChooser)->currentColor, r, g, b);
+        if (fl_color_chooser("Color", r, g, b) != 0) {
+          ((Fl_Font_Chooser*)fontChooser)->currentColor = fl_rgb_color(r, g, b);
+          ((Fl_Font_Chooser*)fontChooser)->fontView.labelcolor(fl_rgb_color(r, g, b));
+          ((Fl_Font_Chooser*)fontChooser)->fontView.redraw();
+        }
       }, this);
     }
 
@@ -81,23 +92,31 @@ inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, const cha
     string label() const {return this->dialog.label();}
     void label(const string& l) {this->dialog.label(l.c_str());}
     
-    int size() const {return this->currentSize;}
-    void size(int s) {
+    Fl_Fontsize size() const {return this->currentSize;}
+    void size(Fl_Fontsize s) {
       this->currentSize = s;
       this->fontSizes.value(this->currentSize + 1);
       this->fontView.labelsize(this->currentSize);
     }
     
+    Fl_Color color() const {return this->currentColor;}
+    void color(int c) {
+      this->currentColor = c;
+      this->fontView.labelcolor(this->currentColor);
+    }
+
   private:
     Fl_Window dialog {100, 200, 550, 430, ""};
     Fl_Hold_Browser fontNames {10, 10, 390, 170};
     Fl_Hold_Browser fontSizes {410, 10, 130, 170};
     Fl_Box fontView {10, 190, 530, 180, "The quick brown fox jumps over the lazy dog.\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."};
-    Fl_Return_Button ok {380, 390, 75, 25, "OK"};
-    Fl_Button cancel {465, 390, 75, 25, "Cancel"};
-    
+    Fl_Return_Button buttonOk {295, 390, 75, 25, "Ok"};
+    Fl_Button buttonCancel {380, 390, 75, 25, "Cancel"};
+    Fl_Button buttonColor {465, 390, 75, 25, "Color..."};
+
     Fl_Font currentFont = FL_HELVETICA;
     int currentSize = FL_NORMAL_SIZE;
+    Fl_Color currentColor = FL_FOREGROUND_COLOR;
     unique_ptr<string> fontSet;
     int result = 0;
   } fontDialog;
@@ -106,11 +125,13 @@ inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, const cha
   if (fontset) fontDialog.font_set(fontset);
   fontDialog.label(name);
   fontDialog.size(size);
+  fontDialog.color(color);
   int result = fontDialog.show();
   
   if (result == 1) {
     font = fontDialog.font();
     size = fontDialog.size();
+    color = fontDialog.color();
   }
   return result;
 }

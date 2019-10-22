@@ -12,9 +12,11 @@ public:
     this->button.callback([](Fl_Widget* sender, void* form) {
       Fl_Font font = ((Form*)form)->label.labelfont();
       int size = ((Form*)form)->label.labelsize();
-      if (fl_font_chooser("Font", font, size) == 1) {
+      Fl_Color color = ((Form*)form)->label.labelcolor();
+      if (fl_font_chooser("Font", font, size, color) == 1) {
         ((Form*)form)->label.labelfont(font);
         ((Form*)form)->label.labelsize(size);
+        ((Form*)form)->label.labelcolor(color);
         ((Form*)form)->label.redraw();
       }
     }, this);
