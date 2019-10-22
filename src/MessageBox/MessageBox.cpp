@@ -14,7 +14,7 @@ public:
     this->buttonShowMessage.callback([](Fl_Widget* sender, void* form) {
       fl_message_icon()->label("!");
       fl_message_title("Message");
-      if (fl_choice("Hello, World!", "Cancel", "OK", nullptr) == 1)
+      if (fl_choice("Hello, World!", fl_cancel, fl_ok, nullptr) == 1)
         ((Form*)form)->labelDialogResult.copy_label("DialogResult = Ok");
       else
         ((Form*)form)->labelDialogResult.copy_label("DialogResult = Cancel");
