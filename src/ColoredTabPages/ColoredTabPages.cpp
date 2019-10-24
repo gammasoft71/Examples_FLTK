@@ -12,20 +12,20 @@ public:
 
     this->tabControl1 = make_shared<Fl_Tabs>(10, 10, 370, 250);
 
-    this->tabPageRed = make_shared<Fl_Group>(20, 30, 350, 220, "Red");
-    this->tabPageRed->color(fl_rgb_color(0xFF, 0x00, 0x00));
+    this->tabPageRed = make_shared<Fl_Group>(10, 10, 370, 230, "Red");
+    this->tabPageRed->color(FL_RED);
     this->tabPageRed->end();
     
-    this->tabPageGreen = make_shared<Fl_Group>(20, 30, 350, 220, "Green");
-    this->tabPageGreen->color(fl_rgb_color(0x00, 0x80, 0x00));
+    this->tabPageGreen = make_shared<Fl_Group>(10, 10, 370, 230, "Green");
+    this->tabPageGreen->color(FL_DARK_GREEN);
     this->tabPageGreen->end();
     
-    this->tabPageBlue = make_shared<Fl_Group>(20, 30, 350, 220, "Blue");
-    this->tabPageBlue->color(fl_rgb_color(0x00, 0x00, 0xFF));
+    this->tabPageBlue = make_shared<Fl_Group>(10, 10, 370, 230, "Blue");
+    this->tabPageBlue->color(FL_BLUE);
     this->tabPageBlue->end();
     
-    this->tabPageYellow = make_shared<Fl_Group>(20, 30, 350, 220, "Yellow");
-    this->tabPageYellow->color(fl_rgb_color(0xFF, 0xFF, 0x00));
+    this->tabPageYellow = make_shared<Fl_Group>(10, 10, 370, 230, "Yellow");
+    this->tabPageYellow->color(FL_YELLOW);
     this->tabPageYellow->end();
 
     this->tabControl1->end();

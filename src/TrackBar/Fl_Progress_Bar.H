@@ -2,6 +2,9 @@
 #include <FL/Fl.H>
 #include <FL/Fl_Progress.H>
 
+static constexpr int32_t FL_HOR_PROGRESS_BAR = 0;
+static constexpr int32_t FL_VERT_PROGRESS_BAR = 1;
+
 class Fl_Progress_Bar : public Fl_Progress {
 public:
   Fl_Progress_Bar(int x, int y, int w, int h) : Fl_Progress(x, y, w, h) {
@@ -21,10 +24,19 @@ public:
   void marquee_width(int marquee_width) {this->marquee_width_ = marquee_width;}
 
   void draw() override {
-    this->Fl_Progress::draw();
-    if (this->marquee_) {
-      draw_box(FL_DOWN_BOX, this->x(), this->y(), this->w(), this->h(), this->color());
-      draw_box(FL_FLAT_BOX, this->x() + Fl::box_dw(this->box()) / 2 + marquee_pos_ - 1, this->y() + Fl::box_dh(this->box()) / 2 - 1, this->marquee_width_ - Fl::box_dw(this->box()) + 2, this->h() - Fl::box_dh(this->box()) + 2, this->selection_color());
+    //this->Fl_Progress::draw();
+    draw_box(FL_DOWN_BOX, this->x(), this->y(), this->w(), this->h(), this->color());
+    if (!this->marquee()) {
+      int progress = 0;
+      if (this->type() == FL_HOR_PROGRESS_BAR) {
+        if (maximum() > minimum())  progress = (int)(w() * (value() - minimum()) / (maximum() - minimum()) + 0.5f);
+        draw_box(FL_FLAT_BOX, this->x() + Fl::box_dw(this->box()) / 2 - 1, this->y() + Fl::box_dh(this->box()) / 2 - 1, progress, this->h() - Fl::box_dh(this->box()) + 2, this->active_r() ? this->selection_color() : fl_inactive(selection_color()));
+      } else {
+        if (maximum() > minimum())  progress = (int)(h() * (value() - minimum()) / (maximum() - minimum()) + 0.5f);
+        draw_box(FL_FLAT_BOX, this->x() + Fl::box_dw(this->box()) / 2 - 1, this->y() + Fl::box_dh(this->box()) / 2 - 1 + h() - progress, this->w() - Fl::box_dw(this->box()) + 2, this->h() - Fl::box_dh(this->box()) + 2 - this->h() + progress, this->active_r() ? this->selection_color() : fl_inactive(selection_color()));
+      }
+    } else {
+      draw_box(FL_FLAT_BOX, this->x() + Fl::box_dw(this->box()) / 2 + marquee_pos_ - 1, this->y() + Fl::box_dh(this->box()) / 2 - 1, this->marquee_width_ - Fl::box_dw(this->box()) + 2, this->h() - Fl::box_dh(this->box()) + 2, this->active_r() ? this->selection_color() : fl_inactive(selection_color()));
     }
   }
   

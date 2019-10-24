@@ -12,13 +12,13 @@ public:
 
     this->tabControl1 = make_shared<Fl_Tabs>(10, 10, 370, 250);
 
-    this->tabPage1 = make_shared<Fl_Group>(20, 30, 350, 220, "tabPage1");
+    this->tabPage1 = make_shared<Fl_Group>(10, 30, 370, 230, "tabPage1");
     this->tabPage1->end();
     
-    this->tabPage2 = make_shared<Fl_Group>(20, 30, 350, 220, "tabPage2");
+    this->tabPage2 = make_shared<Fl_Group>(10, 30, 370, 230, "tabPage2");
     this->tabPage2->end();
     
-    this->tabPage3 = make_shared<Fl_Group>(20, 30, 350, 220, "tabPage3");
+    this->tabPage3 = make_shared<Fl_Group>(10, 30, 370, 230, "tabPage3");
     this->tabPage3->end();
 
     this->tabControl1->end();
@@ -32,6 +32,7 @@ private:
 };
 
 int main(int argc, char *argv[]) {
+  //Fl::scheme("gtk+");
   Form form;
   form.show(argc, argv);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
