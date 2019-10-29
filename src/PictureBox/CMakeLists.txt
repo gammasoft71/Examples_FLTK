@@ -12,10 +12,6 @@ elseif (APPLE)
   set(GUI_OPTION MACOSX_BUNDLE)
 endif ()
 
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Resources/Logo.png ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/Resources/Logo.png COPYONLY)
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Resources/Logo.png ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/Debug/Resources/Logo.png COPYONLY)
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Resources/Logo.png ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/Release/Resources/Logo.png COPYONLY)
-
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(PictureBox ${GUI_OPTION} PictureBox.cpp)
+add_executable(PictureBox ${GUI_OPTION} PictureBox.cpp logo.xpm)

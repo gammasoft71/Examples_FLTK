@@ -1,8 +1,7 @@
 #include <FL/Fl.H>
 #include <FL/Fl_Box.H>
-#include <FL/Fl_Pixmap.H>
+#include <FL/Fl_PNG_Image.H>
 #include <FL/Fl_Window.H>
-#include "logo.xpm"
 
 class Form : public Fl_Window {
 public:
@@ -16,7 +15,7 @@ public:
   
 private:
   Fl_Box pictureBox1 {20, 20, 260, 260};
-  Fl_Pixmap picture {logo_xpm};
+  Fl_PNG_Image picture {"Resources/Logo.png"};
 };
 
 int main(int argc, char *argv[]) {
