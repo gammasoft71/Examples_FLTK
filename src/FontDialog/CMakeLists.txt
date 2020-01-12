@@ -14,4 +14,4 @@ endif ()
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(FontDialog ${GUI_OPTION} FontDialog.cpp Fl_font_chooser.H)
+add_executable(FontDialog ${GUI_OPTION} FontDialog.cpp Fl_font_chooser.h)
