@@ -11,7 +11,7 @@ using namespace std;
 using namespace std::literals;
 
 int main() {
-  setenv("FLTK_SCHEME", "gtk+", 1);
+  //setenv("FLTK_SCHEME", "gtk+", 1);
   Fl::get_system_colors();
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   Fl::scheme(nullptr);
