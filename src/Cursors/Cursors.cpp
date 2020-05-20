@@ -11,10 +11,10 @@ class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 360, 240, "ListBox example") {
     resizable(this);
-    for (auto item : initializer_list<pair<const char *, Fl_Cursor>> {{"Application Starting", FL_CURSOR_WAIT}, {"Arrow", FL_CURSOR_ARROW}, {"Close hand", FL_CURSOR_HAND}, {"Contextual menu", FL_CURSOR_DEFAULT}, {"Cross", FL_CURSOR_CROSS}, {"Default cursor", FL_CURSOR_DEFAULT}, {"Disappearing item", FL_CURSOR_DEFAULT}, {"Drag copy", FL_CURSOR_DEFAULT}, {"Drag link", FL_CURSOR_DEFAULT}, {"Hand", FL_CURSOR_HAND}, {"Help", FL_CURSOR_HELP}, {"Horizontal split", FL_CURSOR_NS}, {"I beam", FL_CURSOR_INSERT}, {"No", FL_CURSOR_DEFAULT}, {"No move 2d", FL_CURSOR_DEFAULT}, {"No move horizontal", FL_CURSOR_DEFAULT}, {"No move vertical", FL_CURSOR_DEFAULT}, {"Open hand", FL_CURSOR_HAND}, {"Pan east", FL_CURSOR_E}, {"Pan north east",FL_CURSOR_NE}, {"Pan north", FL_CURSOR_N}, {"Pan north west", FL_CURSOR_NW}, {"Pan south", FL_CURSOR_S}, {"Pan south west", FL_CURSOR_SW}, {"Pan West", FL_CURSOR_W}, {"Size all", FL_CURSOR_MOVE}, {"Size north-east south-west", FL_CURSOR_DEFAULT}, {"Size north south", FL_CURSOR_NS}, {"Size north-west south-east", FL_CURSOR_NWSE}, {"Size west east", FL_CURSOR_WE}, {"Up arrow", FL_CURSOR_DEFAULT}, {"Vertical I beam", FL_CURSOR_INSERT}, {"Vertical split", FL_CURSOR_WE}, {"Wait cursor", FL_CURSOR_WAIT}})
+    for (auto item : initializer_list<pair<const char *, Fl_Cursor>> {{"Arrow", FL_CURSOR_ARROW}, {"Cross", FL_CURSOR_CROSS}, {"Default", FL_CURSOR_DEFAULT}, {"East", FL_CURSOR_E}, {"Hand", FL_CURSOR_HAND}, {"Help", FL_CURSOR_HELP}, {"Insert", FL_CURSOR_INSERT}, {"Move", FL_CURSOR_MOVE}, {"North", FL_CURSOR_N}, {"North east",FL_CURSOR_NE}, {"North south", FL_CURSOR_NS}, {"North west", FL_CURSOR_NW}, {"North-west south-east", FL_CURSOR_NWSE}, {"South", FL_CURSOR_S}, {"South west", FL_CURSOR_SW}, {"West", FL_CURSOR_W}, {"West east", FL_CURSOR_WE}, {"Wait", FL_CURSOR_WAIT}})
       listBoxCursors.add(item.first, (void*)item.second);
     listBoxCursors.type(FL_HOLD_BROWSER);
-    listBoxCursors.select(6);
+    listBoxCursors.select(3);
     listBoxCursors.callback([](Fl_Widget* sender, void* form) {
       if (((Form*)form)->listBoxCursors.value() != 0)
         ((Form*)form)->test_zone.cursor((Fl_Cursor)(intptr_t)((Form*)form)->listBoxCursors.data(((Form*)form)->listBoxCursors.value()));
