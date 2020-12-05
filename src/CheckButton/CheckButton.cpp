@@ -3,9 +3,9 @@
 #include <FL/Fl_Window.H>
 
 namespace Examples {
-  class Window : public Fl_Window {
+  class MainWindow : public Fl_Window {
   public:
-    Window() : Fl_Window(200, 100, 300, 300, "CheckButton example") {
+    MainWindow() : Fl_Window(200, 100, 300, 300, "CheckButton example") {
       resizable(this);
       
       checkButton1.value(false);
@@ -26,7 +26,7 @@ namespace Examples {
 }
 
 int main(int argc, char *argv[]) {
-  Examples::Window window;
+  Examples::MainWindow window;
   window.show(argc, argv);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();

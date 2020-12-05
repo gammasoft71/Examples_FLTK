@@ -6,9 +6,9 @@
 using namespace std;
 
 namespace Examples {
-  class Window : public Fl_Window {
+  class MainWindow : public Fl_Window {
   public:
-    Window() : Fl_Window(200, 100, 300, 300, "CheckBox example") {
+    MainWindow() : Fl_Window(200, 100, 300, 300, "CheckBox example") {
       resizable(this);
       
       checkBox1.autocheck(false);
@@ -59,7 +59,7 @@ namespace Examples {
 }
 
 int main(int argc, char *argv[]) {
-  Examples::Window window;
+  Examples::MainWindow window;
   window.show(argc, argv);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();

@@ -8,21 +8,21 @@
 using namespace std;
 
 namespace Examples {
-  class Window : public Fl_Window {
+  class MainWindow : public Fl_Window {
   public:
-    Window() : Fl_Window(200, 100, 300, 300, "Label example") {
+    MainWindow() : Fl_Window(200, 100, 300, 300, "Label example") {
       resizable(this);
       
       button1.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button1.callback([](Fl_Widget* sender, void* window) {
-        auto result = "button1 clicked " + to_string(++reinterpret_cast<Window*>(window)->button1Clicked) + " times";
-        reinterpret_cast<Window*>(window)->box1.copy_label(result.c_str());
+        auto result = "button1 clicked " + to_string(++reinterpret_cast<MainWindow*>(window)->button1Clicked) + " times";
+        reinterpret_cast<MainWindow*>(window)->box1.copy_label(result.c_str());
       }, this);
       
       button2.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button2.callback([](Fl_Widget* sender, void* window) {
-        auto result = "button2 clicked " + to_string(++reinterpret_cast<Window*>(window)->button2Clicked) + " times";
-        reinterpret_cast<Window*>(window)->box2.copy_label(result.c_str());
+        auto result = "button2 clicked " + to_string(++reinterpret_cast<MainWindow*>(window)->button2Clicked) + " times";
+        reinterpret_cast<MainWindow*>(window)->box2.copy_label(result.c_str());
       }, this);
       
       box1.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
@@ -40,7 +40,7 @@ namespace Examples {
 }
 
 int main(int argc, char *argv[]) {
-  Examples::Window window;
+  Examples::MainWindow window;
   window.show(argc, argv);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();

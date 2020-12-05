@@ -13,9 +13,9 @@ namespace Examples {
   }
 #endif
 
-  class Window : public Fl_Window {
+  class MainWindow : public Fl_Window {
   public:
-    Window() : Fl_Window(200, 100, 300, 300, "My first application") {
+    MainWindow() : Fl_Window(200, 100, 300, 300, "My first application") {
       box1.align(FL_ALIGN_CENTER | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
       box1.labelfont(FL_HELVETICA_BOLD_ITALIC);
       box1.labelsize(points_to_native_font_graphics_untit(32));
@@ -31,7 +31,7 @@ namespace Examples {
 }
 
 int main(int argc, char *argv[]) {
-  Examples::Window window;
+  Examples::MainWindow window;
   window.show(argc, argv);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();

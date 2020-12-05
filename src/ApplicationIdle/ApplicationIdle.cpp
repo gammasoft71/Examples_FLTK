@@ -9,16 +9,16 @@ using namespace std::chrono;
 using namespace std::chrono_literals;
 
 namespace Examples {
-  class Window : public Fl_Window {
+  class MainWindow : public Fl_Window {
   public:
-    Window() : Fl_Window(200, 100, 300, 300, "") {
+    MainWindow() : Fl_Window(200, 100, 300, 300, "") {
       resizable(this);
       
       Fl::add_idle([](void* window) {
         static auto lastIdleTime = high_resolution_clock::now();;
         auto elapsedTime = high_resolution_clock::now() - lastIdleTime;
         if (elapsedTime >= 100ms) {
-          reinterpret_cast<Window*>(window)->OnApplicationIdle();
+          reinterpret_cast<MainWindow*>(window)->OnApplicationIdle();
           lastIdleTime = high_resolution_clock::now();
         }
       }, this);
@@ -34,7 +34,7 @@ namespace Examples {
 }
 
 int main(int argc, char *argv[]) {
-  Examples::Window window;
+  Examples::MainWindow window;
   window.show(argc, argv);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();

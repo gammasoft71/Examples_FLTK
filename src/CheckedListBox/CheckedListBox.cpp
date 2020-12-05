@@ -7,16 +7,16 @@
 using namespace std;
 
 namespace Examples {
-  class Window : public Fl_Window {
+  class MainWindow : public Fl_Window {
   public:
-    Window() : Fl_Window(200, 100, 200, 240, "CheckBrowser example") {
+    MainWindow() : Fl_Window(200, 100, 200, 240, "CheckBrowser example") {
       resizable(this);
       
       for (auto index = 0; index < 10; index++)
         checkBrowser.add(("item " + to_string(index)).c_str(), index % 2);
       checkBrowser.when(FL_WHEN_CHANGED);
       checkBrowser.callback([](Fl_Widget* sender, void* window) {
-        cout << "checked items = " << reinterpret_cast<Window*>(window)->CheckBrowserToString() << endl;
+        cout << "checked items = " << reinterpret_cast<MainWindow*>(window)->CheckBrowserToString() << endl;
       }, this);
 
       cout << "checked items = " << CheckBrowserToString() << endl;
@@ -35,7 +35,7 @@ namespace Examples {
 }
 
 int main(int argc, char *argv[]) {
-  Examples::Window window;
+  Examples::MainWindow window;
   window.show(argc, argv);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
