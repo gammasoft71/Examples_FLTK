@@ -6,10 +6,10 @@
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 400, 400, "Font Example") {
-    this->resizable(this);
-    this->end();
-    this->button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
-    this->button.callback([](Fl_Widget* sender, void* form) {
+    resizable(this);
+    end();
+    button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    button.callback([](Fl_Widget* sender, void* form) {
       Fl_Font font = ((Form*)form)->label.labelfont();
       int size = ((Form*)form)->label.labelsize();
       Fl_Color color = ((Form*)form)->label.labelcolor();
@@ -21,8 +21,8 @@ public:
       }
     }, this);
 
-    this->label.box(FL_FLAT_BOX);
-    this->label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
+    label.box(FL_FLAT_BOX);
+    label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
   }
   
 private:

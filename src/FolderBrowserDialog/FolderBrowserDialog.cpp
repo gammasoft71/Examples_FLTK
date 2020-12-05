@@ -10,10 +10,10 @@ using namespace std;
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "FolderBrowserDialog example") {
-    this->resizable(this);
+    resizable(this);
     
-    this->button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
-    this->button.callback([](Fl_Widget* sender, void* form) {
+    button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    button.callback([](Fl_Widget* sender, void* form) {
       Fl_Native_File_Chooser folderBrowserDialog;
       folderBrowserDialog.type(Fl_Native_File_Chooser::BROWSE_DIRECTORY);
 #if defined(_WIN32)
@@ -25,7 +25,7 @@ public:
         ((Form*)form)->label.copy_label((string("Path = ") + folderBrowserDialog.filename()).c_str());
     }, this);
 
-    this->label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
   }
   
 private:

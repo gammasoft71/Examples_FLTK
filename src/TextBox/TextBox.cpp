@@ -5,17 +5,17 @@
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "TextBox example") {
-    this->resizable(this);
+    resizable(this);
     
-    this->textBox1.value("textBox1");
-    this->textBox1.when(FL_WHEN_CHANGED);
-    this->textBox1.callback([](Fl_Widget* sender, void* form) {
+    textBox1.value("textBox1");
+    textBox1.when(FL_WHEN_CHANGED);
+    textBox1.callback([](Fl_Widget* sender, void* form) {
       ((Form*)form)->textBox2.value(((Form*)form)->textBox1.value());
     }, this);
     
-    this->textBox2.value("textBox2");
-    this->textBox2.when(FL_WHEN_CHANGED);
-    this->textBox2.callback([](Fl_Widget* sender, void* form) {
+    textBox2.value("textBox2");
+    textBox2.when(FL_WHEN_CHANGED);
+    textBox2.callback([](Fl_Widget* sender, void* form) {
       ((Form*)form)->textBox1.value(((Form*)form)->textBox2.value());
     }, this);
   }

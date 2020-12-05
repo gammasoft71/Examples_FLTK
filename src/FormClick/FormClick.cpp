@@ -5,7 +5,7 @@
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "Click anywhere on the form") {
-    this->resizable(this);
+    resizable(this);
   }
   
   int handle(int event) override {

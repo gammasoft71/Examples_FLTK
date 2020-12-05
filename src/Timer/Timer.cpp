@@ -10,18 +10,18 @@ using namespace std;
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 230, 130, "Timer example") {
-    this->resizable(this);
+    resizable(this);
     
-    this->button.callback([](Fl_Widget* sender, void* form) {
+    button.callback([](Fl_Widget* sender, void* form) {
       ((Form*)form)->enableTimer = !((Form*)form)->enableTimer;
       ((Form*)form)->button.copy_label(((Form*)form)->enableTimer ? "Stop" : "Start");
       if (((Form*)form)->enableTimer) Fl::add_timeout(0.1, OnTimerTick, form);
     }, this);
     
-    this->label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
-    this->label.labelfont(FL_HELVETICA_ITALIC);
-    this->label.labelsize(64);
-    this->label.labelcolor(fl_rgb_color(30, 144, 255));
+    label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    label.labelfont(FL_HELVETICA_ITALIC);
+    label.labelsize(64);
+    label.labelcolor(fl_rgb_color(30, 144, 255));
   }
   
 private:

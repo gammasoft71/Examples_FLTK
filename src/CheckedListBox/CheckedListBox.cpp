@@ -1,44 +1,42 @@
-#include <sstream>
+#include <iostream>
+#include <string>
 #include <FL/Fl.H>
 #include <FL/Fl_Check_Browser.H>
 #include <FL/Fl_Window.H>
 
 using namespace std;
 
-class Fl_Checked_list_box : public Fl_Check_Browser {
-public:
-  Fl_Checked_list_box(int x, int y, int w, int h) : Fl_Check_Browser(x, y, w, h) {
-    selection_color(FL_SELECTION_COLOR);
-  }
-  
-  int handle(int event) override {
-    return Fl_Check_Browser::handle(event);
-  }
-  
-private:
-};
+namespace Examples {
+  class Window : public Fl_Window {
+  public:
+    Window() : Fl_Window(200, 100, 200, 240, "CheckBrowser example") {
+      resizable(this);
+      
+      for (auto index = 0; index < 10; index++)
+        checkBrowser.add(("item " + to_string(index)).c_str(), index % 2);
+      checkBrowser.when(FL_WHEN_CHANGED);
+      checkBrowser.callback([](Fl_Widget* sender, void* window) {
+        cout << "checked items = " << reinterpret_cast<Window*>(window)->CheckBrowserToString() << endl;
+      }, this);
 
-class Form : public Fl_Window {
-public:
-  Form() : Fl_Window(200, 100, 300, 300, "CheckedListBox example") {
-    this->resizable(this);
-    for (int index = 0; index < 50; index++) {
-      stringstream ss;
-      ss << "item " << index;
-      checkedListBox.add(ss.str().c_str(), index % 2);
+      cout << "checked items = " << CheckBrowserToString() << endl;
     }
     
-    int item = 3;
-    checkedListBox.select(&item);
-  }
-  
-private:
-  Fl_Checked_list_box checkedListBox {10, 10, 280, 280};
-};
+  private:
+    string CheckBrowserToString() const {
+      string checkedItems;
+      for (auto item = 1; item <= checkBrowser.nitems(); ++item)
+        if (checkBrowser.checked(item)) checkedItems.append((checkedItems.empty() ? "" : ", ")).append(checkBrowser.text(item));
+      return checkedItems;
+    }
+    
+    Fl_Check_Browser checkBrowser {20, 20, 160, 200};
+  };
+}
 
 int main(int argc, char *argv[]) {
-  Form form;
-  form.show(argc, argv);
+  Examples::Window window;
+  window.show(argc, argv);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }

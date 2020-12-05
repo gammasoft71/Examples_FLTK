@@ -9,36 +9,36 @@ using namespace std;
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "RadioButton example") {
-    this->resizable(this);
+    resizable(this);
 
-    this->radioButton1.auto_check(false);
-    this->radioButton1.state(FL_CHECKED);
-    this->radioButton1.callback([](Fl_Widget* sender, void* form) {
+    radioButton1.auto_check(false);
+    radioButton1.state(FL_CHECKED);
+    radioButton1.callback([](Fl_Widget* sender, void* form) {
       // Uncomments next line to check / uncheck radio button 1 (auto_check is false...)
       //((Fl_Radio_Toggle_Button*)sender)->state(!((Fl_Radio_Toggle_Button*)sender)->state());
     }, this);
 
-    this->radioButton2.state(FL_CHECKED);
+    radioButton2.state(FL_CHECKED);
 
-    this->radioButton3.when(FL_WHEN_CHANGED);
-    this->radioButton3.callback([](Fl_Widget* sender, void* form) {
+    radioButton3.when(FL_WHEN_CHANGED);
+    radioButton3.callback([](Fl_Widget* sender, void* form) {
       stringstream ss;
       ss << "Radio 3 checked = " << boolalpha << (((Fl_Radio_Toggle_Button*)sender)->state() == FL_CHECKED);
       ((Form*)form)->label1.copy_label(ss.str().c_str());
     }, this);
 
-    this->radioButton4.toggle_button(true);
-    this->radioButton4.copy_label("Radio 4");
+    radioButton4.toggle_button(true);
+    radioButton4.copy_label("Radio 4");
 
-    this->radioButton5.auto_check(false);
-    this->radioButton5.state(FL_CHECKED);
-    this->radioButton5.toggle_button(true);
-    this->radioButton5.callback([](Fl_Widget* sender, void* form) {
+    radioButton5.auto_check(false);
+    radioButton5.state(FL_CHECKED);
+    radioButton5.toggle_button(true);
+    radioButton5.callback([](Fl_Widget* sender, void* form) {
       // Uncomments next line to check / uncheck radio button 5 (auto_check is false...)
       //((Fl_Radio_Toggle_Button*)sender)->state(!((Fl_Radio_Toggle_Button*)sender)->state());
     }, this);
     
-    this->label1.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    label1.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
   }
   
 private:

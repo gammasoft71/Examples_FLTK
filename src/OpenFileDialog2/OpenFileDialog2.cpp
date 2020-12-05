@@ -10,10 +10,10 @@ using namespace std;
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "OpenFileDialog example") {
-    this->resizable(this);
+    resizable(this);
     
-    this->button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
-    this->button.callback([](Fl_Widget* sender, void* form) {
+    button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    button.callback([](Fl_Widget* sender, void* form) {
       Fl_Native_File_Chooser openFileDialog;
       openFileDialog.type(Fl_Native_File_Chooser::BROWSE_FILE);
       openFileDialog.filter("Text File\t*.txt");
@@ -26,7 +26,7 @@ public:
         ((Form*)form)->label.copy_label((string("File = ") + openFileDialog.filename()).c_str());
     }, this);
 
-    this->label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
   }
   
 private:

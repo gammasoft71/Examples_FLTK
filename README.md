@@ -17,6 +17,10 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 [CheckBox](src/CheckBox) Shows how to create a Fltk CheckBox with Fl_Check_Button.
 
+[CheckButton](src/CheckButton) Shows how to create a Fltk CheckButton with Fl_Check_Button.
+
+[CheckedListBox](src/CheckedListBox) Shows how to create a Fltk CheckedListBox with Fl_Checked_list_box.
+
 [ComboBox](src/ComboBox) Shows how to create a Fltk ComboBox with Fl_Input_Choice.
 
 [Label](src/Label) Shows how to create a Fltk Label with Fl_Box.
@@ -28,6 +32,8 @@ Shows how to use Fltk controls only by programming code (c++17).
 [RadioButton](src/RadioButton) Shows how to create a Fltk RadioButton with Fl_Round_Button.
 
 [TextBox](src/TextBox) Shows how to create a Fltk TextBox with Fl_Input.
+
+[ToggleButton](src/ToggleButton) Shows how to create a Fltk ToggleButton with Fl_Toggle_Button.
 
 [TrackBar](src/TrackBar) Shows how to create a Fltk TrackBar with Fl_Slider.
 

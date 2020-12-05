@@ -35,7 +35,7 @@ public:
       state_ = state > 2 ? 2 : state;
       value(state != 0);
       set_changed();
-      if (when() & FL_WHEN_CHANGED) this->do_callback();
+      if (when() & FL_WHEN_CHANGED) do_callback();
     }
   }
 
@@ -44,26 +44,26 @@ public:
     if (event == FL_RELEASE || (event == FL_KEYBOARD && Fl::focus() == this && Fl::event_key() == ' ' && !(Fl::event_state() & (FL_SHIFT | FL_CTRL | FL_ALT | FL_META)))) {
       if (auto_check_) {
         state(FL_CHECKED);
-        if (this->parent()) {
-          for ( int index = 0; index < this->parent()->children(); index++) {
-            if (this->parent()->child(index) != this && dynamic_cast<Fl_Radio_Toggle_Button*>(this->parent()->child(index)) && static_cast<Fl_Radio_Toggle_Button*>(this->parent()->child(index))->auto_check())
-              static_cast<Fl_Radio_Toggle_Button*>(this->parent()->child(index))->state(FL_UNCHECKED);
+        if (parent()) {
+          for ( int index = 0; index < parent()->children(); index++) {
+            if (parent()->child(index) != this && dynamic_cast<Fl_Radio_Toggle_Button*>(parent()->child(index)) && static_cast<Fl_Radio_Toggle_Button*>(parent()->child(index))->auto_check())
+              static_cast<Fl_Radio_Toggle_Button*>(parent()->child(index))->state(FL_UNCHECKED);
           }
         }
         
         redraw();
       }
-      if (when() & FL_WHEN_RELEASE) this->do_callback();
+      if (when() & FL_WHEN_RELEASE) do_callback();
       return true;
     }
-    return this->Fl_Radio_Round_Button::handle(event);
+    return Fl_Radio_Round_Button::handle(event);
   }
   
   void draw() override {
     if (toggle_button() == true)
-      this->Fl_Button::draw();
+      Fl_Button::draw();
     else
-      this->Fl_Radio_Round_Button::draw();
+      Fl_Radio_Round_Button::draw();
   }
   
 private:

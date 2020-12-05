@@ -8,23 +8,23 @@ public:
     selection_color(FL_SELECTION_COLOR);
   }
   
-  void animation_speed(int animation_speed) {this->animation_speed_ = animation_speed;}
+  void animation_speed(int animation_speed) {animation_speed_ = animation_speed;}
   int animation_speed() const {return animation_speed_;}
 
   void marquee(bool marquee) {
-    this->marquee_ = marquee;
-    if (this->marquee_) Fl::add_timeout((double)this->animation_speed_ / 1000, on_marquee_timer_tick, this);
+    marquee_ = marquee;
+    if (marquee_) Fl::add_timeout((double)animation_speed_ / 1000, on_marquee_timer_tick, this);
   }
-  bool marquee() const {return this->marquee_;}
+  bool marquee() const {return marquee_;}
   
-  int marquee_width() const {return this->marquee_width_;}
-  void marquee_width(int marquee_width) {this->marquee_width_ = marquee_width;}
+  int marquee_width() const {return marquee_width_;}
+  void marquee_width(int marquee_width) {marquee_width_ = marquee_width;}
 
   void draw() override {
-    this->Fl_Progress::draw();
-    if (this->marquee_) {
-      draw_box(FL_DOWN_BOX, this->x(), this->y(), this->w(), this->h(), this->color());
-      draw_box(FL_FLAT_BOX, this->x() + Fl::box_dw(this->box()) / 2 + marquee_pos_ - 1, this->y() + Fl::box_dh(this->box()) / 2 - 1, this->marquee_width_ - Fl::box_dw(this->box()) + 2, this->h() - Fl::box_dh(this->box()) + 2, this->selection_color());
+    Fl_Progress::draw();
+    if (marquee_) {
+      draw_box(FL_DOWN_BOX, x(), y(), w(), h(), color());
+      draw_box(FL_FLAT_BOX, x() + Fl::box_dw(box()) / 2 + marquee_pos_ - 1, y() + Fl::box_dh(box()) / 2 - 1, marquee_width_ - Fl::box_dw(box()) + 2, h() - Fl::box_dh(box()) + 2, selection_color());
     }
   }
   

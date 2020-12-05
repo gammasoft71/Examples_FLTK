@@ -6,10 +6,10 @@
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "ColorDialog example") {
-    this->resizable(this);
+    resizable(this);
     
-    this->buttonShowMessage.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
-    this->buttonShowMessage.callback([](Fl_Widget* sender, void* form) {
+    buttonShowMessage.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    buttonShowMessage.callback([](Fl_Widget* sender, void* form) {
       uchar r = 0, g = 0, b = 0;
       Fl::get_color(((Form*)form)->color(), r, g, b);
       if (fl_color_chooser("Color", r, g, b) != 0) {

@@ -8,12 +8,12 @@ using namespace std;
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 640, 480, "Panel example") {
-    this->resizable(this);
-    this->panel1 = make_shared<Fl_Scroll>(10, 10, 305, 460);
-    this->panel1->end();
-    this->panel1->box(FL_BORDER_BOX);
-    this->panel2 = make_shared<Fl_Scroll>(325, 10, 305, 460);
-    this->panel2->box(FL_DOWN_BOX);
+    resizable(this);
+    panel1 = make_shared<Fl_Scroll>(10, 10, 305, 460);
+    panel1->end();
+    panel1->box(FL_BORDER_BOX);
+    panel2 = make_shared<Fl_Scroll>(325, 10, 305, 460);
+    panel2->box(FL_DOWN_BOX);
   }
   
 private:

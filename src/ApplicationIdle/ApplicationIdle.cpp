@@ -8,32 +8,34 @@ using namespace std;
 using namespace std::chrono;
 using namespace std::chrono_literals;
 
-class Form : public Fl_Window {
-public:
-  Form() : Fl_Window(200, 100, 300, 300, "") {
-    this->resizable(this);
-
-    Fl::add_idle([](void* form) {
-      static high_resolution_clock::time_point lastIdleTime;
-      high_resolution_clock::duration elapsedTime = high_resolution_clock::now() - lastIdleTime;
-      if (elapsedTime >= 100ms) {
-        ((Form*)form)->OnApplicationIdle();
-        lastIdleTime = high_resolution_clock::now();
-      }
-    }, this);
-  }
-  
-private:
-  void OnApplicationIdle() {
-    this->copy_label(to_string(++this->counter).c_str());
-  }
-
-  int counter = 0;
-};
+namespace Examples {
+  class Window : public Fl_Window {
+  public:
+    Window() : Fl_Window(200, 100, 300, 300, "") {
+      resizable(this);
+      
+      Fl::add_idle([](void* window) {
+        static auto lastIdleTime = high_resolution_clock::now();;
+        auto elapsedTime = high_resolution_clock::now() - lastIdleTime;
+        if (elapsedTime >= 100ms) {
+          reinterpret_cast<Window*>(window)->OnApplicationIdle();
+          lastIdleTime = high_resolution_clock::now();
+        }
+      }, this);
+    }
+    
+  private:
+    void OnApplicationIdle() {
+      copy_label(to_string(++counter).c_str());
+    }
+    
+    int counter = 0;
+  };
+}
 
 int main(int argc, char *argv[]) {
-  Form form;
-  form.show(argc, argv);
+  Examples::Window window;
+  window.show(argc, argv);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }

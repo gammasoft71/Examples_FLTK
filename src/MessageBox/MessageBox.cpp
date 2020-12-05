@@ -8,10 +8,10 @@
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "MessageBox example") {
-    this->resizable(this);
+    resizable(this);
     
-    this->buttonShowMessage.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
-    this->buttonShowMessage.callback([](Fl_Widget* sender, void* form) {
+    buttonShowMessage.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    buttonShowMessage.callback([](Fl_Widget* sender, void* form) {
       fl_message_icon()->label("!");
       fl_message_icon()->color(fl_rgb_color(0, 0, 255));
       fl_message_icon()->labelcolor(fl_rgb_color(255, 255, 255));
@@ -22,7 +22,7 @@ public:
         ((Form*)form)->labelDialogResult.copy_label("DialogResult = Cancel");
     }, this);
 
-    this->labelDialogResult.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+    labelDialogResult.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
   }
   
 private:

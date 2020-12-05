@@ -5,16 +5,16 @@
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "ProgressBar example") {
-    this->resizable(this);
+    resizable(this);
     
-    this->progressBar2.value(50);
+    progressBar2.value(50);
     
-    this->progressBar3.value(100);
+    progressBar3.value(100);
     
-    this->progressBar4.maximum(140);
+    progressBar4.maximum(140);
     Fl::add_timeout(0.05, OnTimerTick, this);
     
-    this->progressBar5.marquee(true);
+    progressBar5.marquee(true);
   }
 
 private:

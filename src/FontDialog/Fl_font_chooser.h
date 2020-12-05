@@ -17,7 +17,7 @@ inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, Fl_Color&
   class Fl_Font_Chooser {
   public:
     Fl_Font_Chooser() {
-      int numberOfFont = Fl::set_fonts(this->fontSet ? this->fontSet->c_str() : nullptr);
+      int numberOfFont = Fl::set_fonts(fontSet ? fontSet->c_str() : nullptr);
       for (int index = 0; index < numberOfFont; index++) {
         int fontType = 0;
         string fontName = Fl::get_font_name((Fl_Font)index, &fontType);
@@ -26,39 +26,39 @@ inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, Fl_Color&
           if (fontType & FL_ITALIC) fontName= "@i" + fontName;
           if (fontName.find("@.") != string::npos) fontName.erase(fontName.find("@."), "@."s.length()); // Suppress subsequent formatting - some MS fonts have '@' in their name
         }
-        this->fontNames.add(fontName.c_str());
+        fontNames.add(fontName.c_str());
       }
       
-      this->fontNames.callback([](Fl_Widget* sender, void* fontChooser) {
+      fontNames.callback([](Fl_Widget* sender, void* fontChooser) {
         ((Fl_Font_Chooser*)fontChooser)->currentFont = ((Fl_Font_Chooser*)fontChooser)->fontNames.value() - 1;
         ((Fl_Font_Chooser*)fontChooser)->fontView.labelfont(((Fl_Font_Chooser*)fontChooser)->currentFont);
         ((Fl_Font_Chooser*)fontChooser)->fontView.redraw();
       }, this);
       
       for (int index = 1; index <= 72; index++)
-        this->fontSizes.add(to_string(index).c_str());
+        fontSizes.add(to_string(index).c_str());
       
-      this->fontSizes.callback([](Fl_Widget* sender, void* fontChooser) {
+      fontSizes.callback([](Fl_Widget* sender, void* fontChooser) {
         ((Fl_Font_Chooser*)fontChooser)->currentSize = ((Fl_Font_Chooser*)fontChooser)->fontSizes.value() - 1;
         ((Fl_Font_Chooser*)fontChooser)->fontView.labelsize(((Fl_Font_Chooser*)fontChooser)->currentSize);
         ((Fl_Font_Chooser*)fontChooser)->fontView.redraw();
       }, this);
       
-      this->fontView.box(FL_DOWN_BOX);
-      this->fontView.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+      fontView.box(FL_DOWN_BOX);
+      fontView.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       
-      this->buttonOk.callback([](Fl_Widget* sender, void* fontChooser) {
+      buttonOk.callback([](Fl_Widget* sender, void* fontChooser) {
         ((Fl_Font_Chooser*)fontChooser)->result = 1;
         ((Fl_Font_Chooser*)fontChooser)->dialog.hide();
       }, this);
       
-      this->buttonCancel.shortcut(FL_Escape);
-      this->buttonCancel.callback([](Fl_Widget* sender, void* fontChooser) {
+      buttonCancel.shortcut(FL_Escape);
+      buttonCancel.callback([](Fl_Widget* sender, void* fontChooser) {
         ((Fl_Font_Chooser*)fontChooser)->result = 0;
         ((Fl_Font_Chooser*)fontChooser)->dialog.hide();
       }, this);
 
-      this->buttonColor.callback([](Fl_Widget* sender, void* fontChooser) {
+      buttonColor.callback([](Fl_Widget* sender, void* fontChooser) {
         uchar r = 0, g = 0, b = 0;
         Fl::get_color(((Fl_Font_Chooser*)fontChooser)->currentColor, r, g, b);
         if (fl_color_chooser("Color", r, g, b) != 0) {
@@ -73,36 +73,36 @@ inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, Fl_Color&
     Fl_Font_Chooser& operator=(const Fl_Font_Chooser&) = delete;
 
     int show() {
-      this->dialog.set_modal();
-      this->dialog.show();
-      while (this->dialog.visible())
+      dialog.set_modal();
+      dialog.show();
+      while (dialog.visible())
         Fl::wait();
-      return this->result;
+      return result;
     }
     
-    Fl_Font font() const {return this->currentFont;}
+    Fl_Font font() const {return currentFont;}
     void font(Fl_Font f) {
-      this->currentFont = f;
-      this->fontNames.value(this->currentFont + 1);
-      this->fontView.labelfont(this->currentFont);
+      currentFont = f;
+      fontNames.value(currentFont + 1);
+      fontView.labelfont(currentFont);
     }
 
-    void font_set(const string& fs) {this->fontSet = make_unique<string>(fs);}
+    void font_set(const string& fs) {fontSet = make_unique<string>(fs);}
     
-    string label() const {return this->dialog.label();}
-    void label(const string& l) {this->dialog.label(l.c_str());}
+    string label() const {return dialog.label();}
+    void label(const string& l) {dialog.label(l.c_str());}
     
-    Fl_Fontsize size() const {return this->currentSize;}
+    Fl_Fontsize size() const {return currentSize;}
     void size(Fl_Fontsize s) {
-      this->currentSize = s;
-      this->fontSizes.value(this->currentSize + 1);
-      this->fontView.labelsize(this->currentSize);
+      currentSize = s;
+      fontSizes.value(currentSize + 1);
+      fontView.labelsize(currentSize);
     }
     
-    Fl_Color color() const {return this->currentColor;}
+    Fl_Color color() const {return currentColor;}
     void color(int c) {
-      this->currentColor = c;
-      this->fontView.labelcolor(this->currentColor);
+      currentColor = c;
+      fontView.labelcolor(currentColor);
     }
 
   private:

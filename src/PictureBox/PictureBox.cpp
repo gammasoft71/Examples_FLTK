@@ -7,11 +7,11 @@
 class Form : public Fl_Window {
 public:
   Form() : Fl_Window(200, 100, 300, 300, "Picture example") {
-    this->pictureBox1.box(FL_BORDER_BOX);
-    this->pictureBox1.image(&this->picture);
-    this->pictureBox1.redraw();
+    pictureBox1.box(FL_BORDER_BOX);
+    pictureBox1.image(&picture);
+    pictureBox1.redraw();
     
-    this->resizable(this);
+    resizable(this);
   }
   
 private:

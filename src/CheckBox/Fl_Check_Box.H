@@ -34,11 +34,11 @@ public:
 
   int state() const {return state_;}
   void state(int state) {
-    if (this->state_ != state) {
+    if (state_ != state) {
       state_ = state > 2 ? 2 : state;
       value(state != 0);
       set_changed();
-      if (when() & FL_WHEN_CHANGED) this->do_callback();
+      if (when() & FL_WHEN_CHANGED) do_callback();
     }
   }
 
@@ -49,19 +49,19 @@ public:
         state(state() < (three_state() ? FL_INDETERMINATE : FL_CHECKED) ? state() + 1 : 0);
         redraw();
       }
-      if (when() & FL_WHEN_RELEASE) this->do_callback();
+      if (when() & FL_WHEN_RELEASE) do_callback();
       return true;
     }
-    return this->Fl_Check_Button::handle(event);
+    return Fl_Check_Button::handle(event);
   }
   
   void draw() override {
     if (toggle_button() == true)
-      this->Fl_Button::draw();
+      Fl_Button::draw();
     else {
-      this->Fl_Check_Button::draw();
-      if (this->state() == FL_INDETERMINATE && toggle_button() == false)
-        draw_box(FL_FLAT_BOX, this->x() + 5, this->y() + (this->h() - 14) / 2 + 3, 8, 8, selection_color());
+      Fl_Check_Button::draw();
+      if (state() == FL_INDETERMINATE && toggle_button() == false)
+        draw_box(FL_FLAT_BOX, x() + 5, y() + (h() - 14) / 2 + 3, 8, 8, selection_color());
     }
   }
   
