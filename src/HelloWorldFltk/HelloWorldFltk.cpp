@@ -3,16 +3,6 @@
 #include <FL/Fl_Window.H>
 
 namespace Examples {
-#if defined(__APPLE__)
-  float points_to_native_font_graphics_untit(float size) {
-    return size / 72.0f * 96.0f;  // font is in pixels and not in points
-  }
-#else
-  float points_to_native_font_graphics_untit(float size) {
-    return size;  // font is in points
-  }
-#endif
-
   class MainWindow : public Fl_Window {
   public:
     MainWindow() : Fl_Window(340, 180) {
