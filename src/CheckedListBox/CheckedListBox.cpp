@@ -10,7 +10,7 @@ namespace Examples {
   class MainWindow : public Fl_Window {
   public:
     MainWindow() : Fl_Window(200, 100, 200, 240, "CheckBrowser example") {
-      resizable(this);
+      resizable(checkBrowser);
       
       for (auto index = 0; index < 10; index++)
         checkBrowser.add(("item " + to_string(index)).c_str(), index % 2);
