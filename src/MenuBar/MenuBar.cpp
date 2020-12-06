@@ -2,7 +2,7 @@
 #include <string>
 #include <FL/Fl.H>
 #include <FL/Fl_Text_Display.H>
-#include <FL/Fl_Menu_Button.H>
+#include <FL/Fl_Menu_Bar.H>
 #include <FL/Fl_Window.H>
 
 using namespace std;
@@ -10,10 +10,9 @@ using namespace std;
 namespace Examples {
   class MainWindow : public Fl_Window {
   public:
-    MainWindow() : Fl_Window(200, 100, 300, 300, "ContextMenu example") {
+    MainWindow() : Fl_Window(200, 100, 300, 300, "MenuBar example") {
       resizable(textDisplay1);
 
-      textBuffer.append("Right click to show menu\n");
       textDisplay1.buffer(&textBuffer);
       textDisplay1.show_cursor(0);
 
@@ -69,13 +68,13 @@ namespace Examples {
         {0}
       };
       
-      contextMenu.type(Fl_Menu_Button::POPUP3);
-      contextMenu.copy(items);
+      menuBar.copy(items);
+      menuBar.parent(this);
     }
     
   private:
-    static void OnMenuItemClick(Fl_Widget* sender, void* window) {reinterpret_cast<MainWindow*>(window)->OnMenuItemClick(dynamic_cast<Fl_Menu_Button&>(*sender));}
-    void OnMenuItemClick(Fl_Menu_Button& menu) {
+    static void OnMenuItemClick(Fl_Widget* sender, void* window) {reinterpret_cast<MainWindow*>(window)->OnMenuItemClick(dynamic_cast<Fl_Menu_Bar&>(*sender));}
+    void OnMenuItemClick(Fl_Menu_Bar& menu) {
       textBuffer.append(menu.mvalue()->label());
       textBuffer.append("\n");
       textBuffer.select(textBuffer.length(), textBuffer.length());
@@ -83,8 +82,8 @@ namespace Examples {
       menu.value(0);
     }
     Fl_Text_Buffer textBuffer;
-    Fl_Text_Display textDisplay1 {0, 0, 300, 300};
-    Fl_Menu_Button contextMenu {0, 0, 300, 300, nullptr};
+    Fl_Menu_Bar menuBar {0, 0, 300, 30, nullptr};
+    Fl_Text_Display textDisplay1 {0, 30, 300, 270};
   };
 }
 

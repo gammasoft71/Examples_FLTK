@@ -10,7 +10,7 @@ using namespace std;
 namespace Examples {
   class MainWindow : public Fl_Window {
   public:
-    MainWindow() : Fl_Window(200, 100, 300, 300, "Label example") {
+    MainWindow() : Fl_Window(200, 100, 300, 300, "Button example") {
       resizable(this);
       
       button1.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);

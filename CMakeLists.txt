@@ -21,7 +21,6 @@ add_subdirectory(src/CheckBox)
 add_subdirectory(src/CheckButton)
 add_subdirectory(src/CheckedListBox)
 add_subdirectory(src/ComboBox)
-add_subdirectory(src/ContextMenu)
 add_subdirectory(src/Cursors)
 add_subdirectory(src/Label)
 add_subdirectory(src/ListBox)
@@ -39,7 +38,9 @@ add_subdirectory(src/Panel)
 add_subdirectory(src/TabControl)
 
 # Menus and Toolbars
-#add_subdirectory(src/MainMenu)
+add_subdirectory(src/ContextMenu)
+add_subdirectory(src/MenuBar)
+add_subdirectory(src/SysMenuBar)
 
 # Components
 add_subdirectory(src/Timer)
