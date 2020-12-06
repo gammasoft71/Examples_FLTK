@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(HelloWorld)
+project(Box)
 
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
@@ -14,4 +14,4 @@ endif ()
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(HelloWorld ${GUI_OPTION} HelloWorld.cpp)
+add_executable(Box ${GUI_OPTION} Box.cpp)

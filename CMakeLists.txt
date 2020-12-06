@@ -8,21 +8,21 @@ else()
 endif()
 
 # Hello World
-add_subdirectory(src/HelloWorld)
+add_subdirectory(src/HelloWorldBox)
+add_subdirectory(src/HelloWorldFltk)
 
 # Application and messages
 add_subdirectory(src/Application)
-add_subdirectory(src/ApplicationIdle)
 #add_subdirectory(src/ApplicationWithMessageLoop)
 
 # Common Controls
+add_subdirectory(src/Box)
 add_subdirectory(src/Button)
 add_subdirectory(src/CheckBox)
 add_subdirectory(src/CheckButton)
 add_subdirectory(src/CheckedListBox)
 add_subdirectory(src/ComboBox)
 add_subdirectory(src/Cursors)
-add_subdirectory(src/Label)
 add_subdirectory(src/ListBox)
 add_subdirectory(src/ProgressBar)
 add_subdirectory(src/PictureBox)
@@ -55,6 +55,7 @@ add_subdirectory(src/MessageBox)
 add_subdirectory(src/SaveFileDialog)
 
 # Events
+add_subdirectory(src/ApplicationIdle)
 add_subdirectory(src/FormClick)
 
 # Other
