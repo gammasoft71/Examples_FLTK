@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(CheckButton)
+project(Check_Button)
 
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
@@ -14,4 +14,5 @@ endif ()
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(CheckButton ${GUI_OPTION} CheckButton.cpp)
+add_executable(${PROJECT_NAME} ${GUI_OPTION} Check_Button.cpp)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Common_Controls")

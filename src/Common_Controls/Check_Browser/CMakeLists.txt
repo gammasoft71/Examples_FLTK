@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(Button)
+project(Check_Browser)
 
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
@@ -14,4 +14,5 @@ endif ()
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(Button ${GUI_OPTION} Button.cpp)
+add_executable(${PROJECT_NAME} ${GUI_OPTION} Check_Browser.cpp)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Common_Controls")

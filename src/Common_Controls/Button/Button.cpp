@@ -8,21 +8,21 @@
 using namespace std;
 
 namespace Examples {
-  class MainWindow : public Fl_Window {
+  class Main_Window : public Fl_Window {
   public:
-    MainWindow() : Fl_Window(200, 100, 300, 300, "Button example") {
+    Main_Window() : Fl_Window(200, 100, 300, 300, "Button example") {
       resizable(this);
       
       button1.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button1.callback([](Fl_Widget* sender, void* window) {
-        auto result = "button1 clicked " + to_string(++reinterpret_cast<MainWindow*>(window)->button1Clicked) + " times";
-        reinterpret_cast<MainWindow*>(window)->box1.copy_label(result.c_str());
+        auto result = "button1 clicked " + to_string(++reinterpret_cast<Main_Window*>(window)->button1_clicked) + " times";
+        reinterpret_cast<Main_Window*>(window)->box1.copy_label(result.c_str());
       }, this);
       
       button2.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button2.callback([](Fl_Widget* sender, void* window) {
-        auto result = "button2 clicked " + to_string(++reinterpret_cast<MainWindow*>(window)->button2Clicked) + " times";
-        reinterpret_cast<MainWindow*>(window)->box2.copy_label(result.c_str());
+        auto result = "button2 clicked " + to_string(++reinterpret_cast<Main_Window*>(window)->button2_clicked) + " times";
+        reinterpret_cast<Main_Window*>(window)->box2.copy_label(result.c_str());
       }, this);
       
       box1.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
@@ -34,13 +34,13 @@ namespace Examples {
     Fl_Repeat_Button button2 {50, 100, 200, 75, "button2"};
     Fl_Box box1 {50, 200, 200, 20, "button1 clicked 0 times"};
     Fl_Box box2 {50, 230, 200, 25, "button2 clicked 0 times"};
-    int button1Clicked = 0;
-    int button2Clicked = 0;
+    int button1_clicked = 0;
+    int button2_clicked = 0;
   };
 }
 
 int main(int argc, char *argv[]) {
-  Examples::MainWindow window;
+  Examples::Main_Window window;
   window.show(argc, argv);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();

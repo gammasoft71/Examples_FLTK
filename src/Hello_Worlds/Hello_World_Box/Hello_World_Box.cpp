@@ -3,9 +3,9 @@
 #include <FL/Fl_Window.H>
 
 namespace Examples {
-  class MainWindow : public Fl_Window {
+  class Main_Window : public Fl_Window {
   public:
-    MainWindow() : Fl_Window(200, 100, 300, 300, "My first application") {
+    Main_Window() : Fl_Window(200, 100, 300, 300, "Hello world (box)") {
       box1.align(FL_ALIGN_CENTER | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
       box1.labelfont(FL_HELVETICA_BOLD_ITALIC);
       box1.labelsize(36);
@@ -21,7 +21,7 @@ namespace Examples {
 }
 
 int main(int argc, char *argv[]) {
-  Examples::MainWindow window;
+  Examples::Main_Window window;
   window.show(argc, argv);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();

@@ -10,8 +10,8 @@ class Fl_Check_Box : public Fl_Check_Button {
 public:
   Fl_Check_Box(int x, int y, int w, int h, const char* l = 0) : Fl_Check_Button(x, y, w, h, l) {toggle_button(false);}
   
-  bool autocheck() const {return autocheck_;}
-  void autocheck(bool autocheck) {autocheck_ = autocheck;}
+  bool auto_check() const {return auto_check_;}
+  void auto_check(bool auto_check) {auto_check_ = auto_check;}
   
   bool three_state() const {return three_state_;}
   void three_state(bool three_state) {three_state_ = three_state;}
@@ -45,7 +45,7 @@ public:
   int handle (int event) override {
     if (event == FL_PUSH || event == FL_DRAG) return true;
     if (event == FL_RELEASE || (event == FL_KEYBOARD && Fl::focus() == this && Fl::event_key() == ' ' && !(Fl::event_state() & (FL_SHIFT | FL_CTRL | FL_ALT | FL_META)))) {
-      if (autocheck_) {
+      if (auto_check_) {
         state(state() < (three_state() ? FL_INDETERMINATE : FL_CHECKED) ? state() + 1 : 0);
         redraw();
       }
@@ -67,7 +67,7 @@ public:
   
 private:
   using Fl_Check_Button::value;
-  bool autocheck_ = true;
+  bool auto_check_ = true;
   bool toggle_button_ = false;
   int state_ = FL_UNCHECKED;
   bool three_state_ = false;

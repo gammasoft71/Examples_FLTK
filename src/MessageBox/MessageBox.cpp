@@ -13,8 +13,8 @@ public:
     buttonShowMessage.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
     buttonShowMessage.callback([](Fl_Widget* sender, void* form) {
       fl_message_icon()->label("!");
-      fl_message_icon()->color(fl_rgb_color(0, 0, 255));
-      fl_message_icon()->labelcolor(fl_rgb_color(255, 255, 255));
+      fl_message_icon()->color(fl_rgb_color(255, 255, 0));
+      fl_message_icon()->labelcolor(fl_rgb_color(0, 0, 0));
       fl_message_title("Message");
       if (fl_choice("Hello, World!", fl_cancel, fl_ok, nullptr) == 1)
         ((Form*)form)->labelDialogResult.copy_label("DialogResult = Ok");
