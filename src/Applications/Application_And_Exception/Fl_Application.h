@@ -3,7 +3,7 @@
 #include <FL/fl_message.H>
 #include <FL/Fl_Window.H>
 
-class Fl_Application {
+class Fl_Application final {
 public:
   static void run(int argc, char *argv[], const Fl_Window& window) {
     Fl::event_dispatch(event_dispatch);
@@ -13,6 +13,8 @@ public:
   }
   
 private:
+  Fl_Application() = default;
+  
   static int event_dispatch(int event, Fl_Window* window) {
     try {
       return Fl::handle_(event, window);
