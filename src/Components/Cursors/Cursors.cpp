@@ -20,16 +20,16 @@ namespace Examples {
       cursors_list_box.callback([](Fl_Widget* sender, void* data) {
         Main_Window* window = reinterpret_cast<Main_Window*>(data);
         if (window->cursors_list_box.value() != 0)
-          window->test_zone.cursor(static_cast<Fl_Cursor>(reinterpret_cast<intptr_t>(window->cursors_list_box.data(window->cursors_list_box.value()))));
+          window->test_cursor.cursor(static_cast<Fl_Cursor>(reinterpret_cast<intptr_t>(window->cursors_list_box.data(window->cursors_list_box.value()))));
       }, this);
       
-      test_zone.box(FL_DOWN_BOX);
-      test_zone.color(FL_BACKGROUND2_COLOR);
+      test_cursor.box(FL_DOWN_BOX);
+      test_cursor.color(FL_BACKGROUND2_COLOR);
     }
     
   private:
     Fl_Browser cursors_list_box {20, 20, 150, 200};
-    Fl_Test_Cursor test_zone {190, 20, 150, 200};
+    Fl_Test_Cursor test_cursor {190, 20, 150, 200};
   };
 }
 
