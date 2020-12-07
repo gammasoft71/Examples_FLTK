@@ -14,5 +14,5 @@ endif ()
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(${PROJECT_NAME} ${GUI_OPTION} Cursors.cpp Fl_Test_Cursor.H)
+add_executable(${PROJECT_NAME} ${GUI_OPTION} Cursors.cpp Fl_Test_Cursor.h)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Components")

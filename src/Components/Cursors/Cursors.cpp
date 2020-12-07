@@ -1,34 +1,14 @@
+#include "Fl_Test_Cursor.h"
 #include <cstdint>
 #include <iostream>
 #include <initializer_list>
 #include <utility>
-#include <FL/Fl.H>
 #include <FL/Fl_Browser.H>
-#include <FL/Fl_Box.H>
 #include <FL/Fl_Window.H>
-#include "Fl_Test_Cursor.H"
 
 using namespace std;
 
 namespace Examples {
-  class Test_Zone : public Fl_Box {
-  public:
-    Test_Zone(int x, int y, int w, int h) : Fl_Box(x, y, w, h) {}
-    
-    void cursor(Fl_Cursor cursor) {cursor_= cursor;}
-    
-    int handle(int e) override {
-      switch(e) {
-        case FL_ENTER: window()->cursor(cursor_); return true;
-        case FL_LEAVE: window()->cursor(FL_CURSOR_DEFAULT); return true;
-        default: return Fl_Box::handle(e);
-      }
-    }
-    
-  private:
-    Fl_Cursor cursor_ = FL_CURSOR_DEFAULT;
-  };
-
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 360, 240, "Cursors example") {
@@ -49,7 +29,7 @@ namespace Examples {
     
   private:
     Fl_Browser cursors_list_box {20, 20, 150, 200};
-    Test_Zone test_zone {190, 20, 150, 200};
+    Fl_Test_Cursor test_zone {190, 20, 150, 200};
   };
 }
 
