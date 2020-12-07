@@ -1,6 +1,5 @@
 #include "Fl_Test_Cursor.h"
 #include <cstdint>
-#include <iostream>
 #include <initializer_list>
 #include <utility>
 #include <FL/Fl_Browser.H>
