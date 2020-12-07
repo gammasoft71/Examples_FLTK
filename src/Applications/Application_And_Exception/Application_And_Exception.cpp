@@ -4,7 +4,7 @@
 using namespace std;
 
 namespace Examples {
-  class Main_Window : public Fl_Window {
+  class Main_Window final : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Application and exception example") {
       resizable(this);
