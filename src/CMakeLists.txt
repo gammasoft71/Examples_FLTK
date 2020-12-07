@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.0)
 project(src)
 
+add_subdirectory(Hello_Worlds)
+add_subdirectory(Applications)
 add_subdirectory(Common_Controls)
 add_subdirectory(User_Controls)
-add_subdirectory(Hello_Worlds)
 
 # Application and messages
-add_subdirectory(Application)
 #add_subdirectory(ApplicationWithMessageLoop)
 
 # Common Controls
