@@ -60,8 +60,8 @@ void fl_scheme_mode(Fl_Scheme_Mode scheme_mode) {
       Fl::set_color(FL_FOREGROUND_COLOR, original_foreground_color_.value());
       Fl::set_color(FL_SELECTION_COLOR, original_selection_color_.value());
     }
+    Fl::redraw();
   }
-  Fl::redraw();
 }
 
 Fl_Scheme_Mode fl_scheme_mode() {
