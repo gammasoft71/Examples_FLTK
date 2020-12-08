@@ -1,16 +1,18 @@
 #include "Fl_Scheme_Mode.h"
 #include <initializer_list>
+#include <map>
+#include <string>
 #include <FL/Fl.H>
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Browser.H>
 #include <FL/Fl_Button.H>
 #include <FL/Fl_Choice.H>
 #include <FL/Fl_Check_Button.H>
-#include <FL/Fl_Group.H>
 #include <FL/fl_message.H>
 #include <FL/Fl_Radio_Round_Button.H>
-#include <FL/Fl_Tabs.H>
 #include <FL/Fl_Window.H>
+
+using namespace std;
 
 namespace Examples {
   class Main_Window : public Fl_Window {
@@ -41,8 +43,10 @@ namespace Examples {
         reinterpret_cast<Main_Window*>(window)->update_theme_and_mode();
       }, this);
 
-      dark_mode_button.value(true);
-      dark_mode_button.callback([](Fl_Widget* sender, void* window) {
+      for (auto item : {"default", "light", "dark"})
+        scheme_mode_choice.add(item);
+      scheme_mode_choice.value(2);
+      scheme_mode_choice.callback([](Fl_Widget* sender, void* window) {
         reinterpret_cast<Main_Window*>(window)->update_theme_and_mode();
       }, this);
     }
@@ -51,7 +55,8 @@ namespace Examples {
     void update_theme_and_mode() {
       if (scheme_choice.value() == 1) fl_scheme_mode(Fl_Scheme_Mode::default_mode); // Workaround : with scheme "plastic", window background was not correctly refresh...
       Fl::scheme(scheme_choice.text(scheme_choice.value()));
-      fl_scheme_mode(dark_mode_button.value() ? Fl_Scheme_Mode::dark : Fl_Scheme_Mode::light);
+      static map<string, Fl_Scheme_Mode> scheme_modes = {{"default", Fl_Scheme_Mode::default_mode}, {"light", Fl_Scheme_Mode::light}, {"dark", Fl_Scheme_Mode::dark}};
+      fl_scheme_mode(scheme_modes[scheme_mode_choice.text(scheme_mode_choice.value())]);
       Fl::redraw();
     }
 
@@ -63,9 +68,9 @@ namespace Examples {
     Fl_Check_Button check_button1 {10, 200, 90, 25, "Raddio 1"};
     Fl_Check_Button check_button2 {110, 200, 90, 25, "Raddio 2"};
     Fl_Box mode_box {10, 265, 30, 25, "Mode"};
-    Fl_Light_Button dark_mode_button {50, 265, 60, 25, "Dark"};
-    Fl_Box scheme_box {130, 265, 40, 25, "Scheme"};
-    Fl_Choice scheme_choice {190, 265, 90, 25};
+    Fl_Choice scheme_mode_choice {50, 265, 80, 25};
+    Fl_Box scheme_box {150, 265, 40, 25, "Scheme"};
+    Fl_Choice scheme_choice {210, 265, 80, 25};
   };
 }
 
