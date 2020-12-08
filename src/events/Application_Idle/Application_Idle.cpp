@@ -18,14 +18,14 @@ namespace Examples {
         static auto lastIdleTime = high_resolution_clock::now();;
         auto elapsedTime = high_resolution_clock::now() - lastIdleTime;
         if (elapsedTime >= 100ms) {
-          reinterpret_cast<Main_Window*>(window)->OnApplicationIdle();
+          reinterpret_cast<Main_Window*>(window)->on_application_idle();
           lastIdleTime = high_resolution_clock::now();
         }
       }, this);
     }
     
   private:
-    void OnApplicationIdle() {
+    void on_application_idle() {
       copy_label(to_string(++counter).c_str());
     }
     

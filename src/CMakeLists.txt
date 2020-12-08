@@ -6,10 +6,8 @@ add_subdirectory(Applications)
 add_subdirectory(Common_Controls)
 add_subdirectory(User_Controls)
 add_subdirectory(Components)
+add_subdirectory(Events)
 add_subdirectory(Others)
-
-# Application and messages
-#add_subdirectory(ApplicationWithMessageLoop)
 
 # Common Controls
 add_subdirectory(ListBox)
@@ -42,10 +40,6 @@ add_subdirectory(OpenFileDialog)
 add_subdirectory(OpenFileDialog2)
 add_subdirectory(MessageBox)
 add_subdirectory(SaveFileDialog)
-
-# Events
-add_subdirectory(ApplicationIdle)
-add_subdirectory(FormClick)
 
 # Other
 add_subdirectory(ColoredForms)
