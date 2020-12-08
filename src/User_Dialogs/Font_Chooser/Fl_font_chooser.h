@@ -17,6 +17,7 @@ inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, Fl_Color&
   class Fl_Font_Chooser {
   public:
     Fl_Font_Chooser() {
+      dialog.end();
       int numberOfFont = Fl::set_fonts(fontSet ? fontSet->c_str() : nullptr);
       for (int index = 0; index < numberOfFont; index++) {
         int fontType = 0;

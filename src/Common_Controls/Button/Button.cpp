@@ -11,6 +11,7 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Button example") {
+      end();
       resizable(this);
       
       button1.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
@@ -31,7 +32,7 @@ namespace Examples {
     
   private:
     Fl_Button button1 {50, 50, 75, 25, "button1"};
-    Fl_Repeat_Button button2 {50, 100, 200, 75, "button2"};
+    Fl_Repeat_Button button2 {50, 100, 200, 75, "button 2"};
     Fl_Box box1 {50, 200, 200, 20, "button1 clicked 0 times"};
     Fl_Box box2 {50, 230, 200, 25, "button2 clicked 0 times"};
     int button1_clicked = 0;

@@ -7,8 +7,8 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 400, 400, "Font Example") {
-      resizable(this);
       end();
+      resizable(this);
       button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button.callback([](Fl_Widget* sender, void* window) {
         Fl_Font font = ((Main_Window*)window)->label.labelfont();

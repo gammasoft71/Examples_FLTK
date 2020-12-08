@@ -9,6 +9,7 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "CheckBox example") {
+      end();
       resizable(this);
       
       check_box1.auto_check(false);

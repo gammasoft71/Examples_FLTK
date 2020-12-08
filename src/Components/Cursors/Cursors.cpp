@@ -11,6 +11,7 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 360, 240, "Cursors example") {
+      end();
       resizable(this);
       for (auto item : initializer_list<pair<const char *, Fl_Cursor>> {{"Default", FL_CURSOR_DEFAULT}, {"Arrow", FL_CURSOR_ARROW}, {"Cross", FL_CURSOR_CROSS}, {"Wait", FL_CURSOR_WAIT}, {"Insert", FL_CURSOR_INSERT}, {"Hand", FL_CURSOR_HAND}, {"Help", FL_CURSOR_HELP}, {"Move", FL_CURSOR_MOVE}, {"North south", FL_CURSOR_NS}, {"West east", FL_CURSOR_WE}, {"North-west south-east", FL_CURSOR_NWSE}, {"North-est south-west", FL_CURSOR_NESW}, {"North", FL_CURSOR_N}, {"North east",FL_CURSOR_NE}, {"East", FL_CURSOR_E}, {"South east", FL_CURSOR_SE}, {"South", FL_CURSOR_S}, {"South west", FL_CURSOR_SW}, {"West", FL_CURSOR_W}, {"North west", FL_CURSOR_NW}, {"None", FL_CURSOR_NONE}})
         cursors_list_box.add(item.first, reinterpret_cast<void*>(item.second));

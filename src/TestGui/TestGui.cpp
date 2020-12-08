@@ -5,12 +5,34 @@
 #include <FL/Fl.H>
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Button.H>
+#include <FL/Fl_Radio_Round_Button.H>
+#include <FL/Fl_Check_Button.H>
+#include <FL/Fl_Input.H>
 #include <FL/Fl_Window.H>
 
 using namespace std;
 using namespace std::literals;
 
+void set_dark_theme_colors() {
+  Fl::foreground(223, 223, 223);
+  Fl::background(50, 50, 50);
+  Fl::background2(23, 23, 23);
+}
+
 int main() {
+  set_dark_theme_colors();
+  //Fl::scheme("gtk+");
+  Fl::scheme("gleam");
+  Fl_Window window(400, 200, 800, 450, "Test gui");
+  Fl_Button button1(10, 10, 75, 25, "Click me");
+  Fl_Check_Button button2(10, 40, 100, 25, "Check me");
+  Fl_Radio_Round_Button button3(10, 70, 100, 25, "Select me");
+  Fl_Radio_Round_Button button4(10, 100, 100, 25, "Select me");
+  Fl_Input textBox1 {10, 130, 75, 25};
+  window.show();
+  Fl::run();
+  
+  /*
   //setenv("FLTK_SCHEME", "gtk+", 1);
   Fl::get_system_colors();
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
@@ -61,4 +83,5 @@ int main() {
   form.show();
 
   Fl::run();
+   */
 }

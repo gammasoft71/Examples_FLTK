@@ -10,6 +10,7 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 200, 240, "CheckBrowser example") {
+      end();
       resizable(check_browser);
       
       for (auto index = 0; index < 10; index++)
