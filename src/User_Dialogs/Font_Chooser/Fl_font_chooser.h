@@ -10,7 +10,7 @@
 #include <FL/Fl_Hold_Browser.H>
 #include <FL/Fl_Window.H>
 
-inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, Fl_Color& color, const char* fontset = nullptr) {
+inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, Fl_Color& color, const char* fontset = nullptr, int color_mode = -1) {
   using namespace std;
   using namespace std::literals;
 
@@ -61,7 +61,7 @@ inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, Fl_Color&
       buttonColor.callback([](Fl_Widget* sender, void* fontChooser) {
         uchar r = 0, g = 0, b = 0;
         Fl::get_color(((Fl_Font_Chooser*)fontChooser)->currentColor, r, g, b);
-        if (fl_color_chooser("Color", r, g, b) != 0) {
+        if (fl_color_chooser("Color", r, g, b, ((Fl_Font_Chooser*)fontChooser)->current_color_mode) != 0) {
           ((Fl_Font_Chooser*)fontChooser)->currentColor = fl_rgb_color(r, g, b);
           ((Fl_Font_Chooser*)fontChooser)->fontView.labelcolor(fl_rgb_color(r, g, b));
           ((Fl_Font_Chooser*)fontChooser)->fontView.redraw();
@@ -104,7 +104,12 @@ inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, Fl_Color&
       currentColor = c;
       fontView.labelcolor(currentColor);
     }
-
+    
+    int color_mode() const {return current_color_mode;}
+    void color_mode(int m) {
+      current_color_mode = m;
+    }
+    
   private:
     Fl_Window dialog {100, 200, 550, 430, ""};
     Fl_Hold_Browser fontNames {10, 10, 390, 170};
@@ -118,6 +123,7 @@ inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, Fl_Color&
     int currentSize = FL_NORMAL_SIZE;
     Fl_Color currentColor = FL_FOREGROUND_COLOR;
     unique_ptr<string> fontSet;
+    int current_color_mode = -1;
     int result = 0;
   } fontDialog;
   

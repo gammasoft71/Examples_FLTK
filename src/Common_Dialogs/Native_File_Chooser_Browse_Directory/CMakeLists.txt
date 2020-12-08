@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(FontDialog)
+project(Native_File_Chooser_Browse_Directory)
 
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
@@ -12,6 +12,8 @@ elseif (APPLE)
   set(GUI_OPTION MACOSX_BUNDLE)
 endif ()
 
+add_definitions(-D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(FontDialog ${GUI_OPTION} FontDialog.cpp Fl_font_chooser.h)
+add_executable(${PROJECT_NAME} ${GUI_OPTION} Native_File_Chooser_Browse_Directory.cpp)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Common_Dialogs")

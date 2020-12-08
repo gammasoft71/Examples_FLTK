@@ -31,6 +31,10 @@ private:
     fl_message_icon()->labelcolor(fl_rgb_color(255, 255, 255));
     fl_message_hotspot(false);
     fl_message_title(title);
-    return fl_choice("Unhandled exception occured in your application. If you click\nOK, the application will ignore this error and attempt to continue.\nIf you click Cancel, the application will close immediately.\n\n%s", fl_cancel, fl_ok, nullptr, text);
+    return fl_choice("Unhandled exception occured in your application. If you click\n"
+                     "OK, the application will ignore this error and attempt to continue.\n"
+                     "If you click Cancel, the application will close immediately.\n"
+                     "\n"
+                     "%s", fl_cancel, fl_ok, nullptr, text);
   }
 };

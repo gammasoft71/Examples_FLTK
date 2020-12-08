@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(OpenFileDialog2)
+project(Font_Chooser)
 
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
@@ -12,7 +12,7 @@ elseif (APPLE)
   set(GUI_OPTION MACOSX_BUNDLE)
 endif ()
 
-add_definitions(-D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(${PROJECT_NAME} ${GUI_OPTION} OpenFileDialog2.cpp)
+add_executable(${PROJECT_NAME} ${GUI_OPTION} Font_Chooser.cpp Fl_font_chooser.h)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "User_Dialogs")

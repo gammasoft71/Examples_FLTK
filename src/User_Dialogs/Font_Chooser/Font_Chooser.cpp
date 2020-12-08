@@ -3,21 +3,21 @@
 #include <FL/Fl_Button.H>
 #include <FL/Fl_Window.H>
 
-class Form : public Fl_Window {
+class Main_Window : public Fl_Window {
 public:
-  Form() : Fl_Window(200, 100, 400, 400, "Font Example") {
+  Main_Window() : Fl_Window(200, 100, 400, 400, "Font Example") {
     resizable(this);
     end();
     button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
-    button.callback([](Fl_Widget* sender, void* form) {
-      Fl_Font font = ((Form*)form)->label.labelfont();
-      int size = ((Form*)form)->label.labelsize();
-      Fl_Color color = ((Form*)form)->label.labelcolor();
+    button.callback([](Fl_Widget* sender, void* window) {
+      Fl_Font font = ((Main_Window*)window)->label.labelfont();
+      int size = ((Main_Window*)window)->label.labelsize();
+      Fl_Color color = ((Main_Window*)window)->label.labelcolor();
       if (fl_font_chooser("Font", font, size, color) == 1) {
-        ((Form*)form)->label.labelfont(font);
-        ((Form*)form)->label.labelsize(size);
-        ((Form*)form)->label.labelcolor(color);
-        ((Form*)form)->label.redraw();
+        reinterpret_cast<Main_Window*>(window)->label.labelfont(font);
+        reinterpret_cast<Main_Window*>(window)->label.labelsize(size);
+        reinterpret_cast<Main_Window*>(window)->label.labelcolor(color);
+        reinterpret_cast<Main_Window*>(window)->label.redraw();
       }
     }, this);
 
@@ -40,8 +40,8 @@ private:
 };
 
 int main(int argc, char *argv[]) {
-  Form form;
-  form.show(argc, argv);
+  Main_Window window;
+  window.show(argc, argv);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }

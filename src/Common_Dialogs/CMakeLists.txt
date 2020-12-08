@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0)
+project(Common_Dialogs)
+
+add_subdirectory(Color_Chooser)
+add_subdirectory(File_Chooser)
+add_subdirectory(Native_File_Chooser_Browse_Directory)
+add_subdirectory(Native_File_Chooser_Browse_File)
