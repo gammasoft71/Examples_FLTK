@@ -1,8 +1,10 @@
+#include "Fl_Scheme_Mode.h"
 #include <initializer_list>
 #include <FL/Fl.H>
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Browser.H>
 #include <FL/Fl_Button.H>
+#include <FL/Fl_Choice.H>
 #include <FL/Fl_Check_Button.H>
 #include <FL/Fl_Group.H>
 #include <FL/fl_message.H>
@@ -23,51 +25,54 @@ namespace Examples {
         fl_choice("Message with dark mode enabled...", "&OK", nullptr, nullptr);
       }, this);
 
-      listBoxLeft.type(FL_HOLD_BROWSER);
+      browser1.type(FL_HOLD_BROWSER);
       for (auto item : {"item 1", "item 2", "item 3", "item 4", "item 5", "item 6", "item 7", "item 8", "item 9", "item 10"})
-        listBoxLeft.add(item);
-      listBoxLeft.select(1);
-      
+        browser1.add(item);
+      browser1.select(1);
+
       radio1.value(true);
+
+      check_button2.value(true);
+      
+      for (auto item : {"basic", "plastic", "gtk+", "gleam"})
+        scheme_choice.add(item);
+      scheme_choice.value(0);
+      scheme_choice.callback([](Fl_Widget* sender, void* window) {
+        reinterpret_cast<Main_Window*>(window)->update_theme_and_mode();
+      }, this);
+
+      dark_mode_button.value(true);
+      dark_mode_button.callback([](Fl_Widget* sender, void* window) {
+        reinterpret_cast<Main_Window*>(window)->update_theme_and_mode();
+      }, this);
     }
     
   private:
-    Fl_Box box1 {10, 10, 90, 25, "Dark mode"};
+    void update_theme_and_mode() {
+      if (scheme_choice.value() == 1) fl_scheme_mode(Fl_Scheme_Mode::default_mode); // Workaround : with scheme "plastic", window background was not correctly refresh...
+      Fl::scheme(scheme_choice.text(scheme_choice.value()));
+      fl_scheme_mode(dark_mode_button.value() ? Fl_Scheme_Mode::dark : Fl_Scheme_Mode::light);
+      Fl::redraw();
+    }
+
+    Fl_Box box1 {10, 10, 90, 25, "Show mode"};
     Fl_Button button1 {110, 10, 75, 25, "Message"};
-    Fl_Browser listBoxLeft {10, 50, 120, 100};
+    Fl_Browser browser1 {10, 50, 120, 100};
     Fl_Radio_Round_Button radio1 {10, 170, 90, 25, "Raddio 1"};
     Fl_Radio_Round_Button radio2 {110, 170, 90, 25, "Raddio 2"};
     Fl_Check_Button check_button1 {10, 200, 90, 25, "Raddio 1"};
     Fl_Check_Button check_button2 {110, 200, 90, 25, "Raddio 2"};
+    Fl_Box mode_box {10, 265, 30, 25, "Mode"};
+    Fl_Light_Button dark_mode_button {50, 265, 60, 25, "Dark"};
+    Fl_Box scheme_box {130, 265, 40, 25, "Scheme"};
+    Fl_Choice scheme_choice {190, 265, 90, 25};
   };
-  
-  static void set_dark_mode() {
-    Fl::get_system_colors();
-#if _WIN32
-    Fl::background(25, 25, 25);
-    Fl::background2(32, 32, 32);
-    Fl::foreground(255, 255, 255);
-    Fl::set_color(FL_SELECTION_COLOR, 0, 160, 250);
-#elif __APPLE__
-    Fl::background(50, 50, 50);
-    Fl::background2(23, 23, 23);
-    Fl::foreground(223, 223, 223);
-    Fl::set_color(FL_SELECTION_COLOR, 3, 88, 208);
-#else
-    Fl::background(51, 51, 51);
-    Fl::background2(45, 45, 45);
-    Fl::foreground(255, 255, 255);
-    Fl::set_color(FL_SELECTION_COLOR, 21, 83, 158);
-#endif
-    Fl::redraw();
-  }
 }
 
 int main(int argc, char *argv[]) {
-  Fl::scheme("gtk+");
   Examples::Main_Window window;
   window.show(argc, argv);
-  Examples::set_dark_mode();
+  fl_scheme_mode(Fl_Scheme_Mode::dark); // Must be call first after window.show, because show(...) method reset selection color to 0xf.
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }

@@ -14,5 +14,5 @@ endif ()
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(${PROJECT_NAME} ${GUI_OPTION} Application_Dark_Mode.cpp)
+add_executable(${PROJECT_NAME} ${GUI_OPTION} Application_Dark_Mode.cpp Fl_Scheme_Mode.h Fl_Scheme_Mode.cpp)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Applications")
