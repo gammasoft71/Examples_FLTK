@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(PictureBox)
+project(Box_Picture)
 
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
@@ -14,4 +14,5 @@ endif ()
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(PictureBox ${GUI_OPTION} PictureBox.cpp logo.xpm)
+add_executable(${PROJECT_NAME} ${GUI_OPTION} Box_Picture.cpp logo.xpm)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Common_Controls")

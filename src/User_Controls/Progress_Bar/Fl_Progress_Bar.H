@@ -4,7 +4,7 @@
 
 class Fl_Progress_Bar : public Fl_Progress {
 public:
-  Fl_Progress_Bar(int x, int y, int w, int h) : Fl_Progress(x, y, w, h) {
+  Fl_Progress_Bar(int x, int y, int w, int h, const char* label = nullptr) : Fl_Progress(x, y, w, h, label) {
     selection_color(FL_SELECTION_COLOR);
   }
   

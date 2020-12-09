@@ -12,9 +12,6 @@ add_subdirectory(Events)
 add_subdirectory(Others)
 
 # Common Controls
-add_subdirectory(ListBox)
-add_subdirectory(ProgressBar)
-add_subdirectory(PictureBox)
 add_subdirectory(RadioButton)
 add_subdirectory(TextBox)
 add_subdirectory(ToggleButton)

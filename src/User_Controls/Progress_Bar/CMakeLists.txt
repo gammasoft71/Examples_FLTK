@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(ProgressBar)
+project(Progress_Bar)
 
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
@@ -14,4 +14,5 @@ endif ()
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(ProgressBar ${GUI_OPTION} ProgressBar.cpp Fl_Progress_Bar.H)
+add_executable(${PROJECT_NAME} ${GUI_OPTION} Progress_Bar.cpp Fl_Progress_Bar.H)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "User_Controls")
