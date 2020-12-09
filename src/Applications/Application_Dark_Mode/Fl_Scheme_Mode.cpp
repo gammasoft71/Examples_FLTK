@@ -69,7 +69,7 @@ namespace {
   }
   
   void set_scheme_white_mode() {
-    Fl::background(253, 253, 253);
+    Fl::background(248, 248, 255);
     Fl::background2(255, 255, 255);
     Fl::foreground(80, 80, 80);
 #if _WIN32
