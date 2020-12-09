@@ -8,7 +8,7 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "CheckBox example") {
+    Main_Window() : Fl_Window(200, 100, 300, 300, "Check box example") {
       end();
       resizable(this);
       

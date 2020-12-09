@@ -5,7 +5,7 @@
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "CheckButton example") {
+    Main_Window() : Fl_Window(200, 100, 300, 300, "Check button example") {
       end();
       resizable(this);
       
@@ -18,11 +18,16 @@ namespace Examples {
       check_button2.callback([](Fl_Widget* sender, void* window) {
         reinterpret_cast<Fl_Check_Button*>(sender)->label(reinterpret_cast<Fl_Check_Button*>(sender)->value() ? "Checked" : "Unchecked");
       }, this);      
+
+      check_button3.callback([](Fl_Widget* sender, void* window) {
+        reinterpret_cast<Fl_Check_Button*>(sender)->label(reinterpret_cast<Fl_Check_Button*>(sender)->value() ? "Checked" : "Unchecked");
+      }, this);
     }
     
   private:
     Fl_Check_Button check_button1 {30, 30, 110, 23, "Unchecked"};
     Fl_Check_Button check_button2 {30, 60, 110, 23, "Checked"};
+    Fl_Check_Button check_button3 {30, 90, 110, 23, "Unchecked"};
   };
 }
 

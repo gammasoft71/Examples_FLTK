@@ -11,10 +11,6 @@ add_subdirectory(Components)
 add_subdirectory(Events)
 add_subdirectory(Others)
 
-# Common Controls
-add_subdirectory(ToggleButton)
-add_subdirectory(TrackBar)
-
 # Containers
 add_subdirectory(Form)
 add_subdirectory(GroupBox)
