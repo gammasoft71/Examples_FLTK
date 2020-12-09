@@ -102,7 +102,7 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  fl_scheme_mode(Fl_Scheme_Mode::dark); // Must be call first after window.show, because show(...) method reset selection color to 0xf.
+  fl_scheme_mode(Fl_Scheme_Mode::dark); // Must be call after window.show, because show(...) method init system_colors and reset selection color to 0xf.
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
