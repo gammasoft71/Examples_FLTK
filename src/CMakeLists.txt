@@ -47,3 +47,4 @@ add_subdirectory(GroupBoxAndRadioButton)
 
 # Tests
 add_subdirectory(TestGui)
+

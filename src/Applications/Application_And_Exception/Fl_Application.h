@@ -9,7 +9,7 @@ public:
     Fl::event_dispatch(event_dispatch);
     const_cast<Fl_Window&>(window).show(argc, argv);
     Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
-    return Fl::run();
+    Fl::run();
   }
   
 private:
@@ -23,6 +23,7 @@ private:
     } catch (...) {
       if (!show_message("Unknown exception occured", "(Unknown exception)")) exit(-1);
     }
+    return 0;
   }
   
   static bool show_message(const char* title, const char* text) {

@@ -20,7 +20,7 @@ namespace Examples {
 #elif __APPLE__
       file << "say $*";
 #else
-      file <<file << "spd-say $*";
+      file << "spd-say $*";
 #endif
       permissions(temp_directory_path()/"say.cmd", perms::owner_all);
 
