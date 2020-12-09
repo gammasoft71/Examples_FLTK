@@ -48,9 +48,11 @@ namespace Examples {
       slider1.value(50);
       slider1.callback([](Fl_Widget* sender, void* window) {
         reinterpret_cast<Main_Window*>(window)->progress1.value(dynamic_cast<Fl_Slider*>(sender)->value());
+        reinterpret_cast<Main_Window*>(window)->progress1.copy_label((to_string((static_cast<int>(dynamic_cast<Fl_Slider*>(sender)->value()))) + "%").c_str());
       }, this);
 
       progress1.value(slider1.value());
+      progress1.copy_label((to_string((static_cast<int>(slider1.value()))) + "%").c_str());
       progress1.color2(FL_SELECTION_COLOR);
       
       for (auto item : {"basic", "plastic", "gtk+", "gleam"})
@@ -60,7 +62,7 @@ namespace Examples {
         reinterpret_cast<Main_Window*>(window)->update_theme_and_mode();
       }, this);
 
-      for (auto item : {"default", "light", "dark"})
+      for (auto item : {"default", "light", "dark", "white", "black", "red", "green", "blue"})
         scheme_mode_choice.add(item);
       scheme_mode_choice.value(2);
       scheme_mode_choice.callback([](Fl_Widget* sender, void* window) {
@@ -78,7 +80,7 @@ namespace Examples {
     void update_theme_and_mode() {
       if (scheme_choice.value() == 1) fl_scheme_mode(Fl_Scheme_Mode::default_mode); // Workaround : with scheme "plastic", window background was not correctly refresh...
       Fl::scheme(scheme_choice.text(scheme_choice.value()));
-      static map<string, Fl_Scheme_Mode> scheme_modes = {{"default", Fl_Scheme_Mode::default_mode}, {"light", Fl_Scheme_Mode::light}, {"dark", Fl_Scheme_Mode::dark}};
+      static map<string, Fl_Scheme_Mode> scheme_modes = {{"default", Fl_Scheme_Mode::default_mode}, {"light", Fl_Scheme_Mode::light}, {"dark", Fl_Scheme_Mode::dark}, {"white", Fl_Scheme_Mode::white}, {"black", Fl_Scheme_Mode::black}, {"red", Fl_Scheme_Mode::red}, {"green", Fl_Scheme_Mode::green}, {"blue", Fl_Scheme_Mode::blue}};
       fl_scheme_mode(scheme_modes[scheme_mode_choice.text(scheme_mode_choice.value())]);
     }
     

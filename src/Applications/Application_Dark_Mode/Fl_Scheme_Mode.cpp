@@ -36,7 +36,6 @@ namespace {
     Fl::foreground(0, 0, 0);
     Fl::set_color(FL_SELECTION_COLOR, 53, 100, 228);
 #endif
-    Fl::redraw();
   }
   
   void set_scheme_dark_mode() {
@@ -57,17 +56,64 @@ namespace {
     Fl::foreground(255, 255, 255);
     Fl::set_color(FL_SELECTION_COLOR, 21, 83, 158);
 #endif
-    Fl::redraw();
   }
-  
+ 
   void set_scheme_default_mode() {
     init_original_colors();
     set_scheme_light_mode(); // Workaround : When the previous scheme_mode is dark, the refresh was not clean...
+    Fl::redraw();
     Fl::set_color(FL_BACKGROUND_COLOR, original_background_color_.value());
     Fl::set_color(FL_BACKGROUND2_COLOR, original_background2_color_.value());
     Fl::set_color(FL_FOREGROUND_COLOR, original_foreground_color_.value());
     Fl::set_color(FL_SELECTION_COLOR, original_selection_color_.value());
+  }
+  
+  void set_scheme_white_mode() {
+    Fl::background(253, 253, 253);
+    Fl::background2(255, 255, 255);
+    Fl::foreground(80, 80, 80);
+#if _WIN32
+    Fl::set_color(FL_SELECTION_COLOR, 0, 120, 215);
+#elif __APPLE__
+    Fl::set_color(FL_SELECTION_COLOR, 0, 98, 225);
+#else
+    Fl::set_color(FL_SELECTION_COLOR, 53, 100, 228);
+#endif
+  }
+  
+  void set_scheme_black_mode() {
+    Fl::background(28, 28, 28);
+    Fl::background2(0, 0, 0);
+    Fl::foreground(120, 120, 120);
+#if _WIN32
+    Fl::set_color(FL_SELECTION_COLOR, 0, 160, 250);
+#elif __APPLE__
+    Fl::set_color(FL_SELECTION_COLOR, 0, 87, 207);
+#else
+    Fl::set_color(FL_SELECTION_COLOR, 21, 83, 158);
+#endif
+  }
+
+  void set_scheme_red_mode() {
+    Fl::background(36, 0, 0);
+    Fl::background2(8, 0, 0);
+    Fl::foreground(223, 100, 100);
+    Fl::set_color(FL_SELECTION_COLOR, 220, 50, 50);
     Fl::redraw();
+  }
+  
+  void set_scheme_green_mode() {
+    Fl::background(0, 36, 0);
+    Fl::background2(0, 8, 0);
+    Fl::foreground(100, 223, 100);
+    Fl::set_color(FL_SELECTION_COLOR, 50, 220, 50);
+  }
+  
+  void set_scheme_blue_mode() {
+    Fl::background(0, 0, 36);
+    Fl::background2(0, 0, 8);
+    Fl::foreground(100, 100, 223);
+    Fl::set_color(FL_SELECTION_COLOR, 50, 50, 255);
   }
 }
 
@@ -77,6 +123,12 @@ void fl_scheme_mode(Fl_Scheme_Mode scheme_mode) {
     if (scheme_mode_ == Fl_Scheme_Mode::default_mode) set_scheme_default_mode();
     else if (scheme_mode_ == Fl_Scheme_Mode::dark) set_scheme_dark_mode();
     else if (scheme_mode_ == Fl_Scheme_Mode::light) set_scheme_light_mode();
+    else if (scheme_mode_ == Fl_Scheme_Mode::white) set_scheme_white_mode();
+    else if (scheme_mode_ == Fl_Scheme_Mode::black) set_scheme_black_mode();
+    else if (scheme_mode_ == Fl_Scheme_Mode::red) set_scheme_red_mode();
+    else if (scheme_mode_ == Fl_Scheme_Mode::green) set_scheme_green_mode();
+    else if (scheme_mode_ == Fl_Scheme_Mode::blue) set_scheme_blue_mode();
+    Fl::redraw();
   }
 }
 
