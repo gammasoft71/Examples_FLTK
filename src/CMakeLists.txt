@@ -13,9 +13,7 @@ add_subdirectory(Events)
 add_subdirectory(Others)
 
 # Containers
-add_subdirectory(GroupBox)
 add_subdirectory(Panel)
-add_subdirectory(TabControl)
 
 # Menus and Toolbars
 add_subdirectory(ContextMenu)
@@ -32,9 +30,6 @@ add_subdirectory(SaveFileDialog)
 # Other
 add_subdirectory(ColoredForms)
 add_subdirectory(ColoredTabPages)
-#add_subdirectory(Drawing)
-add_subdirectory(GroupBoxAndCheckBox)
-add_subdirectory(GroupBoxAndRadioButton)
 
 # Tests
 add_subdirectory(TestGui)
