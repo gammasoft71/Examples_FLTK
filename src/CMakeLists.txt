@@ -20,9 +20,6 @@ add_subdirectory(ContextMenu)
 add_subdirectory(MenuBar)
 add_subdirectory(SysMenuBar)
 
-# Components
-add_subdirectory(Timer)
-
 # Dialogs
 add_subdirectory(MessageBox)
 add_subdirectory(SaveFileDialog)

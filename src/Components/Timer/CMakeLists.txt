@@ -14,4 +14,5 @@ endif ()
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(Timer ${GUI_OPTION} Timer.cpp)
+add_executable(${PROJECT_NAME} ${GUI_OPTION} Timer.cpp)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Components")
