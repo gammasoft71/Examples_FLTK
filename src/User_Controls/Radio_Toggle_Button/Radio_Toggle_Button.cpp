@@ -10,6 +10,7 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Radio toggle button example") {
+      end();
       resizable(this);
 
       radioButton1.auto_check(false);
