@@ -13,7 +13,3 @@ add_subdirectory(User_Dialogs)
 add_subdirectory(Events)
 add_subdirectory(Others)
 add_subdirectory(Tests)
-
-# Other
-add_subdirectory(ColoredTabPages)
-
