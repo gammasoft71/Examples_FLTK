@@ -12,17 +12,10 @@ add_subdirectory(Components)
 add_subdirectory(Events)
 add_subdirectory(Others)
 
-# Containers
-add_subdirectory(Panel)
-
 # Menus and Toolbars
 add_subdirectory(ContextMenu)
 add_subdirectory(MenuBar)
 add_subdirectory(SysMenuBar)
-
-# Dialogs
-add_subdirectory(MessageBox)
-add_subdirectory(SaveFileDialog)
 
 # Other
 add_subdirectory(ColoredForms)
