@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(TestGui)
+project(Test_Gui)
 
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
@@ -15,4 +15,5 @@ endif ()
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(${PROJECT_NAME} ${GUI_OPTION} TestGui.cpp)
+add_executable(${PROJECT_NAME} ${GUI_OPTION} Test_Gui.cpp)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Tests")

@@ -10,11 +10,12 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "MenuBar example") {
-      resizable(textDisplay1);
+    Main_Window() : Fl_Window(200, 100, 300, 300, "Menu bar example") {
+      end();
+      resizable(text_display);
 
-      textDisplay1.buffer(&textBuffer);
-      textDisplay1.show_cursor(0);
+      text_display.buffer(&text_buffer);
+      text_display.show_cursor(0);
 
       Fl_Menu_Item items[] = {
         {"&File", 0, nullptr, nullptr, FL_SUBMENU},
@@ -68,22 +69,22 @@ namespace Examples {
         {0}
       };
       
-      menuBar.copy(items);
-      menuBar.parent(this);
+      menu_bar.copy(items);
+      menu_bar.parent(this);
     }
     
   private:
     static void OnMenuItemClick(Fl_Widget* sender, void* window) {reinterpret_cast<Main_Window*>(window)->OnMenuItemClick(dynamic_cast<Fl_Menu_Bar&>(*sender));}
     void OnMenuItemClick(Fl_Menu_Bar& menu) {
-      textBuffer.append(menu.mvalue()->label());
-      textBuffer.append("\n");
-      textBuffer.select(textBuffer.length(), textBuffer.length());
-      textDisplay1.show_insert_position();
+      text_buffer.append(menu.mvalue()->label());
+      text_buffer.append("\n");
+      text_buffer.select(text_buffer.length(), text_buffer.length());
+      text_display.show_insert_position();
       menu.value(0);
     }
-    Fl_Text_Buffer textBuffer;
-    Fl_Menu_Bar menuBar {0, 0, 300, 30, nullptr};
-    Fl_Text_Display textDisplay1 {0, 30, 300, 270};
+    Fl_Text_Buffer text_buffer;
+    Fl_Menu_Bar menu_bar {0, 0, 300, 30, nullptr};
+    Fl_Text_Display text_display {0, 30, 300, 270};
   };
 }
 

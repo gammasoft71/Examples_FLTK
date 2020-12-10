@@ -6,21 +6,15 @@ add_subdirectory(Applications)
 add_subdirectory(Common_Controls)
 add_subdirectory(User_Controls)
 add_subdirectory(Control_Containers)
+add_subdirectory(Menus_And_Toolbars)
+add_subdirectory(Components)
 add_subdirectory(Common_Dialogs)
 add_subdirectory(User_Dialogs)
-add_subdirectory(Components)
 add_subdirectory(Events)
 add_subdirectory(Others)
-
-# Menus and Toolbars
-add_subdirectory(ContextMenu)
-add_subdirectory(MenuBar)
-add_subdirectory(SysMenuBar)
+add_subdirectory(Tests)
 
 # Other
 add_subdirectory(ColoredForms)
 add_subdirectory(ColoredTabPages)
-
-# Tests
-add_subdirectory(TestGui)
 
