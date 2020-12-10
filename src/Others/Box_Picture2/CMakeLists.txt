@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.0)
+project(Box_Picture2)
+
+find_package(FLTK REQUIRED)
+include_directories(${FLTK_INCLUDE_DIR})
+link_libraries(${FLTK_LIBRARIES})
+
+if (MSVC)
+  set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /ENTRY:mainCRTStartup")
+endif ()
+
+configure_file(Resources/Logo.png ${CMAKE_CURRENT_BINARY_DIR}/Resources/Logo.png COPYONLY)
+configure_file(Resources/Logo.png ${CMAKE_CURRENT_BINARY_DIR}/Debug/Resources/Logo.png COPYONLY)
+configure_file(Resources/Logo.png ${CMAKE_CURRENT_BINARY_DIR}/Release/Resources/Logo.png COPYONLY)
+set_source_files_properties(Resources/Logo.png PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE Box_Picture2.cpp)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Others")

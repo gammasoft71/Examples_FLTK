@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 3.0)
 project(Others)
 
+add_subdirectory(Box_Picture2)
 add_subdirectory(Colored_Tabs)
 add_subdirectory(Colored_Windows)
 add_subdirectory(Combo_Box)
 add_subdirectory(Group_And_Check_Button)
 add_subdirectory(Group_And_Radio_Round_Button)
+add_subdirectory(Schemes_And_Schemes_Modes)

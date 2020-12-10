@@ -42,48 +42,10 @@ namespace Examples {
       check_button2.value(true);
 
       input1.value("Input text");
-      
-      slider1.type(FL_HOR_NICE_SLIDER);
-      slider1.maximum(100);
-      slider1.value(50);
-      slider1.callback([](Fl_Widget* sender, void* window) {
-        reinterpret_cast<Main_Window*>(window)->progress1.value(dynamic_cast<Fl_Slider*>(sender)->value());
-        reinterpret_cast<Main_Window*>(window)->progress1.copy_label((to_string((static_cast<int>(dynamic_cast<Fl_Slider*>(sender)->value()))) + "%").c_str());
-      }, this);
-
-      progress1.value(slider1.value());
-      progress1.copy_label((to_string((static_cast<int>(slider1.value()))) + "%").c_str());
-      progress1.color2(FL_SELECTION_COLOR);
-      
-      for (auto item : {"basic", "plastic", "gtk+", "gleam"})
-        scheme_choice.add(item);
-      scheme_choice.value(0);
-      scheme_choice.callback([](Fl_Widget* sender, void* window) {
-        reinterpret_cast<Main_Window*>(window)->update_theme_and_mode();
-      }, this);
-
-      for (auto item : {"default", "light", "dark", "white", "black", "red", "green", "blue"})
-        scheme_mode_choice.add(item);
-      scheme_mode_choice.value(2);
-      scheme_mode_choice.callback([](Fl_Widget* sender, void* window) {
-        reinterpret_cast<Main_Window*>(window)->update_theme_and_mode();
-      }, this);
     }
 
   protected:
-    void draw() override {
-      Fl_Window::draw();
-      draw_box(Fl_Boxtype::FL_FLAT_BOX, 10, 255, 310, 1, labelcolor());
-    }
-    
   private:
-    void update_theme_and_mode() {
-      if (scheme_choice.value() == 1) fl_scheme_mode(Fl_Scheme_Mode::default_mode); // Workaround : with scheme "plastic", window background was not correctly refresh...
-      Fl::scheme(scheme_choice.text(scheme_choice.value()));
-      static map<string, Fl_Scheme_Mode> scheme_modes = {{"default", Fl_Scheme_Mode::default_mode}, {"light", Fl_Scheme_Mode::light}, {"dark", Fl_Scheme_Mode::dark}, {"white", Fl_Scheme_Mode::white}, {"black", Fl_Scheme_Mode::black}, {"red", Fl_Scheme_Mode::red}, {"green", Fl_Scheme_Mode::green}, {"blue", Fl_Scheme_Mode::blue}};
-      fl_scheme_mode(scheme_modes[scheme_mode_choice.text(scheme_mode_choice.value())]);
-    }
-    
     Fl_Box box1 {10, 10, 90, 25, "Show mode"};
     Fl_Button button1 {110, 10, 75, 25, "Message"};
     Fl_Browser browser1 {10, 50, 120, 100};
@@ -92,19 +54,17 @@ namespace Examples {
     Fl_Check_Button check_button1 {140, 80, 90, 25, "Raddio 1"};
     Fl_Check_Button check_button2 {240, 80, 90, 25, "Raddio 2"};
     Fl_Input input1 {140, 110, 180, 25};
-    Fl_Slider slider1 {10, 170, 310, 25};
-    Fl_Progress progress1 {10, 210, 310, 25};
-    Fl_Box mode_box {10, 265, 30, 25, "Mode"};
-    Fl_Choice scheme_mode_choice {50, 265, 80, 25};
-    Fl_Box scheme_box {150, 265, 40, 25, "Scheme"};
-    Fl_Choice scheme_choice {210, 265, 80, 25};
   };
 }
 
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  fl_scheme_mode(Fl_Scheme_Mode::dark); // Must be call after window.show, because show(...) method init system colors and reset selection color to 0xf.
+  // Must be call after window.show, because show(...) method init system colors and reset selection color to 0xf.
+  Fl::background(50, 50, 50);
+  Fl::background2(23, 23, 23);
+  Fl::foreground(223, 223, 223);
+  Fl::set_color(FL_SELECTION_COLOR, 0, 87, 207);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
