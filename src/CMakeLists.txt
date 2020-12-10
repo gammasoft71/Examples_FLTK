@@ -15,6 +15,5 @@ add_subdirectory(Others)
 add_subdirectory(Tests)
 
 # Other
-add_subdirectory(ColoredForms)
 add_subdirectory(ColoredTabPages)
 

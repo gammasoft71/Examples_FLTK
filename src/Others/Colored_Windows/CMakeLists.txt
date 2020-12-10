@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(ColoredForms)
+project(Colored_Windows)
 
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
@@ -14,4 +14,5 @@ endif ()
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(ColoredForms ${GUI_OPTION} ColoredForms.cpp)
+add_executable(${PROJECT_NAME} ${GUI_OPTION} Colored_Windows.cpp)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Others")
