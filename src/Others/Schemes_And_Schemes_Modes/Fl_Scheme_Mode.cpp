@@ -81,7 +81,7 @@ namespace {
   }
   
   void set_scheme_black_mode() {
-    Fl::background(28, 28, 28);
+    Fl::background(16, 16, 16);
     Fl::background2(0, 0, 0);
     Fl::foreground(120, 120, 120);
 #if _WIN32
@@ -108,10 +108,10 @@ namespace {
   }
   
   void set_scheme_blue_mode() {
-    Fl::background(0, 0, 36);
-    Fl::background2(0, 0, 8);
-    Fl::foreground(100, 100, 223);
-    Fl::set_color(FL_SELECTION_COLOR, 50, 50, 255);
+    Fl::background(0, 0, 64);
+    Fl::background2(0, 0, 16);
+    Fl::foreground(90, 90, 255);
+    Fl::set_color(FL_SELECTION_COLOR, 80, 80, 255);
   }
 }
 
@@ -121,7 +121,6 @@ void fl_scheme_mode(Fl_Scheme_Mode scheme_mode) {
   if (scheme_mode_ != scheme_mode) {
     scheme_mode_ = scheme_mode;
     set_modes[scheme_mode_]();
-    Fl::redraw();
   }
 }
 

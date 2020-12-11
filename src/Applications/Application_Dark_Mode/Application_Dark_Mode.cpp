@@ -1,4 +1,3 @@
-#include "Fl_Scheme_Mode.h"
 #include <initializer_list>
 #include <map>
 #include <string>
@@ -9,10 +8,7 @@
 #include <FL/Fl_Choice.H>
 #include <FL/Fl_Check_Button.H>
 #include <FL/fl_draw.H>
-#include <FL/Fl_Input.H>
 #include <FL/fl_message.H>
-#include <FL/Fl_Slider.H>
-#include <FL/Fl_Progress.H>
 #include <FL/Fl_Radio_Round_Button.H>
 #include <FL/Fl_Window.H>
 
@@ -40,31 +36,30 @@ namespace Examples {
       radio1.value(true);
 
       check_button2.value(true);
-
-      input1.value("Input text");
     }
 
-  protected:
   private:
-    Fl_Box box1 {10, 10, 90, 25, "Show mode"};
+    Fl_Box box1 {10, 10, 90, 25, "Dark mode"};
     Fl_Button button1 {110, 10, 75, 25, "Message"};
     Fl_Browser browser1 {10, 50, 120, 100};
-    Fl_Radio_Round_Button radio1 {140, 50, 90, 25, "Raddio 1"};
-    Fl_Radio_Round_Button radio2 {240, 50, 90, 25, "Raddio 2"};
-    Fl_Check_Button check_button1 {140, 80, 90, 25, "Raddio 1"};
-    Fl_Check_Button check_button2 {240, 80, 90, 25, "Raddio 2"};
-    Fl_Input input1 {140, 110, 180, 25};
+    Fl_Radio_Round_Button radio1 {10, 170, 90, 25, "Raddio 1"};
+    Fl_Radio_Round_Button radio2 {110, 170, 90, 25, "Raddio 2"};
+    Fl_Check_Button check_button1 {10, 200, 90, 25, "Raddio 1"};
+    Fl_Check_Button check_button2 {110, 200, 90, 25, "Raddio 2"};
   };
+  
+  void enable_dark_mode() {
+    Fl::background(50, 50, 50);
+    Fl::background2(23, 23, 23);
+    Fl::foreground(223, 223, 223);
+    Fl::set_color(FL_SELECTION_COLOR, 0, 87, 207);
+  }
 }
 
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  // Must be call after window.show, because show(...) method init system colors and reset selection color to 0xf.
-  Fl::background(50, 50, 50);
-  Fl::background2(23, 23, 23);
-  Fl::foreground(223, 223, 223);
-  Fl::set_color(FL_SELECTION_COLOR, 0, 87, 207);
+  Examples::enable_dark_mode(); // Must be call after window.show, because show(...) method init system colors and reset selection color to 0xf.
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
