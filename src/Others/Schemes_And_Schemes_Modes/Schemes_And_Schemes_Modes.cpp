@@ -144,7 +144,6 @@ namespace Examples {
       fl_scheme_mode(scheme_modes[scheme_mode_choice->text(scheme_mode_choice->value())]);
     }
     
-    Fl_Box dummy_resizable {numeric_limits<int>::max() - 1, numeric_limits<int>::max() -1, 1, 1};
     unique_ptr<Fl_Tabs> tabs;
     unique_ptr<Fl_Group> buttons_page;
     unique_ptr<Fl_Group> browsers_page;
