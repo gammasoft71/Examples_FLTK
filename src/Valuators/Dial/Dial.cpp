@@ -7,7 +7,6 @@
 #include <FL/Fl_Window.H>
 
 using namespace std;
-using namespace std::literals;
 
 namespace Examples {
   class Main_Window : public Fl_Window {
