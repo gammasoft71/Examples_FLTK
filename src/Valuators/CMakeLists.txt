@@ -3,3 +3,4 @@ project(Valuators)
 
 add_subdirectory(Adjuster)
 add_subdirectory(Counter)
+add_subdirectory(Dial)
