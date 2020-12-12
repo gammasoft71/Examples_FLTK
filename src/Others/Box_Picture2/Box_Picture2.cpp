@@ -1,26 +1,43 @@
+#include <filesystem>
+#include <memory>
 #include <FL/Fl.H>
 #include <FL/Fl_Box.H>
 #include <FL/Fl_PNG_Image.H>
 #include <FL/Fl_Window.H>
 
-class Form : public Fl_Window {
-public:
-  Form() : Fl_Window(200, 100, 300, 300, "Box picture 2 example") {
-    this->pictureBox1.box(FL_BORDER_BOX);
-    this->pictureBox1.image(&this->picture);
-    this->pictureBox1.redraw();
+using namespace std;
+using namespace std::filesystem;
+
+namespace Examples {
+  class Main_Window : public Fl_Window {
+  public:
+    Main_Window() : Fl_Window(200, 100, 300, 300, "Box with picture 2 example") {
+      end();
+      resizable(box1);
+
+      box1.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
+      box1.box(FL_BORDER_BOX);
+    }
     
-    this->resizable(this);
-  }
-  
-private:
-  Fl_Box pictureBox1 {20, 20, 260, 260};
-  Fl_PNG_Image picture {"Resources/Logo.png"};
-};
+    void show(int argc, char** argv) {
+#if __APPLE__
+      picture = make_unique<Fl_PNG_Image>((path(argv[0]).remove_filename()/".."/"Resources"/"Logo.png").string().c_str());
+#else
+      picture = make_unique<Fl_PNG_Image>((path(argv[0]).remove_filename()/"Resources"/"Logo.png").string().c_str());
+#endif
+      box1.image(picture.get());
+      Fl_Window::show(argc, argv);
+    }
+    
+  private:
+    Fl_Box box1 {20, 20, 260, 260};
+    unique_ptr<Fl_PNG_Image> picture;
+  };
+}
 
 int main(int argc, char *argv[]) {
-  Form form;
-  form.show(argc, argv);
+  Examples::Main_Window window;
+  window.show(argc, argv);
   Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
