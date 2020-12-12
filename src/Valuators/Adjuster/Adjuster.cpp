@@ -13,27 +13,26 @@ namespace Examples {
       end();
       
       adjuster1.bounds(0, 1);
-      adjuster1.value(1);
+      adjuster1.value(0.5);
       adjuster1.soft(false);
       adjuster1.callback(on_value_changed, &box1);
-      
+      adjuster1.do_callback();
+
       adjuster2.bounds(10, 11);
       adjuster2.value(10);
       adjuster2.soft(false);
-      adjuster2.callback(on_value_changed, this);
-      
+      adjuster2.callback(on_value_changed, &box2);
+      adjuster2.do_callback();
+
       box1.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
       box2.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
-      
-      on_value_changed(&adjuster1, &box1);
-      on_value_changed(&adjuster2, &box2);
     }
     
   private:
-    static void on_value_changed(Fl_Widget* sender, void* window) {
+    static void on_value_changed(Fl_Widget* sender, void* box) {
       static string result(' ', 128);
       dynamic_cast<Fl_Valuator*>(sender)->format(result.data());
-      reinterpret_cast<Fl_Widget*>(window)->copy_label(result.c_str());
+      reinterpret_cast<Fl_Widget*>(box)->copy_label(result.c_str());
     }
     
     Fl_Adjuster adjuster1 {10, 10, 75, 25};
