@@ -49,10 +49,22 @@ namespace Examples {
   };
   
   void enable_dark_mode() {
+#if _WIN32
+    Fl::background(25, 25, 25);
+    Fl::background2(32, 32, 32);
+    Fl::foreground(255, 255, 255);
+    Fl::set_color(FL_SELECTION_COLOR, 0, 160, 250);
+#elif __APPLE__
     Fl::background(50, 50, 50);
     Fl::background2(23, 23, 23);
     Fl::foreground(223, 223, 223);
     Fl::set_color(FL_SELECTION_COLOR, 0, 87, 207);
+#else
+    Fl::background(51, 51, 51);
+    Fl::background2(45, 45, 45);
+    Fl::foreground(255, 255, 255);
+    Fl::set_color(FL_SELECTION_COLOR, 21, 83, 158);
+#endif
   }
 }
 
