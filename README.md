@@ -15,69 +15,69 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 ## [Applications](src/Applications)
 
-* [Application](src/Applications/Application) Shows how to create a simple Fltk application.
-* [Application_And_Exception](src/Applications/Application_And_Exception) Shows how to create a simple Fltk application and how to manage exception.
-* [Application_Dark_Mode](src/Applications/Application_Dark_Mode) Shows how to create a simple Fltk application with dark mode.
+* [Application](src/Applications/Application) shows how to create a simple Fltk application.
+* [Application_And_Exception](src/Applications/Application_And_Exception) shows how to create a simple Fltk application and how to manage exception.
+* [Application_Dark_Mode](src/Applications/Application_Dark_Mode) shows how to create a simple Fltk application with dark mode.
 
 ## [Common Controls](src/Common_Controls)
 
-* [Box](src/Common_Controls/Box) Shows how to show a text with Fl_Box widget.
-* [Box_Picture](src/Common_Controls/Box_Picture) Shows how to show an image with Fl_Box widget.
-* [Browser](src/Common_Controls/Browser) Shows how to create a text list with Fl_Browser widget.
-* [Button](src/Common_Controls/Button) Shows how to create a button with Fl_Button widget.
-* [Check_Browser](src/Common_Controls/Check_Browser) Shows how to create a check button list with Fl_Check_Browser widget.
-* [Check_Button](src/Common_Controls/Check_Button) Shows how to create a check button with Fl_Check_Button widget.
-* [Input](src/Common_Controls/Input) Shows how to create an input text with Fl_Input widget.
-* [Nice_Slider](src/Common_Controls/Nice_Slider) Shows how to create a slider with Fl_Nice_Slider widget.
-* [Progress](src/Common_Controls/Progress) Shows how to create a progress with Fl_Progress widget.
-* [Radio_Round_Button](src/Common_Controls/Radio_Round_Button) Shows how to create a radio round button with Fl_Radio_Round_Button widget.
-* [Spinner](src/Common_Controls/Spinner) Shows how to create a spinner with Fl_Spinner widget.
-* [Toggle_Button](src/Common_Controls/Toggle_Button) Shows how to create a toggle button with Fl_Toggle_Button widget.
+* [Box](src/Common_Controls/Box) shows how to show a text with Fl_Box widget.
+* [Box_Picture](src/Common_Controls/Box_Picture) shows how to show an image with Fl_Box widget.
+* [Browser](src/Common_Controls/Browser) shows how to create a text list with Fl_Browser widget.
+* [Button](src/Common_Controls/Button) shows how to create a button with Fl_Button widget.
+* [Check_Browser](src/Common_Controls/Check_Browser) shows how to create a check button list with Fl_Check_Browser widget.
+* [Check_Button](src/Common_Controls/Check_Button) shows how to create a check button with Fl_Check_Button widget.
+* [Input](src/Common_Controls/Input) shows how to create an input text with Fl_Input widget.
+* [Nice_Slider](src/Common_Controls/Nice_Slider) shows how to create a slider with Fl_Nice_Slider widget.
+* [Progress](src/Common_Controls/Progress) shows how to create a progress with Fl_Progress widget.
+* [Radio_Round_Button](src/Common_Controls/Radio_Round_Button) shows how to create a radio round button with Fl_Radio_Round_Button widget.
+* [Spinner](src/Common_Controls/Spinner) shows how to create a spinner with Fl_Spinner widget.
+* [Toggle_Button](src/Common_Controls/Toggle_Button) shows how to create a toggle button with Fl_Toggle_Button widget.
 
 ## [User Controls](src/User_Controls)
 
-* [Check_Box](src/User_Controls/Check_Box) Shows how to create a check box with own Fl_Check_Box widget.
-* [Progress_Bar](src/User_Controls/Progress_Bar) Shows how to create a progress bar with own Fl_Progress_Bar widget.
-* [Radio_Toggle_Button](src/User_Controls/Radio_Toggle_Button) Shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
+* [Check_Box](src/User_Controls/Check_Box) shows how to create a check box with own Fl_Check_Box widget.
+* [Progress_Bar](src/User_Controls/Progress_Bar) shows how to create a progress bar with own Fl_Progress_Bar widget.
+* [Radio_Toggle_Button](src/User_Controls/Radio_Toggle_Button) shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
 
 ## [Valuators](src/Valuators)
 
-* [Adjuster](src/Valuators/Adjuster) Shows how to create adjusters with Fl_Adjuster valuator.
-* [Counter](src/Valuators/Counter) Shows how to create counters with Fl_Counter and Fl_Simple_Counter valuators.
-* [Dial](src/Valuators/Dial) Shows how to create dials with Fl_Dial, Fl_Line_Dial and Fl_Fill_Dial valuators.
-* [Roller](src/Valuators/Roller) Shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
-* [Slider](src/Valuators/Slider) Shows how to create sliders with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_Slider, Fl_Slider, Fl_Fill_Slider and Fl_Nice_Slider valuators.
-* [Value_Input](src/Valuators/Value_Input) Shows how to create a value input with Fl_Value_Input valuator.
-* [Value_Output](src/Valuators/Value_Output) Shows how to create a value input with Fl_Value_Output valuator.
-* [Value_Slider](src/Valuators/Slider) Shows how to create value sliders with Fl_Hor_Value_Slider and Fl_Value_Slider valuators.
+* [Adjuster](src/Valuators/Adjuster) shows how to create adjusters with Fl_Adjuster valuator.
+* [Counter](src/Valuators/Counter) shows how to create counters with Fl_Counter and Fl_Simple_Counter valuators.
+* [Dial](src/Valuators/Dial) shows how to create dials with Fl_Dial, Fl_Line_Dial and Fl_Fill_Dial valuators.
+* [Roller](src/Valuators/Roller) shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
+* [Slider](src/Valuators/Slider) shows how to create sliders with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_Slider, Fl_Slider, Fl_Fill_Slider and Fl_Nice_Slider valuators.
+* [Value_Input](src/Valuators/Value_Input) shows how to create a value input with Fl_Value_Input valuator.
+* [Value_Output](src/Valuators/Value_Output) shows how to create a value input with Fl_Value_Output valuator.
+* [Value_Slider](src/Valuators/Slider) shows how to create value sliders with Fl_Hor_Value_Slider and Fl_Value_Slider valuators.
 
 ## [Control Containers](src/Control_Containers)
 
-* [Group](src/Control_Containers/Group) Shows how to create a group with Fl_Group.
-* [Scroll](src/Control_Containers/Scroll) Shows how to create a scroll with Fl_Scroll.
-* [Tabs](src/Control_Containers/Tabs) Shows how to create a tabs and pages with Fl_Tabs and Fl_Group.
-* [Window](src/Control_Containers/Window) Shows how to create a simple window with Fl_Window.
+* [Group](src/Control_Containers/Group) shows how to create a group with Fl_Group.
+* [Scroll](src/Control_Containers/Scroll) shows how to create a scroll with Fl_Scroll.
+* [Tabs](src/Control_Containers/Tabs) shows how to create a tabs and pages with Fl_Tabs and Fl_Group.
+* [Window](src/Control_Containers/Window) shows how to create a simple window with Fl_Window.
 
 ## Menus and toolbars
 
-* [MainMenu](src/MainMenu) Shows how to create a Fltk MainMenu with Gtk::MenuBar, Gtk::Menu and Gtk::MenuItem.
+* [MainMenu](src/MainMenu) shows how to create a Fltk MainMenu with Gtk::MenuBar, Gtk::Menu and Gtk::MenuItem.
 
 ## Components
 
-* [Timer](src/Timer) Shows how to create a simple Fltk Timer with TimerGtk.
+* [Timer](src/Timer) shows how to create a simple Fltk Timer with TimerGtk.
 
 ## Dialogs
 
-* [ColorDialog](src/ColorDialog) Shows how to create a ColorDialog with Gtk::ColorChooserDialog.
-* [FolderBrowserDialog](src/FolderBrowserDialog) Shows how to create a FolderBrowserDialog with Gtk::FileChooserDialog.
-* [FontDialog](src/FontDialog) Shows how to create a FontDialog with Gtk::FontChooserDialog.
-* [OpenFileDialog](src/OpenFileDialog) Shows how to create an OpenFileDialog with Gtk::FileChooserDialog.
-* [MessageBox](src/MessageBox) Shows how to create a MessageBox with Gtk::MessageDialog.
-* [SaveFileDialog](src/SaveFileDialog) Shows how to create an SaveFileDialog with Gtk::FileChooserDialog.
+* [ColorDialog](src/ColorDialog) shows how to create a ColorDialog with Gtk::ColorChooserDialog.
+* [FolderBrowserDialog](src/FolderBrowserDialog) shows how to create a FolderBrowserDialog with Gtk::FileChooserDialog.
+* [FontDialog](src/FontDialog) shows how to create a FontDialog with Gtk::FontChooserDialog.
+* [OpenFileDialog](src/OpenFileDialog) shows how to create an OpenFileDialog with Gtk::FileChooserDialog.
+* [MessageBox](src/MessageBox) shows how to create a MessageBox with Gtk::MessageDialog.
+* [SaveFileDialog](src/SaveFileDialog) shows how to create an SaveFileDialog with Gtk::FileChooserDialog.
 
 ## [Others](src/Others)
 
-* [ComboBox](src/Others/ComboBox) Shows how to create a Fltk ComboBox with Fl_Input_Choice.
+* [ComboBox](src/Others/ComboBox) shows how to create a Fltk ComboBox with Fl_Input_Choice.
 
 ## Download
 
