@@ -64,10 +64,10 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Menu_Button](src/Menus_And_Toolbars/Menu_Button) shows how to create a menu button with Fl_Menu_Button widget.
 * [Sys_Menu_Bar](src/Menus_And_Toolbars/Sys_Menu_Bar) shows how to create a system menu bar with Fl_Sys_Menu_Bar widget.
 
-## [Components](src/Comapnents)
+## [Components](src/Components)
 
-* [Cursors](src/Comapnents/Cursors) shows how to change cursor of a widget with override handle method and use fl_cursor method on FL_ENTER and FL_LEAVE events.
-* [Timer](src/Comapnents/Timer) shows how to create a timer with Fl::add_timeout,  Fl::remove_timeout and Fl::repeat_timeout methods.
+* [Cursors](src/Components/Cursors) shows how to change cursor of a widget with override handle method and use fl_cursor method on FL_ENTER and FL_LEAVE events.
+* [Timer](src/Components/Timer) shows how to create a timer with Fl::add_timeout,  Fl::remove_timeout and Fl::repeat_timeout methods.
 
 ## Dialogs
 
