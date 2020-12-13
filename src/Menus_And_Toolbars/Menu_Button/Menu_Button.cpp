@@ -1,4 +1,4 @@
-#include <iostream>
+#include <limits>
 #include <string>
 #include <FL/Fl.H>
 #include <FL/Fl_Text_Display.H>
@@ -76,10 +76,9 @@ namespace Examples {
   private:
     static void on_menu_item_click(Fl_Widget* sender, void* window) {reinterpret_cast<Main_Window*>(window)->on_menu_item_click(dynamic_cast<Fl_Menu_Button&>(*sender));}
     void on_menu_item_click(Fl_Menu_Button& menu) {
-      static int line_count = 0;
       text_buffer.append(menu.mvalue()->label());
       text_buffer.append("\n");
-      text_display.scroll(line_count++, 0);
+      text_display.scroll(std::numeric_limits<int>::max(), 0);
       menu.value(0);
     }
     Fl_Text_Buffer text_buffer;
