@@ -133,7 +133,8 @@ namespace Examples {
     
     void draw() override {
       Fl_Window::draw();
-      draw_box(Fl_Boxtype::FL_FLAT_BOX, 10, h() - 45, w() - 20, 1, labelcolor());
+      draw_box(Fl_Boxtype::FL_FLAT_BOX, 10, h() - 45, w() - 20, 1, fl_darker(color()));
+      draw_box(Fl_Boxtype::FL_FLAT_BOX, 11, h() - 44, w() - 20, 1, fl_lighter(color()));
     }
     
   private:
