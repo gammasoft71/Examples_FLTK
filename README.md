@@ -75,7 +75,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 ## Download
 
 ``` shell
-git clone https://github.com/gammasoft71/FltkExamples FltkExamples
+git clone https://github.com/gammasoft71/Examples_FLTK Examples_FLTK
 ```
 
 ## Generate and build
