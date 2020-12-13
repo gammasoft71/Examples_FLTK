@@ -72,11 +72,13 @@ Shows how to use Fltk controls only by programming code (c++17).
 ## [Common Dialogs](src/Common_Dialogs)
 
 * [Beep](src/Common_Dialogs/Beep) shows how to create a beep with fl_beep method.
-* [ColorDialog](src/Common_Dialogs/ColorDialog) shows how to create a ColorDialog with Gtk::ColorChooserDialog.
-* [FolderBrowserDialog](src/Common_Dialogs/FolderBrowserDialog) shows how to create a FolderBrowserDialog with Gtk::FileChooserDialog.
-* [OpenFileDialog](src/Common_Dialogs/OpenFileDialog) shows how to create an OpenFileDialog with Gtk::FileChooserDialog.
-* [MessageBox](src/Common_Dialogs/MessageBox) shows how to create a MessageBox with Gtk::MessageDialog.
-* [SaveFileDialog](src/Common_Dialogs/SaveFileDialog) shows how to create an SaveFileDialog with Gtk::FileChooserDialog.
+* [Choice](src/Common_Dialogs/Choice) shows how to create a choice box with fl_choice method.
+* [Color_Chooser](src/Common_Dialogs/Color_Chooser) shows how to use color chooser dialog with Fl_Color_Chooser dialog.
+* [File_Chooser](src/Common_Dialogs/Color_Chooser) shows how to use file chooser dialog with fl_file_chooser dmethod.
+* [Message](src/Common_Dialogs/Message) shows how to create a message box with fl_message method.
+* [Native_File_Chooser_Browse_Directory](src/Common_Dialogs/Native_File_Chooser_Browse_Directory) shows how to use a native fil chooser to browse directory with Fl_Native_File_Chooser dialog.
+* [Native_File_Chooser_Browse_File](src/Common_Dialogs/Native_File_Chooser_Browse_File) shows how to use a native fil chooser to browse file with Fl_Native_File_Chooser dialog.
+* [Native_File_Chooser_Save_File](src/Common_Dialogs/Native_File_Chooser_Save_File) shows how to use a native fil chooser to save file with Fl_Native_File_Chooser dialog.
 
 ## [User Dialogs](src/User_Dialogs)
 
