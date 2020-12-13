@@ -82,7 +82,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 ## [User Dialogs](src/User_Dialogs)
 
-* [Font_chooser](src/User_Dialogs/Font_chooser) shows how to use a Font chooser dialog with own fl_font_chooser method.
+* [Font_Chooser](src/User_Dialogs/Font_Chooser) shows how to use a Font chooser dialog with own fl_font_chooser method.
 
 ## [Others](src/Others)
 
