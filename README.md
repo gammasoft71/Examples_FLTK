@@ -3,7 +3,7 @@
 
 Shows how to use Fltk controls only by programming code (c++17).
 
-## Hello World
+## [Hello World](src/Hello_Worlds)
 
 * [Hello_World_Box](src/Hello_Worlds/Hello_World_Box) The classic first application "Hello, World!" with Fl_Box.
 * [Hello_World_Drawing](src/Hello_Worlds/Hello_World_Drawing) The classic first application "Hello, World!" with GDI+ drawing objects.
@@ -13,13 +13,13 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Hello_World_Message2](src/Hello_Worlds/Hello_World_Message2) The classic first application "Hello, World!" with Fl_Message.
 * [Hello_World_Say](src/Hello_Worlds/Hello_World_Say) The classic first application "Hello, World!" with say.
 
-## Application and messages
+## [Applications](src/Applications)
 
 * [Application](src/Applications/Application) Shows how to create a simple Fltk application.
 * [Application_And_Exception](src/Applications/Application_And_Exception) Shows how to create a simple Fltk application and how to manage exception.
 * [Application_Dark_Mode](src/Applications/Application_Dark_Mode) Shows how to create a simple Fltk application with dark mode.
 
-## Common Controls
+## [Common Controls](src/Common_Controls)
 
 * [Box](src/Common_Controls/Box) Shows how to show a text with Fl_Box widget.
 * [Box_Picture](src/Common_Controls/Box_Picture) Shows how to show an image with Fl_Box widget.
@@ -34,13 +34,13 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Spinner](src/Common_Controls/Spinner) Shows how to create a spinner with Fl_Spinner widget.
 * [Toggle_Button](src/Common_Controls/Toggle_Button) Shows how to create a toggle button with Fl_Toggle_Button widget.
 
-## User Controls
+## [User Controls](src/User_Controls)
 
 * [Check_Box](src/User_Controls/Check_Box) Shows how to create a check box with own Fl_Check_Box widget.
 * [Progress_Bar](src/User_Controls/Progress_Bar) Shows how to create a progress bar with own Fl_Progress_Bar widget.
 * [Radio_Toggle_Button](src/User_Controls/Radio_Toggle_Button) Shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
 
-## Valuators
+## [](src/ValuatorsValuators)
 
 * [Adjuster](src/Valuators/Adjuster) Shows how to create an adjuster with Fl_Adjuster vvaluator.
 
