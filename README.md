@@ -69,14 +69,18 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Cursors](src/Components/Cursors) shows how to change cursor of a widget with override handle method and use fl_cursor method on FL_ENTER and FL_LEAVE events.
 * [Timer](src/Components/Timer) shows how to create a timer with Fl::add_timeout,  Fl::remove_timeout and Fl::repeat_timeout methods.
 
-## Dialogs
+## [Common Dialogs](src/Common_Dialogs)
 
-* [ColorDialog](src/ColorDialog) shows how to create a ColorDialog with Gtk::ColorChooserDialog.
-* [FolderBrowserDialog](src/FolderBrowserDialog) shows how to create a FolderBrowserDialog with Gtk::FileChooserDialog.
-* [FontDialog](src/FontDialog) shows how to create a FontDialog with Gtk::FontChooserDialog.
-* [OpenFileDialog](src/OpenFileDialog) shows how to create an OpenFileDialog with Gtk::FileChooserDialog.
-* [MessageBox](src/MessageBox) shows how to create a MessageBox with Gtk::MessageDialog.
-* [SaveFileDialog](src/SaveFileDialog) shows how to create an SaveFileDialog with Gtk::FileChooserDialog.
+* [Beep](src/Common_Dialogs/Beep) shows how to create a beep with fl_beep method.
+* [ColorDialog](src/Common_Dialogs/ColorDialog) shows how to create a ColorDialog with Gtk::ColorChooserDialog.
+* [FolderBrowserDialog](src/Common_Dialogs/FolderBrowserDialog) shows how to create a FolderBrowserDialog with Gtk::FileChooserDialog.
+* [OpenFileDialog](src/Common_Dialogs/OpenFileDialog) shows how to create an OpenFileDialog with Gtk::FileChooserDialog.
+* [MessageBox](src/Common_Dialogs/MessageBox) shows how to create a MessageBox with Gtk::MessageDialog.
+* [SaveFileDialog](src/Common_Dialogs/SaveFileDialog) shows how to create an SaveFileDialog with Gtk::FileChooserDialog.
+
+## [User Dialogs](src/User_Dialogs)
+
+* [FontDialog](src/User_Dialogs/FontDialog) shows how to create a FontDialog with Gtk::FontChooserDialog.
 
 ## [Others](src/Others)
 
