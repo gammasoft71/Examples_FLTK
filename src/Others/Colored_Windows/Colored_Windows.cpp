@@ -11,7 +11,7 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Colored windows") {
+    Main_Window() : Fl_Window(0, 0, 300, 300, "Colored windows") {
       end();
       resizable(this);
       auto screen_x = 0, screen_y = 0, screen_w = 0, screen_h = 0;
@@ -24,18 +24,12 @@ namespace Examples {
         auto colored_window = make_shared<Fl_Window>(window->x, window->y, 300, 300);
         colored_window->color(window->iterator->first);
         colored_window->copy_label(window->iterator->second.c_str());
-
+        colored_window->show();
         window->colored_windows.push_back(colored_window);
         
         window->x = window->y = window->x < 180 ? window->x + 20 : 60;
         window->iterator++;
-        if (window->iterator == window->colors.end())
-          window->iterator = window->colors.begin();
-
-        colored_window->show();
-        while (colored_window->visible())
-          Fl::wait();
-        
+        if (window->iterator == window->colors.end()) window->iterator = window->colors.begin();
       }, this);
     }
     
