@@ -2,7 +2,7 @@
 #include <FL/Fl.H>
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Progress.H>
-#include <FL/Fl_Slider.H>
+#include <FL/Fl_Hor_Nice_Slider.H>
 #include <FL/Fl_Window.H>
 
 using namespace std;
@@ -30,7 +30,7 @@ namespace Examples {
     }
     
   private:
-    Fl_Slider slider1 {20, 50, 200, 25};
+    Fl_Hor_Nice_Slider slider1 {20, 50, 200, 25};
     Fl_Progress progress1 {20, 100, 200, 25};
     Fl_Box box1 {20, 150, 75, 25};
   };
