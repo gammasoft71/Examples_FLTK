@@ -21,18 +21,24 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 ## Common Controls
 
-* [Box](src/Common_Controls/Box) Shows how to show a text with Fl_Box.
-* [Box_Picture](src/Common_Controls/Box_Picture) Shows how to show an image with Fl_Box.
-* [Browser](src/Common_Controls/Browser) Shows how to create a text list with Fl_Browser.
-* [Button](src/Common_Controls/Button) Shows how to create a button with Fl_Button.
-* [Check_Browser](src/Common_Controls/Check_Browser) Shows how to create a check button list with Fl_Check_Browser.
-* [Check_Button](src/Common_Controls/Check_Button) Shows how to create a check button with Fl_Check_Button.
-* [Input](src/Common_Controls/Input) Shows how to create an input text with Fl_Input.
-* [Nice_Slider](src/Common_Controls/Nice_Slider) Shows how to create a slider with Fl_Nice_Slider.
-* [Progress](src/Common_Controls/Progress) Shows how to create a progress with Fl_Progress.
-* [Radio_Round_Button](src/Common_Controls/Radio_Round_Button) Shows how to create a radio round button with Fl_Radio_Round_Button.
-* [Spinner](src/Common_Controls/Spinner) Shows how to create a spinner with Fl_Spinner.
-* [Toggle_Button](src/Common_Controls/Toggle_Button) Shows how to create a toggle button with Fl_Toggle_Button.
+* [Box](src/Common_Controls/Box) Shows how to show a text with Fl_Box widget.
+* [Box_Picture](src/Common_Controls/Box_Picture) Shows how to show an image with Fl_Box widget.
+* [Browser](src/Common_Controls/Browser) Shows how to create a text list with Fl_Browser widget.
+* [Button](src/Common_Controls/Button) Shows how to create a button with Fl_Button widget.
+* [Check_Browser](src/Common_Controls/Check_Browser) Shows how to create a check button list with Fl_Check_Browser widget.
+* [Check_Button](src/Common_Controls/Check_Button) Shows how to create a check button with Fl_Check_Button widget.
+* [Input](src/Common_Controls/Input) Shows how to create an input text with Fl_Input widget.
+* [Nice_Slider](src/Common_Controls/Nice_Slider) Shows how to create a slider with Fl_Nice_Slider widget.
+* [Progress](src/Common_Controls/Progress) Shows how to create a progress with Fl_Progress widget.
+* [Radio_Round_Button](src/Common_Controls/Radio_Round_Button) Shows how to create a radio round button with Fl_Radio_Round_Button widget.
+* [Spinner](src/Common_Controls/Spinner) Shows how to create a spinner with Fl_Spinner widget.
+* [Toggle_Button](src/Common_Controls/Toggle_Button) Shows how to create a toggle button with Fl_Toggle_Button widget.
+
+## User Controls
+
+* [Check_Box](src/User_Controls/Check_Button) Shows how to create a check box with own Fl_Check_Box widget.
+* [Progress](src/User_Controls/Progress) Shows how to create a progress bar with own Fl_Progress_Bar widget.
+* [Radio_Toggle_Button](src/User_Controls/Check_Button) Shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
 
 ## Containers
 
