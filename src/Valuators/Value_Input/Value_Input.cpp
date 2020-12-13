@@ -14,11 +14,11 @@ namespace Examples {
     Main_Window() : Fl_Window(200, 100, 300, 300, "Value input example") {
       end();
       
-      roller1.bounds(0, 1);
-      roller1.value(0.5);
-      roller1.step(0.01);
-      roller1.callback(on_value_changed, &box1);
-      roller1.do_callback();
+      value_input1.bounds(0, 1);
+      value_input1.value(0.5);
+      value_input1.step(0.01);
+      value_input1.callback(on_value_changed, &box1);
+      value_input1.do_callback();
       
       box1.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
     }
@@ -30,7 +30,7 @@ namespace Examples {
       reinterpret_cast<Fl_Widget*>(box)->copy_label(result.c_str());
     }
 
-    Fl_Value_Input roller1 {10, 10, 100, 25};
+    Fl_Value_Input value_input1 {10, 10, 100, 25};
     Fl_Box box1 {FL_DOWN_BOX, 120, 10, 90, 25, ""};
   };
 }
