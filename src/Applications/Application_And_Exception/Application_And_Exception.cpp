@@ -1,5 +1,7 @@
 #include "Fl_Application.h"
+#include <iostream>
 #include <FL/Fl_Button.H>
+#include <FL/fl_message.H>
 
 using namespace std;
 
@@ -7,7 +9,11 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Application and exception example") {
+      end();
       resizable(this);
+ 
+      // uncomment to throw error
+      //throw overflow_error("Creation object error");
       
       generate_handled_exception_button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       generate_handled_exception_button.callback(Main_Window::generate_handled_exception, this);
@@ -42,5 +48,15 @@ namespace Examples {
 }
 
 int main(int argc, char *argv[]) {
-  Fl_Application::run(argc, argv, Examples::Main_Window());
+  try {
+    Fl_Application::run(argc, argv, Examples::Main_Window());
+  } catch(const exception& e) {
+    cerr << e.what() << endl;
+    fl_message_title("Exception occured");
+    fl_alert("Message : %s", e.what());
+  } catch(...) {
+    cerr << "Unknown exception occured" << endl;
+    fl_message_title("Unknown exception occured");
+    fl_alert("%s", "Unknown exception occured");
+  }
 }
