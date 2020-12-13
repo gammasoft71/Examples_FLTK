@@ -84,6 +84,11 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 * [Font_Chooser](src/User_Dialogs/Font_Chooser) shows how to use a Font chooser dialog with own fl_font_chooser method.
 
+## [Events](src/Events)
+
+* [Application_Idle](src/Events/Application_Idle) shows how to use idle event with Fl::add_idle method.
+* [Window_Click](src/Events/Window_Click) shows how to use mouse click event with override handle method and use Fl::event_button, Fl::event_x() and Fl::event_y() methods on FL_RELEASE event.
+
 ## [Others](src/Others)
 
 * [ComboBox](src/Others/ComboBox) shows how to create a Fltk ComboBox with Fl_Input_Choice.
