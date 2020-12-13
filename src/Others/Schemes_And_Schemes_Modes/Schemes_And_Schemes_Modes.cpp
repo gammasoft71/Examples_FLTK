@@ -94,6 +94,7 @@ namespace Examples {
       slider1->type(FL_HOR_NICE_SLIDER);
       slider1->maximum(100);
       slider1->value(50);
+      slider1->color2(FL_SELECTION_COLOR);
       slider1->callback([](Fl_Widget* sender, void* window) {
         reinterpret_cast<Main_Window*>(window)->progress1->value(dynamic_cast<Fl_Slider*>(sender)->value());
         reinterpret_cast<Main_Window*>(window)->progress1->copy_label((to_string((static_cast<int>(dynamic_cast<Fl_Slider*>(sender)->value()))) + "%").c_str());
