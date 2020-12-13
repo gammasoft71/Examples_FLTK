@@ -23,8 +23,8 @@ namespace Examples {
     }
     
   private:
-    Fl_Input input1 {10, 10, 75, 25};
-    Fl_Input input2 {10, 50, 75, 25};
+    Fl_Input input1 {10, 10, 100, 25};
+    Fl_Input input2 {10, 50, 100, 25};
   };
 }
 
