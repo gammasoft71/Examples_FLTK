@@ -19,6 +19,7 @@ namespace Examples {
         window->enable_timer = !window->enable_timer;
         window->button.copy_label(window->enable_timer ? "Stop" : "Start");
         if (window->enable_timer) Fl::add_timeout(0.1, on_timer_tick, data);
+        else Fl::remove_timeout(on_timer_tick, data);
       }, this);
       
       box.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
