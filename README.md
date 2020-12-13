@@ -112,4 +112,4 @@ cmake --build . --config Debug
 
 ## Remarks
 
-This project run with [Fltk 3](https://www.Fltk.org) and [CMake](https://cmake.org).
+This project run with [Fltk 1.3.5](https://www.Fltk.org) and [CMake](https://cmake.org).
