@@ -13,8 +13,8 @@
 #include <FL/Fl_Check_Browser.H>
 #include <FL/fl_draw.H>
 #include <FL/Fl_Input.H>
+#include <FL/Fl_Hor_Nice_Slider.H>
 #include <FL/fl_message.H>
-#include <FL/Fl_Slider.H>
 #include <FL/Fl_Progress.H>
 #include <FL/Fl_Radio_Round_Button.H>
 #include <FL/Fl_Return_Button.H>
@@ -56,7 +56,7 @@ namespace Examples {
 
       slider_page = make_unique<Fl_Group>(tabs->x(), tabs->y() + 20, tabs->w(), tabs->h() - 20, "Slider");
       slider_scroll = make_unique<Fl_Scroll>(tabs->x() + 1, tabs->y() + 21, tabs->w() - 2, tabs->h() - 22);
-      slider1 = make_unique<Fl_Slider>(20, 40, 290, 25);
+      slider1 = make_unique<Fl_Hor_Nice_Slider>(20, 40, 290, 25);
       progress1 = make_unique<Fl_Progress>(20, 80, 290, 25);
       slider_scroll->end();
       slider_page->end();
@@ -164,7 +164,7 @@ namespace Examples {
     unique_ptr<Fl_Browser> browser1;
     unique_ptr<Fl_Check_Browser> check_browser1;
     unique_ptr<Fl_Input> input1;
-    unique_ptr<Fl_Slider> slider1;
+    unique_ptr<Fl_Hor_Nice_Slider> slider1;
     unique_ptr<Fl_Progress> progress1;
     unique_ptr<Fl_Box> mode_box;
     unique_ptr<Fl_Choice> scheme_mode_choice;
