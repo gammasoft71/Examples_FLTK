@@ -58,9 +58,11 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Tabs](src/Control_Containers/Tabs) shows how to create a tabs and pages with Fl_Tabs and Fl_Group.
 * [Window](src/Control_Containers/Window) shows how to create a simple window with Fl_Window.
 
-## Menus and toolbars
+## [Menus and toolbars](src/Menus_And_Toolbars)
 
-* [MainMenu](src/MainMenu) shows how to create a Fltk MainMenu with Gtk::MenuBar, Gtk::Menu and Gtk::MenuItem.
+* [Menu_Bar](src/Menus_And_Toolbars/Menu_Bar) shows how to create a menu bar with Fl_Menu_Bar widget.
+* [Menu_Button](src/Menus_And_Toolbars/Menu_Button) shows how to create a menu button with Fl_Menu_Button widget.
+* [Sys_Menu_Bar](src/Menus_And_Toolbars/Sys_Menu_Bar) shows how to create a system menu bar with Fl_Sys_Menu_Bar widget.
 
 ## Components
 
