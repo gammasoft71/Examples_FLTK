@@ -60,6 +60,7 @@ namespace Examples {
     static void on_value_changed(Fl_Widget* sender, void* data) {
       reinterpret_cast<Fl_Widget*>(data)->copy_label(to_string(static_cast<int>(dynamic_cast<Fl_Slider*>(sender)->value())).c_str());
     }
+    
     Fl_Hor_Slider hor_slider1 {10, 10, 180, 25};
     Fl_Hor_Fill_Slider hor_fill_slider1 {10, 45, 180, 25};
     Fl_Hor_Nice_Slider hor_nice_slider1 {10, 80, 180, 25};
