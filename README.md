@@ -42,7 +42,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 ## Valuators
 
-* [Adjuster](src/User_Controls/Adjuster) Shows how to create an adjuster with Fl_Adjuster vvaluator.
+* [Adjuster](src/Valuators/Adjuster) Shows how to create an adjuster with Fl_Adjuster vvaluator.
 
 ## Containers
 
