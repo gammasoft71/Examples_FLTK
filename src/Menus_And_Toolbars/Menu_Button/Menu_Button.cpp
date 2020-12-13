@@ -16,7 +16,6 @@ namespace Examples {
 
       text_buffer.append("Right click to show menu\n");
       text_display.buffer(&text_buffer);
-      text_display.show_cursor(0);
 
       Fl_Menu_Item items[] = {
         {"&File", 0, nullptr, nullptr, FL_SUBMENU},
@@ -77,10 +76,10 @@ namespace Examples {
   private:
     static void on_menu_item_click(Fl_Widget* sender, void* window) {reinterpret_cast<Main_Window*>(window)->on_menu_item_click(dynamic_cast<Fl_Menu_Button&>(*sender));}
     void on_menu_item_click(Fl_Menu_Button& menu) {
+      static int line_count = 0;
       text_buffer.append(menu.mvalue()->label());
       text_buffer.append("\n");
-      text_buffer.select(text_buffer.length(), text_buffer.length());
-      text_display.show_insert_position();
+      text_display.scroll(line_count++, 0);
       menu.value(0);
     }
     Fl_Text_Buffer text_buffer;
