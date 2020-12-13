@@ -68,7 +68,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [MessageBox](src/MessageBox) Shows how to create a MessageBox with Gtk::MessageDialog.
 * [SaveFileDialog](src/SaveFileDialog) Shows how to create an SaveFileDialog with Gtk::FileChooserDialog.
 
-## Others
+## [Others](src/Others)
 
 * [ComboBox](src/Others/ComboBox) Shows how to create a Fltk ComboBox with Fl_Input_Choice.
 
