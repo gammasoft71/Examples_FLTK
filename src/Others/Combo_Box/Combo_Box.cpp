@@ -15,26 +15,26 @@ namespace Examples {
         combo_box1.add(item);
       combo_box1.callback([](Fl_Widget* sender, void* window) {
         auto index  = reinterpret_cast<Fl_Input_Choice*>(sender)->menubutton()->find_index(reinterpret_cast<Fl_Input_Choice*>(sender)->value());
-        if (index != -1) reinterpret_cast<Main_Window*>(window)->OnComboBoxClick(index);
+        if (index != -1) reinterpret_cast<Main_Window*>(window)->on_combo_box_click(index);
       }, this);
       
       for (auto item : {"Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9", "Item10"})
         combo_box2.add(item);
       combo_box2.callback([](Fl_Widget* sender, void* window) {
-        reinterpret_cast<Main_Window*>(window)->OnComboBoxClick(reinterpret_cast<Fl_Choice*>(sender)->value());
+        reinterpret_cast<Main_Window*>(window)->on_combo_box_click(reinterpret_cast<Fl_Choice*>(sender)->value());
       }, this);
       
       for (auto item : {"Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9", "Item10"})
         combo_box3.add(item);
       combo_box3.callback([](Fl_Widget* sender, void* window) {
-        reinterpret_cast<Main_Window*>(window)->OnComboBoxClick(reinterpret_cast<Fl_Menu_Button*>(sender)->value());
+        reinterpret_cast<Main_Window*>(window)->on_combo_box_click(reinterpret_cast<Fl_Menu_Button*>(sender)->value());
       }, this);
       
-      OnComboBoxClick(0);
+      on_combo_box_click(0);
     }
     
   private:
-    void OnComboBoxClick(int value) {
+    void on_combo_box_click(int value) {
       combo_box1.value(value);
       combo_box2.value(value);
       combo_box3.value(value);
