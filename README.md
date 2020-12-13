@@ -40,6 +40,10 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Progress_Bar](src/User_Controls/Progress_Bar) Shows how to create a progress bar with own Fl_Progress_Bar widget.
 * [Radio_Toggle_Button](src/User_Controls/Radio_Toggle_Button) Shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
 
+## Valuators
+
+* [Adjuster](src/User_Controls/Adjuster) Shows how to create an adjuster with Fl_Adjuster vvaluator.
+
 ## Containers
 
 * [Form](src/Form) Shows how to create a simple Fltk Form with Fl_Window.
