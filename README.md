@@ -1,5 +1,5 @@
 
-# Fltk Examples
+# [FLTK Examples](src)
 
 Shows how to use Fltk controls only by programming code (c++17).
 
