@@ -42,7 +42,14 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 ## [Valuators](src/Valuators)
 
-* [Adjuster](src/Valuators/Adjuster) Shows how to create an adjuster with Fl_Adjuster vvaluator.
+* [Adjuster](src/Valuators/Adjuster) Shows how to create adjusters with Fl_Adjuster valuator.
+* [Counter](src/Valuators/Counter) Shows how to create counters with Fl_Counter and Fl_Simple_Counter valuators.
+* [Dial](src/Valuators/Dial) Shows how to create dials with Fl_Dial, Fl_Line_Dial and Fl_Fill_Dial valuators.
+* [Roller](src/Valuators/Roller) Shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
+* [Slider](src/Valuators/Slider) Shows how to create sliders with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_Slider, Fl_Slider, Fl_Fill_Slider and Fl_Nice_Slider valuators.
+* [Value_Input](src/Valuators/Value_Input) Shows how to create a value input with Fl_Value_Input valuator.
+* [Value_Output](src/Valuators/Value_Output) Shows how to create a value input with Fl_Value_Output valuator.
+* [Value_Slider](src/Valuators/Slider) Shows how to create value sliders with Fl_Hor_Value_Slider and Fl_Value_Slider valuators.
 
 ## Containers
 
