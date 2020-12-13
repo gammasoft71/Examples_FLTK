@@ -2,8 +2,6 @@
 #include <FL/Fl.H>
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Roller.H>
-#include <FL/Fl_Fill_Dial.H>
-#include <FL/Fl_Line_Dial.H>
 #include <FL/Fl_Window.H>
 
 using namespace std;
