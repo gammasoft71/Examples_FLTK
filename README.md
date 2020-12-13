@@ -36,7 +36,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 ## User Controls
 
-* [Check_Box](src/User_Controls/Check_Button) Shows how to create a check box with own Fl_Check_Box widget.
+* [Check_Box](src/User_Controls/Check_Box) Shows how to create a check box with own Fl_Check_Box widget.
 * [Progress](src/User_Controls/Progress) Shows how to create a progress bar with own Fl_Progress_Bar widget.
 * [Radio_Toggle_Button](src/User_Controls/Check_Button) Shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
 
