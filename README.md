@@ -91,7 +91,10 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 ## [Others](src/Others)
 
-* [ComboBox](src/Others/ComboBox) shows how to create a Fltk ComboBox with Fl_Input_Choice.
+* [Box_Picture2](src/Others/Box_Picture2) shows how to show an image with Fl_Box widget.
+* [Colored_Tabs](src/Others/Colored_Tabs) shows how to create a tabs and colored pages with Fl_Tabs and Fl_Group.
+* [Colored_Windows](src/Others/Colored_Windows) shows how to create a colored windows with Fl_Window.
+* [Combo_Box](src/Others/ComboBox) shows how to create Combo boxes with Fl_Input_Choice, Fl_Choie and Fl_Menu_Button widgets.
 
 ## Download
 
