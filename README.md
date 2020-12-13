@@ -21,18 +21,18 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 ## Common Controls
 
-* [Button](src/Button) Shows how to create a Fltk Button and Event Click with Fl_Button.
-* [CheckBox](src/CheckBox) Shows how to create a Fltk CheckBox with Fl_Check_Button.
-* [CheckButton](src/CheckButton) Shows how to create a Fltk CheckButton with Fl_Check_Button.
-* [CheckedListBox](src/CheckedListBox) Shows how to create a Fltk CheckedListBox with Fl_Checked_list_box.
-* [ComboBox](src/ComboBox) Shows how to create a Fltk ComboBox with Fl_Input_Choice.
-* [Label](src/Label) Shows how to create a Fltk Label with Fl_Box.
-* [PictureBox](src/PictureBox) Shows how to create a Fltk PictureBox with Fl_Box.
-* [ProgressBar](src/ProgressBar) Shows how to create a Fltk ProgressBar with Fl_Progress.
-* [RadioButton](src/RadioButton) Shows how to create a Fltk RadioButton with Fl_Round_Button.
-* [TextBox](src/TextBox) Shows how to create a Fltk TextBox with Fl_Input.
-* [ToggleButton](src/ToggleButton) Shows how to create a Fltk ToggleButton with Fl_Toggle_Button.
-* [TrackBar](src/TrackBar) Shows how to create a Fltk TrackBar with Fl_Slider.
+* [Box](src/Common_Controls/Box) Shows how to show a text with Fl_Box.
+* [Box_Picture](src/Common_Controls/Box_Picture) Shows how to show an image with Fl_Box.
+* [Browser](src/Common_Controls/Browser) Shows how to create a text list with Fl_Browser.
+* [Button](src/Common_Controls/Button) Shows how to create a button with Fl_Button.
+* [Check_Browser](src/Common_Controls/Check_Browser) Shows how to create a check button list with Fl_Check_Browser.
+* [Check_Button](src/Common_Controls/Check_Button) Shows how to create a check button with Fl_Check_Button.
+* [Input](src/Common_Controls/Input) Shows how to create an input text with Fl_Input.
+* [Nice_Slider](src/Common_Controls/Nice_Slider) Shows how to create a slider with Fl_Nice_Slider.
+* [Progress](src/Common_Controls/Progress) Shows how to create a progress with Fl_Progress.
+* [Radio_Round_Button](src/Common_Controls/Radio_Round_Button) Shows how to create a radio round button with Fl_Radio_Round_Button.
+* [Spinner](src/Common_Controls/Spinner) Shows how to create a spinner with Fl_Spinner.
+* [Toggle_Button](src/Common_Controls/Toggle_Button) Shows how to create a toggle button with Fl_Toggle_Button.
 
 ## Containers
 
@@ -57,6 +57,10 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [OpenFileDialog](src/OpenFileDialog) Shows how to create an OpenFileDialog with Gtk::FileChooserDialog.
 * [MessageBox](src/MessageBox) Shows how to create a MessageBox with Gtk::MessageDialog.
 * [SaveFileDialog](src/SaveFileDialog) Shows how to create an SaveFileDialog with Gtk::FileChooserDialog.
+
+## Others
+
+* [ComboBox](src/Others/ComboBox) Shows how to create a Fltk ComboBox with Fl_Input_Choice.
 
 ## Download
 
