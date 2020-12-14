@@ -11,9 +11,6 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 230, 130, "Timer example") {
-      end();
-      resizable(this);
-      
       button.callback([](Fl_Widget* sender, void* data) {
         auto window = reinterpret_cast<Main_Window*>(data);
         window->enable_timer = !window->enable_timer;
@@ -47,6 +44,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
