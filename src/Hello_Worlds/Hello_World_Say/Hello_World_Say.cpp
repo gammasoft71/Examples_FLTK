@@ -1,10 +1,8 @@
 #include <cstdlib>
 #include <filesystem>
 #include <fstream>
-#include <string>
 #include <FL/Fl.H>
 #include <FL/Fl_Button.H>
-#include <FL/fl_message.H>
 #include <FL/Fl_Window.H>
 
 using namespace std;
@@ -24,11 +22,8 @@ namespace Examples {
 #endif
       permissions(temp_directory_path()/"say.cmd", perms::owner_all);
 
-      resizable(this);
-      
-      button1.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button1.callback([](Fl_Widget* sender, void* window) {
-        system(((temp_directory_path()/"say.cmd").string() + " \"Hello, World!\"").c_str());
+        popen(((temp_directory_path()/"say.cmd").string() + " \"Hello, World!\"").c_str(), "r");
       }, this);
     }
     
@@ -40,7 +35,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
-  fl_message_hotspot(0);
   return Fl::run();
 }
