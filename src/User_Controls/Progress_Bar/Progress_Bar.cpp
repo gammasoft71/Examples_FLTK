@@ -1,4 +1,4 @@
-#include "Fl_Progress_Bar.H"
+#include "Fl_Progress_Bar.h"
 #include <FL/Fl.H>
 #include <FL/Fl_Window.H>
 
