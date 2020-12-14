@@ -14,5 +14,5 @@ endif ()
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_executable(${PROJECT_NAME} ${GUI_OPTION} Progress_Bar.cpp Fl_Progress_Bar.H)
+add_executable(${PROJECT_NAME} ${GUI_OPTION} Progress_Bar.cpp Fl_Progress_Bar.h)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "User_Controls")
