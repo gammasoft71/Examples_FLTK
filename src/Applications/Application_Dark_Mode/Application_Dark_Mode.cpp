@@ -18,8 +18,8 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 330, 300, "") {
-      end();
-
+      box1.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_CLIP | FL_ALIGN_INSIDE);
+      
       button1.callback([](Fl_Widget* sender, void* window) {
         fl_message_hotspot(false);
         fl_message_icon()->color(fl_rgb_color(0, 0, 255));
@@ -35,17 +35,17 @@ namespace Examples {
 
       radio1.value(true);
 
-      check_button2.value(true);
+      check_button1.value(true);
     }
 
   private:
     Fl_Box box1 {10, 10, 90, 25, "Dark mode"};
-    Fl_Button button1 {110, 10, 75, 25, "Message"};
+    Fl_Button button1 {110, 10, 75, 25, "Click me"};
     Fl_Browser browser1 {10, 50, 120, 100};
     Fl_Radio_Round_Button radio1 {10, 170, 90, 25, "Raddio 1"};
     Fl_Radio_Round_Button radio2 {110, 170, 90, 25, "Raddio 2"};
-    Fl_Check_Button check_button1 {10, 200, 90, 25, "Raddio 1"};
-    Fl_Check_Button check_button2 {110, 200, 90, 25, "Raddio 2"};
+    Fl_Check_Button check_button1 {10, 200, 90, 25, "Check 1"};
+    Fl_Check_Button check_button2 {110, 200, 90, 25, "Check 2"};
   };
   
   void enable_dark_mode() {
@@ -72,6 +72,5 @@ int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
   Examples::enable_dark_mode(); // Must be call after window.show, because show(...) method init system colors and reset selection color to 0xf.
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
