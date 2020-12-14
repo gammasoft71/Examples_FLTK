@@ -7,7 +7,6 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Hello world (emoticons)") {
-      box1.align(FL_ALIGN_CENTER | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
       box1.labelsize(72);
       auto text_width = 0;
       auto text_height = 0;
@@ -18,7 +17,7 @@ namespace Examples {
    }
     
   private:
-    Fl_Box box1 {0, 0, 300, 300, "\U0001F44B, \U0001F30E\U00002757"};
+    Fl_Box box1 {0, 0, 300, 300, u8"\U0001F44B, \U0001F30E\U00002757"};
   };
 }
 
