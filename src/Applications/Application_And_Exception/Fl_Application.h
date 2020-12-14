@@ -8,7 +8,6 @@ public:
   static void run(int argc, char *argv[], const Fl_Window& window) {
     Fl::event_dispatch(event_dispatch);
     const_cast<Fl_Window&>(window).show(argc, argv);
-    Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
     Fl::run();
   }
   
