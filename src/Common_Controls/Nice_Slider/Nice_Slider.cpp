@@ -10,10 +10,7 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Slider example") {
-      end();
-      resizable(this);
-      
+    Main_Window() : Fl_Window(200, 100, 300, 300, "Nice slider example") {
       slider1.type(FL_HOR_NICE_SLIDER);
       slider1.maximum(200);
       slider1.callback([](Fl_Widget* sender, void* data) {
@@ -39,6 +36,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window form;
   form.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
