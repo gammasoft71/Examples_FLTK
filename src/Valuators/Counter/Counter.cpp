@@ -11,8 +11,6 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Counter example") {
-      end();
-      
       counter1.bounds(0, 1);
       counter1.value(0.5);
       counter1.callback(on_value_changed, &box1);
@@ -42,7 +40,6 @@ namespace Examples {
 }
 
 int main(int argc, char* argv[]) {
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   Examples::Main_Window window;
   window.show(argc, argv);
   Fl::run();
