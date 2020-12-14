@@ -10,9 +10,6 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 360, 240, "Browser example") {
-      end();
-      resizable(this);
-      
       browser_left.type(FL_HOLD_BROWSER);
       for (auto item : {"draw", "cut", "paste", "delete", "open", "close", "remove", "edit", "find", "increment", "decrement", "write", "read", "post", "build", "make", "release", "create", "choose", "erase"})
         browser_left.add(item);
@@ -37,7 +34,6 @@ namespace Examples {
           window->browser_right.remove(window->browser_right.value());
         }
       }, this);
-      
     }
     
   private:
@@ -49,6 +45,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
