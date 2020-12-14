@@ -6,9 +6,6 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Progress example") {
-      end();
-      resizable(this);
-      
       progress_bar2.value(50);
       
       progress_bar3.value(100);
@@ -34,6 +31,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
