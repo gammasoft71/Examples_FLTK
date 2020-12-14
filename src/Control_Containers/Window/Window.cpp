@@ -7,9 +7,6 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 640, 480, "Window example") {
-      end();
-      resizable(this);
-
       button.align(FL_ALIGN_CENTER | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button.callback([](Fl_Widget* sender, void* window) {
         reinterpret_cast<Main_Window*>(window)->hide();
@@ -17,7 +14,7 @@ namespace Examples {
     }
 
     void hide() override {
-      fl_message_icon()->label("?");
+      fl_message_hotspot(0);
       fl_message_title("Close window");
       if (fl_choice("Are you sure you want exit?", "No", "Yes", nullptr) == 1)
         Fl_Window::hide();
@@ -31,7 +28,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
-  fl_message_hotspot(0);
   return Fl::run();
 }
