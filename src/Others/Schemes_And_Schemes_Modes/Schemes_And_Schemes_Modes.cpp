@@ -63,10 +63,8 @@ namespace Examples {
       
       tabs->end();
       
-      mode_box = make_unique<Fl_Box>(10, h() - 35, 30, 25, "Mode");
-      scheme_mode_choice = make_unique<Fl_Choice>(50, h() - 35, 80, 25);
-      scheme_box = make_unique<Fl_Box>(150, h() - 35, 40, 25, "Scheme");
-      scheme_choice = make_unique<Fl_Choice>(210, h() - 35, 80, 25);
+      scheme_choice = make_unique<Fl_Choice>(70, h() - 35, 80, 25, "Scheme");
+      scheme_mode_choice = make_unique<Fl_Choice>(210, h() - 35, 80, 25, "Mode");
 
       end();
 
@@ -126,10 +124,8 @@ namespace Examples {
       buttons_page->resize(10, 30, w - 20, h - 85);
       browsers_page->resize(10, 30, w - 20, h - 85);
       slider_page->resize(10, 30, w - 20, h - 85);
-      mode_box->resize(10, h - 35, 30, 25);
-      scheme_mode_choice->resize(50, h - 35, 80, 25);
-      scheme_box->resize(150, h - 35, 40, 25);
-      scheme_choice->resize(210, h - 35, 80, 25);
+      scheme_choice->resize(70, h - 35, 80, 25);
+      scheme_mode_choice->resize(210, h - 35, 80, 25);
     }
     
     void draw() override {
@@ -167,9 +163,7 @@ namespace Examples {
     unique_ptr<Fl_Input> input1;
     unique_ptr<Fl_Hor_Nice_Slider> slider1;
     unique_ptr<Fl_Progress> progress1;
-    unique_ptr<Fl_Box> mode_box;
     unique_ptr<Fl_Choice> scheme_mode_choice;
-    unique_ptr<Fl_Box> scheme_box;
     unique_ptr<Fl_Choice> scheme_choice;
   };
 }
