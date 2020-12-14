@@ -28,7 +28,7 @@ namespace Examples {
     
   private:
     static void on_value_changed(Fl_Widget* sender, void* box) {
-      static string result(' ', 128);
+      static auto result = string(' ', 128);
       dynamic_cast<Fl_Valuator*>(sender)->format(result.data());
       reinterpret_cast<Fl_Widget*>(box)->copy_label(result.c_str());
     }
