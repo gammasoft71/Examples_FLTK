@@ -1,7 +1,5 @@
-#include <string>
 #include <FL/Fl.H>
 #include <FL/Fl_Button.H>
-#include <FL/Fl_Box.H>
 #include <FL/fl_ask.H>
 #include <FL/Fl_Window.H>
 
@@ -9,7 +7,6 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 320, 600, "Beep example") {
-      end();
       resizable(this);
       
       button_default.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
@@ -56,7 +53,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
-  fl_message_hotspot(0);
   return Fl::run();
 }
