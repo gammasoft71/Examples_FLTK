@@ -16,9 +16,6 @@ namespace Examples {
       scroll2 = make_unique<Fl_Scroll>(325, 10, 305, 460);
       scroll2->box(FL_DOWN_BOX);
       scroll2->end();
-
-      end();
-      resizable(this);
     }
     
   private:
@@ -30,6 +27,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
