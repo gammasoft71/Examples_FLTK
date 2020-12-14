@@ -10,8 +10,6 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Adjuster example") {
-      end();
-      
       adjuster1.bounds(0, 1);
       adjuster1.value(0.5);
       adjuster1.soft(false);
@@ -43,7 +41,6 @@ namespace Examples {
 }
 
 int main(int argc, char* argv[]) {
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   Examples::Main_Window window;
   window.show(argc, argv);
   Fl::run();
