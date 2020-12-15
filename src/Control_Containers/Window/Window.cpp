@@ -14,7 +14,7 @@ namespace Examples {
     }
 
     void hide() override {
-      fl_message_hotspot(0);
+      fl_message_hotspot(false);
       fl_message_title("Close window");
       if (fl_choice("Are you sure you want exit?", "No", "Yes", nullptr) == 1)
         Fl_Window::hide();
