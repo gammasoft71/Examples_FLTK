@@ -28,9 +28,6 @@ namespace Examples {
       check6 = make_unique<Fl_Check_Button>(165, 100, 104, 24, "check 6");
       check6->value(1);
       group2->end();
-      
-      end();
-      resizable(this);
     }
     
   private:
@@ -48,6 +45,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
