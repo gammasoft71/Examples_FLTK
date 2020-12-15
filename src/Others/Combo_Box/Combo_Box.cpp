@@ -8,9 +8,6 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Combo box example") {
-      end();
-      resizable(this);
-      
       for (auto item : {"Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9", "Item10"})
         combo_box1.add(item);
       combo_box1.callback([](Fl_Widget* sender, void* window) {
@@ -50,6 +47,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
