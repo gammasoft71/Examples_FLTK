@@ -9,32 +9,26 @@ namespace Examples {
     Main_Window() : Fl_Window(200, 100, 320, 600, "Beep example") {
       resizable(this);
       
-      button_default.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button_default.callback([](Fl_Widget* sender, void* data) {
         fl_beep(FL_BEEP_DEFAULT);
       }, this);
       
-      button_message.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button_message.callback([](Fl_Widget* sender, void* data) {
         fl_beep(FL_BEEP_MESSAGE);
       }, this);
       
-      button_error.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button_error.callback([](Fl_Widget* sender, void* data) {
         fl_beep(FL_BEEP_ERROR);
       }, this);
       
-      button_question.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button_question.callback([](Fl_Widget* sender, void* data) {
         fl_beep(FL_BEEP_QUESTION);
       }, this);
       
-      button_password.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button_password.callback([](Fl_Widget* sender, void* data) {
         fl_beep(FL_BEEP_PASSWORD);
       }, this);
       
-      button_notification.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button_notification.callback([](Fl_Widget* sender, void* data) {
         fl_beep(FL_BEEP_NOTIFICATION);
       }, this);
