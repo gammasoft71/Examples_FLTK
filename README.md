@@ -101,6 +101,8 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Colored_Tabs](src/Others/Colored_Tabs) shows how to create a tabs and colored pages with Fl_Tabs and Fl_Group.
 * [Colored_Windows](src/Others/Colored_Windows) shows how to create a colored windows with Fl_Window.
 * [Combo_Box](src/Others/ComboBox) shows how to create Combo boxes with Fl_Input_Choice, Fl_Choie and Fl_Menu_Button widgets.
+* [Group_And_Check_Button](src/Others/Group_And_Check_Button) shows how to use group and check buttons with Fl_Group and Fl_Check_Button widgets.
+* [Group_And_Radio_Round_Button](src/Others/Group_And_Radio_Round_Button) shows how to use group and radio round buttonsswith Fl_Group and Fl_Radio_Round_Button widgets.
 
 ## Download
 
