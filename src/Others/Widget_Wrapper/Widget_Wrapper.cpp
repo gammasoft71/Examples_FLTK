@@ -8,7 +8,7 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Widget wrapper example") {
-      button.callback([&](Fl_Widget& sender, std::any arg) {
+      button.callback([this](Fl_Widget& sender, std::any arg) {
         fl_message("Clicked %d times", ++count);
       });
     }
