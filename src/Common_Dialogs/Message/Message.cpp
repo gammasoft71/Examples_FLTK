@@ -10,11 +10,9 @@ namespace Examples {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Message example") {
       end();
-      resizable(this);
-      
-      button_show_message.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button_show_message.callback([](Fl_Widget* sender, void* data) {
         auto window = reinterpret_cast<Main_Window*>(data);
+        fl_message_hotspot(0);
         fl_message_icon()->color(fl_rgb_color(0, 0, 255));
         fl_message_icon()->labelcolor(fl_rgb_color(255, 255, 255));
         fl_message_title("Message");
@@ -30,7 +28,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
-  fl_message_hotspot(0);
   return Fl::run();
 }
