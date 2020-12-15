@@ -6,10 +6,9 @@
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 400, 400, "Font Example") {
-      end();
+    Main_Window() : Fl_Window(200, 100, 400, 400, "Font chooser example") {
       resizable(this);
-      button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+
       button.callback([](Fl_Widget* sender, void* window) {
         Fl_Font font = ((Main_Window*)window)->label.labelfont();
         int size = ((Main_Window*)window)->label.labelsize();
@@ -44,6 +43,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
