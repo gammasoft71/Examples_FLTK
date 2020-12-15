@@ -12,4 +12,4 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE Widget_Wrapper.cpp Fl_Widget_Wrapper.h)
-set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Others")
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Tips_And_Tricks")
