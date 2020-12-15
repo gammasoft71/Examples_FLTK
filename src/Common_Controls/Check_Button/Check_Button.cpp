@@ -8,16 +8,16 @@ namespace Examples {
     Main_Window() : Fl_Window(200, 100, 300, 300, "Check button example") {
       check_button1.value(false);
       check_button1.callback([](Fl_Widget* sender, void* window) {
-        reinterpret_cast<Fl_Check_Button*>(sender)->value(0);
+        dynamic_cast<Fl_Check_Button*>(sender)->value(0);
       }, this);
       
       check_button2.value(true);
       check_button2.callback([](Fl_Widget* sender, void* window) {
-        reinterpret_cast<Fl_Check_Button*>(sender)->label(reinterpret_cast<Fl_Check_Button*>(sender)->value() ? "Checked" : "Unchecked");
+        dynamic_cast<Fl_Check_Button*>(sender)->label(dynamic_cast<Fl_Check_Button*>(sender)->value() ? "Checked" : "Unchecked");
       }, this);      
 
       check_button3.callback([](Fl_Widget* sender, void* window) {
-        reinterpret_cast<Fl_Check_Button*>(sender)->label(reinterpret_cast<Fl_Check_Button*>(sender)->value() ? "Checked" : "Unchecked");
+        dynamic_cast<Fl_Check_Button*>(sender)->label(dynamic_cast<Fl_Check_Button*>(sender)->value() ? "Checked" : "Unchecked");
       }, this);
     }
     
