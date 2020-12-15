@@ -12,13 +12,10 @@ namespace Examples {
       // uncomment to throw error
       //throw overflow_error("Creation object error");
       
-      generate_handled_exception_button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       generate_handled_exception_button.callback(Main_Window::generate_handled_exception, this);
       
-      generate_exception_button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       generate_exception_button.callback(Main_Window::generate_exception, this);
       
-      generate_unknown_exception_button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       generate_unknown_exception_button.callback(Main_Window::generate_unknown_exception, this);
     }
     
