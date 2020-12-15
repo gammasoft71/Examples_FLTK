@@ -3,6 +3,7 @@ project(Common_Controls)
 
 add_subdirectory(Box)
 add_subdirectory(Box_Picture)
+add_subdirectory(Box_Picture2)
 add_subdirectory(Browser)
 add_subdirectory(Button)
 add_subdirectory(Check_Browser)

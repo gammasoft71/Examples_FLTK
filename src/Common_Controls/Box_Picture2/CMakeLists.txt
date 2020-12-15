@@ -19,4 +19,4 @@ configure_file(Resources/Logo.png ${CMAKE_CURRENT_BINARY_DIR}/Release/Resources/
 set_source_files_properties(Resources/Logo.png PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 
 add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE Box_Picture2.cpp Resources/Logo.png)
-set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Others")
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Common_Controls")
