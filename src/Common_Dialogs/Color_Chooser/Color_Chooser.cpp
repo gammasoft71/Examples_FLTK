@@ -7,8 +7,7 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Color chooser example") {
-      buttonShowMessage.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
-      buttonShowMessage.callback([](Fl_Widget* sender, void* window) {
+       buttonShowMessage.callback([](Fl_Widget* sender, void* window) {
         uchar r = 0, g = 0, b = 0;
         Fl::get_color(reinterpret_cast<Main_Window*>(window)->color(), r, g, b);
         if (fl_color_chooser("Color", r, g, b) != 0) {
