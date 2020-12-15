@@ -11,9 +11,6 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Nattive File chooser browse file example") {
-      resizable(this);
-      
-      button.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       button.callback([](Fl_Widget* sender, void* window) {
         Fl_Native_File_Chooser dialog;
         dialog.type(Fl_Native_File_Chooser::BROWSE_FILE);
@@ -39,6 +36,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
