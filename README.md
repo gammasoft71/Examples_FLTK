@@ -89,6 +89,12 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Application_Idle](src/Events/Application_Idle) shows how to use idle event with Fl::add_idle method.
 * [Window_Click](src/Events/Window_Click) shows how to use mouse click event with override handle method and use Fl::event_button, Fl::event_x() and Fl::event_y() methods on FL_RELEASE event.
 
+## [Tips And Tricks](src/Tips_And_Tricks)
+
+* [Disable_Symbols](src/Tips_And_Tricks/Disable_Symbols) shows how to disable / enable label symbols.
+
+* [Prevent_Hitting_Escape_Key_Closes_Windows](src/Tips_And_Tricks/Prevent_Hitting_Escape_Key_Closes_Windows) shows how to prevent hitting 'Escape' key closes Windows.
+
 ## [Others](src/Others)
 
 * [Box_Picture2](src/Others/Box_Picture2) shows how to show an image with Fl_Box widget.
