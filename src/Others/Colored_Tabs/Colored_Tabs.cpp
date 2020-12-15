@@ -25,11 +25,6 @@ public:
     page_yellow = make_unique<Fl_Group>(10, 10, 370, 230, "Yellow");
     page_yellow->color(FL_YELLOW);
     page_yellow->end();
-
-    tabs->end();
-
-    end();
-    resizable(this);
   }
   
 private:
@@ -43,6 +38,5 @@ private:
 int main(int argc, char *argv[]) {
   Form form;
   form.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
