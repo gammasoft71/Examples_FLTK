@@ -11,7 +11,8 @@ namespace Examples {
       resizable(box1);
 
       box1.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
-      box1.box(FL_BORDER_BOX);
+      box1.box(Fl_Boxtype::FL_BORDER_BOX);
+      box1.box(FL_GTK_UP_BOX);
       box1.image(&picture);
     }
     
