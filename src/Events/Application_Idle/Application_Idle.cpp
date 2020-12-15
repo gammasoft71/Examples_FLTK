@@ -12,15 +12,12 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "") {
-      end();
-      resizable(this);
-      
       Fl::add_idle([](void* window) {
-        static auto lastIdleTime = high_resolution_clock::now();;
-        auto elapsedTime = high_resolution_clock::now() - lastIdleTime;
-        if (elapsedTime >= 100ms) {
+        static auto last_idle_time = high_resolution_clock::now();;
+        auto elapsed_time = high_resolution_clock::now() - last_idle_time;
+        if (elapsed_time >= 100ms) {
           reinterpret_cast<Main_Window*>(window)->on_application_idle();
-          lastIdleTime = high_resolution_clock::now();
+          last_idle_time = high_resolution_clock::now();
         }
       }, this);
     }
@@ -37,6 +34,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
