@@ -12,8 +12,6 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(0, 0, 300, 300, "Colored windows") {
-      end();
-      resizable(this);
       auto screen_x = 0, screen_y = 0, screen_w = 0, screen_h = 0;
       Fl::screen_xywh(screen_x, screen_y, screen_w, screen_h);
       position(screen_w - 360, 60);
@@ -51,6 +49,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
