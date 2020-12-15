@@ -12,7 +12,7 @@ namespace Examples {
       end();
       button_show_message.callback([](Fl_Widget* sender, void* data) {
         auto window = reinterpret_cast<Main_Window*>(data);
-        fl_message_hotspot(0);
+        fl_message_hotspot(false);
         fl_message_icon()->color(fl_rgb_color(0, 0, 255));
         fl_message_icon()->labelcolor(fl_rgb_color(255, 255, 255));
         fl_message_title("Message");
