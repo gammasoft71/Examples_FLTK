@@ -7,27 +7,26 @@ namespace Examples {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Combo box example") {
       combo_box1.add_range({"Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9", "Item10"});
-      combo_box1.callback([](Fl_Widget* sender, void* window) {
-        auto index = reinterpret_cast<Fl_Combo_Box*>(sender)->find_index(reinterpret_cast<Fl_Combo_Box*>(sender)->value());
-        if (index != -1) reinterpret_cast<Main_Window*>(window)->on_combo_box_click(index);
-      }, this);
+      combo_box1.callback(on_callback, this);
       
       combo_box2.style(Fl_Combo_Box_Style::simple);
       combo_box2.add_range({"Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9", "Item10"});
-      combo_box2.callback([](Fl_Widget* sender, void* window) {
-        reinterpret_cast<Main_Window*>(window)->on_combo_box_click(reinterpret_cast<Fl_Combo_Box*>(sender)->find_index(reinterpret_cast<Fl_Combo_Box*>(sender)->value()));
-      }, this);
-      
+      combo_box2.callback(on_callback, this);
+
       combo_box3.style(Fl_Combo_Box_Style::drop_down_list);
       combo_box3.add_range({"Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9", "Item10"});
-      combo_box3.callback([](Fl_Widget* sender, void* window) {
-        reinterpret_cast<Main_Window*>(window)->on_combo_box_click(reinterpret_cast<Fl_Combo_Box*>(sender)->find_index(reinterpret_cast<Fl_Combo_Box*>(sender)->value()));
-      }, this);
-            
+      combo_box3.callback(on_callback, this);
+
       on_combo_box_click(0);
     }
     
   private:
+    static void on_callback(Fl_Widget* sender, void* data) {
+      auto window = reinterpret_cast<Main_Window*>(data);
+      auto combo_box = reinterpret_cast<Fl_Combo_Box*>(sender);
+      window->on_combo_box_click(combo_box->find_index(combo_box->value()));
+    }
+    
     void on_combo_box_click(int value) {
       combo_box1.value(value);
       combo_box2.value(value);
