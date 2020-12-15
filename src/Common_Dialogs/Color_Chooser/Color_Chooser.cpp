@@ -7,8 +7,6 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Color chooser example") {
-      resizable(this);
-      
       buttonShowMessage.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       buttonShowMessage.callback([](Fl_Widget* sender, void* window) {
         uchar r = 0, g = 0, b = 0;
@@ -28,6 +26,5 @@ namespace Examples {
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   return Fl::run();
 }
