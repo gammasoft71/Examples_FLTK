@@ -3,7 +3,7 @@ project(Common_Dialogs)
 
 add_subdirectory(Beep)
 add_subdirectory(Choice)
-add_subdirectory(Color_Chooser)
+add_subdirectory(Color_Chooser_Dialog)
 add_subdirectory(File_Chooser)
 add_subdirectory(Message)
 add_subdirectory(Native_File_Chooser_Browse_Directory)

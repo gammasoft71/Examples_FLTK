@@ -21,15 +21,16 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 ## [Common Controls](src/Common_Controls)
 
-* [Box](src/Common_Controls/Box) shows how to show a text with Fl_Box widget.
-* [Box_Picture](src/Common_Controls/Box_Picture) shows how to show an image with Fl_Box widget.
-* [Box_Picture2](src/Common_Controls/Box_Picture2) shows how to show an image with Fl_Box widget.
+* [Box](src/Common_Controls/Box) shows how to use a text with Fl_Box widget.
+* [Box_Picture](src/Common_Controls/Box_Picture) shows how to use an image with Fl_Box widget.
+* [Box_Picture2](src/Common_Controls/Box_Picture2) shows how to use an image with Fl_Box widget.
 * [Browser](src/Common_Controls/Browser) shows how to create a text list with Fl_Browser widget.
 * [Button](src/Common_Controls/Button) shows how to create a button with Fl_Button widget.
 * [Check_Browser](src/Common_Controls/Check_Browser) shows how to create a check button list with Fl_Check_Browser widget.
 * [Check_Button](src/Common_Controls/Check_Button) shows how to create a check button with Fl_Check_Button widget.
-* [Clock](src/Common_Controls/Clock) shows how to show a clock with Fl_Clock widget.
-* [Clock_Output](src/Common_Controls/Clock_Output) shows how to show a static clock with Fl_Clock_Output widget.
+* [Clock](src/Common_Controls/Clock) shows how to use a clock with Fl_Clock widget.
+* [Clock_Output](src/Common_Controls/Clock_Output) shows how to use a static clock with Fl_Clock_Output widget.
+* [Color_Chooser](src/Common_Controls/Color_Chooser) shows how to use a color chooser with Fl_Color_Chooser widget.
 * [Input](src/Common_Controls/Input) shows how to create an input text with Fl_Input widget.
 * [Nice_Slider](src/Common_Controls/Nice_Slider) shows how to create a slider with Fl_Nice_Slider widget.
 * [Progress](src/Common_Controls/Progress) shows how to create a progress with Fl_Progress widget.
@@ -82,7 +83,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 * [Beep](src/Common_Dialogs/Beep) shows how to create a beep with fl_beep method.
 * [Choice](src/Common_Dialogs/Choice) shows how to create a choice box with fl_choice method.
-* [Color_Chooser](src/Common_Dialogs/Color_Chooser) shows how to use color chooser dialog with Fl_Color_Chooser dialog.
+* [Color_Chooser_Dialog](src/Common_Dialogs/Color_Chooser_Dialog) shows how to use color chooser dialog with Fl_Color_Chooser dialog.
 * [File_Chooser](src/Common_Dialogs/Color_Chooser) shows how to use file chooser dialog with fl_file_chooser dmethod.
 * [Message](src/Common_Dialogs/Message) shows how to create a message box with fl_message method.
 * [Native_File_Chooser_Browse_Directory](src/Common_Dialogs/Native_File_Chooser_Browse_Directory) shows how to use a native fil chooser to browse directory with Fl_Native_File_Chooser dialog.
