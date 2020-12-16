@@ -1,5 +1,4 @@
 #include <initializer_list>
-#include <sstream>
 #include <FL/Fl.H>
 #include <FL/Fl_Browser.H>
 #include <FL/Fl_Window.H>
