@@ -56,8 +56,8 @@ namespace Examples {
       
       browsers_page = make_unique<Fl_Group>(tabs->x(), tabs->y() + 20, tabs->w(), tabs->h() - 20, "Browsers");
       browsers_scroll = make_unique<Fl_Scroll>(tabs->x() + 1, tabs->y() + 21, tabs->w() - 2, tabs->h() - 22);
-      browser1 = make_unique<Fl_Browser>(20, 40, 120, 100);
-      check_browser1 = make_unique<Fl_Check_Browser>(150, 40, 120, 100);
+      browser1 = make_unique<Fl_Browser>(20, 40, 200, 100);
+      check_browser1 = make_unique<Fl_Check_Browser>(20, 160, 200, 100);
       browsers_scroll->end();
       browsers_page->end();
 
@@ -110,11 +110,13 @@ namespace Examples {
                               "\U0001F428");
 
       browser1->type(FL_HOLD_BROWSER);
-      for (auto item : {"item 1", "item 2", "item 3", "item 4", "item 5", "item 6", "item 7", "item 8", "item 9", "item 10"}) {
+      for (auto item : {"Light red", "Light green", "Light blue", "Yellow", "White", "Dark gray", "Light cyan", "Light magenta", "Red", "Green", "Blue", "Brown", "Light gray", "Black", "Cyan", "Magenta"}) {
         browser1->add(item);
         check_browser1->add(item);
       }
       browser1->select(1);
+      check_browser1->checked(1, true);
+      check_browser1->checked(4, true);
 
       slider1->type(FL_HOR_NICE_SLIDER);
       slider1->maximum(100);
