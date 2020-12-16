@@ -10,7 +10,7 @@ namespace Examples {
       uchar red = 0, green = 0, blue = 0;
       Fl::get_color(test_color_box.color(), red, green, blue);
       
-      color_chooser.rgb(static_cast<double>(red) / 255, static_cast<double>(green) / 255, static_cast<double>(blue) / 255);
+      color_chooser.rgb(red / 255.0, green / 255.0, blue / 255.0);
       color_chooser.mode(1);
       color_chooser.callback([](Fl_Widget* sender, void* data) {
         auto color_chooser = dynamic_cast<Fl_Color_Chooser*>(sender);
