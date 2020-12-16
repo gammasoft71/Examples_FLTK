@@ -99,6 +99,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 ## [Tips And Tricks](src/Tips_And_Tricks)
 
 * [Disable_Symbols](src/Tips_And_Tricks/Disable_Symbols) shows how to disable / enable label symbols.
+* [Functional](src/Tips_And_Tricks/Functional) shows how to use callback method with std::function, std::bind and lambda methods.
 * [Prevent_Hitting_Escape_Key_Closes_Windows](src/Tips_And_Tricks/Prevent_Hitting_Escape_Key_Closes_Windows) shows how to prevent hitting 'Escape' key closes Windows.
 * [Widget_Wrapper](src/Tips_And_Tricks/Widget_Wrapper) shows how to use callback method with std::function, std::bind and lambda methods.
 

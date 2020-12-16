@@ -2,5 +2,6 @@ cmake_minimum_required(VERSION 3.0)
 project(Tips_And_Tricks)
 
 add_subdirectory(Disable_Symbols)
+add_subdirectory(Functional)
 add_subdirectory(Prevent_Hitting_Escape_Key_Closes_Windows)
 add_subdirectory(Widget_Wrapper)
