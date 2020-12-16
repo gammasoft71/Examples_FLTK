@@ -28,6 +28,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Button](src/Common_Controls/Button) shows how to create a button with Fl_Button widget.
 * [Check_Browser](src/Common_Controls/Check_Browser) shows how to create a check button list with Fl_Check_Browser widget.
 * [Check_Button](src/Common_Controls/Check_Button) shows how to create a check button with Fl_Check_Button widget.
+* [Clock](src/Common_Controls/Clock) shows how to show a clock with Fl_Clock widget.
 * [Input](src/Common_Controls/Input) shows how to create an input text with Fl_Input widget.
 * [Nice_Slider](src/Common_Controls/Nice_Slider) shows how to create a slider with Fl_Nice_Slider widget.
 * [Progress](src/Common_Controls/Progress) shows how to create a progress with Fl_Progress widget.
