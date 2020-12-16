@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(Schemes_And_Schemes_Modes)
+project(Schemes_Modes)
 
 find_package(FLTK REQUIRED)
 include_directories(${FLTK_INCLUDE_DIR})
@@ -11,5 +11,5 @@ endif ()
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE Schemes_And_Schemes_Modes.cpp Fl_Scheme_Mode.h Fl_Scheme_Mode.cpp)
-set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Others")
+add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE Schemes_Modes.cpp Fl_Scheme_Mode.h Fl_Scheme_Mode.cpp)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "User_Components")

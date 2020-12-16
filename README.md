@@ -71,6 +71,10 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Cursors](src/Components/Cursors) shows how to change cursor of a widget with override handle method and use fl_cursor method on FL_ENTER and FL_LEAVE events.
 * [Timer](src/Components/Timer) shows how to create a timer with Fl::add_timeout,  Fl::remove_timeout and Fl::repeat_timeout methods.
 
+## [User Components](src/User_Components)
+
+* [Schemes_Modes](src/User_Components/Schemes_Modes) shows how to use schemes and own scheme modes whith own fl_sheme_mode methods.
+
 ## [Common Dialogs](src/Common_Dialogs)
 
 * [Beep](src/Common_Dialogs/Beep) shows how to create a beep with fl_beep method.
@@ -103,7 +107,6 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Colored_Windows](src/Others/Colored_Windows) shows how to create a colored windows with Fl_Window.
 * [Group_And_Check_Button](src/Others/Group_And_Check_Button) shows how to use group and check buttons with Fl_Group and Fl_Check_Button widgets.
 * [Group_And_Radio_Round_Button](src/Others/Group_And_Radio_Round_Button) shows how to use group and radio round buttons with Fl_Group and Fl_Radio_Round_Button widgets.
-* [Schemes_And_Schemes_Modes](src/Others/Schemes_And_Schemes_Modes) shows how to use schemes and own scheme modes whith fl_scheme and  own fl_sheme_mode methods.
 
 ## Download
 
