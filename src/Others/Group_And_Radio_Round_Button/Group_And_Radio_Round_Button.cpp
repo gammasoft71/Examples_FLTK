@@ -1,7 +1,6 @@
 #include <FL/Fl.H>
+#include <FL/Fl_Group.H>
 #include <FL/Fl_Radio_Round_Button.H>
-#include <FL/Fl_Radio_Button.H>
-#include <FL/Fl_Scroll.H>
 #include <FL/Fl_Window.H>
 
 namespace Examples {
