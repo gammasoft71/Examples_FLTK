@@ -14,6 +14,7 @@ public:
     color_tabs_check_button.callback([](Fl_Widget* sender, void* data) {
       auto window = reinterpret_cast<Main_Window*>(data);
       auto color_tabs = dynamic_cast<Fl_Check_Button*>(sender)->value();
+      
       window->page_red.color2(color_tabs ? FL_RED : FL_BACKGROUND_COLOR);
       window->page_green.color2(color_tabs ? FL_DARK_GREEN : FL_BACKGROUND_COLOR);
       window->page_blue.color2(color_tabs ? FL_BLUE : FL_BACKGROUND_COLOR);
