@@ -21,13 +21,14 @@ inline int fl_font_chooser(const char* name, Fl_Font& font, int& size, Fl_Color&
       int numberOfFont = Fl::set_fonts(font_set_ ? font_set_->c_str() : nullptr);
       for (int index = 0; index < numberOfFont; index++) {
         int fontType = 0;
-        string fontName = Fl::get_font_name((Fl_Font)index, &fontType);
+        string font_name = Fl::get_font_name((Fl_Font)index, &fontType);
         if (fontType) {
-          if (fontType & FL_BOLD) fontName= "@b" + fontName;
-          if (fontType & FL_ITALIC) fontName= "@i" + fontName;
-          if (fontName.find("@.") != string::npos) fontName.erase(fontName.find("@."), "@."s.length()); // Suppress subsequent formatting - some MS fonts have '@' in their name
+          //if (fontType & FL_BOLD) font_name = "@b" + font_name;
+          //if (fontType & FL_ITALIC) font_name = "@i" + font_name;
+          font_name = "@F" + std::to_string(index) + font_name;
+          if (font_name.find("@.") != string::npos) font_name.erase(font_name.find("@."), "@."s.length()); // Suppress subsequent formatting - some MS fonts have '@' in their name
         }
-        font_names_.add(fontName.c_str());
+        font_names_.add(font_name.c_str());
       }
       
       font_names_.callback([](Fl_Widget* sender, void* data) {
