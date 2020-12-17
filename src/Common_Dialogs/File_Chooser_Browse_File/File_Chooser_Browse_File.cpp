@@ -10,7 +10,7 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "File Chooser example") {
+    Main_Window() : Fl_Window(200, 100, 300, 300, "File Chooser brwose file example") {
       button.callback([](Fl_Widget* sender, void* form) {
         #if defined(_WIN32)
           std::string directory = (string(getenv("HOMEPATH")) + "\\Desktop");
@@ -32,6 +32,7 @@ namespace Examples {
 }
 
 int main(int argc, char *argv[]) {
+  Fl_File_Icon::load_system_icons();
   Examples::Main_Window window;
   window.show(argc, argv);
   return Fl::run();
