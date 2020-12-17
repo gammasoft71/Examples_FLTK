@@ -33,6 +33,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Color_Chooser](src/Common_Controls/Color_Chooser) shows how to use a color chooser with Fl_Color_Chooser widget.
 * [File_Browser](src/Common_Controls/File_Browser) shows how to use a file browser with Fl_File_Browser widget.
 * [File_Input](src/Common_Controls/File_Input) shows how to use a file input with Fl_File_Input widget.
+* [Float_Input](src/Common_Controls/Float_Input) shows how to create a float input text with Fl_Float_Input widget.
 * [Input](src/Common_Controls/Input) shows how to create an input text with Fl_Input widget.
 * [Nice_Slider](src/Common_Controls/Nice_Slider) shows how to create a slider with Fl_Nice_Slider widget.
 * [Progress](src/Common_Controls/Progress) shows how to create a progress with Fl_Progress widget.
