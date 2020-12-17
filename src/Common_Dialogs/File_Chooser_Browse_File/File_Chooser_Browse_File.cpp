@@ -10,8 +10,9 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "File Chooser brwose file example") {
+    Main_Window() : Fl_Window(200, 100, 300, 300, "File Chooser browse file example") {
       button.callback([](Fl_Widget* sender, void* form) {
+        reinterpret_cast<Main_Window*>(form)->box.copy_label("File = (none)");
         #if defined(_WIN32)
           std::string directory = (string(getenv("HOMEPATH")) + "\\Desktop");
         #else
@@ -27,7 +28,7 @@ namespace Examples {
     
   private:
     Fl_Button button {10, 10, 75, 25, "Open..."};
-    Fl_Box box {10, 50, 280, 20, "File = "};
+    Fl_Box box {10, 50, 280, 20, "File = (none)"};
   };
 }
 
