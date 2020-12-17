@@ -36,7 +36,7 @@ namespace Examples {
     static void generate_unknown_exception(Fl_Widget* sender, void* window) {throw "Unknown exception generated";}
 
     Fl_Button generate_handled_exception_button {10, 10, 220, 25, "Generate handled exception"};
-    Fl_Button generate_exception_button {10, 40, 170, 25, "Generate exception"};
+    Fl_Button generate_exception_button {10, 40, 220, 25, "Generate exception"};
     Fl_Button generate_unknown_exception_button {10, 70, 220, 25, "Generate unknown exception"};
   };
 }
