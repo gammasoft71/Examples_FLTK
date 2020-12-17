@@ -36,6 +36,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Float_Input](src/Common_Controls/Float_Input) shows how to create a float input text with Fl_Float_Input widget.
 * [Input](src/Common_Controls/Input) shows how to create an input text with Fl_Input widget.
 * [Int_Input](src/Common_Controls/Int_Input) shows how to create a int input text with Fl_Int_Input widget.
+* [Multiline_Input](src/Common_Controls/Multiline_Input) shows how to create a multiline input text with Fl_Multiline_Input widget.
 * [Nice_Slider](src/Common_Controls/Nice_Slider) shows how to create a slider with Fl_Nice_Slider widget.
 * [Progress](src/Common_Controls/Progress) shows how to create a progress with Fl_Progress widget.
 * [Radio_Round_Button](src/Common_Controls/Radio_Round_Button) shows how to create a radio round button with Fl_Radio_Round_Button widget.
