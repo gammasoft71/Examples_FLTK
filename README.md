@@ -31,6 +31,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Clock](src/Common_Controls/Clock) shows how to use a clock with Fl_Clock widget.
 * [Clock_Output](src/Common_Controls/Clock_Output) shows how to use a static clock with Fl_Clock_Output widget.
 * [Color_Chooser](src/Common_Controls/Color_Chooser) shows how to use a color chooser with Fl_Color_Chooser widget.
+* [File_Browser](src/Common_Controls/File_Browser) shows how to use a file browser with Fl_File_Browser widget.
 * [Input](src/Common_Controls/Input) shows how to create an input text with Fl_Input widget.
 * [Nice_Slider](src/Common_Controls/Nice_Slider) shows how to create a slider with Fl_Nice_Slider widget.
 * [Progress](src/Common_Controls/Progress) shows how to create a progress with Fl_Progress widget.
