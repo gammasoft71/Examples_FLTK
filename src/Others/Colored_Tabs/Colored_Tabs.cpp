@@ -1,9 +1,6 @@
-#include <memory>
 #include <FL/Fl.H>
 #include <FL/Fl_Tabs.H>
 #include <FL/Fl_Window.H>
-
-using namespace std;
 
 class Form : public Fl_Window {
 public:
