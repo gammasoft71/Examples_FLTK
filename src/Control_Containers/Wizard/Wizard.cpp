@@ -1,11 +1,8 @@
-#include <memory>
 #include <FL/Fl.H>
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Button.H>
 #include <FL/Fl_Wizard.H>
 #include <FL/Fl_Window.H>
-
-using namespace std;
 
 class Main_Window : public Fl_Window {
 public:
