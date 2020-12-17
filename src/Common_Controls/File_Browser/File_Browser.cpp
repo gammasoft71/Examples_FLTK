@@ -32,6 +32,7 @@ namespace Examples {
 }
 
 int main(int argc, char *argv[]) {
+  Fl_File_Icon::load_system_icons();
   Examples::Main_Window window;
   window.show(argc, argv);
   return Fl::run();
