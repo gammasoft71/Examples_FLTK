@@ -16,7 +16,9 @@ public:
       auto color_tabs = dynamic_cast<Fl_Check_Button*>(sender)->value();
       
       window->page_red.color2(color_tabs ? FL_RED : FL_BACKGROUND_COLOR);
+      window->page_red.labelcolor(color_tabs ? FL_WHITE : FL_FOREGROUND_COLOR);
       window->page_green.color2(color_tabs ? FL_DARK_GREEN : FL_BACKGROUND_COLOR);
+      window->page_green.labelcolor(color_tabs ? FL_WHITE : FL_FOREGROUND_COLOR);
       window->page_blue.color2(color_tabs ? FL_BLUE : FL_BACKGROUND_COLOR);
       window->page_blue.labelcolor(color_tabs ? FL_WHITE : FL_FOREGROUND_COLOR);
       window->page_yellow.color2(color_tabs ? FL_YELLOW : FL_BACKGROUND_COLOR);
