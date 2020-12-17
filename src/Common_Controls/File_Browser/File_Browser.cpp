@@ -7,16 +7,15 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 500, 255, "File browser example") {
-      file_brwoser.type(FL_HOLD_BROWSER);
-      file_brwoser.filetype(Fl_File_Browser::FILES);
-      file_brwoser.filter("*.*");
+      file_browser.type(FL_HOLD_BROWSER);
+      file_browser.filetype(Fl_File_Browser::FILES);
+      file_browser.filter("*.*");
 #if defined(_WIN32)
-      file_brwoser.load(getenv("HOMEPATH"));
+      file_browser.load(getenv("HOMEPATH"));
 #else
-      file_brwoser.load(getenv("HOME"));
+      file_browser.load(getenv("HOME"));
 #endif
-      
-      file_brwoser.callback([](Fl_Widget* sender, void* data) {
+      file_browser.callback([](Fl_Widget* sender, void* data) {
         auto file_browser = dynamic_cast<Fl_File_Browser*>(sender);
         auto box = reinterpret_cast<Fl_Box*>(data);
         box->copy_label(file_browser->text(file_browser->value()));
@@ -26,7 +25,7 @@ namespace Examples {
     }
     
   private:
-    Fl_File_Browser file_brwoser {10, 10, 480, 200};
+    Fl_File_Browser file_browser {10, 10, 480, 200};
     Fl_Box box1 {10, 220, 480, 25, "(none)"};
   };
 }
