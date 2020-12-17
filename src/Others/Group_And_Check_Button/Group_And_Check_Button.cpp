@@ -8,12 +8,12 @@ namespace Examples {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 160, "Group and Check button example") {
       group1.align(FL_ALIGN_INSIDE | FL_ALIGN_TOP | FL_ALIGN_LEFT);
-      group1.box(FL_FRAME_BOX);
+      group1.box(FL_BORDER_BOX);
       
       check2.value(1);
 
       group2.align(FL_ALIGN_INSIDE | FL_ALIGN_TOP | FL_ALIGN_LEFT);
-      group2.box(FL_FRAME_BOX);
+      group2.box(FL_BORDER_BOX);
 
       check6.value(1);
     }
