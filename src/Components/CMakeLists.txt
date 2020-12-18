@@ -3,4 +3,5 @@ project(Components)
 
 add_subdirectory(Cursors)
 add_subdirectory(Schemes)
+add_subdirectory(Preferences)
 add_subdirectory(Timer)

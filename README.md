@@ -81,7 +81,8 @@ Shows how to use Fltk controls only by programming code (c++17).
 ## [Components](src/Components)
 
 * [Cursors](src/Components/Cursors) shows how to change cursor of a widget with override handle method and use fl_cursor method on FL_ENTER and FL_LEAVE events.
-* [Schemes](src/Components/Schemes) shows how to use schemes whith own fl_scheme methods.
+* [Preferences](src/Components/Preferences) shows how to use preferences whith Fl_Preferences component.
+* [Schemes](src/Components/Schemes) shows how to use schemes whith fl_scheme methods.
 * [Timer](src/Components/Timer) shows how to create a timer with Fl::add_timeout,  Fl::remove_timeout and Fl::repeat_timeout methods.
 
 ## [User Components](src/User_Components)
