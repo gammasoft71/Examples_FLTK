@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.0)
+
+# Solution
 project(Hello_Worlds)
 
+# Projects
 add_subdirectory(Hello_World_Box)
 add_subdirectory(Hello_World_Drawing)
 add_subdirectory(Hello_World_Emoticons)

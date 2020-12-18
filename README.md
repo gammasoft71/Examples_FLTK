@@ -21,6 +21,9 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 ## [Common Controls](src/Common_Controls)
 
+* [Adjuster](src/Common_Controls/Adjuster) shows how to create adjusters with Fl_Adjuster valuator.
+* [Adjuster](src/Common_Controls/Adjuster) shows how to create adjusters with Fl_Adjuster valuator.
+* [Counter](src/Common_Controls/Counter) shows how to create counters with Fl_Counter and Fl_Simple_Counter valuators.
 * [Box](src/Common_Controls/Box) shows how to use a text with Fl_Box widget.
 * [Box_Picture](src/Common_Controls/Box_Picture) shows how to use an image with Fl_Box widget.
 * [Box_Picture2](src/Common_Controls/Box_Picture2) shows how to use an image with Fl_Box widget.
@@ -31,6 +34,8 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Clock](src/Common_Controls/Clock) shows how to use a clock with Fl_Clock widget.
 * [Clock_Output](src/Common_Controls/Clock_Output) shows how to use a static clock with Fl_Clock_Output widget.
 * [Color_Chooser](src/Common_Controls/Color_Chooser) shows how to use a color chooser with Fl_Color_Chooser widget.
+* [Counter](src/Common_Controls/Counter) shows how to create counters with Fl_Counter and Fl_Simple_Counter valuators.
+* [Dial](src/Common_Controls/Dial) shows how to create dials with Fl_Dial, Fl_Line_Dial and Fl_Fill_Dial valuators.
 * [File_Browser](src/Common_Controls/File_Browser) shows how to use a file browser with Fl_File_Browser widget.
 * [File_Input](src/Common_Controls/File_Input) shows how to use a file input with Fl_File_Input widget.
 * [Float_Input](src/Common_Controls/Float_Input) shows how to create a float input text with Fl_Float_Input widget.
@@ -42,9 +47,14 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Output](src/Common_Controls/Output) shows how to create an output text with Fl_Output widget.
 * [Progress](src/Common_Controls/Progress) shows how to create a progress with Fl_Progress widget.
 * [Radio_Round_Button](src/Common_Controls/Radio_Round_Button) shows how to create a radio round button with Fl_Radio_Round_Button widget.
+* [Roller](src/Common_Controls/Roller) shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
 * [Secret_Input](src/Common_Controls/Secret_Input) shows how to create a secret input text with Fl_Secret_Input widget.
+* [Slider](src/Common_Controls/Slider) shows how to create sliders with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_Slider, Fl_Slider, Fl_Fill_Slider and Fl_Nice_Slider valuators.
 * [Spinner](src/Common_Controls/Spinner) shows how to create a spinner with Fl_Spinner widget.
 * [Toggle_Button](src/Common_Controls/Toggle_Button) shows how to create a toggle button with Fl_Toggle_Button widget.
+* [Value_Input](src/Common_Controls/Value_Input) shows how to create a value input with Fl_Value_Input valuator.
+* [Value_Output](src/Common_Controls/Value_Output) shows how to create a value input with Fl_Value_Output valuator.
+* [Value_Slider](src/Common_Controls/Slider) shows how to create value sliders with Fl_Hor_Value_Slider and Fl_Value_Slider valuators.
 
 ## [User Controls](src/User_Controls)
 
@@ -52,17 +62,6 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Combo_Box](src/User_Controls/Combo_Box) shows how to create Combo boxes with own Fl_Combo_Box widgets.
 * [Progress_Bar](src/User_Controls/Progress_Bar) shows how to create a progress bar with own Fl_Progress_Bar widget.
 * [Radio_Toggle_Button](src/User_Controls/Radio_Toggle_Button) shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
-
-## [Valuators](src/Valuators)
-
-* [Adjuster](src/Valuators/Adjuster) shows how to create adjusters with Fl_Adjuster valuator.
-* [Counter](src/Valuators/Counter) shows how to create counters with Fl_Counter and Fl_Simple_Counter valuators.
-* [Dial](src/Valuators/Dial) shows how to create dials with Fl_Dial, Fl_Line_Dial and Fl_Fill_Dial valuators.
-* [Roller](src/Valuators/Roller) shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
-* [Slider](src/Valuators/Slider) shows how to create sliders with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_Slider, Fl_Slider, Fl_Fill_Slider and Fl_Nice_Slider valuators.
-* [Value_Input](src/Valuators/Value_Input) shows how to create a value input with Fl_Value_Input valuator.
-* [Value_Output](src/Valuators/Value_Output) shows how to create a value input with Fl_Value_Output valuator.
-* [Value_Slider](src/Valuators/Slider) shows how to create value sliders with Fl_Hor_Value_Slider and Fl_Value_Slider valuators.
 
 ## [Control Containers](src/Control_Containers)
 
