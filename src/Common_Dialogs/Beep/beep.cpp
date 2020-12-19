@@ -1,6 +1,6 @@
 #include <FL/Fl.H>
-#include <FL/Fl_Button.H>
 #include <FL/fl_ask.H>
+#include <FL/Fl_Button.H>
 #include <FL/Fl_Window.H>
 
 namespace Examples {
