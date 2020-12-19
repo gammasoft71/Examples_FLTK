@@ -11,7 +11,7 @@ namespace Examples {
     Main_Window() : Fl_Window(200, 100, 300, 300, "Password example") {
       button_show_message.callback([](Fl_Widget* sender, void* data) {
         auto window = reinterpret_cast<Main_Window*>(data);
-        auto result = fl_password("Message text:", window->box_result.label());
+        auto result = fl_password("User password:", window->box_result.label());
         if (result) window->box_result.copy_label(result);
       }, this);
       
@@ -19,7 +19,7 @@ namespace Examples {
     }
     
   private:
-    Fl_Button button_show_message {10, 10, 100, 25, "Text..."};
+    Fl_Button button_show_message {10, 10, 100, 25, "Password..."};
     Fl_Box box_result {10, 50, 200, 25, "sysad47!74dasys"};
   };
 }
