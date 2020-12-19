@@ -19,7 +19,7 @@ namespace Examples {
     }
     
   private:
-    Fl_Button button_show_message {10, 10, 100, 25, "Text..."};
+    Fl_Button button_show_message {10, 10, 75, 25, "Text..."};
     Fl_Box box_result {10, 50, 200, 25, "Default value"};
   };
 }
