@@ -18,7 +18,7 @@ namespace Examples {
         cout << "use_wait_cursor = " << std::boolalpha << fl_use_wait_cursor() << endl;
         for (auto count = 0; count < 500; ++count) {
           Fl::wait(0);
-          sleep_for(milliseconds(10));
+          sleep_for(milliseconds(10)); // Simulate work...
         }
         fl_use_wait_cursor(false);
         cout << "use_wait_cursor = " << std::boolalpha << fl_use_wait_cursor() << endl;
@@ -28,7 +28,7 @@ namespace Examples {
         Fl_Use_Wait_Cursor wait_cursor;
         for (auto count = 0; count < 500; ++count) {
           Fl::wait(0);
-          sleep_for(milliseconds(10));
+          sleep_for(milliseconds(10)); // Simulate work...
         }
       });
     }
