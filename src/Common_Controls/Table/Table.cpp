@@ -17,6 +17,7 @@ namespace Examples {
       col_width(2, 90);
       col_width(3, 310);
       col_width(4, 160);
+      col_resize(true);
     }
 
   private:
