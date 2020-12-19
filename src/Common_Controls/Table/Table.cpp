@@ -12,11 +12,11 @@ namespace Examples {
       rows(datas.size());
       cols(datas[0].size());
       col_header(true);
-      col_width(0, 200);
+      col_width(0, 130);
       col_width(1, 80);
-      col_width(2, 120);
-      col_width(3, 350);
-      col_width(4, 200);
+      col_width(2, 90);
+      col_width(3, 310);
+      col_width(4, 160);
     }
 
   private:
@@ -55,18 +55,18 @@ namespace Examples {
       {"Kira Nerys", "Female", "Bajoran", "Bajoran Militia / Federation Starfleet", "Colonel / Commander"},
       {"Phlox", "Male", "Denobulan", "Interspecies Medical Exchange", "Doctor"},
       {"Jean-Luc Picard", "Male", "Human", "Federation Starfleet", "Amiral"},
-      {"The Doctor (EMH)", "Hologram", "Male", "", "Chief Medical Officer"},
+      {"The Doctor (EMH)", "Hologram", "Male", "\"USS Voyager\"", "Chief Medical Officer"},
     };
   };
   
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 972, 450, "Table example") {
+    Main_Window() : Fl_Window(200, 100, 792, 215, "Table example") {
       resizable(table);
     }
     
   private:
-    Start_Trek_Character_Table table {10, 10, 952, 430};
+    Start_Trek_Character_Table table {10, 10, 772, 195};
   };
 }
 
