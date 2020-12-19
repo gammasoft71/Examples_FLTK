@@ -51,6 +51,6 @@ int main(int argc, char *argv[]) {
   } catch(...) {
     cerr << "Unknown exception occured" << endl;
     fl_message_title("Unknown exception occured");
-    fl_alert("%s", "Unknown exception occured");
+    fl_alert("(Unknown exception)");
   }
 }
