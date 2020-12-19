@@ -1,6 +1,6 @@
 #include <memory>
 #include <FL/Fl.H>
-#include <FL/Fl_Scroll.H>
+#include <FL/Fl_Group.H>
 #include <FL/Fl_Window.H>
 
 using namespace std;
