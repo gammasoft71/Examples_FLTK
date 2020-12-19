@@ -88,6 +88,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Preferences](src/Components/Preferences) shows how to use preferences with Fl_Preferences component.
 * [Schemes](src/Components/Schemes) shows how to use schemes with fl_scheme methods.
 * [Timer](src/Components/Timer) shows how to create a timer with Fl::add_timeout,  Fl::remove_timeout and Fl::repeat_timeout methods.
+* [Tooltip](src/Components/Tooltip) shows how to create a tooltip with Fl_Tooltip component.
 
 ## [User Components](src/User_Components)
 
