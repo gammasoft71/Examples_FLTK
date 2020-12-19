@@ -46,6 +46,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Nice_Slider](src/Common_Controls/Nice_Slider) shows how to create a slider with Fl_Nice_Slider widget.
 * [Output](src/Common_Controls/Output) shows how to create an output text with Fl_Output widget.
 * [Progress](src/Common_Controls/Progress) shows how to create a progress with Fl_Progress widget.
+* [Radio_Light_Button](src/Common_Controls/Radio_Light_Button) shows how to create a radio light button with Fl_Radio_Light_Button widget.
 * [Radio_Round_Button](src/Common_Controls/Radio_Round_Button) shows how to create a radio round button with Fl_Radio_Round_Button widget.
 * [Roller](src/Common_Controls/Roller) shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
 * [Secret_Input](src/Common_Controls/Secret_Input) shows how to create a secret input text with Fl_Secret_Input widget.
