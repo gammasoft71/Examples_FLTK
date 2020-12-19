@@ -5,3 +5,4 @@ project(User_Components)
 
 # Projects
 add_subdirectory(Scheme_Modes)
+add_subdirectory(Use_Wait_Cursor)
