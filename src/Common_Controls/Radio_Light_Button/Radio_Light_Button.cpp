@@ -6,7 +6,7 @@
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Radio round button example") {
+    Main_Window() : Fl_Window(200, 100, 300, 300, "Radio light button example") {
       radio_round_button1.when(FL_WHEN_CHANGED);
       radio_round_button1.callback([](Fl_Widget* sender, void* window) {
         reinterpret_cast<Main_Window*>(window)->box1.label("Radio 1 is checked");
