@@ -52,6 +52,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Secret_Input](src/Common_Controls/Secret_Input) shows how to create a secret input text with Fl_Secret_Input widget.
 * [Slider](src/Common_Controls/Slider) shows how to create sliders with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_Slider, Fl_Slider, Fl_Fill_Slider and Fl_Nice_Slider valuators.
 * [Spinner](src/Common_Controls/Spinner) shows how to create a spinner with Fl_Spinner widget.
+* [Table](src/Common_Controls/Table) shows how to use a table with Fl_Table widget.
 * [Toggle_Button](src/Common_Controls/Toggle_Button) shows how to create a toggle button with Fl_Toggle_Button widget.
 * [Value_Input](src/Common_Controls/Value_Input) shows how to create a value input with Fl_Value_Input valuator.
 * [Value_Output](src/Common_Controls/Value_Output) shows how to create a value input with Fl_Value_Output valuator.
