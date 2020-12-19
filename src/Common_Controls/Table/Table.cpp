@@ -24,6 +24,7 @@ namespace Examples {
       fl_push_clip(x, y, width, height);
       fl_draw_box(FL_THIN_UP_BOX, x, y, width, height, FL_BACKGROUND_COLOR);
       fl_color(FL_FOREGROUND_COLOR);
+      fl_font(FL_HELVETICA_BOLD, FL_NORMAL_SIZE);
       fl_draw(value.c_str(), x, y, width, height, FL_ALIGN_CENTER);
       fl_pop_clip();
     }
@@ -33,6 +34,7 @@ namespace Examples {
       fl_color(FL_BACKGROUND2_COLOR);
       fl_rectf(x, y, width, height);
       fl_color(FL_FOREGROUND_COLOR);
+      fl_font(FL_HELVETICA, FL_NORMAL_SIZE);
       fl_draw(value.c_str(), x + 2, y, width, height, FL_ALIGN_LEFT);
       fl_color(FL_BACKGROUND_COLOR);
       fl_rect(x, y, width, height);
