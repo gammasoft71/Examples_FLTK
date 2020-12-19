@@ -18,6 +18,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Application](src/Applications/Application) shows how to create a simple Fltk application.
 * [Application_And_Exception](src/Applications/Application_And_Exception) shows how to create a simple Fltk application and how to manage exception.
 * [Application_Dark_Mode](src/Applications/Application_Dark_Mode) shows how to create a simple Fltk application with dark mode.
+* [Application_Light_Mode](src/Applications/Application_Light_Mode) shows how to create a simple Fltk application with light mode.
 
 ## [Common Controls](src/Common_Controls)
 
