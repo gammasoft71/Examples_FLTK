@@ -71,6 +71,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Pack](src/Control_Containers/Pack) shows how to create a pack with Fl_Pack.
 * [Scroll](src/Control_Containers/Scroll) shows how to create a scroll with Fl_Scroll.
 * [Tabs](src/Control_Containers/Tabs) shows how to create a tabs and pages with Fl_Tabs and Fl_Group.
+* [Tile](src/Control_Containers/Tile) shows how to create a tile with Fl_Tile.
 * [Window](src/Control_Containers/Window) shows how to create a simple window with Fl_Window.
 * [Wizard](src/Control_Containers/Wizard) shows how to create a Wizard and pages with Fl_Wizard and Fl_Group.
 
