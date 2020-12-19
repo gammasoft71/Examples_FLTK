@@ -42,6 +42,7 @@ namespace Examples {
     }
 
     void draw_cell(TableContext context, int row = 0, int col = 0, int x = 0, int y = 0, int width = 0, int height = 0) override {
+      Fl_Table::draw_cell(context, row, col, x, y, width, height);
       switch (context) {
         case CONTEXT_COL_HEADER: draw_header(col_header_datas[col], x, y, width, height);  return;
         case CONTEXT_CELL: draw_data(datas[row][col], x, y, width, height); return;
