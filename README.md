@@ -106,6 +106,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Native_File_Chooser_Browse_Directory](src/Common_Dialogs/Native_File_Chooser_Browse_Directory) shows how to use a native fil chooser to browse directory with Fl_Native_File_Chooser dialog.
 * [Native_File_Chooser_Browse_File](src/Common_Dialogs/Native_File_Chooser_Browse_File) shows how to use a native fil chooser to browse file with Fl_Native_File_Chooser dialog.
 * [Native_File_Chooser_Save_File](src/Common_Dialogs/Native_File_Chooser_Save_File) shows how to use a native fil chooser to save file with Fl_Native_File_Chooser dialog.
+* [Password](src/Common_Dialogs/Password) shows how to create an password box with fl_password method.
 
 ## [User Dialogs](src/User_Dialogs)
 
