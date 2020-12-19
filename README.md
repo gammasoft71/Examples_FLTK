@@ -94,7 +94,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 ## [User Components](src/User_Components)
 
 * [Scheme_Modes](src/User_Components/Scheme_Modes) shows how to use own scheme modes with own fl_scheme_mode methods.
-* [Use_Wait_Cursor](User_Components/Use_Wait_Xursor) shows how to use own Fl_Use_Wait_cursor component or own fl_use_wait_cursor method.
+* [Use_Wait_Cursor](src/User_Components/Use_Wait_Xursor) shows how to use own Fl_Use_Wait_cursor component or own fl_use_wait_cursor method.
 
 ## [Common Dialogs](src/Common_Dialogs)
 
