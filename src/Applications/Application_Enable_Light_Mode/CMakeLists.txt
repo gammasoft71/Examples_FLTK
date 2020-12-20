@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
 # Project
-project(Application_Light_Mode)
+project(Application_Enable_Light_Mode)
 find_package(FLTK REQUIRED)
 
 # Options
@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE Application_Light_Mode.cpp)
+add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE Application_Enable_Light_Mode.cpp)
 target_include_directories(${PROJECT_NAME} PRIVATE ${FLTK_INCLUDE_DIR})
 target_link_libraries(${PROJECT_NAME} ${FLTK_LIBRARIES})
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Applications")
