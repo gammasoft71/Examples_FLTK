@@ -20,7 +20,8 @@ namespace Examples {
         symbol->labelcolor(fl_color_average(FL_FOREGROUND_COLOR, FL_WHITE, 0.5));
         boxes.push_back(symbol);
         
-        auto label = make_shared<Fl_Box>(10 + (70*(index%6)), 60 + (70*(index/6)), 50, 11);
+        auto label = make_shared<Fl_Box>(0 + (70*(index%6)), 60 + (70*(index/6)), 70, 14);
+        label->align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
         label->box(FL_FLAT_BOX);
         label->labelsize(11);
         boxes.push_back(label);
@@ -48,7 +49,6 @@ namespace Examples {
         window->boxes[index]->copy_label(window->make_label(window->symbols[index / 2]).c_str());
         window->boxes[index + 1]->copy_label(("@" + window->make_label(window->symbols[index / 2])).c_str());
       }
-      window->redraw();
     }
     
     string make_label(const string& base_label) {
