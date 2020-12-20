@@ -37,7 +37,6 @@ namespace Examples {
 }
 
 int main(int argc, char *argv[]) {
-  Fl::belowmouse();
   Examples::Main_Window window;
   window.show(argc, argv);
   return Fl::run();
