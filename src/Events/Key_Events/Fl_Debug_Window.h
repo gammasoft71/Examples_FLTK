@@ -1,5 +1,7 @@
 #pragma once
 #include <ctime>
+#include <iomanip>
+#include <sstream>
 #include <FL/Fl.H>
 #include <FL/Fl_Text_Display.H>
 #include <FL/Fl_Window.H>
@@ -35,11 +37,11 @@ public:
   
 private:
   void write_header() {
-    time_t curtime = time(NULL);
-    struct tm *curdate = localtime(&curtime);
-    char date[23];
-    strftime(date, sizeof(date), "%Y-%m-%d %H:%M:%S - ", curdate);
-    text_buffer.append(date);
+    auto current_time = time(nullptr);
+    auto current_tm = localtime(&current_time);
+    std::stringstream ss;
+    ss << std::put_time(current_tm, "%Y-%m-%d %H:%M:%S - ");
+    text_buffer.append(ss.str().c_str());
     need_header = false;
   }
   
