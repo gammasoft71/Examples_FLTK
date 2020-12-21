@@ -14,11 +14,11 @@ namespace Examples {
     Main_Window() : Fl_Window(200, 100, 300, 300, "Key events example") {}
     
     int handle(int event) override {
-      if (event == FL_KEYDOWN) debug.append_line(("Key_Down = "s + key_to_string()).c_str());
-      if (event == FL_KEYDOWN && Fl::event_length() != 0) debug.append_line(("Key_Press = "s + key_char_to_string()).c_str());
+      if (event == FL_KEYDOWN) trace.append_line(("Key_Down = "s + key_to_string()).c_str());
+      if (event == FL_KEYDOWN && Fl::event_length() != 0) trace.append_line(("Key_Press = "s + key_char_to_string()).c_str());
       if (event == FL_KEYUP) {
-        debug.append_line(("Key_Up = "s + key_to_string()).c_str());
-        if (modifiers_to_string() == "[none]") debug.append_line("");
+        trace.append_line(("Key_Up = "s + key_to_string()).c_str());
+        if (modifiers_to_string() == "[none]") trace.append_line("");
       }
       return Fl_Window::handle(event);
     }
@@ -49,7 +49,7 @@ namespace Examples {
     }
 
     Fl_End end_this;
-    Fl_Trace_Window debug;
+    Fl_Trace_Window trace;
   };
 }
 
