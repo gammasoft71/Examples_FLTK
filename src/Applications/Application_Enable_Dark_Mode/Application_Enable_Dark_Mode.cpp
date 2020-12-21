@@ -47,30 +47,30 @@ namespace Examples {
     Fl_Check_Button check_button1 {10, 200, 90, 25, "Check 1"};
     Fl_Check_Button check_button2 {110, 200, 90, 25, "Check 2"};
   };
-  
-  void enable_dark_mode() {
-#if _WIN32
-    Fl::background(25, 25, 25);
-    Fl::background2(32, 32, 32);
-    Fl::foreground(255, 255, 255);
-    Fl::set_color(FL_SELECTION_COLOR, 0, 160, 250);
-#elif __APPLE__
-    Fl::background(50, 50, 50);
-    Fl::background2(23, 23, 23);
-    Fl::foreground(223, 223, 223);
-    Fl::set_color(FL_SELECTION_COLOR, 0, 87, 207);
-#else
-    Fl::background(51, 51, 51);
-    Fl::background2(45, 45, 45);
-    Fl::foreground(255, 255, 255);
-    Fl::set_color(FL_SELECTION_COLOR, 21, 83, 158);
-#endif
-  }
 }
 
 int main(int argc, char *argv[]) {
   Examples::Main_Window window;
   window.show(argc, argv);
-  Examples::enable_dark_mode(); // Must be call after window.show, because show(...) method init system colors and reset selection color to 0xf.
+  struct Fl_Enable_Dark_Mode {
+    Fl_Enable_Dark_Mode() {
+#if _WIN32
+      Fl::background(25, 25, 25);
+      Fl::background2(32, 32, 32);
+      Fl::foreground(255, 255, 255);
+      Fl::set_color(FL_SELECTION_COLOR, 0, 160, 250);
+#elif __APPLE__
+      Fl::background(50, 50, 50);
+      Fl::background2(23, 23, 23);
+      Fl::foreground(223, 223, 223);
+      Fl::set_color(FL_SELECTION_COLOR, 0, 87, 207);
+#else
+      Fl::background(51, 51, 51);
+      Fl::background2(45, 45, 45);
+      Fl::foreground(255, 255, 255);
+      Fl::set_color(FL_SELECTION_COLOR, 21, 83, 158);
+#endif
+    }
+  } enable_dark_mode; // Must be call after window.show, because show(...) method init system colors and reset selection color to 0xf.
   return Fl::run();
 }
