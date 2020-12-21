@@ -13,9 +13,9 @@ namespace Examples {
     Main_Window() : Fl_Window(200, 100, 300, 300, "Key events example") {}
     
     int handle(int event) override {
-      if (event == FL_KEYDOWN) debug.append_line("Key_Down = "s + key_to_string());
-      if (event == FL_KEYDOWN && Fl::event_length() != 0) debug.append_line("Key_Press = "s + key_char_to_string());
-      if (event == FL_KEYUP) debug.append_line("Key_Up = "s + key_to_string() + (modifiers_to_string() == "[none]" ? "\n"s : ""s));
+      if (event == FL_KEYDOWN) debug.append_line(("Key_Down = "s + key_to_string()).c_str());
+      if (event == FL_KEYDOWN && Fl::event_length() != 0) debug.append_line(("Key_Press = "s + key_char_to_string()).c_str());
+      if (event == FL_KEYUP) debug.append_line(("Key_Up = "s + key_to_string() + (modifiers_to_string() == "[none]" ? "\n"s : ""s)).c_str());
       return Fl_Window::handle(event);
     }
     
@@ -31,22 +31,17 @@ namespace Examples {
       return ss.str();
     }
     
-    static string key_char_to_string() {
-      stringstream ss;
-      ss << "{key_char='" << Fl::event_text() << "'}";
-      return ss.str();
-    }
+    static string key_char_to_string() {return std::string("{key_char='") + Fl::event_text() + std::string("'}");}
     
     static string modifiers_to_string() {
-      stringstream ss;
-      ss << "[";
-      if (Fl::event_shift()) ss << "shift";
-      if (Fl::event_ctrl()) ss << (ss.str() == "[" ? "" : ", ")  << "control";
-      if (Fl::event_alt()) ss << (ss.str() == "[" ? "" : ", ")  << "alt";
-      if (Fl::event_command()) ss << (ss.str() == "[" ? "" : ", ")  << "command";
-      if (ss.str() == "[") ss << "none";
-      ss << "]";
-      return ss.str();
+      if (!Fl::event_shift() && !Fl::event_ctrl() && !Fl::event_alt() && !Fl::event_command()) return "[none]";
+      string result;
+      if (Fl::event_shift()) result += "shift, ";
+      if (Fl::event_ctrl()) result += "control, ";
+      if (Fl::event_alt()) result += "alt, ";
+      if (Fl::event_command()) result += "command, ";
+      result.resize(result.size() - 2);
+      return "[" + result + "]";
     }
 
     Fl_End end_this;
