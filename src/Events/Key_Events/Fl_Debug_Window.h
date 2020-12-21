@@ -8,13 +8,14 @@
 
 class Fl_Debug_Window : public Fl_Window {
 public:
-  Fl_Debug_Window() : Fl_Window(200, 100, 300, 300, "Debug") {
+  Fl_Debug_Window() : Fl_Window(0, 0, "Debug") {
     resizable(text_display);
     auto screen_num = Fl::screen_num(x(), y());
     auto screen_x = 0, screen_y = 0, screen_width = 0, screen_height = 0;
     Fl::screen_xywh(screen_x, screen_y, screen_width, screen_height);
     resize(screen_x, screen_y + (screen_height / 5 * 4), screen_width, screen_height / 5);
     text_display.buffer(&text_buffer);
+    text_display.resize(0, 0, w(), h());
     show();
   }
   
@@ -47,5 +48,5 @@ private:
   
   bool need_header = true;
   Fl_Text_Buffer text_buffer;
-  Fl_Text_Display text_display {0, 0, 300, 300};
+  Fl_Text_Display text_display {0, 0, 0, 0};
 };
