@@ -119,6 +119,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 * [Application_Idle](src/Events/Application_Idle) shows how to use idle event with Fl::add_idle method.
 * [Key_Events](src/Events/Key_Events) demonstrates the use of key events.
+* [Mouse_Events](src/Events/Mouse_Events) demonstrates the use of mouse events.
 * [Window_Click](src/Events/Window_Click) shows how to use mouse click event with override handle method and use Fl::event_button, Fl::event_x() and Fl::event_y() methods on FL_RELEASE event.
 
 ## [Tips And Tricks](src/Tips_And_Tricks)

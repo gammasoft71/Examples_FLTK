@@ -37,13 +37,13 @@ namespace Examples {
     static string key_char_to_string() {return std::string("{key_char='") + Fl::event_text() + std::string("'}");}
     
     static string modifiers_to_string() {
-      if (!Fl::event_shift() && !Fl::event_ctrl() && !Fl::event_alt() && !Fl::event_command()) return "[none]";
       string result;
       if (Fl::event_shift()) result += "shift, ";
       if (Fl::event_ctrl()) result += "control, ";
       if (Fl::event_alt()) result += "alt, ";
       if (Fl::event_command()) result += "command, ";
-      result.resize(result.size() - 2);
+      if (result.size()) result.resize(result.size() - 2);
+      else result = "none";
       return "[" + result + "]";
     }
 
