@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
 # Solution
-project(Control_Containers)
+project(Groups)
 
 # Projects
 add_subdirectory(Group)

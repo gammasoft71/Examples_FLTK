@@ -67,15 +67,15 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Progress_Bar](src/User_Controls/Progress_Bar) shows how to create a progress bar with own Fl_Progress_Bar widget.
 * [Radio_Toggle_Button](src/User_Controls/Radio_Toggle_Button) shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
 
-## [Control Containers](src/Control_Containers)
+## [Groups](src/Groups)
 
-* [Group](src/Control_Containers/Group) shows how to create a group with Fl_Group.
-* [Pack](src/Control_Containers/Pack) shows how to create a pack with Fl_Pack.
-* [Scroll](src/Control_Containers/Scroll) shows how to create a scroll with Fl_Scroll.
-* [Tabs](src/Control_Containers/Tabs) shows how to create a tabs and pages with Fl_Tabs and Fl_Group.
-* [Tile](src/Control_Containers/Tile) shows how to create a tile with Fl_Tile.
-* [Window](src/Control_Containers/Window) shows how to create a simple window with Fl_Window.
-* [Wizard](src/Control_Containers/Wizard) shows how to create a Wizard and pages with Fl_Wizard and Fl_Group.
+* [Group](src/Groups/Group) shows how to create a group with Fl_Group.
+* [Pack](src/Groups/Pack) shows how to create a pack with Fl_Pack.
+* [Scroll](src/Groups/Scroll) shows how to create a scroll with Fl_Scroll.
+* [Tabs](src/Groups/Tabs) shows how to create a tabs and pages with Fl_Tabs and Fl_Group.
+* [Tile](src/Groups/Tile) shows how to create a tile with Fl_Tile.
+* [Window](src/Groups/Window) shows how to create a simple window with Fl_Window.
+* [Wizard](src/Groups/Wizard) shows how to create a Wizard and pages with Fl_Wizard and Fl_Group.
 
 ## [Menus and toolbars](src/Menus_And_Toolbars)
 
