@@ -9,13 +9,12 @@
 class Fl_Debug_Window : public Fl_Window {
 public:
   Fl_Debug_Window() : Fl_Window(0, 0, "Debug") {
-    resizable(text_display);
+    resizable(this);
     auto screen_num = Fl::screen_num(x(), y());
     auto screen_x = 0, screen_y = 0, screen_width = 0, screen_height = 0;
     Fl::screen_xywh(screen_x, screen_y, screen_width, screen_height);
     resize(screen_x, screen_y + (screen_height / 5 * 4), screen_width, screen_height / 5);
     text_display.buffer(&text_buffer);
-    text_display.resize(0, 0, w(), h());
     show();
   }
   
@@ -34,6 +33,11 @@ public:
   }
   
   void hide() override {iconize();}
+  
+  void resize(int x, int y, int width, int height) override {
+    Fl_Window::resize(x, y, width, height);
+    text_display.resize(0, 0, w(), h());
+  }
   
 private:
   void write_header() {
