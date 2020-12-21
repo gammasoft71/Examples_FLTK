@@ -1,6 +1,7 @@
+#define TRACE
+#include "Fl_Trace_Window.h"
 #include <iomanip>
 #include <sstream>
-#include "Fl_Debug_Window.h"
 #include <FL/Fl.H>
 #include <FL/Fl_Window.H>
 
@@ -48,7 +49,7 @@ namespace Examples {
     }
 
     Fl_End end_this;
-    Fl_Debug_Window debug;
+    Fl_Trace_Window debug;
   };
 }
 

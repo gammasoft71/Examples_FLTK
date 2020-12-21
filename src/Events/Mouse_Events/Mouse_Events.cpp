@@ -1,6 +1,7 @@
+#define TRACE
+#include "Fl_Trace_Window.h"
 #include <iomanip>
 #include <sstream>
-#include "Fl_Debug_Window.h"
 #include <FL/Fl.H>
 #include <FL/Fl_Window.H>
 
@@ -14,11 +15,11 @@ namespace Examples {
     
     int handle(int event) override {
       if (Fl::event_inside(0, 0, w(), h())) {
-        if (event == FL_PUSH) debug.append_line(mouse_event_to_string("Push").c_str());
-        if (event == FL_DRAG) debug.append_line(mouse_event_to_string("Drag").c_str());
-        if (event == FL_RELEASE) debug.append_line(mouse_event_to_string("Release").c_str());
-        if (event == FL_MOVE) debug.append_line(mouse_event_to_string("Move").c_str());
-        if (event == FL_MOUSEWHEEL) debug.append_line(mouse_event_to_string("MouseWheel").c_str());
+        if (event == FL_PUSH) trace.append_line(mouse_event_to_string("Push").c_str());
+        if (event == FL_DRAG) trace.append_line(mouse_event_to_string("Drag").c_str());
+        if (event == FL_RELEASE) trace.append_line(mouse_event_to_string("Release").c_str());
+        if (event == FL_MOVE) trace.append_line(mouse_event_to_string("Move").c_str());
+        if (event == FL_MOUSEWHEEL) trace.append_line(mouse_event_to_string("MouseWheel").c_str());
       }
       return Fl_Window::handle(event);
     }
@@ -58,7 +59,7 @@ namespace Examples {
     }
 
     Fl_End end_this;
-    Fl_Debug_Window debug;
+    Fl_Trace_Window trace;
   };
 }
 

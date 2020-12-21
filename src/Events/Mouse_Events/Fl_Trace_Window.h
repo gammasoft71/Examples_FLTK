@@ -6,30 +6,36 @@
 #include <FL/Fl_Text_Display.H>
 #include <FL/Fl_Window.H>
 
-class Fl_Debug_Window : public Fl_Window {
+class Fl_Trace_Window : public Fl_Window {
 public:
-  Fl_Debug_Window() : Fl_Window(0, 0, "Debug") {
+  Fl_Trace_Window() : Fl_Window(0, 0, "Debug") {
     resizable(this);
     auto screen_num = Fl::screen_num(x(), y());
     auto screen_x = 0, screen_y = 0, screen_width = 0, screen_height = 0;
     Fl::screen_xywh(screen_x, screen_y, screen_width, screen_height);
     resize(screen_x, screen_y + (screen_height / 5 * 4), screen_width, screen_height / 5);
     text_display.buffer(&text_buffer);
+#if defined(TRACE)
     show();
+#endif
   }
   
   void append(const char* value) {
+#if defined(TRACE)
     if (need_header) write_header();
     text_buffer.append(value);
     text_display.scroll(text_buffer.count_lines(0, text_buffer.length()), 0);
+#endif
   }
   
   void append_line(const char* value) {
+#if defined(TRACE)
     if (need_header) write_header();
     text_buffer.append(value);
     text_buffer.append("\n");
     text_display.scroll(text_buffer.count_lines(0, text_buffer.length()), 0);
     need_header = true;
+#endif
   }
   
   void hide() override {iconize();}
