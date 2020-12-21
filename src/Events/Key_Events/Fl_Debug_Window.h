@@ -22,6 +22,7 @@ public:
     text_display.scroll(text_buffer.count_lines(0, text_buffer.length()), 0);
   }
   
+  void append_line() {append_line("");}  
   void append_line(const char* value) {
     if (need_header) write_header();
     text_buffer.append(value);
