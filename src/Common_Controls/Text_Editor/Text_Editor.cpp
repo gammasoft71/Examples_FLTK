@@ -1,13 +1,13 @@
 #include <FL/Fl.H>
-#include <FL/Fl_Text_Display.H>
+#include <FL/Fl_Text_Editor.H>
 #include <FL/Fl_Window.H>
 
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 450, 300, "Text display example") {
-      resizable(text_display);
-      text_display.buffer(&text_buffer);
+    Main_Window() : Fl_Window(200, 100, 450, 300, "Text editor example") {
+      resizable(text_editor);
+      text_editor.buffer(&text_buffer);
       text_buffer.append("Line 1\n");
       text_buffer.append("Line 2\n");
       text_buffer.append("Line 3\n");
@@ -22,7 +22,7 @@ namespace Examples {
     
   private:
     Fl_Text_Buffer text_buffer;
-    Fl_Text_Display text_display {0, 0, 450, 300};
+    Fl_Text_Editor text_editor {0, 0, 450, 300};
   };
 }
 
