@@ -15,7 +15,10 @@ namespace Examples {
     int handle(int event) override {
       if (event == FL_KEYDOWN) debug.append_line(("Key_Down = "s + key_to_string()).c_str());
       if (event == FL_KEYDOWN && Fl::event_length() != 0) debug.append_line(("Key_Press = "s + key_char_to_string()).c_str());
-      if (event == FL_KEYUP) debug.append_line(("Key_Up = "s + key_to_string() + (modifiers_to_string() == "[none]" ? "\n"s : ""s)).c_str());
+      if (event == FL_KEYUP) {
+        debug.append_line(("Key_Up = "s + key_to_string()).c_str());
+        if (modifiers_to_string() == "[none]") debug.append_line();
+      }
       return Fl_Window::handle(event);
     }
     
