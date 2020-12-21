@@ -1,5 +1,4 @@
 #pragma once
-#include <string>
 #include <FL/Fl.H>
 #include <FL/Fl_Text_Display.H>
 #include <FL/Fl_Window.H>
@@ -16,18 +15,18 @@ public:
     show();
   }
   
-  void append(const std::string& value) {
-    text_buffer.append(value.c_str());
+  void append(const char* value) {
+    text_buffer.append(value);
     text_display.scroll(text_buffer.count_lines(0, text_buffer.length()), 0);
   }
   
-  void append_line(const std::string& value) {
-    text_buffer.append(value.c_str());
+  void append_line(const char* value) {
+    text_buffer.append(value);
     text_buffer.append("\n");
     text_display.scroll(text_buffer.count_lines(0, text_buffer.length()), 0);
   }
   
-  void hide() override {}
+  void hide() override {iconize();}
   
 private:
   Fl_Text_Buffer text_buffer;
