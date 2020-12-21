@@ -1,6 +1,7 @@
 #pragma once
 #include <ctime>
 #include <iomanip>
+#include <iostream>
 #include <sstream>
 #include <FL/Fl.H>
 #include <FL/Fl_Text_Display.H>
@@ -24,6 +25,7 @@ public:
 #if defined(TRACE)
     if (need_header) write_header();
     text_buffer.append(value);
+    std::cerr << value;
     text_display.scroll(text_buffer.count_lines(0, text_buffer.length()), 0);
 #endif
   }
@@ -32,7 +34,9 @@ public:
 #if defined(TRACE)
     if (need_header) write_header();
     text_buffer.append(value);
+    std::cerr << value;
     text_buffer.append("\n");
+    std::cerr << std::endl;
     text_display.scroll(text_buffer.count_lines(0, text_buffer.length()), 0);
     need_header = true;
 #endif
@@ -52,6 +56,7 @@ private:
     std::stringstream ss;
     ss << std::put_time(current_tm, "%Y-%m-%d %H:%M:%S - ");
     text_buffer.append(ss.str().c_str());
+    std::cerr << ss.str();
     need_header = false;
   }
   
