@@ -147,7 +147,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 git clone https://github.com/gammasoft71/Examples_FLTK Examples_FLTK
 ```
 
-## Generate and build
+## Build and run
 
 To build this project, open "Terminal" and type following lines:
 
@@ -159,6 +159,8 @@ cmake ..
 start Fltk_Examples.sln
 ```
 
+Select any project and type Ctrl+F5 to build and run it.
+
 ### macOS :
 
 ``` shell
@@ -167,6 +169,7 @@ cmake .. -G "Xcode"
 open ./Fltk_Examples.xcodeproj
 ```
 
+Select any project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -174,6 +177,7 @@ open ./Fltk_Examples.xcodeproj
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
+./Any_Project
 ```
 
 ## Remarks
