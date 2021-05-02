@@ -154,8 +154,7 @@ To build this project, open "Terminal" and type following lines:
 ### Windows :
 
 ``` cmake
-mkdir build
-cd build
+mkdir build && cd build
 cmake .. 
 start Fltk_Examples.sln
 ```
@@ -163,8 +162,7 @@ start Fltk_Examples.sln
 ### macOS :
 
 ``` cmake
-mkdir build
-cd build
+mkdir build && cd build
 cmake .. -G "Xcode"
 open ./Fltk_Examples.xcodeproj
 ```
@@ -173,8 +171,7 @@ open ./Fltk_Examples.xcodeproj
 ### Linux :
 
 ``` cmake
-mkdir build
-cd build
+mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
 ```
