@@ -14,7 +14,7 @@ To build this project, open "Terminal" and type following lines:
 
 ### Windows :
 
-``` cmake
+``` shell
 mkdir build && cd build
 cmake .. 
 start Hello_World_Box.sln
@@ -22,7 +22,7 @@ start Hello_World_Box.sln
 
 ### macOS :
 
-``` cmake
+``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
 open ./Hello_World_Box.xcodeproj
@@ -30,7 +30,7 @@ open ./Hello_World_Box.xcodeproj
 
 ### Linux :
 
-``` cmake
+``` shell
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
