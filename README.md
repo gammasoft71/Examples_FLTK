@@ -25,7 +25,6 @@ Shows how to use Fltk controls only by programming code (c++17).
 ## [Common Controls](src/Common_Controls)
 
 * [Adjuster](src/Common_Controls/Adjuster) shows how to create adjusters with Fl_Adjuster valuator.
-* [Counter](src/Common_Controls/Counter) shows how to create counters with Fl_Counter and Fl_Simple_Counter valuators.
 * [Box](src/Common_Controls/Box) shows how to use a text with Fl_Box widget.
 * [Box_Picture](src/Common_Controls/Box_Picture) shows how to use an image with Fl_Box widget.
 * [Box_Picture2](src/Common_Controls/Box_Picture2) shows how to use an image with Fl_Box widget.
