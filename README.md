@@ -15,12 +15,12 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Hello_World_Message2](src/Hello_Worlds/Hello_World_Message2/README.md) The classic first application "Hello, World!" with Fl_Message.
 * [Hello_World_Say](src/Hello_Worlds/Hello_World_Say/README.md) The classic first application "Hello, World!" with say.
 
-## [Applications](src/Applications)
+## [Applications](src/Applications/README.md)
 
-* [Application](src/Applications/Application) shows how to create a simple Fltk application.
+* [Application](src/Applications/Application/README.md) shows how to create a simple Fltk application.
 * [Application_And_Exception](src/Applications/Application_And_Exception) shows how to create a simple Fltk application and how to manage exception.
-* [Application_Enable_Dark_Mode](src/Applications/Application_Enable_Dark_Mode) shows how to create a simple Fltk application with dark mode.
-* [Application_Enable_Light_Mode](src/Applications/Application_Enable_Light_Mode) shows how to create a simple Fltk application with light mode.
+* [Application_Enable_Dark_Mode](src/Applications/Application_Enable_Dark_Mode/README.md) shows how to create a simple Fltk application with dark mode.
+* [Application_Enable_Light_Mode](src/Applications/Application_Enable_Light_Mode/README.md) shows how to create a simple Fltk application with light mode.
 
 ## [Common Controls](src/Common_Controls)
 
