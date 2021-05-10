@@ -1,10 +1,10 @@
-# Application
+# Adjuster
 
-Shows how to create a simple Fltk application.
+Shows how to create adjusters with Fl_Adjuster valuator.
 
 ## Source
 
-[Application.cpp](Application.cpp)
+[Adjuster.cpp](Adjuster.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Application.sln
+start Adjuster.sln
 ```
 
-Select Application project and type Ctrl+F5 to build and run it.
+Select Adjuster project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Application.xcodeproj
+open ./Adjuster.xcodeproj
 ```
 
-Select Application project and type Cmd+R to build and run it.
+Select Adjuster project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Application project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Application
+./Adjuster
 ```
