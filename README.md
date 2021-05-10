@@ -22,7 +22,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Application_Enable_Dark_Mode](src/Applications/Application_Enable_Dark_Mode/README.md) shows how to create a simple Fltk application with dark mode.
 * [Application_Enable_Light_Mode](src/Applications/Application_Enable_Light_Mode/README.md) shows how to create a simple Fltk application with light mode.
 
-## [Common Controls](src/Common_Controls)
+## [Common Controls](src/Common_Controls/README.md)
 
 * [Adjuster](src/Common_Controls/Adjuster/README.md) shows how to create adjusters with Fl_Adjuster valuator.
 * [Box](src/Common_Controls/Box/README.md) shows how to use a text with Fl_Box widget.
