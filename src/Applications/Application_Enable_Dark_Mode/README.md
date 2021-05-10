@@ -1,10 +1,10 @@
-# Application
+# Application_Enable_Dark_Mode
 
-Shows how to create a simple Fltk application.
+Shows how to create a simple Fltk application with dark mode.
 
 ## Source
 
-[Application.cpp](Application.cpp)
+[Application_Enable_Dark_Mode.cpp](Application_Enable_Dark_Mode.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Application.sln
+start Application_Enable_Dark_Mode.sln
 ```
 
-Select Application project and type Ctrl+F5 to build and run it.
+Select Application_Enable_Dark_Mode project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Application.xcodeproj
+open ./Application_Enable_Dark_Mode.xcodeproj
 ```
 
-Select Application project and type Cmd+R to build and run it.
+Select Application_Enable_Dark_Mode project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Application project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Application
+./Application_Enable_Dark_Mode
 ```
