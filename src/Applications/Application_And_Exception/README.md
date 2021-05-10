@@ -1,10 +1,10 @@
-# Application
+# Application_And_Exception
 
-Shows how to create a simple Fltk application.
+Shows how to create a simple Fltk application and how to manage exception.
 
 ## Source
 
-[Application.cpp](Application.cpp)
+[Application_And_Exception.cpp](Application_And_Exception.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Application.sln
+start Application_And_Exception.sln
 ```
 
-Select Application project and type Ctrl+F5 to build and run it.
+Select Application_And_Exception project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Application.xcodeproj
+open ./Application_And_Exception.xcodeproj
 ```
 
-Select Application project and type Cmd+R to build and run it.
+Select Application_And_Exception project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Application project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Application
+./Application_And_Exception
 ```
