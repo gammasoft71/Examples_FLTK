@@ -1,10 +1,10 @@
-# Hello_World_Box
+# Hello_World_Say
 
-The classic first application "Hello World" with Fl_Box
+The classic first application "Hello World" with say.
 
 ## Source
 
-[Hello_World_Box.cpp](Hello_World_Box.cpp)
+[Hello_World_Say.cpp](Hello_World_Say.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Hello_World_Box.sln
+start Hello_World_Say.sln
 ```
 
-Select Hello_World_Box project and type Ctrl+F5 to build and run it.
+Select Hello_World_Say project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Hello_World_Box.xcodeproj
+open ./Hello_World_Say.xcodeproj
 ```
 
-Select Hello_World_Box project and type Cmd+R to build and run it.
+Select Hello_World_Say project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Hello_World_Box project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Hello_World_Box
+./Hello_World_Say
 ```
