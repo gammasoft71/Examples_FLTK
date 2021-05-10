@@ -5,7 +5,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 [![fltk](docs/Pictures/fltk_header.png)](https://gammasoft71.wixsite.com/gammasoft/fltk)
 
-## [Hello World](src/Hello_Worlds)
+## [Hello World](src/Hello_Worlds/README.md)
 
 * [Hello_World_Box](src/Hello_Worlds/Hello_World_Box/README.md) The classic first application "Hello, World!" with Fl_Box.
 * [Hello_World_Drawing](src/Hello_Worlds/Hello_World_Drawing/README.md) The classic first application "Hello, World!" with GDI+ drawing objects.
