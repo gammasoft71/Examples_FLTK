@@ -1,6 +1,6 @@
 # Hello_World_Box
 
-The classic first application "Hello World" with Fl_Box
+The classic first application "Hello World" with Fl_Box.
 
 ## Source
 
