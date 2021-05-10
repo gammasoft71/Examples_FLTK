@@ -8,12 +8,12 @@ Shows how to use Fltk controls only by programming code (c++17).
 ## [Hello World](src/Hello_Worlds)
 
 * [Hello_World_Box](src/Hello_Worlds/Hello_World_Box/README.md) The classic first application "Hello, World!" with Fl_Box.
-* [Hello_World_Drawing](src/Hello_Worlds/Hello_World_Drawing) The classic first application "Hello, World!" with GDI+ drawing objects.
-* [Hello_World_Emoticons](src/Hello_Worlds/Hello_World_Emoticons) The classic first application "Hello, World!" with Fl_Box and emoticons.
-* [Hello_World_Fltk](src/Hello_Worlds/Hello_World_Fltk) The classic first application "Hello, World!" by FLTK.
-* [Hello_World_Message](src/Hello_Worlds/Hello_World_Message) The classic first application "Hello, World!" with Fl_Message.
-* [Hello_World_Message2](src/Hello_Worlds/Hello_World_Message2) The classic first application "Hello, World!" with Fl_Message.
-* [Hello_World_Say](src/Hello_Worlds/Hello_World_Say) The classic first application "Hello, World!" with say.
+* [Hello_World_Drawing](src/Hello_Worlds/Hello_World_Drawing/README.md) The classic first application "Hello, World!" with GDI+ drawing objects.
+* [Hello_World_Emoticons](src/Hello_Worlds/Hello_World_Emoticons/README.md) The classic first application "Hello, World!" with Fl_Box and emoticons.
+* [Hello_World_Fltk](src/Hello_Worlds/Hello_World_Fltk/README.md) The classic first application "Hello, World!" by FLTK.
+* [Hello_World_Message](src/Hello_Worlds/Hello_World_Message/README.md) The classic first application "Hello, World!" with Fl_Message.
+* [Hello_World_Message2](src/Hello_Worlds/Hello_World_Message2/README.md) The classic first application "Hello, World!" with Fl_Message.
+* [Hello_World_Say](src/Hello_Worlds/Hello_World_Say/README.md) The classic first application "Hello, World!" with say.
 
 ## [Applications](src/Applications)
 
