@@ -1,6 +1,6 @@
 # Box
 
-Shows how to create adjusters with Fl_Box widget.
+Shows how to use a text with Fl_Box widget.
 
 ## Source
 
