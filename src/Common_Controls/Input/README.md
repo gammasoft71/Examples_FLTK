@@ -1,10 +1,10 @@
-# Box
+# Input
 
-Shows how to create adjusters with Fl_Box widget.
+Shows how to create an input with Fl_Input widget.
 
 ## Source
 
-[Box.cpp](Box.cpp)
+[Input.cpp](Input.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,17 +17,17 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Box.sln
+start Input.sln
 ```
 
-Select Box project and type Ctrl+F5 to build and run it.
+Select Input project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Box.xcodeproj
+open ./Input.xcodeproj
 ```
 
 Select Box project and type Cmd+R to build and run it.
@@ -38,5 +38,5 @@ Select Box project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Box
+./Input
 ```
