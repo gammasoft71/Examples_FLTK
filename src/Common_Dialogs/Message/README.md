@@ -1,10 +1,10 @@
-# Beep
+# Message
 
-Shows how to use a beep with fl_beep method.
+Shows how to use a beep with fl_message method.
 
 ## Source
 
-[Beep.cpp](Beep.cpp)
+[Message.cpp](Message.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Beep.sln
+start Message.sln
 ```
 
-Select Beep project and type Ctrl+F5 to build and run it.
+Select Message project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Beep.xcodeproj
+open ./Message.xcodeproj
 ```
 
-Select Beep project and type Cmd+R to build and run it.
+Select Message project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Beep project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Beep
+./Message
 ```
