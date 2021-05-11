@@ -6,7 +6,7 @@ Demonstrates the use of key events.
 
 [Key_Events.cpp](Key_Events.cpp)
 
-[Fl_Trace_Window.cpp](Fl_Trace_Window.cpp)
+[Fl_Trace_Window.h](Fl_Trace_Window.h)
 
 [CMakeLists.txt](CMakeLists.txt)
 
