@@ -1,6 +1,6 @@
 # Message
 
-Shows how to use a beep with fl_message method.
+Shows how to use message box with fl_message method.
 
 ## Source
 
