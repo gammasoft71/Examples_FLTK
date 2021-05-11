@@ -1,6 +1,6 @@
 # Input
 
-Shows how to create an input with Fl_Input widget.
+Shows how to create an input text with Fl_Input widget.
 
 ## Source
 
