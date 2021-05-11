@@ -1,10 +1,10 @@
-# Box
+# Radio_Round_Button
 
-Shows how to create adjusters with Fl_Box widget.
+Shows how to create a radio round button with Fl_Radio_Round_Button widget.
 
 ## Source
 
-[Box.cpp](Box.cpp)
+[Radio_Round_Button.cpp](Radio_Round_Button.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Box.sln
+start Radio_Round_Button.sln
 ```
 
-Select Box project and type Ctrl+F5 to build and run it.
+Select Radio_Round_Button project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Box.xcodeproj
+open ./Radio_Round_Button.xcodeproj
 ```
 
-Select Box project and type Cmd+R to build and run it.
+Select Radio_Round_Button project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Box project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Box
+./Radio_Round_Button
 ```
