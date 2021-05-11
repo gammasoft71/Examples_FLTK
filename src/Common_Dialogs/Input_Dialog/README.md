@@ -1,10 +1,10 @@
-# Beep
+# Input_Dialog
 
-Shows how to use a beep with fl_beep method.
+Shows how to use input dialog with fl_input method.
 
 ## Source
 
-[Beep.cpp](Beep.cpp)
+[Input_Dialog.cpp](Input_Dialog.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Beep.sln
+start Input_Dialog.sln
 ```
 
-Select Beep project and type Ctrl+F5 to build and run it.
+Select Input_Dialog project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Beep.xcodeproj
+open ./Input_Dialog.xcodeproj
 ```
 
-Select Beep project and type Cmd+R to build and run it.
+Select Input_Dialog project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Beep project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Beep
+./Input_Dialog
 ```
