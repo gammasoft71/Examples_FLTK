@@ -1,6 +1,6 @@
 # Choice
 
-Shows how to use choice dialog with fl_choice method.
+Shows how to use choice box with fl_choice method.
 
 ## Source
 
