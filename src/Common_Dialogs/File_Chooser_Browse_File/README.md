@@ -1,10 +1,10 @@
-# Beep
+# File_Chooser_Browse_File
 
-Shows how to use a beep with fl_beep method.
+Shows how to use file choose browse file with fl_file_chooser method.
 
 ## Source
 
-[Beep.cpp](Beep.cpp)
+[File_Chooser_Browse_File.cpp](File_Chooser_Browse_File.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Beep.sln
+start File_Chooser_Browse_File.sln
 ```
 
-Select Beep project and type Ctrl+F5 to build and run it.
+Select File_Chooser_Browse_File project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Beep.xcodeproj
+open ./File_Chooser_Browse_File.xcodeproj
 ```
 
-Select Beep project and type Cmd+R to build and run it.
+Select File_Chooser_Browse_File project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Beep project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Beep
+./File_Chooser_Browse_File
 ```
