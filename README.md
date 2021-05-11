@@ -99,19 +99,19 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Scheme_Modes](src/User_Components/Scheme_Modes) shows how to use own scheme modes with own fl_scheme_mode methods.
 * [Use_Wait_Cursor](src/User_Components/Use_Wait_Cursor) shows how to use own Fl_Use_Wait_cursor component or own fl_use_wait_cursor method.
 
-## [Common Dialogs](src/Common_Dialogs)
+## [Common Dialogs](src/Common_Dialogs/README.md)
 
-* [Beep](src/Common_Dialogs/Beep) shows how to create a beep with fl_beep method.
-* [Choice](src/Common_Dialogs/Choice) shows how to create a choice box with fl_choice method.
-* [Color_Chooser_Dialog](src/Common_Dialogs/Color_Chooser_Dialog) shows how to use color chooser tto brows file dialog with Fl_Color_Chooser dialog.
-* [File_Chooser_Browse_Directory](src/Common_Dialogs/File_Chooser_Browse_Directory) shows how to use directory chooser dialog with fl_dir_chooser method.
-* [File_Chooser_Browse_File](src/Common_Dialogs/File_Chooser_Browse_File) shows how to use file chooser dialog with fl_file_chooser method.
-* [Input_Dialog](src/Common_Dialogs/Input_Dialog) shows how to create an input box with fl_input method.
-* [Message](src/Common_Dialogs/Message) shows how to create a message box with fl_message method.
-* [Native_File_Chooser_Browse_Directory](src/Common_Dialogs/Native_File_Chooser_Browse_Directory) shows how to use a native fil chooser to browse directory with Fl_Native_File_Chooser dialog.
-* [Native_File_Chooser_Browse_File](src/Common_Dialogs/Native_File_Chooser_Browse_File) shows how to use a native fil chooser to browse file with Fl_Native_File_Chooser dialog.
-* [Native_File_Chooser_Save_File](src/Common_Dialogs/Native_File_Chooser_Save_File) shows how to use a native fil chooser to save file with Fl_Native_File_Chooser dialog.
-* [Password](src/Common_Dialogs/Password) shows how to create an password box with fl_password method.
+* [Beep](src/Common_Dialogs/Beep/README.md) shows how to create a beep with fl_beep method.
+* [Choice](src/Common_Dialogs/Choice/README.md) shows how to create a choice box with fl_choice method.
+* [Color_Chooser_Dialog](src/Common_Dialogs/Color_Chooser_Dialog/README.md) shows how to use color chooser tto brows file dialog with Fl_Color_Chooser dialog.
+* [File_Chooser_Browse_Directory](src/Common_Dialogs/File_Chooser_Browse_Directory/README.md) shows how to use directory chooser dialog with fl_dir_chooser method.
+* [File_Chooser_Browse_File](src/Common_Dialogs/File_Chooser_Browse_File/README.md) shows how to use file chooser dialog with fl_file_chooser method.
+* [Input_Dialog](src/Common_Dialogs/Input_Dialog/README.md) shows how to create an input box with fl_input method.
+* [Message](src/Common_Dialogs/Message/README.md) shows how to create a message box with fl_message method.
+* [Native_File_Chooser_Browse_Directory](src/Common_Dialogs/Native_File_Chooser_Browse_Directory/README.md) shows how to use a native fil chooser to browse directory with Fl_Native_File_Chooser dialog.
+* [Native_File_Chooser_Browse_File](src/Common_Dialogs/Native_File_Chooser_Browse_File/README.md) shows how to use a native fil chooser to browse file with Fl_Native_File_Chooser dialog.
+* [Native_File_Chooser_Save_File](src/Common_Dialogs/Native_File_Chooser_Save_File/README.md) shows how to use a native fil chooser to save file with Fl_Native_File_Chooser dialog.
+* [Password](src/Common_Dialogs/Password/README.md) shows how to create an password box with fl_password method.
 
 ## [User Dialogs](src/User_Dialogs)
 
