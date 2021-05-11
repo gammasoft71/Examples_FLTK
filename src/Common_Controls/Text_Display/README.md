@@ -1,10 +1,10 @@
-# Box
+# Text_Display
 
-Shows how to create adjusters with Fl_Box widget.
+Shows how to use a text display with Fl_Text_Display widget.
 
 ## Source
 
-[Box.cpp](Box.cpp)
+[Text_Display.cpp](Text_Display.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Box.sln
+start Text_Display.sln
 ```
 
-Select Box project and type Ctrl+F5 to build and run it.
+Select Text_Display project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Box.xcodeproj
+open ./Text_Display.xcodeproj
 ```
 
-Select Box project and type Cmd+R to build and run it.
+Select Text_Display project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Box project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Box
+./Text_Display
 ```
