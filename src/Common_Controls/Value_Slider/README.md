@@ -1,6 +1,6 @@
 # Value_Slider
 
-Shows how to create value sliders with Fl_Value_Slider valuator.
+Shows how to create value sliders with Fl_Hor_Value_Slider and Fl_Value_Slider valuators.
 
 ## Source
 
