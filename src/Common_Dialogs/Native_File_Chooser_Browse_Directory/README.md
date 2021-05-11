@@ -1,6 +1,6 @@
 # Native_File_Chooser_Browse_Directory
 
-Shows how to use natibe file chooser to browse directory with Fl_Native_File_Chooser_Browse dialog.
+Shows how to use natibe file chooser to browse directory with Fl_Native_File_Chooser dialog.
 
 ## Source
 
