@@ -1,10 +1,10 @@
-# Color_Chooser_Dialog
+# Native_File_Chooser_Browse_Directory
 
-Shows how to use color chooser dialog with Fl_Color_Chooser_Dialog dialog.
+Shows how to use natibe file chooser to browse directory with Fl_Native_File_Chooser_Browse dialog.
 
 ## Source
 
-[Color_Chooser_Dialog.cpp](Color_Chooser_Dialog.cpp)
+[Native_File_Chooser_Browse_Directory.cpp](Native_File_Chooser_Browse_Directory.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Color_Chooser_Dialog.sln
+start Native_File_Chooser_Browse_Directory.sln
 ```
 
-Select Color_Chooser_Dialog project and type Ctrl+F5 to build and run it.
+Select Native_File_Chooser_Browse_Directory project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Color_Chooser_Dialog.xcodeproj
+open ./Native_File_Chooser_Browse_Directory.xcodeproj
 ```
 
-Select Color_Chooser_Dialog project and type Cmd+R to build and run it.
+Select Native_File_Chooser_Browse_Directory project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Color_Chooser_Dialog project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Color_Chooser_Dialog
+./Native_File_Chooser_Browse_Directory
 ```
