@@ -1,10 +1,10 @@
-# Box
+# Toggle_Button
 
-Shows how to create adjusters with Fl_Box widget.
+Shows how to create a toggle button with Fl_Toggle_Button widget.
 
 ## Source
 
-[Box.cpp](Box.cpp)
+[Toggle_Button.cpp](Toggle_Button.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,17 +17,17 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Box.sln
+start Toggle_Button.sln
 ```
 
-Select Box project and type Ctrl+F5 to build and run it.
+Select Toggle_Button project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Box.xcodeproj
+open ./Toggle_Button.xcodeproj
 ```
 
 Select Box project and type Cmd+R to build and run it.
@@ -38,5 +38,5 @@ Select Box project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Box
+./Toggle_Button
 ```
