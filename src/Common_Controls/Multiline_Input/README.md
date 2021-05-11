@@ -1,6 +1,6 @@
 # Multiline_Input
 
-Shows how to create a multiline input text with Fl_Multiline_Input widget.
+Shows how to create a multiline text input with Fl_Multiline_Input widget.
 
 ## Source
 
