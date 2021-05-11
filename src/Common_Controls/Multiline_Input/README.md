@@ -1,6 +1,6 @@
 # Multiline_Input
 
-Shows how to create adjusters with Fl_Multiline_Input widget.
+Shows how to create a multiline input with Fl_Multiline_Input widget.
 
 ## Source
 
