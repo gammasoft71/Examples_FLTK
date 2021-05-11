@@ -103,7 +103,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 * [Beep](src/Common_Dialogs/Beep/README.md) shows how to create a beep with fl_beep method.
 * [Choice](src/Common_Dialogs/Choice/README.md) shows how to create a choice box with fl_choice method.
-* [Color_Chooser_Dialog](src/Common_Dialogs/Color_Chooser_Dialog/README.md) shows how to use color chooser tto brows file dialog with Fl_Color_Chooser dialog.
+* [Color_Chooser_Dialog](src/Common_Dialogs/Color_Chooser_Dialog/README.md) shows how to use color chooser dialog with Fl_Color_Chooser dialog.
 * [File_Chooser_Browse_Directory](src/Common_Dialogs/File_Chooser_Browse_Directory/README.md) shows how to use directory chooser dialog with fl_dir_chooser method.
 * [File_Chooser_Browse_File](src/Common_Dialogs/File_Chooser_Browse_File/README.md) shows how to use file chooser dialog with fl_file_chooser method.
 * [Input_Dialog](src/Common_Dialogs/Input_Dialog/README.md) shows how to create an input box with fl_input method.
