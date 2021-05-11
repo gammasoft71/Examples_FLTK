@@ -36,4 +36,4 @@
 * [Tree](Tree/README.md) shows how to use a tree with Fl_Tree widget.
 * [Value_Input](Value_Input/README.md) shows how to create a value input with Fl_Value_Input valuator.
 * [Value_Output](Value_Output/README.md) shows how to create a value input with Fl_Value_Output valuator.
-* [Value_Slider](Slider/README.md) shows how to create value sliders with Fl_Hor_Value_Slider and Fl_Value_Slider valuators.
+* [Value_Slider](Value_Slider/README.md) shows how to create value sliders with Fl_Hor_Value_Slider and Fl_Value_Slider valuators.
