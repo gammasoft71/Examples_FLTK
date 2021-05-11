@@ -1,6 +1,6 @@
 # Password
 
-Shows how to use password dialog with fl_password method.
+Shows how to use password box with fl_password method.
 
 ## Source
 
