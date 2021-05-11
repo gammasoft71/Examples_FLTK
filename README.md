@@ -85,14 +85,14 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Menu_Button](src/Menus_And_Toolbars/Menu_Button) shows how to create a menu button with Fl_Menu_Button widget.
 * [Sys_Menu_Bar](src/Menus_And_Toolbars/Sys_Menu_Bar) shows how to create a system menu bar with Fl_Sys_Menu_Bar widget.
 
-## [Components](src/Components)
+## [Components](src/Components/README.md)
 
 * [Cursors](src/Components/Cursors) shows how to change cursor of a widget with override handle method and use fl_cursor method on FL_ENTER and FL_LEAVE events.
-* [Preferences](src/Components/Preferences) shows how to use preferences with Fl_Preferences component.
-* [Schemes](src/Components/Schemes) shows how to use schemes with fl_scheme methods.
-* [Symbols](src/Components/Symbols) shows how to use symbols with Fl_Box widget.
-* [Timer](src/Components/Timer) shows how to create a timer with Fl::add_timeout,  Fl::remove_timeout and Fl::repeat_timeout methods.
-* [Tooltip](src/Components/Tooltip) shows how to create a tooltip with Fl_Tooltip component.
+* [Preferences](src/Components/Preferences/README.md) shows how to use preferences with Fl_Preferences component.
+* [Schemes](src/Components/Schemes/README.md) shows how to use schemes with fl_scheme methods.
+* [Symbols](src/Components/Symbols/README.md) shows how to use symbols with Fl_Box widget.
+* [Timer](src/Components/Timer/README.md) shows how to create a timer with Fl::add_timeout,  Fl::remove_timeout and Fl::repeat_timeout methods.
+* [Tooltip](src/Components/Tooltip/README.md) shows how to create a tooltip with Fl_Tooltip component.
 
 ## [User Components](src/User_Components)
 
