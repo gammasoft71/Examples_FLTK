@@ -109,8 +109,8 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Input_Dialog](src/Common_Dialogs/Input_Dialog/README.md) shows how to create an input box with fl_input method.
 * [Message](src/Common_Dialogs/Message/README.md) shows how to create a message box with fl_message method.
 * [Native_File_Chooser_Browse_Directory](src/Common_Dialogs/Native_File_Chooser_Browse_Directory/README.md) shows how to use a native fil chooser to browse directory with Fl_Native_File_Chooser dialog.
-* [Native_File_Chooser_Browse_File](src/Common_Dialogs/Native_File_Chooser_Browse_File/README.md) shows how to use a native fil chooser to browse file with Fl_Native_File_Chooser dialog.
-* [Native_File_Chooser_Save_File](src/Common_Dialogs/Native_File_Chooser_Save_File/README.md) shows how to use a native fil chooser to save file with Fl_Native_File_Chooser dialog.
+* [Native_File_Chooser_Browse_File](src/Common_Dialogs/Native_File_Chooser_Browse_File/README.md) shows how to use a native file chooser to browse file with Fl_Native_File_Chooser dialog.
+* [Native_File_Chooser_Save_File](src/Common_Dialogs/Native_File_Chooser_Save_File/README.md) shows how to use a native file chooser to save file with Fl_Native_File_Chooser dialog.
 * [Password](src/Common_Dialogs/Password/README.md) shows how to create an password box with fl_password method.
 
 ## [User Dialogs](src/User_Dialogs)
