@@ -1,10 +1,10 @@
-# Box
+# Clock_Output
 
-Shows how to create adjusters with Fl_Box widget.
+Shows how to create a static clock with Fl_Clock_Output widget.
 
 ## Source
 
-[Box.cpp](Box.cpp)
+[Clock_Output.cpp](Clock_Output.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Box.sln
+start Clock_Output.sln
 ```
 
-Select Box project and type Ctrl+F5 to build and run it.
+Select Clock_Output project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Box.xcodeproj
+open ./Clock_Output.xcodeproj
 ```
 
-Select Box project and type Cmd+R to build and run it.
+Select Clock_Output project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Box project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Box
+./Clock_Output
 ```
