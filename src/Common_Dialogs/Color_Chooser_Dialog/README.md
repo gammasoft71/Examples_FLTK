@@ -1,10 +1,10 @@
-# Beep
+# Color_Chooser_Dialog
 
-Shows how to use a beep with fl_beep method.
+Shows how to use color chooser dialog with Fl_Color_Chooser_Dialog dialog.
 
 ## Source
 
-[Beep.cpp](Beep.cpp)
+[Color_Chooser_Dialog.cpp](Color_Chooser_Dialog.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Beep.sln
+start Color_Chooser_Dialog.sln
 ```
 
-Select Beep project and type Ctrl+F5 to build and run it.
+Select Color_Chooser_Dialog project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Beep.xcodeproj
+open ./Color_Chooser_Dialog.xcodeproj
 ```
 
-Select Beep project and type Cmd+R to build and run it.
+Select Color_Chooser_Dialog project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Beep project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Beep
+./Color_Chooser_Dialog
 ```
