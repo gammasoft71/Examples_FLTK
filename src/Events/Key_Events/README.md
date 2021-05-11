@@ -6,6 +6,8 @@ Demonstrates the use of key events.
 
 [Key_Events.cpp](Key_Events.cpp)
 
+[Fl_Trace_Window.cpp](Fl_Trace_Window.cpp)
+
 [CMakeLists.txt](CMakeLists.txt)
 
 ## Generate and build
