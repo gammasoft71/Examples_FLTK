@@ -8,6 +8,6 @@
 * [Input_Dialog](Input_Dialog/README.md) shows how to create an input box with fl_input method.
 * [Message](Message/README.md) shows how to create a message box with fl_message method.
 * [Native_File_Chooser_Browse_Directory](Native_File_Chooser_Browse_Directory/README.md) shows how to use a native fil chooser to browse directory with Fl_Native_File_Chooser dialog.
-* [Native_File_Chooser_Browse_File](Native_File_Chooser_Browse_File/README.md) shows how to use a native fil chooser to browse file with Fl_Native_File_Chooser dialog.
-* [Native_File_Chooser_Save_File](Native_File_Chooser_Save_File/README.md) shows how to use a native fil chooser to save file with Fl_Native_File_Chooser dialog.
+* [Native_File_Chooser_Browse_File](Native_File_Chooser_Browse_File/README.md) shows how to use a native file chooser to browse file with Fl_Native_File_Chooser dialog.
+* [Native_File_Chooser_Save_File](Native_File_Chooser_Save_File/README.md) shows how to use a native file chooser to save file with Fl_Native_File_Chooser dialog.
 * [Password](Password/README.md) shows how to create an password box with fl_password method.
