@@ -59,7 +59,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Toggle_Button](src/Common_Controls/Toggle_Button/README.md) shows how to create a toggle button with Fl_Toggle_Button widget.
 * [Tree](src/Common_Controls/Tree/README.md) shows how to use a tree with Fl_Tree widget.
 * [Value_Input](src/Common_Controls/Value_Input/README.md) shows how to create a value input with Fl_Value_Input valuator.
-* [Value_Output](src/Common_Controls/Value_Output/README.md) shows how to create a value input with Fl_Value_Output valuator.
+* [Value_Output](src/Common_Controls/Value_Output/README.md) shows how to create a value output with Fl_Value_Output valuator.
 * [Value_Slider](src/Common_Controls/Slider/README.md) shows how to create value sliders with Fl_Hor_Value_Slider and Fl_Value_Slider valuators.
 
 ## [User Controls](src/User_Controls)
