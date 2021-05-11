@@ -1,6 +1,6 @@
 # Input_Dialog
 
-Shows how to use input dialog with fl_input method.
+Shows how to use input box with fl_input method.
 
 ## Source
 
