@@ -45,7 +45,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Multiline_Input](src/Common_Controls/Multiline_Input/README.md) shows how to create a multiline text input text with Fl_Multiline_Input widget.
 * [Multiline_Output](src/Common_Controls/Multiline_Output/README.md) shows how to create a multiline text output with Fl_Multiline_Output widget.
 * [Nice_Slider](src/Common_Controls/Nice_Slider/README.md) shows how to create a slider with Fl_Nice_Slider widget.
-* [Output](src/Common_Controls/Output/README.md) shows how to create an output text with Fl_Output widget.
+* [Output](src/Common_Controls/Output/README.md) shows how to create a text output with Fl_Output widget.
 * [Progress](src/Common_Controls/Progress/README.md) shows how to create a progress with Fl_Progress widget.
 * [Radio_Light_Button](src/Common_Controls/Radio_Light_Button/README.md) shows how to create a radio light button with Fl_Radio_Light_Button widget.
 * [Radio_Round_Button](src/Common_Controls/Radio_Round_Button/README.md) shows how to create a radio round button with Fl_Radio_Round_Button widget.
