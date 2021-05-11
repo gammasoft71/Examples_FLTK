@@ -1,10 +1,10 @@
-# Adjuster
+# Slider
 
-Shows how to create adjusters with Fl_Adjuster valuator.
+Shows how to create slider with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_Slider, Fl_Slider, Fl_Fill_Slider and Fl_Nice_Slider valuators.
 
 ## Source
 
-[Adjuster.cpp](Adjuster.cpp)
+[Slider.cpp](Slider.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Adjuster.sln
+start Slider.sln
 ```
 
-Select Adjuster project and type Ctrl+F5 to build and run it.
+Select Slider project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Adjuster.xcodeproj
+open ./Slider.xcodeproj
 ```
 
-Select Adjuster project and type Cmd+R to build and run it.
+Select Slider project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Adjuster project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Adjuster
+./Slider
 ```
