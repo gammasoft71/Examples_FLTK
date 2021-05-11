@@ -40,10 +40,10 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [File_Browser](src/Common_Controls/File_Browser/README.md) shows how to use a file browser with Fl_File_Browser widget.
 * [File_Input](src/Common_Controls/File_Input/README.md) shows how to use a file input with Fl_File_Input widget.
 * [Float_Input](src/Common_Controls/Float_Input/README.md) shows how to create a float input text with Fl_Float_Input widget.
-* [Input](src/Common_Controls/Input/README.md) shows how to create an input text with Fl_Input widget.
+* [Input](src/Common_Controls/Input/README.md) shows how to create a text input with Fl_Input widget.
 * [Int_Input](src/Common_Controls/Int_Input/README.md) shows how to create an int input text with Fl_Int_Input widget.
-* [Multiline_Input](src/Common_Controls/Multiline_Input/README.md) shows how to create a multiline input text with Fl_Multiline_Input widget.
-* [Multiline_Output](src/Common_Controls/Multiline_Output/README.md) shows how to create a multiline output text with Fl_Multiline_Output widget.
+* [Multiline_Input](src/Common_Controls/Multiline_Input/README.md) shows how to create a multiline text input text with Fl_Multiline_Input widget.
+* [Multiline_Output](src/Common_Controls/Multiline_Output/README.md) shows how to create a multiline text output with Fl_Multiline_Output widget.
 * [Nice_Slider](src/Common_Controls/Nice_Slider/README.md) shows how to create a slider with Fl_Nice_Slider widget.
 * [Output](src/Common_Controls/Output/README.md) shows how to create an output text with Fl_Output widget.
 * [Progress](src/Common_Controls/Progress/README.md) shows how to create a progress with Fl_Progress widget.
