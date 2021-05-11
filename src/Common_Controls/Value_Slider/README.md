@@ -1,10 +1,10 @@
-# Adjuster
+# Value_Slider
 
-Shows how to create adjusters with Fl_Adjuster valuator.
+Shows how to create a value slider with Fl_Value_Slider valuator.
 
 ## Source
 
-[Adjuster.cpp](Adjuster.cpp)
+[Value_Slider.cpp](Value_Slider.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Adjuster.sln
+start Value_Slider.sln
 ```
 
-Select Adjuster project and type Ctrl+F5 to build and run it.
+Select Value_Slider project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Adjuster.xcodeproj
+open ./Value_Slider.xcodeproj
 ```
 
-Select Adjuster project and type Cmd+R to build and run it.
+Select Value_Slider project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Adjuster project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Adjuster
+./Value_Slider
 ```
