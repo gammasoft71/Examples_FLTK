@@ -1,10 +1,10 @@
-# Box
+# Spinner
 
-Shows how to create adjusters with Fl_Box widget.
+Shows how to create a spinner with Fl_Spinner widget.
 
 ## Source
 
-[Box.cpp](Box.cpp)
+[Spinner.cpp](Spinner.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Box.sln
+start Spinner.sln
 ```
 
-Select Box project and type Ctrl+F5 to build and run it.
+Select Spinner project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Box.xcodeproj
+open ./Spinner.xcodeproj
 ```
 
-Select Box project and type Cmd+R to build and run it.
+Select Spinner project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Box project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Box
+./Spinner
 ```
