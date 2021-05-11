@@ -1,10 +1,10 @@
-# Box
+# File_Browser
 
-Shows how to create adjusters with Fl_Box widget.
+Shows how to create a file browser with Fl_File_Browser widget.
 
 ## Source
 
-[Box.cpp](Box.cpp)
+[File_Browser.cpp](File_Browser.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Box.sln
+start File_Browser.sln
 ```
 
-Select Box project and type Ctrl+F5 to build and run it.
+Select File_Browser project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Box.xcodeproj
+open ./File_Browser.xcodeproj
 ```
 
-Select Box project and type Cmd+R to build and run it.
+Select File_Browser project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Box project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Box
+./File_Browser
 ```
