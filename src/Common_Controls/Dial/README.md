@@ -1,10 +1,10 @@
-# Adjuster
+# Dial
 
-Shows how to create adjusters with Fl_Adjuster valuator.
+Shows how to create dials with Fl_Dial, Fl_Line_Dial and Fl_Fill_Dial valuators.
 
 ## Source
 
-[Adjuster.cpp](Adjuster.cpp)
+[Dial.cpp](Dial.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Adjuster.sln
+start Dial.sln
 ```
 
-Select Adjuster project and type Ctrl+F5 to build and run it.
+Select Dial project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Adjuster.xcodeproj
+open ./Dial.xcodeproj
 ```
 
-Select Adjuster project and type Cmd+R to build and run it.
+Select Dial project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Adjuster project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Adjuster
+./Dial
 ```
