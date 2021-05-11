@@ -30,7 +30,7 @@ cmake .. -G "Xcode"
 open ./Input.xcodeproj
 ```
 
-Select Box project and type Cmd+R to build and run it.
+Select Input project and type Cmd+R to build and run it.
 
 ### Linux :
 
