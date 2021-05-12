@@ -6,6 +6,8 @@ Shows how to create a check box with own Fl_Check_Box widget.
 
 [Check_Box.cpp](Check_Box.cpp)
 
+[Fl_Check_Box.h](Fl_Check_Box.h)
+
 [CMakeLists.txt](CMakeLists.txt)
 
 ## Generate and build
