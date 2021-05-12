@@ -6,6 +6,8 @@ Shows how to create a progress bar with own Fl_Progress_Bar widget.
 
 [Progress_Bar.cpp](Progress_Bar.cpp)
 
+[Fl_Progress_Bar.h](Fl_Progress_Bar.h)
+
 [CMakeLists.txt](CMakeLists.txt)
 
 ## Generate and build
