@@ -124,12 +124,12 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Mouse_Events](src/Events/Mouse_Events/README.md) demonstrates the use of mouse events.
 * [Window_Click](src/Events/Window_Click/README.md) shows how to use mouse click event with override handle method and use Fl::event_button, Fl::event_x() and Fl::event_y() methods on FL_RELEASE event.
 
-## [Tips And Tricks](src/Tips_And_Tricks)
+## [Tips And Tricks](src/Tips_And_Tricks/README.md)
 
-* [Disable_Symbols](src/Tips_And_Tricks/Disable_Symbols) shows how to disable / enable label symbols.
-* [Functional](src/Tips_And_Tricks/Functional) shows how to use callback method with std::function, std::bind and lambda methods.
-* [Prevent_Hitting_Escape_Key_Closes_Windows](src/Tips_And_Tricks/Prevent_Hitting_Escape_Key_Closes_Windows) shows how to prevent hitting 'Escape' key closes Windows.
-* [Widget_Wrapper](src/Tips_And_Tricks/Widget_Wrapper) shows how to use callback method with std::function, std::bind and lambda methods.
+* [Disable_Symbols](src/Tips_And_Tricks/Disable_Symbols/README.md) shows how to disable / enable label symbols.
+* [Functional](src/Tips_And_Tricks/Functional/README.md) shows how to use callback method with std::function, std::bind and lambda methods.
+* [Prevent_Hitting_Escape_Key_Closes_Windows](src/Tips_And_Tricks/Prevent_Hitting_Escape_Key_Closes_Windows/README.md) shows how to prevent hitting 'Escape' key closes Windows.
+* [Widget_Wrapper](src/Tips_And_Tricks/Widget_Wrapper/README.md) shows how to use callback method with std::function, std::bind and lambda methods.
 
 ## [Others](src/Others/README.md)
 
