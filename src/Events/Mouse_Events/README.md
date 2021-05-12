@@ -1,6 +1,6 @@
 # Mouse_Events
 
-Demonstrates the use of key events.
+Demonstrates the use of mouse events.
 
 ## Source
 
