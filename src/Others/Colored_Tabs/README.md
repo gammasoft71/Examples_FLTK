@@ -1,10 +1,10 @@
-# Browser
+# Colored_Tabs
 
-Shows how to create text list with Fl_Browser widget.
+Shows how to create a tabs and colored pages with Fl_Tabs and Fl_Group..
 
 ## Source
 
-[Browser.cpp](Browser.cpp)
+[Colored_Tabs.cpp](Colored_Tabs.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Browser.sln
+start Colored_Tabs.sln
 ```
 
-Select Browser project and type Ctrl+F5 to build and run it.
+Select Colored_Tabs project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Browser.xcodeproj
+open ./Colored_Tabs.xcodeproj
 ```
 
-Select Browser project and type Cmd+R to build and run it.
+Select Colored_Tabs project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Browser project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Browser
+./Colored_Tabs
 ```
