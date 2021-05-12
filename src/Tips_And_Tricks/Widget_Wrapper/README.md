@@ -6,6 +6,8 @@ Shows how to use callback method with std::function, std::bind and lambda method
 
 [Widget_Wrapper.cpp](Widget_Wrapper.cpp)
 
+[Fl_Widget_Wrapper.h](Fl_Widget_Wrapper.h)
+
 [CMakeLists.txt](CMakeLists.txt)
 
 ## Generate and build
