@@ -6,6 +6,10 @@ Shows how to use own scheme modes with own fl_scheme_mode methods.
 
 [Scheme_Modes.cpp](Scheme_Modes.cpp)
 
+[Fl_Scheme_Mode.h](Fl_Scheme_Mode.h)
+
+[Fl_Scheme_Mode.cpp](Fl_Scheme_Mode.cpp)
+
 [CMakeLists.txt](CMakeLists.txt)
 
 ## Generate and build
