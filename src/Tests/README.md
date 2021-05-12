@@ -1,3 +1,3 @@
 # Others
 
-* [Test_Gui](Test_Gui/README.md) use to experiment test.
+* [Test_Gui](Test_Gui/README.md) is used to experiment test.
