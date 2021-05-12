@@ -1,10 +1,10 @@
-# Button
+# Scheme_Modes
 
-Shows how to create a button with Fl_Button widget.
+Shows how to use own scheme modes with own fl_scheme_mode methods.
 
 ## Source
 
-[Button.cpp](Button.cpp)
+[Scheme_Modes.cpp](Scheme_Modes.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Button.sln
+start Scheme_Modes.sln
 ```
 
-Select Button project and type Ctrl+F5 to build and run it.
+Select Scheme_Modes project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Button.xcodeproj
+open ./Scheme_Modes.xcodeproj
 ```
 
-Select Button project and type Cmd+R to build and run it.
+Select Scheme_Modes project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Button project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Button
+./Scheme_Modes
 ```
