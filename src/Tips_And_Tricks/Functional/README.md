@@ -1,10 +1,10 @@
-# Button
+# Functional
 
-Shows how to create a button with Fl_Button widget.
+Shows how to use callback method with std::function, std::bind and lambda methods.
 
 ## Source
 
-[Button.cpp](Button.cpp)
+[Functional.cpp](Functional.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Button.sln
+start Functional.sln
 ```
 
-Select Button project and type Ctrl+F5 to build and run it.
+Select Functional project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Button.xcodeproj
+open ./Functional.xcodeproj
 ```
 
-Select Button project and type Cmd+R to build and run it.
+Select Functional project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Button project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Button
+./Functional
 ```
