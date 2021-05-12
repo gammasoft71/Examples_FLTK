@@ -1,10 +1,10 @@
-# Button
+# Disable_Symbols
 
-Shows how to create a button with Fl_Button widget.
+Shows how to disable / enable label symbols.
 
 ## Source
 
-[Button.cpp](Button.cpp)
+[Disable_Symbols.cpp](Disable_Symbols.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Button.sln
+start Disable_Symbols.sln
 ```
 
-Select Button project and type Ctrl+F5 to build and run it.
+Select Disable_Symbols project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Button.xcodeproj
+open ./Disable_Symbols.xcodeproj
 ```
 
-Select Button project and type Cmd+R to build and run it.
+Select Disable_Symbols project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Button project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Button
+./Disable_Symbols
 ```
