@@ -1,10 +1,10 @@
-# Button
+# Menu_Button
 
-Shows how to create a button with Fl_Button widget.
+Shows how to create a menu button with Fl_Menu_Button widget.
 
 ## Source
 
-[Button.cpp](Button.cpp)
+[Menu_Button.cpp](Menu_Button.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Button.sln
+start Menu_Button.sln
 ```
 
-Select Button project and type Ctrl+F5 to build and run it.
+Select Menu_Button project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Button.xcodeproj
+open ./Menu_Button.xcodeproj
 ```
 
-Select Button project and type Cmd+R to build and run it.
+Select Menu_Button project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Button project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Button
+./Menu_Button
 ```
