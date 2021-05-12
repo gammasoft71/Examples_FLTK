@@ -1,10 +1,10 @@
-# Button
+# Use_Wait_Cursor
 
-Shows how to create a button with Fl_Button widget.
+Shows how to use own Fl_Use_Wait_cursor component or own fl_use_wait_cursor method.
 
 ## Source
 
-[Button.cpp](Button.cpp)
+[Use_Wait_Cursor.cpp](Use_Wait_Cursor.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Button.sln
+start Use_Wait_Cursor.sln
 ```
 
-Select Button project and type Ctrl+F5 to build and run it.
+Select Use_Wait_Cursor project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Button.xcodeproj
+open ./Use_Wait_Cursor.xcodeproj
 ```
 
-Select Button project and type Cmd+R to build and run it.
+Select Use_Wait_Cursor project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Button project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Button
+./Use_Wait_Cursor
 ```
