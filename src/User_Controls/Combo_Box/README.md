@@ -6,6 +6,10 @@ Shows how to create Combo boxes with own Fl_Combo_Box widgets.
 
 [Combo_Box.cpp](Combo_Box.cpp)
 
+[Fl_Combo_Box_Style.h](Fl_Combo_Box_Style.h)
+
+[Fl_Combo_Box.h](Fl_Combo_Box.h)
+
 [CMakeLists.txt](CMakeLists.txt)
 
 ## Generate and build
