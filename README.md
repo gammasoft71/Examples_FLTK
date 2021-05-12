@@ -79,11 +79,11 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Window](src/Groups/Window/README.md) shows how to create a simple window with Fl_Window.
 * [Wizard](src/Groups/Wizard/README.md) shows how to create a Wizard and pages with Fl_Wizard and Fl_Group.
 
-## [Menus and toolbars](src/Menus_And_Toolbars)
+## [Menus and toolbars](src/Menus_And_Toolbars/README.md)
 
-* [Menu_Bar](src/Menus_And_Toolbars/Menu_Bar) shows how to create a menu bar with Fl_Menu_Bar widget.
-* [Menu_Button](src/Menus_And_Toolbars/Menu_Button) shows how to create a menu button with Fl_Menu_Button widget.
-* [Sys_Menu_Bar](src/Menus_And_Toolbars/Sys_Menu_Bar) shows how to create a system menu bar with Fl_Sys_Menu_Bar widget.
+* [Menu_Bar](src/Menus_And_Toolbars/Menu_Bar/README.md) shows how to create a menu bar with Fl_Menu_Bar widget.
+* [Menu_Button](src/Menus_And_Toolbars/Menu_Button/README.md) shows how to create a menu button with Fl_Menu_Button widget.
+* [Sys_Menu_Bar](src/Menus_And_Toolbars/Sys_Menu_Bar/README.md) shows how to create a system menu bar with Fl_Sys_Menu_Bar widget.
 
 ## [Components](src/Components/README.md)
 
