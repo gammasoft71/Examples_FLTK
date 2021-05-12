@@ -6,9 +6,9 @@ Shows how to change cursor of a widget with override handle method and use fl_cu
 
 [Cursors.cpp](Cursors.cpp)
 
-[CMakeLists.txt](CMakeLists.txt)
-
 [Fl_Test_Cursor.h](Fl_Test_Cursor.h)
+
+[CMakeLists.txt](CMakeLists.txt)
 
 ## Generate and build
 
