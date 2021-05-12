@@ -1,10 +1,10 @@
-# Button
+# Combo_Box
 
-Shows how to create a button with Fl_Button widget.
+Shows how to create Combo boxes with own Fl_Combo_Box widgets.
 
 ## Source
 
-[Button.cpp](Button.cpp)
+[Combo_Box.cpp](Combo_Box.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Button.sln
+start Combo_Box.sln
 ```
 
-Select Button project and type Ctrl+F5 to build and run it.
+Select Combo_Box project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Button.xcodeproj
+open ./Combo_Box.xcodeproj
 ```
 
-Select Button project and type Cmd+R to build and run it.
+Select Combo_Box project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Button project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Button
+./Combo_Box
 ```
