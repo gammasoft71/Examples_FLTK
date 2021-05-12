@@ -1,10 +1,10 @@
-# Browser
+# Colored_Browser
 
-Shows how to create text list with Fl_Browser widget.
+Shows how to create a browser and colored items with Fl_Browser.
 
 ## Source
 
-[Browser.cpp](Browser.cpp)
+[Colored_Browser.cpp](Colored_Browser.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Browser.sln
+start Colored_Browser.sln
 ```
 
-Select Browser project and type Ctrl+F5 to build and run it.
+Select Colored_Browser project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Browser.xcodeproj
+open ./Colored_Browser.xcodeproj
 ```
 
-Select Browser project and type Cmd+R to build and run it.
+Select Colored_Browser project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Browser project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Browser
+./Colored_Browser
 ```
