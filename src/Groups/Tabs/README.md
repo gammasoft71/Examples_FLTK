@@ -1,10 +1,10 @@
-# Group
+# Tabs
 
-Shows how to create a group with Fl_Group.
+Shows how to create a tabs and pages with Fl_Tabs and Fl_Group.
 
 ## Source
 
-[Group.cpp](Group.cpp)
+[Tabs.cpp](Tabs.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Group.sln
+start Tabs.sln
 ```
 
-Select Group project and type Ctrl+F5 to build and run it.
+Select Tabs project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Group.xcodeproj
+open ./Tabs.xcodeproj
 ```
 
-Select Group project and type Cmd+R to build and run it.
+Select Tabs project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Group project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Group
+./Tabs
 ```
