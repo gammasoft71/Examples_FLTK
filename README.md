@@ -113,9 +113,9 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Native_File_Chooser_Save_File](src/Common_Dialogs/Native_File_Chooser_Save_File/README.md) shows how to use a native file chooser dialog to save file with Fl_Native_File_Chooser dialog.
 * [Password](src/Common_Dialogs/Password/README.md) shows how to create an password box with fl_password method.
 
-## [User Dialogs](src/User_Dialogs)
+## [User Dialogs](src/User_Dialogs/README.md)
 
-* [Font_Chooser](src/User_Dialogs/Font_Chooser) shows how to use a Font chooser dialog with own fl_font_chooser method.
+* [Font_Chooser](src/User_Dialogs/Font_Chooser/README.md) shows how to use a Font chooser dialog with own fl_font_chooser method.
 
 ## [Events](src/Events/README.md)
 
