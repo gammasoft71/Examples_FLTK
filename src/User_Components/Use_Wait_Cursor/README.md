@@ -6,6 +6,10 @@ Shows how to use own Fl_Use_Wait_cursor component or own fl_use_wait_cursor meth
 
 [Use_Wait_Cursor.cpp](Use_Wait_Cursor.cpp)
 
+[Fl_Use_Wait_Cursor.h](Fl_Use_Wait_Cursor.h)
+
+[Fl_Use_Wait_Cursor.cpp](Fl_Use_Wait_Cursor.cpp)
+
 [CMakeLists.txt](CMakeLists.txt)
 
 ## Generate and build
