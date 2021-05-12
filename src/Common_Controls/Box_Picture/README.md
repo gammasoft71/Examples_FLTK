@@ -8,6 +8,8 @@ Shows how to use an image with Fl_Box widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+[logo.xpm](logo.xpm)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:
