@@ -1,10 +1,10 @@
-# Browser
+# Group_And_Radio_Round_Button
 
-Shows how to create text list with Fl_Browser widget.
+Shows how to use group and radio round buttons with Fl_Group and Fl_Radio_Round_Button widgets.
 
 ## Source
 
-[Browser.cpp](Browser.cpp)
+[Group_And_Radio_Round_Button.cpp](Group_And_Radio_Round_Button.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Browser.sln
+start Group_And_Radio_Round_Button.sln
 ```
 
-Select Browser project and type Ctrl+F5 to build and run it.
+Select Group_And_Radio_Round_Button project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Browser.xcodeproj
+open ./Group_And_Radio_Round_Button.xcodeproj
 ```
 
-Select Browser project and type Cmd+R to build and run it.
+Select Group_And_Radio_Round_Button project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Browser project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Browser
+./Group_And_Radio_Round_Button
 ```
