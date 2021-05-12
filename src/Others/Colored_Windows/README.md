@@ -1,10 +1,10 @@
-# Browser
+# Colored_Windows
 
-Shows how to create text list with Fl_Browser widget.
+Shows how to create a colored windows with Fl_Window.
 
 ## Source
-
-[Browser.cpp](Browser.cpp)
+  
+[Colored_Windows.cpp](Colored_Windows.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Browser.sln
+start Colored_Windows.sln
 ```
 
-Select Browser project and type Ctrl+F5 to build and run it.
+Select Colored_Windows project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Browser.xcodeproj
+open ./Colored_Windows.xcodeproj
 ```
 
-Select Browser project and type Cmd+R to build and run it.
+Select Colored_Windows project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Browser project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Browser
+./Colored_Windows
 ```
