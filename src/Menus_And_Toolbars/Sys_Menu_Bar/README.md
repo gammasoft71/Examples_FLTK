@@ -1,10 +1,10 @@
-# Button
+# Sys_Menu_Bar
 
-Shows how to create a button with Fl_Button widget.
+Shows how to create a system menu bar with Fl_Sys_Menu_Bar widget.
 
 ## Source
 
-[Button.cpp](Button.cpp)
+[Sys_Menu_Bar.cpp](Sys_Menu_Bar.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Button.sln
+start Sys_Menu_Bar.sln
 ```
 
-Select Button project and type Ctrl+F5 to build and run it.
+Select Sys_Menu_Bar project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Button.xcodeproj
+open ./Sys_Menu_Bar.xcodeproj
 ```
 
-Select Button project and type Cmd+R to build and run it.
+Select Sys_Menu_Bar project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Button project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Button
+./Sys_Menu_Bar
 ```
