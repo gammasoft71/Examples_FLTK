@@ -1,6 +1,6 @@
 # Progress_Bar
 
-Shows how to create a button with Fl_Button widget.
+Shows how to create a progress bar with own Fl_Progress_Bar widget.
 
 ## Source
 
