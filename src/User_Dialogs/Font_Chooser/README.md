@@ -6,6 +6,8 @@ Shows how to use a Font chooser dialog with own fl_font_chooser method.
 
 [Font_Chooser.cpp](Font_Chooser.cpp)
 
+[Fl_Font_Chooser.h](Fl_Font_Chooser.h)
+
 [CMakeLists.txt](CMakeLists.txt)
 
 ## Generate and build
