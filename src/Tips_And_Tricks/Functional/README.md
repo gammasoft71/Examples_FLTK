@@ -6,6 +6,8 @@ Shows how to use callback method with std::function, std::bind and lambda method
 
 [Functional.cpp](Functional.cpp)
 
+[fl_functional.h](fl_functional.h)
+
 [CMakeLists.txt](CMakeLists.txt)
 
 ## Generate and build
