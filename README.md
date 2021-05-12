@@ -94,10 +94,10 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Timer](src/Components/Timer/README.md) shows how to create a timer with Fl::add_timeout,  Fl::remove_timeout and Fl::repeat_timeout methods.
 * [Tooltip](src/Components/Tooltip/README.md) shows how to create a tooltip with Fl_Tooltip component.
 
-## [User Components](src/User_Components)
+## [User Components](src/User_Components/README.md)
 
-* [Scheme_Modes](src/User_Components/Scheme_Modes) shows how to use own scheme modes with own fl_scheme_mode methods.
-* [Use_Wait_Cursor](src/User_Components/Use_Wait_Cursor) shows how to use own Fl_Use_Wait_cursor component or own fl_use_wait_cursor method.
+* [Scheme_Modes](src/User_Components/Scheme_Modes/README.md) shows how to use own scheme modes with own fl_scheme_mode methods.
+* [Use_Wait_Cursor](src/User_Components/Use_Wait_Cursor/README.md) shows how to use own Fl_Use_Wait_cursor component or own fl_use_wait_cursor method.
 
 ## [Common Dialogs](src/Common_Dialogs/README.md)
 
