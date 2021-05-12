@@ -62,12 +62,12 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Value_Output](src/Common_Controls/Value_Output/README.md) shows how to create a value output with Fl_Value_Output valuator.
 * [Value_Slider](src/Common_Controls/Value_Slider/README.md) shows how to create value sliders with Fl_Hor_Value_Slider and Fl_Value_Slider valuators.
 
-## [User Controls](src/User_Controls)
+## [User Controls](src/User_Controls/README.md)
 
-* [Check_Box](src/User_Controls/Check_Box) shows how to create a check box with own Fl_Check_Box widget.
-* [Combo_Box](src/User_Controls/Combo_Box) shows how to create Combo boxes with own Fl_Combo_Box widgets.
-* [Progress_Bar](src/User_Controls/Progress_Bar) shows how to create a progress bar with own Fl_Progress_Bar widget.
-* [Radio_Toggle_Button](src/User_Controls/Radio_Toggle_Button) shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
+* [Check_Box](src/User_Controls/Check_Box/README.md) shows how to create a check box with own Fl_Check_Box widget.
+* [Combo_Box](src/User_Controls/Combo_Box/README.md) shows how to create Combo boxes with own Fl_Combo_Box widgets.
+* [Progress_Bar](src/User_Controls/Progress_Bar/README.md) shows how to create a progress bar with own Fl_Progress_Bar widget.
+* [Radio_Toggle_Button](src/User_Controls/Radio_Toggle_Button/README.md) shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
 
 ## [Groups](src/Groups/README.md)
 
