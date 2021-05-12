@@ -1,10 +1,10 @@
-# Button
+# Radio_Toggle_Button
 
-Shows how to create a button with Fl_Button widget.
+Shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
 
 ## Source
 
-[Button.cpp](Button.cpp)
+[Radio_Toggle_Button.cpp](Radio_Toggle_Button.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
 
@@ -17,20 +17,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Button.sln
+start Radio_Toggle_Button.sln
 ```
 
-Select Button project and type Ctrl+F5 to build and run it.
+Select Radio_Toggle_Button project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Button.xcodeproj
+open ./Radio_Toggle_Button.xcodeproj
 ```
 
-Select Button project and type Cmd+R to build and run it.
+Select Radio_Toggle_Button project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +38,5 @@ Select Button project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Button
+./Radio_Toggle_Button
 ```
