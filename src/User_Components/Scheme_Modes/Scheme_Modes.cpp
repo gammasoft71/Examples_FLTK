@@ -36,7 +36,7 @@ namespace Examples {
         fl_message_icon()->color(fl_rgb_color(0, 0, 255));
         fl_message_icon()->label("i");
         fl_message_icon()->labelcolor(fl_rgb_color(255, 255, 255));
-        fl_choice("Message with dark mode enabled...", "&OK", nullptr, nullptr);
+        fl_choice("This is an example of message...", "&OK", nullptr, nullptr);
       }, this);
 
       toggle_button1.value(true);
