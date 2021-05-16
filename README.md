@@ -101,6 +101,8 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 ## [Common Dialogs](src/Common_Dialogs/README.md)
 
+* [About](src/Common_Dialogs/About/README.md) shows how to create an about box with fl_message method.
+* [Alert](src/Common_Dialogs/Alert/README.md) shows how to create an alert box with fl_alert method.
 * [Beep](src/Common_Dialogs/Beep/README.md) shows how to create a beep with fl_beep method.
 * [Choice](src/Common_Dialogs/Choice/README.md) shows how to create a choice box with fl_choice method.
 * [Color_Chooser_Dialog](src/Common_Dialogs/Color_Chooser_Dialog/README.md) shows how to use color chooser dialog with Fl_Color_Chooser dialog.
@@ -116,6 +118,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 ## [User Dialogs](src/User_Dialogs/README.md)
 
 * [Font_Chooser](src/User_Dialogs/Font_Chooser/README.md) shows how to use a Font chooser dialog with own fl_font_chooser method.
+* [Message_Box](src/User_Dialogs/Message_Box/README.md) shows how to use a Message box with own fl_message_box method.
 
 ## [Events](src/Events/README.md)
 
