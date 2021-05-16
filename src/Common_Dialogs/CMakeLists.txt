@@ -4,6 +4,8 @@ cmake_minimum_required(VERSION 3.0)
 project(Common_Dialogs)
 
 # Projects
+add_subdirectory(About)
+add_subdirectory(Alert)
 add_subdirectory(Beep)
 add_subdirectory(Choice)
 add_subdirectory(Color_Chooser_Dialog)

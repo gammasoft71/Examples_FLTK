@@ -1,5 +1,4 @@
 #include "Fl_Application.h"
-#include <iostream>
 #include <FL/Fl_Button.H>
 #include <FL/fl_message.H>
 
@@ -22,13 +21,9 @@ namespace Examples {
   private:
     static void generate_handled_exception(Fl_Widget* sender, void* window) {
       try {
-        throw invalid_argument("Exception handled generated");
+        throw invalid_argument("Exception handled generated.");
       } catch (const exception& e) {
-        fl_message_icon()->label("i");
-        fl_message_icon()->color(fl_rgb_color(0, 0, 255));
-        fl_message_icon()->labelcolor(fl_rgb_color(255, 255, 255));
         fl_message_title("Exception handled");
-        fl_message_hotspot(false);
         fl_message("%s", e.what());
       }
     }
@@ -45,12 +40,8 @@ int main(int argc, char *argv[]) {
   try {
     Fl_Application::run(argc, argv, Examples::Main_Window());
   } catch(const exception& e) {
-    cerr << e.what() << endl;
-    fl_message_title("Exception occured");
-    fl_alert("Message : %s", e.what());
+    Fl_Application::show_exception_error("Exception occured", e);
   } catch(...) {
-    cerr << "Unknown exception occured" << endl;
-    fl_message_title("Unknown exception occured");
-    fl_alert("(Unknown exception)");
+    Fl_Application::show_exception_error("Unknown exception occured");
   }
 }

@@ -12,15 +12,11 @@ namespace Examples {
       button_show_choice.callback([](Fl_Widget* sender, void* data) {
         auto window = reinterpret_cast<Main_Window*>(data);
         window->box_result.copy_label("Result = ");
-        fl_message_hotspot(false);
-        fl_message_icon()->label("!");
-        fl_message_icon()->color(fl_rgb_color(255, 255, 0));
-        fl_message_icon()->labelcolor(fl_rgb_color(0, 0, 0));
         fl_message_title("Choice");
-        if (fl_choice("Hello, World!", fl_cancel, fl_ok, nullptr) == 1)
-          window->box_result.copy_label("Result = Ok");
+        if (fl_choice("Can you answer the question ?", fl_no, fl_yes, nullptr) == 1)
+          window->box_result.copy_label("Result = Yes");
         else
-          window->box_result.copy_label("Result = Cancel");
+          window->box_result.copy_label("Result = No");
       }, this);
 
       box_result.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);

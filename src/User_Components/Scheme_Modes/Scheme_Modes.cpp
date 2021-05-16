@@ -32,11 +32,11 @@ namespace Examples {
       resizable(this);
 
       button1.callback([](Fl_Widget* sender, void* window) {
-        fl_message_hotspot(false);
+        fl_message_icon()->box(FL_ROUND_UP_BOX);
         fl_message_icon()->color(fl_rgb_color(0, 0, 255));
         fl_message_icon()->label("i");
         fl_message_icon()->labelcolor(fl_rgb_color(255, 255, 255));
-        fl_choice("This is an example of message...", "&OK", nullptr, nullptr);
+        fl_choice("This is an example of message...", nullptr, fl_ok, nullptr);
       }, this);
 
       toggle_button1.value(true);
@@ -172,6 +172,8 @@ namespace Examples {
 }
 
 int main(int argc, char *argv[]) {
+  fl_message_hotspot(false);
+  fl_message_icon()->labelfont(FL_HELVETICA_BOLD);
   Examples::Main_Window window;
   window.show(argc, argv);
   return Fl::run();

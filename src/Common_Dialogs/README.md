@@ -1,5 +1,7 @@
 # Common Dialogs
 
+* [About](About/README.md) shows how to create an about box with fl_message method.
+* [Alert](Alert/README.md) shows how to create an alert box with fl_alert method.
 * [Beep](Beep/README.md) shows how to create a beep with fl_beep method.
 * [Choice](Choice/README.md) shows how to create a choice box with fl_choice method.
 * [Color_Chooser_Dialog](Color_Chooser_Dialog/README.md) shows how to use color chooser dialog with Fl_Color_Chooser dialog.

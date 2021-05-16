@@ -8,16 +8,16 @@
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Message example") {
+    Main_Window() : Fl_Window(200, 100, 300, 300, "Alert example") {
       end();
       button_show_message.callback([](Fl_Widget* sender, void* data) {
-        fl_message_title("Message");
-        fl_message("This is a message description.");
+        fl_message_title("Alert");
+        fl_alert("This is a warning description.");
       }, this);
     }
     
   private:
-    Fl_Button button_show_message {10, 10, 100, 25, "Message"};
+    Fl_Button button_show_message {10, 10, 100, 25, "Alert"};
   };
 }
 

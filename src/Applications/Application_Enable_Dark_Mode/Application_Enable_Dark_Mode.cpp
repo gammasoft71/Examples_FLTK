@@ -21,11 +21,12 @@ namespace Examples {
       box1.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_CLIP | FL_ALIGN_INSIDE);
       
       button1.callback([](Fl_Widget* sender, void* window) {
-        fl_message_hotspot(false);
+        fl_message_icon()->box(FL_ROUND_UP_BOX);
         fl_message_icon()->color(fl_rgb_color(0, 0, 255));
         fl_message_icon()->label("i");
         fl_message_icon()->labelcolor(fl_rgb_color(255, 255, 255));
-        fl_choice("Message with dark mode enabled...", "&OK", nullptr, nullptr);
+        fl_message_title("Message");
+        fl_choice("This is an example of message...", nullptr, fl_ok, nullptr);
       }, this);
 
       browser1.type(FL_HOLD_BROWSER);
@@ -50,6 +51,8 @@ namespace Examples {
 }
 
 int main(int argc, char *argv[]) {
+  fl_message_hotspot(false);
+  fl_message_icon()->labelfont(FL_HELVETICA_BOLD);
   Examples::Main_Window window;
   window.show(argc, argv);
   struct Fl_Enable_Dark_Mode {
