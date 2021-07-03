@@ -4,6 +4,7 @@ cmake_minimum_required(VERSION 3.0)
 project(Others)
 
 # Projects
+add_subdirectory(Box_And_Unicode_Text)
 add_subdirectory(Colored_Browser)
 add_subdirectory(Colored_Tabs)
 add_subdirectory(Colored_Text_Display)
