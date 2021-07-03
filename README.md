@@ -42,6 +42,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Float_Input](src/Common_Controls/Float_Input/README.md) shows how to create a float input text with Fl_Float_Input widget.
 * [Input](src/Common_Controls/Input/README.md) shows how to create a text input with Fl_Input widget.
 * [Int_Input](src/Common_Controls/Int_Input/README.md) shows how to create an int input text with Fl_Int_Input widget.
+* [Light_Button](src/Common_Controls/Light_Button/README.md) shows how to create a light button with Fl_Light_Button widget.
 * [Multiline_Input](src/Common_Controls/Multiline_Input/README.md) shows how to create a multiline text input text with Fl_Multiline_Input widget.
 * [Multiline_Output](src/Common_Controls/Multiline_Output/README.md) shows how to create a multiline text output with Fl_Multiline_Output widget.
 * [Nice_Slider](src/Common_Controls/Nice_Slider/README.md) shows how to create a slider with Fl_Nice_Slider widget.
@@ -50,6 +51,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Radio_Light_Button](src/Common_Controls/Radio_Light_Button/README.md) shows how to create a radio light button with Fl_Radio_Light_Button widget.
 * [Radio_Round_Button](src/Common_Controls/Radio_Round_Button/README.md) shows how to create a radio round button with Fl_Radio_Round_Button widget.
 * [Roller](src/Common_Controls/Roller/README.md) shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
+* [Round_Button](src/Common_Controls/Round_Button/README.md) shows how to create a round button with Fl_Round_Button widget.
 * [Secret_Input](src/Common_Controls/Secret_Input/README.md) shows how to create a secret text input with Fl_Secret_Input widget.
 * [Slider](src/Common_Controls/Slider/README.md) shows how to create sliders with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_Slider, Fl_Slider, Fl_Fill_Slider and Fl_Nice_Slider valuators.
 * [Spinner](src/Common_Controls/Spinner/README.md) shows how to create a spinner with Fl_Spinner widget.
@@ -136,6 +138,7 @@ Shows how to use Fltk controls only by programming code (c++17).
 
 ## [Others](src/Others/README.md)
 
+* [Box_And_Unicode_Text](src/Others/Box_And_Unicode_Text/README.md) demonstrates the use of Fl_Box with unicode text.
 * [Colored_Browser](src/Others/Colored_Browser/README.md) shows how to create a browser and colored items with Fl_Browser.
 * [Colored_Tabs](src/Others/Colored_Tabs/README.md) shows how to create a tabs and colored pages with Fl_Tabs and Fl_Group.
 * [Colored_Text_Display](src/Others/Colored_Text_Display/README.md) shows how to create a colored text display with Fl_Text_Display.
