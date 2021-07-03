@@ -1,6 +1,6 @@
 # Box_And_Unicode_Text
 
-Demonstrates the use of Fl_Box control with unicode text.
+Demonstrates the use of Fl_Box with unicode text.
 
 ## Source
 
