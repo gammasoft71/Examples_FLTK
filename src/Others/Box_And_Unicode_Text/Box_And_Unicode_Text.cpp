@@ -12,12 +12,15 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window(200, 100, 420, 350, "Box and unicode text example") {
-      color(fl_rgb_color(0, 128, 128));
+      color(FL_DARK_CYAN);
+      labelcolor(FL_BLACK);
       for (auto index = 0U; index < languages.size(); ++index) {
         items[index].first = make_shared<Fl_Box>(10, 10 + index * 30, 150, 25, languages[index].first.c_str());
         items[index].first->align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+        items[index].first->labelcolor(FL_BLACK);
         items[index].second = make_shared<Fl_Box>(160, 10 + index * 30, 240, 25, languages[index].second.c_str());
         items[index].second->align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+        items[index].second->labelcolor(FL_BLACK);
       }
     }
     
