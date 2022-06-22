@@ -112,8 +112,8 @@ namespace Examples {
     Fl_Return_Button return_button1 {120, 80, 75, 25, "Return"};
     Fl_Radio_Round_Button radio1 {20, 120, 90, 25, "Raddio 1"};
     Fl_Radio_Round_Button radio2 {120, 120, 90, 25, "Raddio 2"};
-    Fl_Check_Button check_button1 {20, 150, 90, 25, "Raddio 1"};
-    Fl_Check_Button check_button2 {120, 150, 90, 25, "Raddio 2"};
+    Fl_Check_Button check_button1 {20, 150, 90, 25, "Check 1"};
+    Fl_Check_Button check_button2 {120, 150, 90, 25, "Check 2"};
     Fl_End end_buttons_scroll;
     Fl_End end_buttons_page;
     

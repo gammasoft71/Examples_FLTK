@@ -5,6 +5,10 @@
 #include <FL/Fl_Button.H>
 #include <FL/Fl_Window.H>
 
+#ifdef _WIN32
+#  define popen _popen
+#endif
+
 using namespace std;
 using namespace std::filesystem;
 
