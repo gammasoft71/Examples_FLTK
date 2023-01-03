@@ -2,6 +2,9 @@
 #include <FL/Fl_Box.H>
 #include <FL/Fl_File_Browser.H>
 #include <FL/Fl_Window.H>
+#if defined(_WIN32)
+#include <stdlib.h>
+#endif
 
 namespace Examples {
   class Main_Window : public Fl_Window {
