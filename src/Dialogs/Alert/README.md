@@ -8,6 +8,10 @@ Shows how to use message box with fl_message method.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Alert.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:
