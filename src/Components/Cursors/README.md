@@ -10,6 +10,10 @@ Shows how to change cursor of a widget with override handle method and use fl_cu
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Cursors.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

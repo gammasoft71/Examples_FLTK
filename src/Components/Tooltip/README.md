@@ -8,6 +8,10 @@ Shows how to create a tooltip with Fl_Tooltip component.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Tooltip.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

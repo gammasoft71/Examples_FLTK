@@ -8,6 +8,10 @@ Shows how to use preferences with Fl_Preferences component.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Preferences.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

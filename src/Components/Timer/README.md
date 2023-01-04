@@ -8,6 +8,10 @@ Shows how to create a timer with Fl::add_timeout, Fl::remove_timeout and Fl::rep
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Timer.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:
