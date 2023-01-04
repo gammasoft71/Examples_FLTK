@@ -1,12 +1,16 @@
-# Window
+# Pack
 
-Shows how to create a simple window with Fl_Window.
+Shows how to create a pack with Fl_Pack.
 
 ## Source
 
-[Window.cpp](Window.cpp)
+[Pack.cpp](Pack.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
+
+## Output
+
+![output](../../../docs/Pictures/Examples/Pack.png)
 
 ## Generate and build
 
@@ -17,20 +21,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Window.sln
+start Pack.sln
 ```
 
-Select Window project and type Ctrl+F5 to build and run it.
+Select Pack project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Window.xcodeproj
+open ./Pack.xcodeproj
 ```
 
-Select Window project and type Cmd+R to build and run it.
+Select Pack project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +42,5 @@ Select Window project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Window
+./Pack
 ```

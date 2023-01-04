@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
 # Solution
-project(Wizard)
+project(Window)
 find_package(FLTK REQUIRED)
 
 # Options
@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-Add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE Wizard.cpp)
+add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE Window.cpp)
 target_include_directories(${PROJECT_NAME} PRIVATE ${FLTK_INCLUDE_DIR})
 if (APPLE)
   # Workaround: fltk.framework does not exist, so we have to replace it by libfltk.dylib
@@ -20,4 +20,4 @@ if (APPLE)
   string(REPLACE "/usr/local/fltk.framework" "${FLTK_LIBRARY_NAME}" FLTK_LIBRARIES "${FLTK_LIBRARIES}")
 endif()
 target_link_libraries(${PROJECT_NAME} ${FLTK_LIBRARIES})
-set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Groups")
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "Windows")

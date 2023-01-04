@@ -1,12 +1,16 @@
-# Wizard
+# Tile
 
-Shows how to create a wizard and pages with Fl_Wizard and Fl_Group.
+Shows how to create a tile with Fl_Tile.
 
 ## Source
 
-[Wizard.cpp](Wizard.cpp)
+[Tile.cpp](Tile.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
+
+## Output
+
+![output](../../../docs/Pictures/Examples/Tile.png)
 
 ## Generate and build
 
@@ -17,20 +21,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Wizard.sln
+start Tile.sln
 ```
 
-Select Wizard project and type Ctrl+F5 to build and run it.
+Select Tile project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Wizard.xcodeproj
+open ./Tile.xcodeproj
 ```
 
-Select Wizard project and type Cmd+R to build and run it.
+Select Tile project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +42,5 @@ Select Wizard project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Wizard
+./Tile
 ```

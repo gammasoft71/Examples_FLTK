@@ -22,12 +22,6 @@ Shows how to use [Fltk](https://www.fltk.org) controls only by programming code 
 * [Application_Enable_Dark_Mode](Applications/Application_Enable_Dark_Mode/README.md) shows how to create a simple Fltk application with dark mode.
 * [Application_Enable_Light_Mode](Applications/Application_Enable_Light_Mode/README.md) shows how to create a simple Fltk application with light mode.
 
-## [Menus and toolbars](Menus_And_Toolbars/README.md)
-
-* [Menu_Bar](Menus_And_Toolbars/Menu_Bar/README.md) shows how to create a menu bar with Fl_Menu_Bar widget.
-* [Menu_Button](Menus_And_Toolbars/Menu_Button/README.md) shows how to create a menu button with Fl_Menu_Button widget.
-* [Sys_Menu_Bar](Menus_And_Toolbars/Sys_Menu_Bar/README.md) shows how to create a system menu bar with Fl_Sys_Menu_Bar widget.
-
 ## [Dialogs](Dialogs/README.md)
 
 * [About](Dialogs/About/README.md) shows how to create an about box with fl_message method.
@@ -44,15 +38,24 @@ Shows how to use [Fltk](https://www.fltk.org) controls only by programming code 
 * [Native_File_Chooser_Save_File](Dialogs/Native_File_Chooser_Save_File/README.md) shows how to use a native file chooser dialog to save file with Fl_Native_File_Chooser dialog.
 * [Password](Dialogs/Password/README.md) shows how to create an password box with fl_password method.
 
-## [Groups](Groups/README.md)
+## [Windows](Windows/README.md)
 
-* [Group](Groups/Group/README.md) shows how to create a group with Fl_Group.
-* [Pack](Groups/Pack/README.md) shows how to create a pack with Fl_Pack.
-* [Scroll](Groups/Scroll/README.md) shows how to create a scroll with Fl_Scroll.
-* [Tabs](Groups/Tabs/README.md) shows how to create a tabs and pages with Fl_Tabs and Fl_Group.
-* [Tile](Groups/Tile/README.md) shows how to create a tile with Fl_Tile.
-* [Window](Groups/Window/README.md) shows how to create a simple window with Fl_Window.
-* [Wizard](Groups/Wizard/README.md) shows how to create a Wizard and pages with Fl_Wizard and Fl_Group.
+* [Window](Windows/Window/README.md) shows how to create a simple window with Fl_Window.
+
+## [Menus and toolbars](Menus_And_Toolbars/README.md)
+
+* [Menu_Bar](Menus_And_Toolbars/Menu_Bar/README.md) shows how to create a menu bar with Fl_Menu_Bar widget.
+* [Menu_Button](Menus_And_Toolbars/Menu_Button/README.md) shows how to create a menu button with Fl_Menu_Button widget.
+* [Sys_Menu_Bar](Menus_And_Toolbars/Sys_Menu_Bar/README.md) shows how to create a system menu bar with Fl_Sys_Menu_Bar widget.
+
+## [Containers](Containers/README.md)
+
+* [Group](Containers/Group/README.md) shows how to create a group with Fl_Group.
+* [Pack](Containers/Pack/README.md) shows how to create a pack with Fl_Pack.
+* [Scroll](Containers/Scroll/README.md) shows how to create a scroll with Fl_Scroll.
+* [Tabs](Containers/Tabs/README.md) shows how to create a tabs and pages with Fl_Tabs and Fl_Group.
+* [Tile](Containers/Tile/README.md) shows how to create a tile with Fl_Tile.
+* [Wizard](Containers/Wizard/README.md) shows how to create a Wizard and pages with Fl_Wizard and Fl_Group.
 
 ## [Controls](Controls/README.md)
 

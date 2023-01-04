@@ -1,12 +1,16 @@
-# Tabs
+# Scroll
 
-Shows how to create a tabs and pages with Fl_Tabs and Fl_Group.
+Shows how to create a scroll with Fl_Scroll.
 
 ## Source
 
-[Tabs.cpp](Tabs.cpp)
+[Scroll.cpp](Scroll.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
+
+## Output
+
+![output](../../../docs/Pictures/Examples/Scroll.png)
 
 ## Generate and build
 
@@ -17,20 +21,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Tabs.sln
+start Scroll.sln
 ```
 
-Select Tabs project and type Ctrl+F5 to build and run it.
+Select Scroll project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Tabs.xcodeproj
+open ./Scroll.xcodeproj
 ```
 
-Select Tabs project and type Cmd+R to build and run it.
+Select Scroll project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +42,5 @@ Select Tabs project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Tabs
+./Scroll
 ```

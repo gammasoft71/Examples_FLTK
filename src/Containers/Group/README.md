@@ -1,12 +1,16 @@
-# Pack
+# Group
 
-Shows how to create a pack with Fl_Pack.
+Shows how to create a group with Fl_Group.
 
 ## Source
 
-[Pack.cpp](Pack.cpp)
+[Group.cpp](Group.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
+
+## Output
+
+![output](../../../docs/Pictures/Examples/Group.png)
 
 ## Generate and build
 
@@ -17,20 +21,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Pack.sln
+start Group.sln
 ```
 
-Select Pack project and type Ctrl+F5 to build and run it.
+Select Group project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Pack.xcodeproj
+open ./Group.xcodeproj
 ```
 
-Select Pack project and type Cmd+R to build and run it.
+Select Group project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +42,5 @@ Select Pack project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Pack
+./Group
 ```

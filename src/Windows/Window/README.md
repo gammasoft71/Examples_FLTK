@@ -1,12 +1,16 @@
-# Scroll
+# Window
 
-Shows how to create a scroll with Fl_Scroll.
+Shows how to create a simple window with Fl_Window.
 
 ## Source
 
-[Scroll.cpp](Scroll.cpp)
+[Window.cpp](Window.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
+
+## Output
+
+![output](../../../docs/Pictures/Examples/Window.png)
 
 ## Generate and build
 
@@ -17,20 +21,20 @@ To build this project, open "Terminal" and type following lines:
 ``` shell
 mkdir build && cd build
 cmake .. 
-start Scroll.sln
+start Window.sln
 ```
 
-Select Scroll project and type Ctrl+F5 to build and run it.
+Select Window project and type Ctrl+F5 to build and run it.
 
 ### macOS :
 
 ``` shell
 mkdir build && cd build
 cmake .. -G "Xcode"
-open ./Scroll.xcodeproj
+open ./Window.xcodeproj
 ```
 
-Select Scroll project and type Cmd+R to build and run it.
+Select Window project and type Cmd+R to build and run it.
 
 ### Linux :
 
@@ -38,5 +42,5 @@ Select Scroll project and type Cmd+R to build and run it.
 mkdir build && cd build
 cmake .. 
 cmake --build . --config Debug
-./Scroll
+./Window
 ```
