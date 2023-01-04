@@ -8,6 +8,10 @@ The classic first application "Hello World" by FLTK.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Hello_World_Fltk.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

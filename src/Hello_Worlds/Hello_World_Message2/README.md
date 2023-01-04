@@ -8,6 +8,10 @@ The classic first application "Hello World" with Fl_Message.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Hello_World_Message2.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

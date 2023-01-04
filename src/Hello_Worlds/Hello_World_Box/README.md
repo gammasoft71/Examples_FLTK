@@ -8,6 +8,10 @@ The classic first application "Hello World" with Fl_Box.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Hello_World_Box.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

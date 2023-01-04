@@ -8,6 +8,10 @@ The classic first application "Hello World" with say.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Hello_World_Say.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:
