@@ -10,7 +10,7 @@ Shows how to use group and radio round buttons with Fl_Group and Fl_Radio_Round_
 
 ## Output
 
-![output](../../../docs/Pictures/Examples/Group_And_Round_Button.png)
+![output](../../../docs/Pictures/Examples/Group_And_Radio_Round_Button.png)
 
 ## Generate and build
 
