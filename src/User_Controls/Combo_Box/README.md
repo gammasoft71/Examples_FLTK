@@ -12,6 +12,10 @@ Shows how to create Combo boxes with own Fl_Combo_Box widgets.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Group_Box.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

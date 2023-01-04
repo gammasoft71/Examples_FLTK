@@ -10,6 +10,10 @@ Shows how to create a check box with own Fl_Check_Box widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Check_Box.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

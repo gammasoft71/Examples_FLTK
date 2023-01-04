@@ -10,6 +10,10 @@ Shows how to create a progress bar with own Fl_Progress_Bar widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Progress_Bar.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:
