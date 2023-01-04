@@ -8,6 +8,10 @@ Shows how to create a simple Fltk application with light mode.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Application_Enable_Light_Mode.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

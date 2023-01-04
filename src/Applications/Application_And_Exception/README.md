@@ -10,6 +10,10 @@ Shows how to create a simple Fltk application and how to manage exception.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Application_And_Exception.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:
