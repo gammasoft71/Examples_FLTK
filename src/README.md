@@ -122,6 +122,11 @@ Shows how to use [Fltk](https://www.fltk.org) controls only by programming code 
 * [Prevent_Hitting_Escape_Key_Closes_Windows](Tips_And_Tricks/Prevent_Hitting_Escape_Key_Closes_Windows/README.md) shows how to prevent hitting 'Escape' key closes Windows.
 * [Widget_Wrapper](Tips_And_Tricks/Widget_Wrapper/README.md) shows how to use callback method with std::function, std::bind and lambda methods.
 
+## [User Dialogs](User_Dialogs/README.md)
+
+* [Font_Chooser](User_Dialogs/Font_Chooser/README.md) shows how to use a Font chooser dialog with own fl_font_chooser method.
+* [Message_Box](User_Dialogs/Message_Box/README.md) shows how to use a Message box with own fl_message_box method.
+
 ## [User Controls](User_Controls/README.md)
 
 * [Check_Box](User_Controls/Check_Box/README.md) shows how to create a check box with own Fl_Check_Box widget.
@@ -133,11 +138,6 @@ Shows how to use [Fltk](https://www.fltk.org) controls only by programming code 
 
 * [Scheme_Modes](User_Components/Scheme_Modes/README.md) shows how to use own scheme modes with own fl_scheme_mode methods.
 * [Use_Wait_Cursor](User_Components/Use_Wait_Cursor/README.md) shows how to use own Fl_Use_Wait_cursor component or own fl_use_wait_cursor method.
-
-## [User Dialogs](User_Dialogs/README.md)
-
-* [Font_Chooser](User_Dialogs/Font_Chooser/README.md) shows how to use a Font chooser dialog with own fl_font_chooser method.
-* [Message_Box](User_Dialogs/Message_Box/README.md) shows how to use a Message box with own fl_message_box method.
 
 ## [Others](Others/README.md)
 
