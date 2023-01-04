@@ -10,6 +10,10 @@ Shows how to use a Font chooser dialog with own fl_font_chooser method.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Font_Chooser.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

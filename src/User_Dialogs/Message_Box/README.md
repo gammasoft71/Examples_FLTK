@@ -4,9 +4,21 @@ Shows how to use message box with own fl_message_box method.
 
 ## Source
 
+[Dialog_Result.h](Dialog_Result.h)
+
+[fl_message_box.h](fl_message_box.h)
+
+[Message_Box_Buttons.h](Message_Box_Buttons.h)
+
+[Message_Box_Icon.h](Message_Box_Icon.h)
+
 [Message_Box.cpp](Message_Box.cpp)
 
 [CMakeLists.txt](CMakeLists.txt)
+
+## Output
+
+![output](../../../docs/Pictures/Examples/Message_Box.png)
 
 ## Generate and build
 
