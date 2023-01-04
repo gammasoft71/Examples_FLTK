@@ -19,7 +19,7 @@ SShows how to use [Fltk](https://www.fltk.org) controls only by programming code
 * [User Components](src/User_Components/README.md) contains user componants examples.
 * [User Dialogs](src/User_Dialogs/README.md) contains user dialogs examples.
 * [Others](src/Others/README.md) contains others examples.
-* [All](srcREADME.md) contains all examples
+* [All](src/README.md) contains all examples
 
 ## Download
 
