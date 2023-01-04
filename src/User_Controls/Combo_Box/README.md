@@ -14,7 +14,7 @@ Shows how to create Combo boxes with own Fl_Combo_Box widgets.
 
 ## Output
 
-![output](../../../docs/Pictures/Examples/Group_Box.png)
+![output](../../../docs/Pictures/Examples/Combo_Box.png)
 
 ## Generate and build
 
