@@ -10,7 +10,7 @@ The classic first application "Hello World" with GDI+ drawing objects.
 
 ## Output
 
-![output](../../../docs/Pictures/Examples/Hello_WorldDrawing.png)
+![output](../../../docs/Pictures/Examples/Hello_World_Drawing.png)
 
 ## Generate and build
 
