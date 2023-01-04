@@ -1,6 +1,6 @@
-# Box
+# Int_Input
 
-Shows how to create adjusters with Fl_Box widget.
+Shows how to create int input with Fl_Int_Input widget.
 
 ## Source
 
