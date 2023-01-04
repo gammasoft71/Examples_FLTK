@@ -8,6 +8,10 @@ Shows how to use choice box with fl_choice method.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Choice.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

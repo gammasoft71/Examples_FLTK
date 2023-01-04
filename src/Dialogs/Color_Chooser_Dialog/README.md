@@ -8,6 +8,10 @@ Shows how to use color chooser dialog with Fl_Color_Chooser_Dialog dialog.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Color_Chooser_Dialog.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

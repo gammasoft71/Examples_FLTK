@@ -8,6 +8,10 @@ Shows how to use native file chooser to browse directory with Fl_Native_File_Cho
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Native_File_Chooser_Browse_Directory.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

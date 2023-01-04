@@ -8,6 +8,10 @@ Shows how to use file choose browse file with fl_file_chooser method.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/File_Chooser_Browse_File.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

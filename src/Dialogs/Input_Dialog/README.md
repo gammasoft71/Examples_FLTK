@@ -8,6 +8,10 @@ Shows how to use input box with fl_input method.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Input_Dialog.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

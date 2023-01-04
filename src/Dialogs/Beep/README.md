@@ -8,6 +8,10 @@ Shows how to use a beep with fl_beep method.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Beep.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

@@ -8,6 +8,10 @@ Shows how to use native file chooser dialog to save file with Fl_Native_File_Cho
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Native_File_Chooser_Save_File.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

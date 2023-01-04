@@ -8,6 +8,10 @@ Shows how to use file chooser browse directory with fl_dir_chooser  method.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/File_Chooser_Browse_Directory.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

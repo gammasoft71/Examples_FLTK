@@ -8,6 +8,10 @@ Shows how to use a native file chooser dialog to browse file with Fl_Native_File
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Native_File_Chooser_Browse_File.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

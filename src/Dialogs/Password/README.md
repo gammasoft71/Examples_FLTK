@@ -8,6 +8,10 @@ Shows how to use password box with fl_password method.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Password.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:
