@@ -22,54 +22,27 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Application_Enable_Dark_Mode](src/Applications/Application_Enable_Dark_Mode/README.md) shows how to create a simple Fltk application with dark mode.
 * [Application_Enable_Light_Mode](src/Applications/Application_Enable_Light_Mode/README.md) shows how to create a simple Fltk application with light mode.
 
-## [Common Controls](src/Common_Controls/README.md)
+## [Menus and toolbars](src/Menus_And_Toolbars/README.md)
 
-* [Adjuster](src/Common_Controls/Adjuster/README.md) shows how to create adjusters with Fl_Adjuster valuator.
-* [Box](src/Common_Controls/Box/README.md) shows how to use a text with Fl_Box widget.
-* [Box_Picture](src/Common_Controls/Box_Picture/README.md) shows how to use an image with Fl_Box widget.
-* [Box_Picture2](src/Common_Controls/Box_Picture2/README.md) shows how to use an image with Fl_Box widget.
-* [Browser](src/Common_Controls/Browser/README.md) shows how to create a text list with Fl_Browser widget.
-* [Button](src/Common_Controls/Button/README.md) shows how to create a button with Fl_Button widget.
-* [Check_Browser](src/Common_Controls/Check_Browser/README.md) shows how to create a check button list with Fl_Check_Browser widget.
-* [Check_Button](src/Common_Controls/Check_Button/README.md) shows how to create a check button with Fl_Check_Button widget.
-* [Clock](src/Common_Controls/Clock/README.md) shows how to use a clock with Fl_Clock widget.
-* [Clock_Output](src/Common_Controls/Clock_Output/README.md) shows how to use a static clock with Fl_Clock_Output widget.
-* [Color_Chooser](src/Common_Controls/Color_Chooser/README.md) shows how to use a color chooser with Fl_Color_Chooser widget.
-* [Counter](src/Common_Controls/Counter/README.md) shows how to create counters with Fl_Counter and Fl_Simple_Counter valuators.
-* [Dial](src/Common_Controls/Dial/README.md) shows how to create dials with Fl_Dial, Fl_Line_Dial and Fl_Fill_Dial valuators.
-* [File_Browser](src/Common_Controls/File_Browser/README.md) shows how to use a file browser with Fl_File_Browser widget.
-* [File_Input](src/Common_Controls/File_Input/README.md) shows how to use a file input with Fl_File_Input widget.
-* [Float_Input](src/Common_Controls/Float_Input/README.md) shows how to create a float input text with Fl_Float_Input widget.
-* [Input](src/Common_Controls/Input/README.md) shows how to create a text input with Fl_Input widget.
-* [Int_Input](src/Common_Controls/Int_Input/README.md) shows how to create an int input text with Fl_Int_Input widget.
-* [Light_Button](src/Common_Controls/Light_Button/README.md) shows how to create a light button with Fl_Light_Button widget.
-* [Multiline_Input](src/Common_Controls/Multiline_Input/README.md) shows how to create a multiline text input text with Fl_Multiline_Input widget.
-* [Multiline_Output](src/Common_Controls/Multiline_Output/README.md) shows how to create a multiline text output with Fl_Multiline_Output widget.
-* [Nice_Slider](src/Common_Controls/Nice_Slider/README.md) shows how to create a slider with Fl_Nice_Slider widget.
-* [Output](src/Common_Controls/Output/README.md) shows how to create a text output with Fl_Output widget.
-* [Progress](src/Common_Controls/Progress/README.md) shows how to create a progress with Fl_Progress widget.
-* [Radio_Light_Button](src/Common_Controls/Radio_Light_Button/README.md) shows how to create a radio light button with Fl_Radio_Light_Button widget.
-* [Radio_Round_Button](src/Common_Controls/Radio_Round_Button/README.md) shows how to create a radio round button with Fl_Radio_Round_Button widget.
-* [Roller](src/Common_Controls/Roller/README.md) shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
-* [Round_Button](src/Common_Controls/Round_Button/README.md) shows how to create a round button with Fl_Round_Button widget.
-* [Secret_Input](src/Common_Controls/Secret_Input/README.md) shows how to create a secret text input with Fl_Secret_Input widget.
-* [Slider](src/Common_Controls/Slider/README.md) shows how to create sliders with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_Slider, Fl_Slider, Fl_Fill_Slider and Fl_Nice_Slider valuators.
-* [Spinner](src/Common_Controls/Spinner/README.md) shows how to create a spinner with Fl_Spinner widget.
-* [Table](src/Common_Controls/Table/README.md) shows how to use a table with Fl_Table widget.
-* [Text_Display](src/Common_Controls/Text_Display/README.md) shows how to use a text display with Fl_Text_Display widget.
-* [Text_Editor](src/Common_Controls/Text_Editor) shows how to use a text display with Fl_Text_Editor widget.
-* [Toggle_Button](src/Common_Controls/Toggle_Button/README.md) shows how to create a toggle button with Fl_Toggle_Button widget.
-* [Tree](src/Common_Controls/Tree/README.md) shows how to use a tree with Fl_Tree widget.
-* [Value_Input](src/Common_Controls/Value_Input/README.md) shows how to create a value input with Fl_Value_Input valuator.
-* [Value_Output](src/Common_Controls/Value_Output/README.md) shows how to create a value output with Fl_Value_Output valuator.
-* [Value_Slider](src/Common_Controls/Value_Slider/README.md) shows how to create value sliders with Fl_Hor_Value_Slider and Fl_Value_Slider valuators.
+* [Menu_Bar](src/Menus_And_Toolbars/Menu_Bar/README.md) shows how to create a menu bar with Fl_Menu_Bar widget.
+* [Menu_Button](src/Menus_And_Toolbars/Menu_Button/README.md) shows how to create a menu button with Fl_Menu_Button widget.
+* [Sys_Menu_Bar](src/Menus_And_Toolbars/Sys_Menu_Bar/README.md) shows how to create a system menu bar with Fl_Sys_Menu_Bar widget.
 
-## [User Controls](src/User_Controls/README.md)
+## [Dialogs](src/Dialogs/README.md)
 
-* [Check_Box](src/User_Controls/Check_Box/README.md) shows how to create a check box with own Fl_Check_Box widget.
-* [Combo_Box](src/User_Controls/Combo_Box/README.md) shows how to create Combo boxes with own Fl_Combo_Box widgets.
-* [Progress_Bar](src/User_Controls/Progress_Bar/README.md) shows how to create a progress bar with own Fl_Progress_Bar widget.
-* [Radio_Toggle_Button](src/User_Controls/Radio_Toggle_Button/README.md) shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
+* [About](src/Dialogs/About/README.md) shows how to create an about box with fl_message method.
+* [Alert](src/Dialogs/Alert/README.md) shows how to create an alert box with fl_alert method.
+* [Beep](src/Dialogs/Beep/README.md) shows how to create a beep with fl_beep method.
+* [Choice](src/Dialogs/Choice/README.md) shows how to create a choice box with fl_choice method.
+* [Color_Chooser_Dialog](src/Dialogs/Color_Chooser_Dialog/README.md) shows how to use color chooser dialog with Fl_Color_Chooser dialog.
+* [File_Chooser_Browse_Directory](src/Dialogs/File_Chooser_Browse_Directory/README.md) shows how to use directory chooser dialog with fl_dir_chooser method.
+* [File_Chooser_Browse_File](src/Dialogs/File_Chooser_Browse_File/README.md) shows how to use file chooser dialog with fl_file_chooser method.
+* [Input_Dialog](src/Dialogs/Input_Dialog/README.md) shows how to create an input box with fl_input method.
+* [Message](src/Dialogs/Message/README.md) shows how to create a message box with fl_message method.
+* [Native_File_Chooser_Browse_Directory](src/Dialogs/Native_File_Chooser_Browse_Directory/README.md) shows how to use a native file chooser to browse directory with Fl_Native_File_Chooser dialog.
+* [Native_File_Chooser_Browse_File](src/Dialogs/Native_File_Chooser_Browse_File/README.md) shows how to use a native file chooser dialog to browse file with Fl_Native_File_Chooser dialog.
+* [Native_File_Chooser_Save_File](src/Dialogs/Native_File_Chooser_Save_File/README.md) shows how to use a native file chooser dialog to save file with Fl_Native_File_Chooser dialog.
+* [Password](src/Dialogs/Password/README.md) shows how to create an password box with fl_password method.
 
 ## [Groups](src/Groups/README.md)
 
@@ -81,11 +54,47 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Window](src/Groups/Window/README.md) shows how to create a simple window with Fl_Window.
 * [Wizard](src/Groups/Wizard/README.md) shows how to create a Wizard and pages with Fl_Wizard and Fl_Group.
 
-## [Menus and toolbars](src/Menus_And_Toolbars/README.md)
+## [Controls](src/Controls/README.md)
 
-* [Menu_Bar](src/Menus_And_Toolbars/Menu_Bar/README.md) shows how to create a menu bar with Fl_Menu_Bar widget.
-* [Menu_Button](src/Menus_And_Toolbars/Menu_Button/README.md) shows how to create a menu button with Fl_Menu_Button widget.
-* [Sys_Menu_Bar](src/Menus_And_Toolbars/Sys_Menu_Bar/README.md) shows how to create a system menu bar with Fl_Sys_Menu_Bar widget.
+* [Adjuster](src/Controls/Adjuster/README.md) shows how to create adjusters with Fl_Adjuster valuator.
+* [Box](src/Controls/Box/README.md) shows how to use a text with Fl_Box widget.
+* [Box_Picture](src/Controls/Box_Picture/README.md) shows how to use an image with Fl_Box widget.
+* [Box_Picture2](src/Controls/Box_Picture2/README.md) shows how to use an image with Fl_Box widget.
+* [Browser](src/Controls/Browser/README.md) shows how to create a text list with Fl_Browser widget.
+* [Button](src/Controls/Button/README.md) shows how to create a button with Fl_Button widget.
+* [Check_Browser](src/Controls/Check_Browser/README.md) shows how to create a check button list with Fl_Check_Browser widget.
+* [Check_Button](src/Controls/Check_Button/README.md) shows how to create a check button with Fl_Check_Button widget.
+* [Clock](src/Controls/Clock/README.md) shows how to use a clock with Fl_Clock widget.
+* [Clock_Output](src/Controls/Clock_Output/README.md) shows how to use a static clock with Fl_Clock_Output widget.
+* [Color_Chooser](src/Controls/Color_Chooser/README.md) shows how to use a color chooser with Fl_Color_Chooser widget.
+* [Counter](src/Controls/Counter/README.md) shows how to create counters with Fl_Counter and Fl_Simple_Counter valuators.
+* [Dial](src/Controls/Dial/README.md) shows how to create dials with Fl_Dial, Fl_Line_Dial and Fl_Fill_Dial valuators.
+* [File_Browser](src/Controls/File_Browser/README.md) shows how to use a file browser with Fl_File_Browser widget.
+* [File_Input](src/Controls/File_Input/README.md) shows how to use a file input with Fl_File_Input widget.
+* [Float_Input](src/Controls/Float_Input/README.md) shows how to create a float input text with Fl_Float_Input widget.
+* [Input](src/Controls/Input/README.md) shows how to create a text input with Fl_Input widget.
+* [Int_Input](src/Controls/Int_Input/README.md) shows how to create an int input text with Fl_Int_Input widget.
+* [Light_Button](src/Controls/Light_Button/README.md) shows how to create a light button with Fl_Light_Button widget.
+* [Multiline_Input](src/Controls/Multiline_Input/README.md) shows how to create a multiline text input text with Fl_Multiline_Input widget.
+* [Multiline_Output](src/Controls/Multiline_Output/README.md) shows how to create a multiline text output with Fl_Multiline_Output widget.
+* [Nice_Slider](src/Controls/Nice_Slider/README.md) shows how to create a slider with Fl_Nice_Slider widget.
+* [Output](src/Controls/Output/README.md) shows how to create a text output with Fl_Output widget.
+* [Progress](src/Controls/Progress/README.md) shows how to create a progress with Fl_Progress widget.
+* [Radio_Light_Button](src/Controls/Radio_Light_Button/README.md) shows how to create a radio light button with Fl_Radio_Light_Button widget.
+* [Radio_Round_Button](src/Controls/Radio_Round_Button/README.md) shows how to create a radio round button with Fl_Radio_Round_Button widget.
+* [Roller](src/Controls/Roller/README.md) shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
+* [Round_Button](src/Controls/Round_Button/README.md) shows how to create a round button with Fl_Round_Button widget.
+* [Secret_Input](src/Controls/Secret_Input/README.md) shows how to create a secret text input with Fl_Secret_Input widget.
+* [Slider](src/Controls/Slider/README.md) shows how to create sliders with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_Slider, Fl_Slider, Fl_Fill_Slider and Fl_Nice_Slider valuators.
+* [Spinner](src/Controls/Spinner/README.md) shows how to create a spinner with Fl_Spinner widget.
+* [Table](src/Controls/Table/README.md) shows how to use a table with Fl_Table widget.
+* [Text_Display](src/Controls/Text_Display/README.md) shows how to use a text display with Fl_Text_Display widget.
+* [Text_Editor](src/Controls/Text_Editor) shows how to use a text display with Fl_Text_Editor widget.
+* [Toggle_Button](src/Controls/Toggle_Button/README.md) shows how to create a toggle button with Fl_Toggle_Button widget.
+* [Tree](src/Controls/Tree/README.md) shows how to use a tree with Fl_Tree widget.
+* [Value_Input](src/Controls/Value_Input/README.md) shows how to create a value input with Fl_Value_Input valuator.
+* [Value_Output](src/Controls/Value_Output/README.md) shows how to create a value output with Fl_Value_Output valuator.
+* [Value_Slider](src/Controls/Value_Slider/README.md) shows how to create value sliders with Fl_Hor_Value_Slider and Fl_Value_Slider valuators.
 
 ## [Components](src/Components/README.md)
 
@@ -95,32 +104,6 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Symbols](src/Components/Symbols/README.md) shows how to use symbols with Fl_Box widget.
 * [Timer](src/Components/Timer/README.md) shows how to create a timer with Fl::add_timeout,  Fl::remove_timeout and Fl::repeat_timeout methods.
 * [Tooltip](src/Components/Tooltip/README.md) shows how to create a tooltip with Fl_Tooltip component.
-
-## [User Components](src/User_Components/README.md)
-
-* [Scheme_Modes](src/User_Components/Scheme_Modes/README.md) shows how to use own scheme modes with own fl_scheme_mode methods.
-* [Use_Wait_Cursor](src/User_Components/Use_Wait_Cursor/README.md) shows how to use own Fl_Use_Wait_cursor component or own fl_use_wait_cursor method.
-
-## [Common Dialogs](src/Common_Dialogs/README.md)
-
-* [About](src/Common_Dialogs/About/README.md) shows how to create an about box with fl_message method.
-* [Alert](src/Common_Dialogs/Alert/README.md) shows how to create an alert box with fl_alert method.
-* [Beep](src/Common_Dialogs/Beep/README.md) shows how to create a beep with fl_beep method.
-* [Choice](src/Common_Dialogs/Choice/README.md) shows how to create a choice box with fl_choice method.
-* [Color_Chooser_Dialog](src/Common_Dialogs/Color_Chooser_Dialog/README.md) shows how to use color chooser dialog with Fl_Color_Chooser dialog.
-* [File_Chooser_Browse_Directory](src/Common_Dialogs/File_Chooser_Browse_Directory/README.md) shows how to use directory chooser dialog with fl_dir_chooser method.
-* [File_Chooser_Browse_File](src/Common_Dialogs/File_Chooser_Browse_File/README.md) shows how to use file chooser dialog with fl_file_chooser method.
-* [Input_Dialog](src/Common_Dialogs/Input_Dialog/README.md) shows how to create an input box with fl_input method.
-* [Message](src/Common_Dialogs/Message/README.md) shows how to create a message box with fl_message method.
-* [Native_File_Chooser_Browse_Directory](src/Common_Dialogs/Native_File_Chooser_Browse_Directory/README.md) shows how to use a native file chooser to browse directory with Fl_Native_File_Chooser dialog.
-* [Native_File_Chooser_Browse_File](src/Common_Dialogs/Native_File_Chooser_Browse_File/README.md) shows how to use a native file chooser dialog to browse file with Fl_Native_File_Chooser dialog.
-* [Native_File_Chooser_Save_File](src/Common_Dialogs/Native_File_Chooser_Save_File/README.md) shows how to use a native file chooser dialog to save file with Fl_Native_File_Chooser dialog.
-* [Password](src/Common_Dialogs/Password/README.md) shows how to create an password box with fl_password method.
-
-## [User Dialogs](src/User_Dialogs/README.md)
-
-* [Font_Chooser](src/User_Dialogs/Font_Chooser/README.md) shows how to use a Font chooser dialog with own fl_font_chooser method.
-* [Message_Box](src/User_Dialogs/Message_Box/README.md) shows how to use a Message box with own fl_message_box method.
 
 ## [Events](src/Events/README.md)
 
@@ -135,6 +118,23 @@ Shows how to use Fltk controls only by programming code (c++17).
 * [Functional](src/Tips_And_Tricks/Functional/README.md) shows how to use callback method with std::function, std::bind and lambda methods.
 * [Prevent_Hitting_Escape_Key_Closes_Windows](src/Tips_And_Tricks/Prevent_Hitting_Escape_Key_Closes_Windows/README.md) shows how to prevent hitting 'Escape' key closes Windows.
 * [Widget_Wrapper](src/Tips_And_Tricks/Widget_Wrapper/README.md) shows how to use callback method with std::function, std::bind and lambda methods.
+
+## [User Controls](src/User_Controls/README.md)
+
+* [Check_Box](src/User_Controls/Check_Box/README.md) shows how to create a check box with own Fl_Check_Box widget.
+* [Combo_Box](src/User_Controls/Combo_Box/README.md) shows how to create Combo boxes with own Fl_Combo_Box widgets.
+* [Progress_Bar](src/User_Controls/Progress_Bar/README.md) shows how to create a progress bar with own Fl_Progress_Bar widget.
+* [Radio_Toggle_Button](src/User_Controls/Radio_Toggle_Button/README.md) shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
+
+## [User Components](src/User_Components/README.md)
+
+* [Scheme_Modes](src/User_Components/Scheme_Modes/README.md) shows how to use own scheme modes with own fl_scheme_mode methods.
+* [Use_Wait_Cursor](src/User_Components/Use_Wait_Cursor/README.md) shows how to use own Fl_Use_Wait_cursor component or own fl_use_wait_cursor method.
+
+## [User Dialogs](src/User_Dialogs/README.md)
+
+* [Font_Chooser](src/User_Dialogs/Font_Chooser/README.md) shows how to use a Font chooser dialog with own fl_font_chooser method.
+* [Message_Box](src/User_Dialogs/Message_Box/README.md) shows how to use a Message box with own fl_message_box method.
 
 ## [Others](src/Others/README.md)
 
