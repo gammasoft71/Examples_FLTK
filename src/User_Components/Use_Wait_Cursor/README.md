@@ -12,6 +12,10 @@ Shows how to use own Fl_Use_Wait_cursor component or own fl_use_wait_cursor meth
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Use_Wait_Cursor.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

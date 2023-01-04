@@ -12,6 +12,10 @@ Shows how to use own scheme modes with own fl_scheme_mode methods.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Scheme_Modes.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:
