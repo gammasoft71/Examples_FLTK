@@ -8,6 +8,10 @@ Shows how to use mouse click event with override handle method and use Fl::event
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Window_Click.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

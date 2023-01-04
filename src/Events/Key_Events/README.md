@@ -10,6 +10,10 @@ Demonstrates the use of key events.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Key_Events.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

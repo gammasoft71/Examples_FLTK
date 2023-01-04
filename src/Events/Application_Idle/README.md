@@ -8,6 +8,10 @@ Shows how to use idle event with Fl::add_idle method.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Application_Idle.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:
