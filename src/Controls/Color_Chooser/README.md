@@ -10,7 +10,7 @@ Shows how to create a color chooser with Fl_Color_Chooser widget.
 
 ## Output
 
-![output](../../../docs/Pictures/Examples/Color_Choser.png)
+![output](../../../docs/Pictures/Examples/Color_Chooser.png)
 
 ## Generate and build
 
