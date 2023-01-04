@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
 # Solution
-project(beep)
+project(Beep)
 find_package(FLTK REQUIRED)
 
 # Options
@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Application
-add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE beep.cpp)
+add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE Beep.cpp)
 target_include_directories(${PROJECT_NAME} PRIVATE ${FLTK_INCLUDE_DIR})
 if (APPLE)
   # Workaround: fltk.framework does not exist, so we have to replace it by libfltk.dylib
