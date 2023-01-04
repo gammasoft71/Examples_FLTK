@@ -3,7 +3,7 @@
 
 Shows how to use [Fltk](https://www.fltk.org) controls only by programming code ([c++17](https://en.cppreference.com/w/)).
 
-[![fltk](docs/Pictures/fltk_header.png)](https://www.fltk.org)
+[![fltk](../docs/Pictures/fltk_header.png)](https://www.fltk.org)
 
 ## [Hello World](Hello_Worlds/README.md)
 
