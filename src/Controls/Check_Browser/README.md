@@ -8,6 +8,10 @@ Shows how to create a check button list with Fl_Check_Browser widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Check_Browser.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

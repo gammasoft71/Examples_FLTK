@@ -8,6 +8,10 @@ Shows how to create a toggle button with Fl_Toggle_Button widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Toggle_Button.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

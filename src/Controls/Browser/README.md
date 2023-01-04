@@ -8,6 +8,10 @@ Shows how to create text list with Fl_Browser widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Browser.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

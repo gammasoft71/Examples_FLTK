@@ -8,6 +8,10 @@ Shows how to create a check button with Fl_Check_Button widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Check_Button.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

@@ -8,6 +8,10 @@ Shows how to create a file browser with Fl_File_Browser widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/File_Browser.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

@@ -8,6 +8,10 @@ Shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Roller.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

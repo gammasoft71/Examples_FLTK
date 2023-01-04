@@ -8,6 +8,10 @@ Shows how to create a clock with Fl_Clock widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Clock.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

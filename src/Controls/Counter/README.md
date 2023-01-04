@@ -8,6 +8,10 @@ Shows how to create counters with Fl_Counter and Fl_simple_Counter valuators.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Counter.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

@@ -8,6 +8,10 @@ Shows how to create a float input with Fl_Float_Input widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Float_Input.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

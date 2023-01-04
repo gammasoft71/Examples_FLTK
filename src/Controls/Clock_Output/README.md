@@ -8,6 +8,10 @@ Shows how to create a static clock with Fl_Clock_Output widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Clock_Output.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

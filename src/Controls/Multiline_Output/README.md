@@ -8,6 +8,10 @@ Shows how to create a multiline text output with Fl_Box widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Multimine_Output.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

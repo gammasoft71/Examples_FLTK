@@ -8,6 +8,10 @@ Shows how to create a radio light button with Fl_Light_Button widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Light_Button.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

@@ -8,6 +8,10 @@ Shows how to create sliders with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Slider.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

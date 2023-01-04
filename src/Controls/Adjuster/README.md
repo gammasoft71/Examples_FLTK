@@ -8,6 +8,10 @@ Shows how to create adjusters with Fl_Adjuster valuator.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Adjuster.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

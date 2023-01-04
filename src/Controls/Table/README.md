@@ -8,6 +8,10 @@ Shows how to usea table with Fl_Table widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Table.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

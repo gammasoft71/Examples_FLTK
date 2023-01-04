@@ -8,6 +8,10 @@ Shows how to create a progress with Fl_Progress widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Progress.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

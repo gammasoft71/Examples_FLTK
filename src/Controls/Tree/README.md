@@ -8,6 +8,10 @@ Shows how to create a tree with Fl_Tree widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Tree.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

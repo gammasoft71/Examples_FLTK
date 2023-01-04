@@ -8,6 +8,10 @@ Shows how to create a value output with Fl_Value_Output valuator.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Value_Output.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

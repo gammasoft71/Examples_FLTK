@@ -8,6 +8,10 @@ Shows how to use a text display with Fl_Text_Display widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Text_Display.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

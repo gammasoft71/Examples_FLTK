@@ -8,6 +8,10 @@ Shows how to create a color chooser with Fl_Color_Chooser widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Color_Choser.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

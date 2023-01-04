@@ -8,6 +8,10 @@ Shows how to use a text with Fl_Box widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Box.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

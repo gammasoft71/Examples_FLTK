@@ -8,6 +8,10 @@ Shows how to create a secret text input with Fl_Secret_Input widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Secret_Input.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

@@ -8,6 +8,10 @@ Shows how to create a radio round button with Fl_Radio_Round_Button widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Radio_Round_button.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

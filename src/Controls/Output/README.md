@@ -8,6 +8,10 @@ Shows how to create a text output with Fl_Output widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Output.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

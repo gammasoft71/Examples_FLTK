@@ -8,6 +8,10 @@ Shows how to create value sliders with Fl_Hor_Value_Slider and Fl_Value_Slider v
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Value_Slider.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

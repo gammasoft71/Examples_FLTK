@@ -8,6 +8,10 @@ Shows how to create a text input with Fl_Input widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Input.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

@@ -8,6 +8,10 @@ Shows how to use a text editor with Fl_Text_Editor widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Text_Editor.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

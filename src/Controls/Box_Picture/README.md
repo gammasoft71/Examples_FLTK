@@ -10,6 +10,10 @@ Shows how to use an image with Fl_Box widget.
 
 [logo.xpm](logo.xpm)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Box_Picture.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

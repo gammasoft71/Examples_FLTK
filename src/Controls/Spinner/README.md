@@ -8,6 +8,10 @@ Shows how to create a spinner with Fl_Spinner widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Spinner.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:
