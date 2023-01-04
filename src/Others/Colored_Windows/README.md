@@ -8,6 +8,10 @@ Shows how to create a colored windows with Fl_Window.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Colored_Windows.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

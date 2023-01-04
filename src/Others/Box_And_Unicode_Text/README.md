@@ -8,6 +8,10 @@ Demonstrates the use of Fl_Box with unicode text.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Box_And_Unicode_Text.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

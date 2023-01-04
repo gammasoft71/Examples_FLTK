@@ -8,6 +8,10 @@ Shows how to create a browser and colored items with Fl_Browser.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Colored_Browser.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

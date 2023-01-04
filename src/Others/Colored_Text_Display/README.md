@@ -8,6 +8,10 @@ Shows how to create a colored text display with Fl_Text_Display.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Colored_Text_Display.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

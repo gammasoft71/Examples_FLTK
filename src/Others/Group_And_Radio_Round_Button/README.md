@@ -8,6 +8,10 @@ Shows how to use group and radio round buttons with Fl_Group and Fl_Radio_Round_
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Group_And_Round_Button.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

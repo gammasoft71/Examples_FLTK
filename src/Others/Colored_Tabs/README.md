@@ -8,6 +8,10 @@ Shows how to create a tabs and colored pages with Fl_Tabs and Fl_Group..
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Colored_Tabs.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:
