@@ -10,7 +10,7 @@ Shows how to use group and check buttons with Fl_Group and Fl_Check_Button widge
 
 ## Output
 
-![output](../../../docs/Pictures/Examples/GRoup_And_Check_Button.png)
+![output](../../../docs/Pictures/Examples/Group_And_Check_Button.png)
 
 ## Generate and build
 
