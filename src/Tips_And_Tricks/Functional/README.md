@@ -10,6 +10,10 @@ Shows how to use callback method with std::function, std::bind and lambda method
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Functional.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

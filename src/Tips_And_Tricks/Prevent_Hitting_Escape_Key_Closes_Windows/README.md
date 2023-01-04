@@ -8,6 +8,10 @@ Shows how to prevent hitting 'Escape' key closes Windows.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Prevent_Hitting_Escape_Key_Closes_Windows.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

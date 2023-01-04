@@ -8,6 +8,10 @@ Shows how to disable / enable label symbols.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Disable_Symbols.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:
