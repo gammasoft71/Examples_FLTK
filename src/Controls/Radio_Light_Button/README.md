@@ -10,7 +10,7 @@ Shows how to create a radio light button with Fl_Radio_Light_Button widget.
 
 ## Output
 
-![output](../../../docs/Pictures/Examples/Radio_light_Button.png)
+![output](../../../docs/Pictures/Examples/Radio_Light_Button.png)
 
 ## Generate and build
 
