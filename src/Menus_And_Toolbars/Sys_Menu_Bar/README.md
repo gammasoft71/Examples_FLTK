@@ -8,6 +8,10 @@ Shows how to create a system menu bar with Fl_Sys_Menu_Bar widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Sys_Menu_Bar.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

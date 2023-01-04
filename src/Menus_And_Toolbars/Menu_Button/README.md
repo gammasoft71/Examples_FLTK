@@ -8,6 +8,10 @@ Shows how to create a menu button with Fl_Menu_Button widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Menu_Button.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:

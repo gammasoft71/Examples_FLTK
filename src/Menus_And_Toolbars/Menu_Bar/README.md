@@ -8,6 +8,10 @@ Shows how to create a menu bar with Fl_Menu_Bar widget.
 
 [CMakeLists.txt](CMakeLists.txt)
 
+## Output
+
+![output](../../../docs/Pictures/Examples/Menu_Bar.png)
+
 ## Generate and build
 
 To build this project, open "Terminal" and type following lines:
