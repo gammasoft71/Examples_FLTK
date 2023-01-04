@@ -10,7 +10,7 @@ Shows how to create a multiline text output with Fl_Box widget.
 
 ## Output
 
-![output](../../../docs/Pictures/Examples/Multimine_Output.png)
+![output](../../../docs/Pictures/Examples/Multiline_Output.png)
 
 ## Generate and build
 
