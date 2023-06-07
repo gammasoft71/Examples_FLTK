@@ -5,7 +5,7 @@ Shows how to use [Fltk](https://www.fltk.org) controls only by programming code 
 
 [![fltk](../docs/Pictures/fltk_header.png)](https://www.fltk.org)
 
-## [Hello World](Hello_Worlds/README.md)
+## [Hello Worlds](Hello_Worlds/README.md)
 
 * [Hello_World_Box](Hello_Worlds/Hello_World_Box/README.md) The classic first application "Hello, World!" with Fl_Box.
 * [Hello_World_Drawing](Hello_Worlds/Hello_World_Drawing/README.md) The classic first application "Hello, World!" with GDI+ drawing objects.
