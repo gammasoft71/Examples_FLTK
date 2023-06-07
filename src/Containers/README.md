@@ -1,4 +1,4 @@
-# Groups
+# Containers
 
 * [Group](Group/README.md) shows how to create a group with Fl_Group.
 * [Pack](Pack/README.md) shows how to create a pack with Fl_Pack.
