@@ -5,7 +5,7 @@ SShows how to use [Fltk](https://www.fltk.org) controls only by programming code
 
 [![fltk](docs/Pictures/fltk_header.png)](https://www.fltk.org)
 
-* [Hello World](src/Hello_Worlds/README.md) contains Fltk "Hello, World!" examples.
+* [Hello Worlds](src/Hello_Worlds/README.md) contains Fltk "Hello, World!" examples.
 * [Applications](src/Applications/README.md) contains applications examples.
 * [Dialogs](src/Dialogs/README.md) contains dialogs examples.
 * [Windows](src/Windows/README.md) contains windows examples.
