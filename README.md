@@ -1,12 +1,12 @@
 
 # FLTK Examples
 
-Shows how to use [Fltk](https://www.fltk.org) controls only by programming code ([c++17](https://en.cppreference.com/w/)).
+Shows how to use [FLTK](https://www.fltk.org) controls only by programming code ([c++17](https://en.cppreference.com/w/)).
 
 [![fltk](docs/Pictures/fltk_header.png)](https://www.fltk.org)
 
 ## FLTK
-* [Hello Worlds](src/Hello_Worlds/README.md) contains Fltk "Hello, World!" examples.
+* [Hello Worlds](src/Hello_Worlds/README.md) contains [FLTK]([FLTK](https://www.fltk.org) "Hello, World!" examples.
 * [Applications](src/Applications/README.md) contains applications examples.
 * [Dialogs](src/Dialogs/README.md) contains dialogs examples.
 * [Windows](src/Windows/README.md) contains windows examples.
@@ -63,4 +63,4 @@ cmake --build . --config Debug
 
 ## Remarks
 
-This project run with [Fltk 1.3.5](https://www.Fltk.org) and [CMake](https://cmake.org).
+This project run with [FLTK 1.3.5](https://www.fltk.org) and [CMake](https://cmake.org).

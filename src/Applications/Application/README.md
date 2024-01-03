@@ -1,6 +1,6 @@
 # Application
 
-Shows how to create a simple Fltk application.
+Shows how to create a simple [FLTK](https://www.fltk.org) application.
 
 ## Source
 

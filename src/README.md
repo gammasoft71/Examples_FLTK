@@ -1,7 +1,7 @@
 
 # FLTK Examples
 
-Shows how to use [Fltk](https://www.fltk.org) controls only by programming code ([c++17](https://en.cppreference.com/w/)).
+Shows how to use [FLTK](https://www.fltk.org) controls only by programming code ([c++17](https://en.cppreference.com/w/)).
 
 [![fltk](../docs/Pictures/fltk_header.png)](https://www.fltk.org)
 
@@ -17,10 +17,10 @@ Shows how to use [Fltk](https://www.fltk.org) controls only by programming code 
 
 ## [Applications](Applications/README.md)
 
-* [Application](Applications/Application/README.md) shows how to create a simple Fltk application.
-* [Application_And_Exception](Applications/Application_And_Exception) shows how to create a simple Fltk application and how to manage exception.
-* [Application_Enable_Dark_Mode](Applications/Application_Enable_Dark_Mode/README.md) shows how to create a simple Fltk application with dark mode.
-* [Application_Enable_Light_Mode](Applications/Application_Enable_Light_Mode/README.md) shows how to create a simple Fltk application with light mode.
+* [Application](Applications/Application/README.md) shows how to create a simple [FLTK](https://www.fltk.org) application.
+* [Application_And_Exception](Applications/Application_And_Exception) shows how to create a simple [FLTK](https://www.fltk.org) application and how to manage exception.
+* [Application_Enable_Dark_Mode](Applications/Application_Enable_Dark_Mode/README.md) shows how to create a simple [FLTK](https://www.fltk.org) application with dark mode.
+* [Application_Enable_Light_Mode](Applications/Application_Enable_Light_Mode/README.md) shows how to create a simple [FLTK](https://www.fltk.org) application with light mode.
 
 ## [Dialogs](Dialogs/README.md)
 
@@ -190,4 +190,4 @@ cmake --build . --config Debug
 
 ## Remarks
 
-This project run with [Fltk 1.3.5](https://www.Fltk.org) and [CMake](https://cmake.org).
+This project run with [FLTK 1.3.5](https://www.fltk.org) and [CMake](https://cmake.org).

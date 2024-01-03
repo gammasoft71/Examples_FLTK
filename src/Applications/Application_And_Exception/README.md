@@ -1,6 +1,6 @@
 # Application_And_Exception
 
-Shows how to create a simple Fltk application and how to manage exception.
+Shows how to create a simple [FLTK](https://www.fltk.org) application and how to manage exception.
 
 ## Source
 

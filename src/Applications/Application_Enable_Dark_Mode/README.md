@@ -1,6 +1,6 @@
 # Application_Enable_Dark_Mode
 
-Shows how to create a simple Fltk application with dark mode.
+Shows how to create a simple [FLTK](https://www.fltk.org) application with dark mode.
 
 ## Source
 
