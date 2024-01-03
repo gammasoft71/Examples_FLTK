@@ -5,7 +5,7 @@
 * [Beep](Beep/README.md) shows how to create a beep with [fl_beep](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga7df367b297d2b2d1af087e1adbf3c265) method.
 * [Choice](Choice/README.md) shows how to create a choice box with [fl_choice](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga36c19b29fcd5c261f3eafdf9f7126b16) method.
 * [Color_Chooser_Dialog](Color_Chooser_Dialog/README.md) shows how to use color chooser dialog with [fl_color_chooser](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga6241252ca65bc163d046b4f900a5ebad) method.
-* [File_Chooser_Browse_Directory](File_Chooser_Browse_Directory/README.md) shows how to use directory chooser dialog with fl_dir_chooser method.
+* [File_Chooser_Browse_Directory](File_Chooser_Browse_Directory/README.md) shows how to use directory chooser dialog with [fl_dir_chooser](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga24f703a97e90934198a474d19b22732dl) method.
 * [File_Chooser_Browse_File](File_Chooser_Browse_File/README.md) shows how to use file chooser dialog with fl_file_chooser method.
 * [Input_Dialog](Input_Dialog/README.md) shows how to create an input box with fl_input method.
 * [Message](Message/README.md) shows how to create a message box with [fl_message](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga570c50cf7641b7d85f949b6d61f51c43) method.

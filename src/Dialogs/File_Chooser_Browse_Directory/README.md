@@ -1,6 +1,6 @@
 # File_Chooser_Browse_Directory
 
-Shows how to use file chooser browse directory with fl_dir_chooser  method.
+Shows how to use file chooser browse directory with [fl_dir_chooser](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga24f703a97e90934198a474d19b22732dl)  method.
 
 ## Source
 
