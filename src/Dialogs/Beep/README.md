@@ -1,6 +1,6 @@
 # Beep
 
-Shows how to use a beep with fl_beep method.
+Shows how to use a beep with [fl_beep](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga7df367b297d2b2d1af087e1adbf3c265) method.
 
 ## Source
 
