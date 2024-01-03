@@ -1,6 +1,6 @@
 # Symbols
 
-Shows how to use symbols with Fl_Box widget.
+Shows how to use symbols with [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) widget.
 
 ## Source
 

@@ -1,6 +1,6 @@
 # Box_Picture2
 
-Shows how to use an image with Fl_Box widget.
+Shows how to use an image with [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) widget.
 
 ## Source
 
