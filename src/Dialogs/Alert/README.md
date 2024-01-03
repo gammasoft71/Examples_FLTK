@@ -1,6 +1,6 @@
 # Alert
 
-Shows how to use message box with [fl_message](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga570c50cf7641b7d85f949b6d61f51c43) method.
+Shows how to use alert box with [fl_alert](https://www.fltk.org/doc-1.3/group__group__comdlg.html#gae998e9cd38954bfde24bd20e550e9b8a) method.
 
 ## Source
 
