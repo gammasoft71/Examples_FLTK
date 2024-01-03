@@ -1,6 +1,6 @@
 # Hello_World_Fltk
 
-The classic first application "Hello World" by FLTK.
+The classic first application "Hello World" by [FLTK](https://www.fltk.org).
 
 ## Source
 
