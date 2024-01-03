@@ -1,6 +1,6 @@
 # Choice
 
-Shows how to use choice box with fl_choice method.
+Shows how to use choice box with [fl_choice](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga36c19b29fcd5c261f3eafdf9f7126b16) method.
 
 ## Source
 
