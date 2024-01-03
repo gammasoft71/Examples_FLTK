@@ -1,6 +1,6 @@
 # Message
 
-Shows how to use message box with fl_message method.
+Shows how to use message box with [fl_message](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga570c50cf7641b7d85f949b6d61f51c43) method.
 
 ## Source
 
