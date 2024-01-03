@@ -28,7 +28,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Alert](Dialogs/Alert/README.md) shows how to create an alert box with [fl_alert](https://www.fltk.org/doc-1.3/group__group__comdlg.html#gae998e9cd38954bfde24bd20e550e9b8a) method.
 * [Beep](Dialogs/Beep/README.md) shows how to create a beep with [fl_beep](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga7df367b297d2b2d1af087e1adbf3c265) method.
 * [Choice](Dialogs/Choice/README.md) shows how to create a choice box with [fl_choice](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga36c19b29fcd5c261f3eafdf9f7126b16) method.
-* [Color_Chooser_Dialog](Dialogs/Color_Chooser_Dialog/README.md) shows how to use color chooser dialog with Fl_Color_Chooser dialog.
+* [Color_Chooser_Dialog](Dialogs/Color_Chooser_Dialog/README.md) shows how to use color chooser dialog with [Fl_Color_Chooser](https://www.fltk.org/doc-1.3/classFl__Color__Chooser.html) dialog.
 * [File_Chooser_Browse_Directory](Dialogs/File_Chooser_Browse_Directory/README.md) shows how to use directory chooser dialog with fl_dir_chooser method.
 * [File_Chooser_Browse_File](Dialogs/File_Chooser_Browse_File/README.md) shows how to use file chooser dialog with fl_file_chooser method.
 * [Input_Dialog](Dialogs/Input_Dialog/README.md) shows how to create an input box with fl_input method.
@@ -69,7 +69,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Check_Button](Controls/Check_Button/README.md) shows how to create a check button with Fl_Check_Button widget.
 * [Clock](Controls/Clock/README.md) shows how to use a clock with Fl_Clock widget.
 * [Clock_Output](Controls/Clock_Output/README.md) shows how to use a static clock with Fl_Clock_Output widget.
-* [Color_Chooser](Controls/Color_Chooser/README.md) shows how to use a color chooser with Fl_Color_Chooser widget.
+* [Color_Chooser](Controls/Color_Chooser/README.md) shows how to use a color chooser with [Fl_Color_Chooser](https://www.fltk.org/doc-1.3/classFl__Color__Chooser.html) widget.
 * [Counter](Controls/Counter/README.md) shows how to create counters with Fl_Counter and Fl_Simple_Counter valuators.
 * [Dial](Controls/Dial/README.md) shows how to create dials with Fl_Dial, Fl_Line_Dial and Fl_Fill_Dial valuators.
 * [File_Browser](Controls/File_Browser/README.md) shows how to use a file browser with Fl_File_Browser widget.

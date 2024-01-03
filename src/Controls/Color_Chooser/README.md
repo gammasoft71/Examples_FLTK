@@ -1,6 +1,6 @@
 # Color_Chooser
 
-Shows how to create a color chooser with Fl_Color_Chooser widget.
+Shows how to create a color chooser with [Fl_Color_Chooser](https://www.fltk.org/doc-1.3/classFl__Color__Chooser.html) widget.
 
 ## Source
 
