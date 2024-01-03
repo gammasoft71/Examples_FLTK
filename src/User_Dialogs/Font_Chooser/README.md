@@ -1,6 +1,6 @@
 # Font_Chooser
 
-Shows how to use a Font chooser dialog with own fl_font_chooser method.
+Shows how to use a Font chooser dialog with own [fl_font_chooser](fl_font_chooser.h) method.
 
 ## Source
 

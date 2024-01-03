@@ -124,7 +124,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 
 ## [User Dialogs](User_Dialogs/README.md)
 
-* [Font_Chooser](User_Dialogs/Font_Chooser/README.md) shows how to use a Font chooser dialog with own fl_font_chooser method.
+* [Font_Chooser](User_Dialogs/Font_Chooser/README.md) shows how to use a Font chooser dialog with own [fl_font_chooser](User_Dialogs/Font_Chooser/fl_font_chooser.h) method.
 * [Message_Box](User_Dialogs/Message_Box/README.md) shows how to use a Message box with own [fl_message_box](User_Dialogs/Message_Box/fl_message_box.h) method.
 
 ## [User Controls](User_Controls/README.md)
