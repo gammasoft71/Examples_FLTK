@@ -1,6 +1,6 @@
 # File_Input
 
-Shows how to create a file input with Fl_File_Input widget.
+Shows how to create a file input with [Fl_File_Input](https://www.fltk.org/doc-1.3/classFl__File__Input.html) widget.
 
 ## Source
 
