@@ -1,6 +1,6 @@
 # Input_Dialog
 
-Shows how to use input box with fl_input method.
+Shows how to use input box with [fl_input](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga2fef37bee5a282b195b98386bd4b8bda) method.
 
 ## Source
 
