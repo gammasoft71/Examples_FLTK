@@ -1,6 +1,6 @@
 # File_Browser
 
-Shows how to create a file browser with Fl_File_Browser widget.
+Shows how to create a file browser with [Fl_File_Browser](https://www.fltk.org/doc-1.3/classFl__File__Browser.html) widget.
 
 ## Source
 
