@@ -1,6 +1,6 @@
 # Check_Browser
 
-Shows how to create a check button list with Fl_Check_Browser widget.
+Shows how to create a check button list with [Fl_Check_Browser](https://www.fltk.org/doc-1.3/classFl__Check__Browser.html) widget.
 
 ## Source
 
