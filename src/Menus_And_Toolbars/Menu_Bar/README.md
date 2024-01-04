@@ -1,6 +1,6 @@
 # Menu_Bar
 
-Shows how to create a menu bar with Fl_Menu_Bar widget.
+Shows how to create a menu bar with [Fl_Menu_Bar](https://www.fltk.org/doc-1.3/classFl__Menu__Bar.html) widget.
 
 ## Source
 
