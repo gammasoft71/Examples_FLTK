@@ -1,6 +1,6 @@
 # Wizard
 
-Shows how to create a wizard and pages with Fl_Wizard and [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html).
+Shows how to create a wizard and pages with [Fl_Wizard](https://www.fltk.org/doc-1.3/classFl__Wizard.html) and [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html).
 
 ## Source
 

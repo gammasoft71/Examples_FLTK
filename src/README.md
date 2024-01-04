@@ -55,7 +55,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Scroll](Containers/Scroll/README.md) shows how to create a scroll with [Fl_Scroll](https://www.fltk.org/doc-1.3/classFl__Scroll.html).
 * [Tabs](Containers/Tabs/README.md) shows how to create a tabs and pages with [Fl_Tabs](https://www.fltk.org/doc-1.3/classFl__Tabs.html) and [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html).
 * [Tile](Containers/Tile/README.md) shows how to create a tile with [Fl_Tile](https://www.fltk.org/doc-1.3/classFl__Tile.html).
-* [Wizard](Containers/Wizard/README.md) shows how to create a Wizard and pages with Fl_Wizard and [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html).
+* [Wizard](Containers/Wizard/README.md) shows how to create a Wizard and pages with [Fl_Wizard](https://www.fltk.org/doc-1.3/classFl__Wizard.html) and [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html).
 
 ## [Controls](Controls/README.md)
 
