@@ -1,6 +1,6 @@
 # Native_File_Chooser_Browse_Directory
 
-Shows how to use native file chooser to browse directory with Fl_Native_File_Chooser dialog.
+Shows how to use native file chooser to browse directory with [Fl_Native_File_Chooser](https://www.fltk.org/doc-1.3/classFl__Native__File__Chooser.html) dialog.
 
 ## Source
 

@@ -33,9 +33,9 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [File_Chooser_Browse_File](Dialogs/File_Chooser_Browse_File/README.md) shows how to use file chooser dialog with [fl_file_chooser](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga5bc7a0eda4de38cbc33d3a16d5cfd32f) method.
 * [Input_Dialog](Dialogs/Input_Dialog/README.md) shows how to create an input box with [fl_input](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga2fef37bee5a282b195b98386bd4b8bda) method.
 * [Message](Dialogs/Message/README.md) shows how to create a message box with [fl_message](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga570c50cf7641b7d85f949b6d61f51c43) method.
-* [Native_File_Chooser_Browse_Directory](Dialogs/Native_File_Chooser_Browse_Directory/README.md) shows how to use a native file chooser to browse directory with Fl_Native_File_Chooser dialog.
-* [Native_File_Chooser_Browse_File](Dialogs/Native_File_Chooser_Browse_File/README.md) shows how to use a native file chooser dialog to browse file with Fl_Native_File_Chooser dialog.
-* [Native_File_Chooser_Save_File](Dialogs/Native_File_Chooser_Save_File/README.md) shows how to use a native file chooser dialog to save file with Fl_Native_File_Chooser dialog.
+* [Native_File_Chooser_Browse_Directory](Dialogs/Native_File_Chooser_Browse_Directory/README.md) shows how to use a native file chooser to browse directory with [Fl_Native_File_Chooser](https://www.fltk.org/doc-1.3/classFl__Native__File__Chooser.html) dialog.
+* [Native_File_Chooser_Browse_File](Dialogs/Native_File_Chooser_Browse_File/README.md) shows how to use a native file chooser dialog to browse file with [Fl_Native_File_Chooser](https://www.fltk.org/doc-1.3/classFl__Native__File__Chooser.html) dialog.
+* [Native_File_Chooser_Save_File](Dialogs/Native_File_Chooser_Save_File/README.md) shows how to use a native file chooser dialog to save file with [Fl_Native_File_Chooser](https://www.fltk.org/doc-1.3/classFl__Native__File__Chooser.html) dialog.
 * [Password](Dialogs/Password/README.md) shows how to create an password box with fl_password method.
 
 ## [Windows](Windows/README.md)
