@@ -1,6 +1,6 @@
 # Sys_Menu_Bar
 
-Shows how to create a system menu bar with Fl_Sys_Menu_Bar widget.
+Shows how to create a system menu bar with [Fl_Sys_Menu_Bar](https://www.fltk.org/doc-1.3/classFl__Sys__Menu__Bar.html) widget.
 
 ## Source
 

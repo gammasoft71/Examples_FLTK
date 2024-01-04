@@ -46,7 +46,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 
 * [Menu_Bar](Menus_And_Toolbars/Menu_Bar/README.md) shows how to create a menu bar with [Fl_Menu_Bar](https://www.fltk.org/doc-1.3/classFl__Menu__Bar.html) widget.
 * [Menu_Button](Menus_And_Toolbars/Menu_Button/README.md) shows how to create a menu button with [Fl_Menu_Button](https://www.fltk.org/doc-1.3/classFl__Menu__Button.html) widget.
-* [Sys_Menu_Bar](Menus_And_Toolbars/Sys_Menu_Bar/README.md) shows how to create a system menu bar with Fl_Sys_Menu_Bar widget.
+* [Sys_Menu_Bar](Menus_And_Toolbars/Sys_Menu_Bar/README.md) shows how to create a system menu bar with [Fl_Sys_Menu_Bar](https://www.fltk.org/doc-1.3/classFl__Sys__Menu__Bar.html) widget.
 
 ## [Containers](Containers/README.md)
 
