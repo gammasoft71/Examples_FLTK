@@ -1,6 +1,6 @@
 # Clock_Output
 
-Shows how to create a static clock with Fl_Clock_Output widget.
+Shows how to create a static clock with [Fl_Clock_Output](https://www.fltk.org/doc-1.3/classFl__Clock__Output.html) widget.
 
 ## Source
 
