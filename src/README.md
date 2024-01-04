@@ -36,7 +36,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Native_File_Chooser_Browse_Directory](Dialogs/Native_File_Chooser_Browse_Directory/README.md) shows how to use a native file chooser to browse directory with [Fl_Native_File_Chooser](https://www.fltk.org/doc-1.3/classFl__Native__File__Chooser.html) dialog.
 * [Native_File_Chooser_Browse_File](Dialogs/Native_File_Chooser_Browse_File/README.md) shows how to use a native file chooser dialog to browse file with [Fl_Native_File_Chooser](https://www.fltk.org/doc-1.3/classFl__Native__File__Chooser.html) dialog.
 * [Native_File_Chooser_Save_File](Dialogs/Native_File_Chooser_Save_File/README.md) shows how to use a native file chooser dialog to save file with [Fl_Native_File_Chooser](https://www.fltk.org/doc-1.3/classFl__Native__File__Chooser.html) dialog.
-* [Password](Dialogs/Password/README.md) shows how to create an password box with fl_password method.
+* [Password](Dialogs/Password/README.md) shows how to create an password box with [fl_password](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga46a734743667b14b086f72b3e5c3a858) method.
 
 ## [Windows](Windows/README.md)
 

@@ -1,6 +1,6 @@
 # Password
 
-Shows how to use password box with fl_password method.
+Shows how to use password box with [fl_password](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga46a734743667b14b086f72b3e5c3a858) method.
 
 ## Source
 
