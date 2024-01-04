@@ -8,7 +8,7 @@
 * [Button](Button/README.md) shows how to create a button with [Fl_Button](https://www.fltk.org/doc-1.3/classFl__Button.html) widget.
 * [Check_Browser](Check_Browser/README.md) shows how to create a check button list with [Fl_Check_Browser](https://www.fltk.org/doc-1.3/classFl__Check__Browser.html) widget.
 * [Check_Button](Check_Button/README.md) shows how to create a check button with [Fl_Check_Button](https://www.fltk.org/doc-1.3/classFl__Check__Button.html) widget.
-* [Clock](Clock/README.md) shows how to use a clock with Fl_Clock widget.
+* [Clock](Clock/README.md) shows how to use a clock with [Fl_Clock](https://www.fltk.org/doc-1.3/classFl__Clock.html) widget.
 * [Clock_Output](Clock_Output/README.md) shows how to use a static clock with Fl_Clock_Output widget.
 * [Color_Chooser](Color_Chooser/README.md) shows how to use a color chooser with [Fl_Color_Chooser](https://www.fltk.org/doc-1.3/classFl__Color__Chooser.html) widget.
 * [Counter](Counter/README.md) shows how to create counters with Fl_Counter and Fl_Simple_Counter valuators.

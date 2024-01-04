@@ -1,6 +1,6 @@
 # Clock
 
-Shows how to create a clock with Fl_Clock widget.
+Shows how to create a clock with [Fl_Clock](https://www.fltk.org/doc-1.3/classFl__Clock.html) widget.
 
 ## Source
 
