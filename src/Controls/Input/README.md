@@ -1,6 +1,6 @@
 # Input
 
-Shows how to create a text input with Fl_Input widget.
+Shows how to create a text input with [Fl_Input](https://www.fltk.org/doc-1.3/classFl__Input.html) widget.
 
 ## Source
 

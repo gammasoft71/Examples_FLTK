@@ -16,7 +16,7 @@
 * [File_Browser](File_Browser/README.md) shows how to use a file browser with [Fl_File_Browser](https://www.fltk.org/doc-1.3/classFl__File__Browser.html) widget.
 * [File_Input](File_Input/README.md) shows how to use a file input with [Fl_File_Input](https://www.fltk.org/doc-1.3/classFl__File__Input.html) widget.
 * [Float_Input](Float_Input/README.md) shows how to create a float input text with [Fl_Float_Input](https://www.fltk.org/doc-1.3/classFl__Float__Input.html) widget.
-* [Input](Input/README.md) shows how to create an input text with Fl_Input widget.
+* [Input](Input/README.md) shows how to create an input text with [Fl_Input](https://www.fltk.org/doc-1.3/classFl__Input.html) widget.
 * [Int_Input](Int_Input/README.md) shows how to create a int input text with Fl_Int_Input widget.
 * [Light_Button](Light_Button/README.md) shows how to create a light button with Fl_Light_Button widget.
 * [Multiline_Input](Multiline_Input/README.md) shows how to create a multiline input text with Fl_Multiline_Input widget.
