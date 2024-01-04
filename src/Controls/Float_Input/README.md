@@ -1,6 +1,6 @@
 # Float_Input
 
-Shows how to create a float input with Fl_Float_Input widget.
+Shows how to create a float input with [Fl_Float_Input](https://www.fltk.org/doc-1.3/classFl__Float__Input.html) widget.
 
 ## Source
 

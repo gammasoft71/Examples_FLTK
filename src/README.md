@@ -74,7 +74,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Dial](Controls/Dial/README.md) shows how to create dials with [Fl_Dial](https://www.fltk.org/doc-1.3/classFl__Dial.html), [Fl_Line_Dial](https://www.fltk.org/doc-1.3/classFl__Line__Dial.html) and [Fl_Fill_Dial](https://www.fltk.org/doc-1.3/classFl__Fill__Dial.html) valuators.
 * [File_Browser](Controls/File_Browser/README.md) shows how to use a file browser with [Fl_File_Browser](https://www.fltk.org/doc-1.3/classFl__File__Browser.html) widget.
 * [File_Input](Controls/File_Input/README.md) shows how to use a file input with [Fl_File_Input](https://www.fltk.org/doc-1.3/classFl__File__Input.html) widget.
-* [Float_Input](Controls/Float_Input/README.md) shows how to create a float input text with Fl_Float_Input widget.
+* [Float_Input](Controls/Float_Input/README.md) shows how to create a float input text with [Fl_Float_Input](https://www.fltk.org/doc-1.3/classFl__Float__Input.html) widget.
 * [Input](Controls/Input/README.md) shows how to create a text input with Fl_Input widget.
 * [Int_Input](Controls/Int_Input/README.md) shows how to create an int input text with Fl_Int_Input widget.
 * [Light_Button](Controls/Light_Button/README.md) shows how to create a light button with Fl_Light_Button widget.
