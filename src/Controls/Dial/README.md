@@ -1,6 +1,6 @@
 # Dial
 
-Shows how to create dials with Fl_Dial, Fl_Line_Dial and Fl_Fill_Dial valuators.
+Shows how to create dials with [Fl_Dial](https://www.fltk.org/doc-1.3/classFl__Dial.html), Fl_Line_Dial and Fl_Fill_Dial valuators.
 
 ## Source
 

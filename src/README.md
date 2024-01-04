@@ -71,7 +71,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Clock_Output](Controls/Clock_Output/README.md) shows how to use a static clock with [Fl_Clock_Output](https://www.fltk.org/doc-1.3/classFl__Clock__Output.html) widget.
 * [Color_Chooser](Controls/Color_Chooser/README.md) shows how to use a color chooser with [Fl_Color_Chooser](https://www.fltk.org/doc-1.3/classFl__Color__Chooser.html) widget.
 * [Counter](Controls/Counter/README.md) shows how to create counters with [Fl_Counter](https://www.fltk.org/doc-1.3/classFl__Counter.html) and [Fl_Simple_Counter](https://www.fltk.org/doc-1.3/classFl__Simple__Counter.html) valuators.
-* [Dial](Controls/Dial/README.md) shows how to create dials with Fl_Dial, Fl_Line_Dial and Fl_Fill_Dial valuators.
+* [Dial](Controls/Dial/README.md) shows how to create dials with [Fl_Dial](https://www.fltk.org/doc-1.3/classFl__Dial.html), Fl_Line_Dial and Fl_Fill_Dial valuators.
 * [File_Browser](Controls/File_Browser/README.md) shows how to use a file browser with Fl_File_Browser widget.
 * [File_Input](Controls/File_Input/README.md) shows how to use a file input with Fl_File_Input widget.
 * [Float_Input](Controls/Float_Input/README.md) shows how to create a float input text with Fl_Float_Input widget.
