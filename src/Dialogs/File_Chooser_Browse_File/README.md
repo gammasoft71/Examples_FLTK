@@ -1,6 +1,6 @@
 # File_Chooser_Browse_File
 
-Shows how to use file choose browse file with fl_file_chooser method.
+Shows how to use file choose browse file with [fl_file_chooser](https://www.fltk.org/doc-1.3/group__group__comdlg.html#ga5bc7a0eda4de38cbc33d3a16d5cfd32f) method.
 
 ## Source
 
