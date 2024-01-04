@@ -40,7 +40,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 
 ## [Windows](Windows/README.md)
 
-* [Window](Windows/Window/README.md) shows how to create a simple window with Fl_Window.
+* [Window](Windows/Window/README.md) shows how to create a simple window with [Fl_Window](https://www.fltk.org/doc-1.3/classFl__Window.html).
 
 ## [Menus and toolbars](Menus_And_Toolbars/README.md)
 
@@ -145,7 +145,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Colored_Browser](Others/Colored_Browser/README.md) shows how to create a browser and colored items with Fl_Browser.
 * [Colored_Tabs](Others/Colored_Tabs/README.md) shows how to create a tabs and colored pages with Fl_Tabs and Fl_Group.
 * [Colored_Text_Display](Others/Colored_Text_Display/README.md) shows how to create a colored text display with Fl_Text_Display.
-* [Colored_Windows](Others/Colored_Windows/README.md) shows how to create a colored windows with Fl_Window.
+* [Colored_Windows](Others/Colored_Windows/README.md) shows how to create a colored windows with [Fl_Window](https://www.fltk.org/doc-1.3/classFl__Window.html).
 * [Group_And_Check_Button](Others/Group_And_Check_Button/README.md) shows how to use group and check buttons with Fl_Group and Fl_Check_Button widgets.
 * [Group_And_Radio_Round_Button](Others/Group_And_Radio_Round_Button/README.md) shows how to use group and radio round buttons with Fl_Group and Fl_Radio_Round_Button widgets.
 

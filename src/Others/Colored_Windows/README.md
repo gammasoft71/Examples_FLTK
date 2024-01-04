@@ -1,6 +1,6 @@
 # Colored_Windows
 
-Shows how to create a colored windows with Fl_Window.
+Shows how to create a colored windows with [Fl_Window](https://www.fltk.org/doc-1.3/classFl__Window.html).
 
 ## Source
   
