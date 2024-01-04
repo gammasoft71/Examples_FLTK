@@ -1,6 +1,6 @@
 # Group_And_Check_Button
 
-Shows how to use group and check buttons with Fl_Group and Fl_Check_Button widgets.
+Shows how to use group and check buttons with [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html) and Fl_Check_Button widgets.
 
 ## Source
 

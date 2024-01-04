@@ -1,6 +1,6 @@
 # Tabs
 
-Shows how to create a tabs and pages with Fl_Tabs and Fl_Group.
+Shows how to create a tabs and pages with Fl_Tabs and [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html).
 
 ## Source
 

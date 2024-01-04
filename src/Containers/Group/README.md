@@ -1,6 +1,6 @@
 # Group
 
-Shows how to create a group with Fl_Group.
+Shows how to create a group with [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html).
 
 ## Source
 
