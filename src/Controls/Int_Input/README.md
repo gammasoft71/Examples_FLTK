@@ -1,6 +1,6 @@
 # Int_Input
 
-Shows how to create int input with Fl_Int_Input widget.
+Shows how to create int input with [Fl_Int_Input](https://www.fltk.org/doc-1.3/classFl__Int__Input.html) widget.
 
 ## Source
 
