@@ -1,6 +1,6 @@
 # Menu_Button
 
-Shows how to create a menu button with Fl_Menu_Button widget.
+Shows how to create a menu button with [Fl_Menu_Button](https://www.fltk.org/doc-1.3/classFl__Menu__Button.html) widget.
 
 ## Source
 
