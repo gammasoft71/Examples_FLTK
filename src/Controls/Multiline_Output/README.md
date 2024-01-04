@@ -1,6 +1,6 @@
 # Multiline_Output
 
-Shows how to create a multiline text output with [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) widget.
+Shows how to create a multiline text output with [Fl_Multiline_Output](https://www.fltk.org/doc-1.3/classFl__Multiline__Output.html) widget.
 
 ## Source
 
