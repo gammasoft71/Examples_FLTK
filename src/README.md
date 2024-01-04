@@ -59,7 +59,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 
 ## [Controls](Controls/README.md)
 
-* [Adjuster](Controls/Adjuster/README.md) shows how to create adjusters with Fl_Adjuster valuator.
+* [Adjuster](Controls/Adjuster/README.md) shows how to create adjusters with [Fl_Adjuster](https://www.fltk.org/doc-1.3/classFl__Adjuster.html) valuator.
 * [Box](Controls/Box/README.md) shows how to use a text with [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) widget.
 * [Box_Picture](Controls/Box_Picture/README.md) shows how to use an image with [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) widget.
 * [Box_Picture2](Controls/Box_Picture2/README.md) shows how to use an image with [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) widget.

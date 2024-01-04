@@ -1,6 +1,6 @@
 # Adjuster
 
-Shows how to create adjusters with Fl_Adjuster valuator.
+Shows how to create adjusters with [Fl_Adjuster](https://www.fltk.org/doc-1.3/classFl__Adjuster.html) valuator.
 
 ## Source
 

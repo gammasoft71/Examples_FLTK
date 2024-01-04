@@ -1,6 +1,6 @@
 # Common Controls
 
-* [Adjuster](Adjuster/README.md) shows how to create adjusters with Fl_Adjuster valuator.
+* [Adjuster](Adjuster/README.md) shows how to create adjusters with [Fl_Adjuster](https://www.fltk.org/doc-1.3/classFl__Adjuster.html) valuator.
 * [Box](Box/README.md) shows how to use a text with [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) widget.
 * [Box_Picture](Box_Picture/README.md) shows how to use an image with [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) widget.
 * [Box_Picture2](Box_Picture2/README.md) shows how to use an image with [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) widget.
