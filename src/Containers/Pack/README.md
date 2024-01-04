@@ -1,6 +1,6 @@
 # Pack
 
-Shows how to create a pack with Fl_Pack.
+Shows how to create a pack with [Fl_Pack](https://www.fltk.org/doc-1.3/classFl__Pack.html).
 
 ## Source
 
