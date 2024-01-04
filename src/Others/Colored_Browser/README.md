@@ -1,6 +1,6 @@
 # Colored_Browser
 
-Shows how to create a browser and colored items with Fl_Browser.
+Shows how to create a browser and colored items with [Fl_Browser](https://www.fltk.org/doc-1.3/classFl__Browser.html).
 
 ## Source
 

@@ -63,7 +63,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Box](Controls/Box/README.md) shows how to use a text with [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) widget.
 * [Box_Picture](Controls/Box_Picture/README.md) shows how to use an image with [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) widget.
 * [Box_Picture2](Controls/Box_Picture2/README.md) shows how to use an image with [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) widget.
-* [Browser](Controls/Browser/README.md) shows how to create a text list with Fl_Browser widget.
+* [Browser](Controls/Browser/README.md) shows how to create a text list with [Fl_Browser](https://www.fltk.org/doc-1.3/classFl__Browser.html) widget.
 * [Button](Controls/Button/README.md) shows how to create a button with Fl_Button widget.
 * [Check_Browser](Controls/Check_Browser/README.md) shows how to create a check button list with Fl_Check_Browser widget.
 * [Check_Button](Controls/Check_Button/README.md) shows how to create a check button with Fl_Check_Button widget.
@@ -142,7 +142,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 ## [Others](Others/README.md)
 
 * [Box_And_Unicode_Text](Others/Box_And_Unicode_Text/README.md) demonstrates the use of [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) with unicode text.
-* [Colored_Browser](Others/Colored_Browser/README.md) shows how to create a browser and colored items with Fl_Browser.
+* [Colored_Browser](Others/Colored_Browser/README.md) shows how to create a browser and colored items with [Fl_Browser](https://www.fltk.org/doc-1.3/classFl__Browser.html).
 * [Colored_Tabs](Others/Colored_Tabs/README.md) shows how to create a tabs and colored pages with Fl_Tabs and [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html).
 * [Colored_Text_Display](Others/Colored_Text_Display/README.md) shows how to create a colored text display with Fl_Text_Display.
 * [Colored_Windows](Others/Colored_Windows/README.md) shows how to create a colored windows with [Fl_Window](https://www.fltk.org/doc-1.3/classFl__Window.html).

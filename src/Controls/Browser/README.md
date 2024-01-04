@@ -1,6 +1,6 @@
 # Browser
 
-Shows how to create text list with Fl_Browser widget.
+Shows how to create text list with [Fl_Browser](https://www.fltk.org/doc-1.3/classFl__Browser.html) widget.
 
 ## Source
 
