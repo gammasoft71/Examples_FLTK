@@ -77,7 +77,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Float_Input](Controls/Float_Input/README.md) shows how to create a float input text with [Fl_Float_Input](https://www.fltk.org/doc-1.3/classFl__Float__Input.html) widget.
 * [Input](Controls/Input/README.md) shows how to create a text input with [Fl_Input](https://www.fltk.org/doc-1.3/classFl__Input.html) widget.
 * [Int_Input](Controls/Int_Input/README.md) shows how to create an int input text with [Fl_Int_Input](https://www.fltk.org/doc-1.3/classFl__Int__Input.html) widget.
-* [Light_Button](Controls/Light_Button/README.md) shows how to create a light button with Fl_Light_Button widget.
+* [Light_Button](Controls/Light_Button/README.md) shows how to create a light button with [Fl_Light_Button](https://www.fltk.org/doc-1.3/classFl__Light__Button.html) widget.
 * [Multiline_Input](Controls/Multiline_Input/README.md) shows how to create a multiline text input text with Fl_Multiline_Input widget.
 * [Multiline_Output](Controls/Multiline_Output/README.md) shows how to create a multiline text output with Fl_Multiline_Output widget.
 * [Nice_Slider](Controls/Nice_Slider/README.md) shows how to create a slider with Fl_Nice_Slider widget.
