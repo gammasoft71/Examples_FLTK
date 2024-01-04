@@ -1,6 +1,6 @@
 # Scroll
 
-Shows how to create a scroll with Fl_Scroll.
+Shows how to create a scroll with [Fl_Scroll](https://www.fltk.org/doc-1.3/classFl__Scroll.html).
 
 ## Source
 
