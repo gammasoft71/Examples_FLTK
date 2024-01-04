@@ -1,6 +1,6 @@
 # Counter
 
-Shows how to create counters with Fl_Counter and Fl_simple_Counter valuators.
+Shows how to create counters with [Fl_Counter](https://www.fltk.org/doc-1.3/classFl__Counter.html) and [Fl_Simple_Counter](https://www.fltk.org/doc-1.3/classFl__Simple__Counter.html) valuators.
 
 ## Source
 

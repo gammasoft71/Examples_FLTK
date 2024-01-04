@@ -11,7 +11,7 @@
 * [Clock](Clock/README.md) shows how to use a clock with [Fl_Clock](https://www.fltk.org/doc-1.3/classFl__Clock.html) widget.
 * [Clock_Output](Clock_Output/README.md) shows how to use a static clock with [Fl_Clock_Output](https://www.fltk.org/doc-1.3/classFl__Clock__Output.html) widget.
 * [Color_Chooser](Color_Chooser/README.md) shows how to use a color chooser with [Fl_Color_Chooser](https://www.fltk.org/doc-1.3/classFl__Color__Chooser.html) widget.
-* [Counter](Counter/README.md) shows how to create counters with Fl_Counter and [Fl_Simple_Counter](https://www.fltk.org/doc-1.3/classFl__Simple__Counter.html) valuators.
+* [Counter](Counter/README.md) shows how to create counters with [Fl_Counter](https://www.fltk.org/doc-1.3/classFl__Counter.html) and [Fl_Simple_Counter](https://www.fltk.org/doc-1.3/classFl__Simple__Counter.html) valuators.
 * [Dial](Dial/README.md) shows how to create dials with Fl_Dial, Fl_Line_Dial and Fl_Fill_Dial valuators.
 * [File_Browser](File_Browser/README.md) shows how to use a file browser with Fl_File_Browser widget.
 * [File_Input](File_Input/README.md) shows how to use a file input with Fl_File_Input widget.
