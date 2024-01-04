@@ -1,6 +1,6 @@
 # Button
 
-Shows how to create a button with Fl_Button widget.
+Shows how to create a button with [Fl_Button](https://www.fltk.org/doc-1.3/classFl__Button.html) widget.
 
 ## Source
 
