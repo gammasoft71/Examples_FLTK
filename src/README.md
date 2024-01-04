@@ -66,7 +66,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Browser](Controls/Browser/README.md) shows how to create a text list with [Fl_Browser](https://www.fltk.org/doc-1.3/classFl__Browser.html) widget.
 * [Button](Controls/Button/README.md) shows how to create a button with [Fl_Button](https://www.fltk.org/doc-1.3/classFl__Button.html) widget.
 * [Check_Browser](Controls/Check_Browser/README.md) shows how to create a check button list with [Fl_Check_Browser](https://www.fltk.org/doc-1.3/classFl__Check__Browser.html) widget.
-* [Check_Button](Controls/Check_Button/README.md) shows how to create a check button with Fl_Check_Button widget.
+* [Check_Button](Controls/Check_Button/README.md) shows how to create a check button with [Fl_Check_Button](https://www.fltk.org/doc-1.3/classFl__Check__Button.html) widget.
 * [Clock](Controls/Clock/README.md) shows how to use a clock with Fl_Clock widget.
 * [Clock_Output](Controls/Clock_Output/README.md) shows how to use a static clock with Fl_Clock_Output widget.
 * [Color_Chooser](Controls/Color_Chooser/README.md) shows how to use a color chooser with [Fl_Color_Chooser](https://www.fltk.org/doc-1.3/classFl__Color__Chooser.html) widget.
@@ -146,7 +146,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Colored_Tabs](Others/Colored_Tabs/README.md) shows how to create a tabs and colored pages with Fl_Tabs and [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html).
 * [Colored_Text_Display](Others/Colored_Text_Display/README.md) shows how to create a colored text display with Fl_Text_Display.
 * [Colored_Windows](Others/Colored_Windows/README.md) shows how to create a colored windows with [Fl_Window](https://www.fltk.org/doc-1.3/classFl__Window.html).
-* [Group_And_Check_Button](Others/Group_And_Check_Button/README.md) shows how to use group and check buttons with [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html) and Fl_Check_Button widgets.
+* [Group_And_Check_Button](Others/Group_And_Check_Button/README.md) shows how to use group and check buttons with [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html) and [Fl_Check_Button](https://www.fltk.org/doc-1.3/classFl__Check__Button.html) widgets.
 * [Group_And_Radio_Round_Button](Others/Group_And_Radio_Round_Button/README.md) shows how to use group and radio round buttons with [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html) and Fl_Radio_Round_Button widgets.
 
 ## Download

@@ -1,6 +1,6 @@
 # Check_Button
 
-Shows how to create a check button with Fl_Check_Button widget.
+Shows how to create a check button with [Fl_Check_Button](https://www.fltk.org/doc-1.3/classFl__Check__Button.html) widget.
 
 ## Source
 
