@@ -1,6 +1,6 @@
 # Functional
 
-Shows how to use callback method with std::function, std::bind and lambda methods.
+Shows how to use callback method with [std::function](https://en.cppreference.com/w/cpp/utility/functional/function), [std::bind](https://en.cppreference.com/w/cpp/utility/functional/bind) and [lambda](https://en.cppreference.com/w/cpp/language/lambda) methods.
 
 ## Source
 

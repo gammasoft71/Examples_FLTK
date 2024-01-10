@@ -118,9 +118,9 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 ## [Tips And Tricks](Tips_And_Tricks/README.md)
 
 * [Disable_Symbols](Tips_And_Tricks/Disable_Symbols/README.md) shows how to disable / enable label symbols.
-* [Functional](Tips_And_Tricks/Functional/README.md) shows how to use callback method with std::function, std::bind and lambda methods.
+* [Functional](Tips_And_Tricks/Functional/README.md) shows how to use callback method with [std::function](https://en.cppreference.com/w/cpp/utility/functional/function), [std::bind](https://en.cppreference.com/w/cpp/utility/functional/bind) and [lambda](https://en.cppreference.com/w/cpp/language/lambda) methods.
 * [Prevent_Hitting_Escape_Key_Closes_Windows](Tips_And_Tricks/Prevent_Hitting_Escape_Key_Closes_Windows/README.md) shows how to prevent hitting 'Escape' key closes Windows.
-* [Widget_Wrapper](Tips_And_Tricks/Widget_Wrapper/README.md) shows how to use callback method with std::function, std::bind and lambda methods.
+* [Widget_Wrapper](Tips_And_Tricks/Widget_Wrapper/README.md) shows how to use callback method with [std::function](https://en.cppreference.com/w/cpp/utility/functional/function), [std::bind](https://en.cppreference.com/w/cpp/utility/functional/bind) and [lambda](https://en.cppreference.com/w/cpp/language/lambda) methods.
 
 ## [User Dialogs](User_Dialogs/README.md)
 
