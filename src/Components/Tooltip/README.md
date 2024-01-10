@@ -1,6 +1,6 @@
 # Tooltip
 
-Shows how to create a tooltip with Fl_Tooltip component.
+Shows how to create a tooltip with [Fl_Tooltip](https://www.fltk.org/doc-1.3/classFl__Tooltip.html) component.
 
 ## Source
 
