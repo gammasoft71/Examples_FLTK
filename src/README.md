@@ -92,7 +92,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Spinner](Controls/Spinner/README.md) shows how to create a spinner with [Fl_Spinner](https://www.fltk.org/doc-1.3/classFl__Spinner.html) widget.
 * [Table](Controls/Table/README.md) shows how to use a table with [Fl_Table](javascript:searchResults.Toggle("SR_fl_5ftable_582")) widget.
 * [Text_Display](Controls/Text_Display/README.md) shows how to use a text display with [Fl_Text_Display](https://www.fltk.org/doc-1.3/classFl__Text__Display.html) widget.
-* [Text_Editor](Controls/Text_Editor) shows how to use a text display with Fl_Text_Editor widget.
+* [Text_Editor](Controls/Text_Editor) shows how to use a text display with [Fl_Text_Editor](https://www.fltk.org/doc-1.3/classFl__Text__Editor.html) widget.
 * [Toggle_Button](Controls/Toggle_Button/README.md) shows how to create a toggle button with Fl_Toggle_Button widget.
 * [Tree](Controls/Tree/README.md) shows how to use a tree with Fl_Tree widget.
 * [Value_Input](Controls/Value_Input/README.md) shows how to create a value input with Fl_Value_Input valuator.

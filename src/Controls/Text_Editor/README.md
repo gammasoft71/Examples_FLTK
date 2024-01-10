@@ -1,6 +1,6 @@
 # Text_Editor
 
-Shows how to use a text editor with Fl_Text_Editor widget.
+Shows how to use a text editor with [Fl_Text_Editor](https://www.fltk.org/doc-1.3/classFl__Text__Editor.html) widget.
 
 ## Source
 
