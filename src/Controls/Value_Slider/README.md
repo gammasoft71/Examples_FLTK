@@ -1,6 +1,6 @@
 # Value_Slider
 
-Shows how to create value sliders with [Fl_Hor_Value_Slider](https://www.fltk.org/doc-1.3/classFl__Hor__Value__Slider.html) and Fl_Value_Slider valuators.
+Shows how to create value sliders with [Fl_Hor_Value_Slider](https://www.fltk.org/doc-1.3/classFl__Hor__Value__Slider.html) and [Fl_Value_Slider](https://www.fltk.org/doc-1.3/classFl__Value__Slider.html) valuators.
 
 ## Source
 
