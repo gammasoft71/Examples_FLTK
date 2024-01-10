@@ -1,6 +1,6 @@
 # Table
 
-Shows how to usea table with [Fl_Table](javascript:searchResults.Toggle("SR_fl_5ftable_582")) widget.
+Shows how to usea table with [Fl_Table](https://www.fltk.org/doc-1.3/classFl__Table.html) widget.
 
 ## Source
 
