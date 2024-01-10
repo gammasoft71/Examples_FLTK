@@ -1,6 +1,6 @@
 # Preferences
 
-Shows how to use preferences with Fl_Preferences component.
+Shows how to use preferences with [Fl_Preferences](https://www.fltk.org/doc-1.3/classFl__Preferences.html) component.
 
 ## Source
 
