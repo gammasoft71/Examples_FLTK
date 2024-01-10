@@ -1,6 +1,6 @@
 # Application_Idle
 
-Shows how to use idle event with Fl::add_idle method.
+Shows how to use idle event with [Fl::add_idle](https://www.fltk.org/doc-1.3/classFl.html#a4e7a1b5d18c2f073238a8466a62a3e7a) method.
 
 ## Source
 
