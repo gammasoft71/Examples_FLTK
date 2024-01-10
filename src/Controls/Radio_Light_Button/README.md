@@ -1,6 +1,6 @@
 # Radio_Light_Button
 
-Shows how to create a radio light button with Fl_Radio_Light_Button widget.
+Shows how to create a radio light button with [Fl_Radio_Light_Button](https://www.fltk.org/doc-1.3/classFl__Radio__Light__Button.html) widget.
 
 ## Source
 
