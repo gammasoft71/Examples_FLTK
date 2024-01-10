@@ -1,6 +1,6 @@
 # Toggle_Button
 
-Shows how to create a toggle button with Fl_Toggle_Button widget.
+Shows how to create a toggle button with [Fl_Toggle_Button](https://www.fltk.org/doc-1.3/classFl__Toggle__Button.html) widget.
 
 ## Source
 

@@ -34,7 +34,7 @@
 * [Table](Table/README.md) shows how to use a table with [Fl_Table](javascript:searchResults.Toggle("SR_fl_5ftable_582")) widget.
 * [Text_Display](Text_Display/README.md) shows how to use a text display with [Fl_Text_Display](https://www.fltk.org/doc-1.3/classFl__Text__Display.html) widget.
 * [Text_Editor](Text_Editor) shows how to use a text display with [Fl_Text_Editor](https://www.fltk.org/doc-1.3/classFl__Text__Editor.html) widget.
-* [Toggle_Button](Toggle_Button/README.md) shows how to create a toggle button with Fl_Toggle_Button widget.
+* [Toggle_Button](Toggle_Button/README.md) shows how to create a toggle button with [Fl_Toggle_Button](https://www.fltk.org/doc-1.3/classFl__Toggle__Button.html) widget.
 * [Tree](Tree/README.md) shows how to use a tree with Fl_Tree widget.
 * [Value_Input](Value_Input/README.md) shows how to create a value input with Fl_Value_Input valuator.
 * [Value_Output](Value_Output/README.md) shows how to create a value input with Fl_Value_Output valuator.
