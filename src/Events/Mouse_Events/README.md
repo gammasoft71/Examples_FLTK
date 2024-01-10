@@ -1,6 +1,6 @@
 # Mouse_Events
 
-Demonstrates the use of mouse events.
+Demonstrates the use of [mouse events](https://www.fltk.org/doc-1.3/events.html#events_mouse).
 
 ## Source
 

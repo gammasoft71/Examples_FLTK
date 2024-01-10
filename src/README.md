@@ -111,8 +111,8 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 ## [Events](Events/README.md)
 
 * [Application_Idle](Events/Application_Idle/README.md) shows how to use idle event with [Fl::add_idle](https://www.fltk.org/doc-1.3/classFl.html#a4e7a1b5d18c2f073238a8466a62a3e7a) method.
-* [Key_Events](Events/Key_Events/README.md) demonstrates the use of key events.
-* [Mouse_Events](Events/Mouse_Events/README.md) demonstrates the use of mouse events.
+* [Key_Events](Events/Key_Events/README.md) demonstrates the use of [keyboard events](https://www.fltk.org/doc-1.3/events.html#events_keyboard).
+* [Mouse_Events](Events/Mouse_Events/README.md) demonstrates the use of [mouse events](https://www.fltk.org/doc-1.3/events.html#events_mouse).
 * [Window_Click](Events/Window_Click/README.md) shows how to use mouse click event with override handle method and use Fl::event_button, Fl::event_x() and Fl::event_y() methods on FL_RELEASE event.
 
 ## [Tips And Tricks](Tips_And_Tricks/README.md)

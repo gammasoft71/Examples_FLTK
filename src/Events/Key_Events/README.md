@@ -1,6 +1,6 @@
 # Key_Events
 
-Demonstrates the use of key events.
+Demonstrates the use of [keyboard events](https://www.fltk.org/doc-1.3/events.html#events_keyboard).
 
 ## Source
 
