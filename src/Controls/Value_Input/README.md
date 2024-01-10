@@ -1,6 +1,6 @@
 # Value_Input
 
-Shows how to create a value input with [Fl_Adjuster](https://www.fltk.org/doc-1.3/classFl__Adjuster.html) valuator.
+Shows how to create a value input with [Fl_Value_Input](https://www.fltk.org/doc-1.3/classFl__Value__Input.html) valuator.
 
 ## Source
 
