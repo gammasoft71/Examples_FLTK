@@ -1,6 +1,6 @@
 # Cursors
 
-Shows how to change cursor of a widget with override handle method and use fl_cursor method on FL_ENTER and FL_LEAVE events.
+Shows how to change cursor of a widget with override handle method and use [fl_cursor](https://www.fltk.org/doc-1.3/group__fl__drawings.html#gac34f54a80fa846cf66f160bc02940bd2) method on FL_ENTER and FL_LEAVE events.
 
 ## Source
 
