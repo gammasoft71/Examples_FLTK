@@ -1,6 +1,6 @@
 # Progress
 
-Shows how to create a progress with Fl_Progress widget.
+Shows how to create a progress with [Fl_Progress](https://www.fltk.org/doc-1.3/classFl__Progress.html) widget.
 
 ## Source
 

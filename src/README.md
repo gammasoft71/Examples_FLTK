@@ -82,7 +82,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Multiline_Output](Controls/Multiline_Output/README.md) shows how to create a multiline text output with [Fl_Multiline_Output](https://www.fltk.org/doc-1.3/classFl__Multiline__Output.html) widget.
 * [Nice_Slider](Controls/Nice_Slider/README.md) shows how to create a slider with [Fl_Nice_Slider](https://www.fltk.org/doc-1.3/classFl__Nice__Slider.html) widget.
 * [Output](Controls/Output/README.md) shows how to create a text output with [Fl_Output](https://www.fltk.org/doc-1.3/classFl__Output.html) widget.
-* [Progress](Controls/Progress/README.md) shows how to create a progress with Fl_Progress widget.
+* [Progress](Controls/Progress/README.md) shows how to create a progress with [Fl_Progress](https://www.fltk.org/doc-1.3/classFl__Progress.html) widget.
 * [Radio_Light_Button](Controls/Radio_Light_Button/README.md) shows how to create a radio light button with Fl_Radio_Light_Button widget.
 * [Radio_Round_Button](Controls/Radio_Round_Button/README.md) shows how to create a radio round button with Fl_Radio_Round_Button widget.
 * [Roller](Controls/Roller/README.md) shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
