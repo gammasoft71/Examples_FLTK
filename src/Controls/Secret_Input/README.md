@@ -1,6 +1,6 @@
 # Secret_Input
 
-Shows how to create a secret text input with Fl_Secret_Input widget.
+Shows how to create a secret text input with [Fl_Secret_Input](https://www.fltk.org/doc-1.3/classFl__Secret__Input.html) widget.
 
 ## Source
 
