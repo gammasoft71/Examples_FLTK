@@ -1,6 +1,6 @@
 # Schemes
 
-Shows how to use schemes with fl_scheme methods.
+Shows how to use schemes with [Fl::scheme](https://www.fltk.org/doc-1.3/classFl.html#a9d070bb1d5a24c28beab53a70af095a4) methods.
 
 ## Source
 

@@ -103,7 +103,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 
 * [Cursors](Components/Cursors) shows how to change cursor of a widget with override handle method and use [fl_cursor](https://www.fltk.org/doc-1.3/group__fl__drawings.html#gac34f54a80fa846cf66f160bc02940bd2) method on [FL_ENTER](https://www.fltk.org/doc-1.3/events.html#events_fl_enter) and [FL_LEAVE](https://www.fltk.org/doc-1.3/events.html#events_fl_leave) events.
 * [Preferences](Components/Preferences/README.md) shows how to use preferences with [Fl_Preferences](https://www.fltk.org/doc-1.3/classFl__Preferences.html) component.
-* [Schemes](Components/Schemes/README.md) shows how to use schemes with fl_scheme methods.
+* [Schemes](Components/Schemes/README.md) shows how to use schemes with [Fl::scheme](https://www.fltk.org/doc-1.3/classFl.html#a9d070bb1d5a24c28beab53a70af095a4) methods.
 * [Symbols](Components/Symbols/README.md) shows how to use symbols with [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) widget.
 * [Timer](Components/Timer/README.md) shows how to create a timer with Fl::add_timeout,  Fl::remove_timeout and Fl::repeat_timeout methods.
 * [Tooltip](Components/Tooltip/README.md) shows how to create a tooltip with Fl_Tooltip component.
