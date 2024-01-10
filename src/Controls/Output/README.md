@@ -1,6 +1,6 @@
 # Output
 
-Shows how to create a text output with Fl_Output widget.
+Shows how to create a text output with [Fl_Output](https://www.fltk.org/doc-1.3/classFl__Output.html) widget.
 
 ## Source
 
