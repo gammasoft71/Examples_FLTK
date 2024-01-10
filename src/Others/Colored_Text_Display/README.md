@@ -1,6 +1,6 @@
 # Colored_Text_Display
 
-Shows how to create a colored text display with Fl_Text_Display.
+Shows how to create a colored text display with [Fl_Text_Display](https://www.fltk.org/doc-1.3/classFl__Text__Display.html).
 
 ## Source
 
