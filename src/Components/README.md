@@ -4,5 +4,5 @@
 * [Preferences](Preferences/README.md) shows how to use preferences with [Fl_Preferences](https://www.fltk.org/doc-1.3/classFl__Preferences.html) component.
 * [Schemes](Schemes/README.md) shows how to use schemes with [Fl::scheme](https://www.fltk.org/doc-1.3/classFl.html#a9d070bb1d5a24c28beab53a70af095a4) methods.
 * [Symbols](Symbols/README.md) shows how to use symbols with [Fl_Box](https://www.fltk.org/doc-1.3/classFl__Box.html) widget.
-* [Timer](Timer/README.md) shows how to create a timer with Fl::add_timeout,  Fl::remove_timeout and Fl::repeat_timeout methods.
+* [Timer](Timer/README.md) shows how to create a timer with [Fl::add_timeout](https://www.fltk.org/doc-1.3/classFl.html#a23e63eb7cec3a27fa360e66c6e2b2e52),  [Fl::remove_timeout](https://www.fltk.org/doc-1.3/classFl.html#a9a950f0585de6416eb4fee2365a1578f) and Fl::repeat_timeout methods.
 * [Tooltip](Tooltip/README.md) shows how to create a tooltip with Fl_Tooltip component.
