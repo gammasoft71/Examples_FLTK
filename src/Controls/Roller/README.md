@@ -1,6 +1,6 @@
 # Roller
 
-Shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
+Shows how to create rollers (horizontal and vertical) with [Fl_Roller](https://www.fltk.org/doc-1.3/classFl__Roller.html) valuator.
 
 ## Source
 
