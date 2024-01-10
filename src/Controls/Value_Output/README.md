@@ -1,6 +1,6 @@
 # Value_Output
 
-Shows how to create a value output with Fl_Value_Output valuator.
+Shows how to create a value output with [Fl_Value_Output](https://www.fltk.org/doc-1.3/classFl__Value__Output.html) valuator.
 
 ## Source
 
