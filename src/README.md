@@ -84,7 +84,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Output](Controls/Output/README.md) shows how to create a text output with [Fl_Output](https://www.fltk.org/doc-1.3/classFl__Output.html) widget.
 * [Progress](Controls/Progress/README.md) shows how to create a progress with [Fl_Progress](https://www.fltk.org/doc-1.3/classFl__Progress.html) widget.
 * [Radio_Light_Button](Controls/Radio_Light_Button/README.md) shows how to create a radio light button with [Fl_Radio_Light_Button](https://www.fltk.org/doc-1.3/classFl__Radio__Light__Button.html) widget.
-* [Radio_Round_Button](Controls/Radio_Round_Button/README.md) shows how to create a radio round button with Fl_Radio_Round_Button widget.
+* [Radio_Round_Button](Controls/Radio_Round_Button/README.md) shows how to create a radio round button with [Fl_Radio_Round_Button](https://www.fltk.org/doc-1.3/classFl__Radio__Round__Button.html) widget.
 * [Roller](Controls/Roller/README.md) shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
 * [Round_Button](Controls/Round_Button/README.md) shows how to create a round button with Fl_Round_Button widget.
 * [Secret_Input](Controls/Secret_Input/README.md) shows how to create a secret text input with Fl_Secret_Input widget.
@@ -147,7 +147,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Colored_Text_Display](Others/Colored_Text_Display/README.md) shows how to create a colored text display with Fl_Text_Display.
 * [Colored_Windows](Others/Colored_Windows/README.md) shows how to create a colored windows with [Fl_Window](https://www.fltk.org/doc-1.3/classFl__Window.html).
 * [Group_And_Check_Button](Others/Group_And_Check_Button/README.md) shows how to use group and check buttons with [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html) and [Fl_Check_Button](https://www.fltk.org/doc-1.3/classFl__Check__Button.html) widgets.
-* [Group_And_Radio_Round_Button](Others/Group_And_Radio_Round_Button/README.md) shows how to use group and radio round buttons with [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html) and Fl_Radio_Round_Button widgets.
+* [Group_And_Radio_Round_Button](Others/Group_And_Radio_Round_Button/README.md) shows how to use group and radio round buttons with [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html) and [Fl_Radio_Round_Button](https://www.fltk.org/doc-1.3/classFl__Radio__Round__Button.html) widgets.
 
 ## Download
 

@@ -1,6 +1,6 @@
 # Group_And_Radio_Round_Button
 
-Shows how to use group and radio round buttons with [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html) and Fl_Radio_Round_Button widgets.
+Shows how to use group and radio round buttons with [Fl_Group](https://www.fltk.org/doc-1.3/classFl__Group.html) and [Fl_Radio_Round_Button](https://www.fltk.org/doc-1.3/classFl__Radio__Round__Button.html) widgets.
 
 ## Source
 
