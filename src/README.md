@@ -94,7 +94,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Text_Display](Controls/Text_Display/README.md) shows how to use a text display with [Fl_Text_Display](https://www.fltk.org/doc-1.3/classFl__Text__Display.html) widget.
 * [Text_Editor](Controls/Text_Editor) shows how to use a text display with [Fl_Text_Editor](https://www.fltk.org/doc-1.3/classFl__Text__Editor.html) widget.
 * [Toggle_Button](Controls/Toggle_Button/README.md) shows how to create a toggle button with [Fl_Toggle_Button](https://www.fltk.org/doc-1.3/classFl__Toggle__Button.html) widget.
-* [Tree](Controls/Tree/README.md) shows how to use a tree with Fl_Tree widget.
+* [Tree](Controls/Tree/README.md) shows how to use a tree with [Fl_Tree](https://www.fltk.org/doc-1.3/classFl__Tree.html) widget.
 * [Value_Input](Controls/Value_Input/README.md) shows how to create a value input with Fl_Value_Input valuator.
 * [Value_Output](Controls/Value_Output/README.md) shows how to create a value output with Fl_Value_Output valuator.
 * [Value_Slider](Controls/Value_Slider/README.md) shows how to create value sliders with Fl_Hor_Value_Slider and Fl_Value_Slider valuators.

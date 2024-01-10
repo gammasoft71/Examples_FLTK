@@ -1,6 +1,6 @@
 # Tree
 
-Shows how to create a tree with Fl_Tree widget.
+Shows how to create a tree with [Fl_Tree](https://www.fltk.org/doc-1.3/classFl__Tree.html) widget.
 
 ## Source
 
