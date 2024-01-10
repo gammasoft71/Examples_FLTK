@@ -80,7 +80,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Light_Button](Controls/Light_Button/README.md) shows how to create a light button with [Fl_Light_Button](https://www.fltk.org/doc-1.3/classFl__Light__Button.html) widget.
 * [Multiline_Input](Controls/Multiline_Input/README.md) shows how to create a multiline text input text with [Fl_Multiline_Input](https://www.fltk.org/doc-1.3/classFl__Multiline__Input.html) widget.
 * [Multiline_Output](Controls/Multiline_Output/README.md) shows how to create a multiline text output with [Fl_Multiline_Output](https://www.fltk.org/doc-1.3/classFl__Multiline__Output.html) widget.
-* [Nice_Slider](Controls/Nice_Slider/README.md) shows how to create a slider with Fl_Nice_Slider widget.
+* [Nice_Slider](Controls/Nice_Slider/README.md) shows how to create a slider with [Fl_Nice_Slider](https://www.fltk.org/doc-1.3/classFl__Nice__Slider.html) widget.
 * [Output](Controls/Output/README.md) shows how to create a text output with Fl_Output widget.
 * [Progress](Controls/Progress/README.md) shows how to create a progress with Fl_Progress widget.
 * [Radio_Light_Button](Controls/Radio_Light_Button/README.md) shows how to create a radio light button with Fl_Radio_Light_Button widget.
@@ -88,7 +88,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Roller](Controls/Roller/README.md) shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
 * [Round_Button](Controls/Round_Button/README.md) shows how to create a round button with Fl_Round_Button widget.
 * [Secret_Input](Controls/Secret_Input/README.md) shows how to create a secret text input with Fl_Secret_Input widget.
-* [Slider](Controls/Slider/README.md) shows how to create sliders with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_Slider, Fl_Slider, Fl_Fill_Slider and Fl_Nice_Slider valuators.
+* [Slider](Controls/Slider/README.md) shows how to create sliders with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_Slider, Fl_Slider, Fl_Fill_Slider and [Fl_Nice_Slider](https://www.fltk.org/doc-1.3/classFl__Nice__Slider.html) valuators.
 * [Spinner](Controls/Spinner/README.md) shows how to create a spinner with Fl_Spinner widget.
 * [Table](Controls/Table/README.md) shows how to use a table with Fl_Table widget.
 * [Text_Display](Controls/Text_Display/README.md) shows how to use a text display with Fl_Text_Display widget.

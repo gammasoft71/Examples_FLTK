@@ -21,7 +21,7 @@
 * [Light_Button](Light_Button/README.md) shows how to create a light button with [Fl_Light_Button](https://www.fltk.org/doc-1.3/classFl__Light__Button.html) widget.
 * [Multiline_Input](Multiline_Input/README.md) shows how to create a multiline input text with [Fl_Multiline_Input](https://www.fltk.org/doc-1.3/classFl__Multiline__Input.html) widget.
 * [Multiline_Output](Multiline_Output/README.md) shows how to create a multiline output text with [Fl_Multiline_Output](https://www.fltk.org/doc-1.3/classFl__Multiline__Output.html) widget.
-* [Nice_Slider](Nice_Slider/README.md) shows how to create a slider with Fl_Nice_Slider widget.
+* [Nice_Slider](Nice_Slider/README.md) shows how to create a slider with [Fl_Nice_Slider](https://www.fltk.org/doc-1.3/classFl__Nice__Slider.html) widget.
 * [Output](Output/README.md) shows how to create an output text with Fl_Output widget.
 * [Progress](Progress/README.md) shows how to create a progress with Fl_Progress widget.
 * [Radio_Light_Button](Radio_Light_Button/README.md) shows how to create a radio light button with Fl_Radio_Light_Button widget.
@@ -29,7 +29,7 @@
 * [Roller](Roller/README.md) shows how to create rollers (horizontal and vertical) with Fl_Roller valuator.
 * [Round_Button](Round_Button/README.md) shows how to create a round button with Fl_Round_Button widget.
 * [Secret_Input](Secret_Input/README.md) shows how to create a secret input text with Fl_Secret_Input widget.
-* [Slider](Slider/README.md) shows how to create sliders with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_Slider, Fl_Slider, Fl_Fill_Slider and Fl_Nice_Slider valuators.
+* [Slider](Slider/README.md) shows how to create sliders with Fl_Hor_Slider, Fl_Hor_Fill_Slider, Fl_Hor_Nice_Slider, Fl_Slider, Fl_Fill_Slider and [Fl_Nice_Slider](https://www.fltk.org/doc-1.3/classFl__Nice__Slider.html) valuators.
 * [Spinner](Spinner/README.md) shows how to create a spinner with Fl_Spinner widget.
 * [Table](Table/README.md) shows how to use a table with Fl_Table widget.
 * [Text_Display](Text_Display/README.md) shows how to use a text display with Fl_Text_Display widget.

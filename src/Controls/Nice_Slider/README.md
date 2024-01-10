@@ -1,6 +1,6 @@
 # Nice_Slider
 
-Shows how to create a slider with Fl_Nice_Slider widget.
+Shows how to create a slider with [Fl_Nice_Slider](https://www.fltk.org/doc-1.3/classFl__Nice__Slider.html) widget.
 
 ## Source
 
