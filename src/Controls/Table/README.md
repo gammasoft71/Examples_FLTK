@@ -1,6 +1,6 @@
 # Table
 
-Shows how to usea table with Fl_Table widget.
+Shows how to usea table with [Fl_Table](javascript:searchResults.Toggle("SR_fl_5ftable_582")) widget.
 
 ## Source
 

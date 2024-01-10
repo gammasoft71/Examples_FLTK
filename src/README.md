@@ -90,7 +90,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 * [Secret_Input](Controls/Secret_Input/README.md) shows how to create a secret text input with [Fl_Secret_Input](https://www.fltk.org/doc-1.3/classFl__Secret__Input.html) widget.
 * [Slider](Controls/Slider/README.md) shows how to create sliders with [Fl_Hor_Slider](https://www.fltk.org/doc-1.3/classFl__Hor__Slider.html), [Fl_Hor_Fill_Slider](https://www.fltk.org/doc-1.3/classFl__Hor__Fill__Slider.html), [Fl_Hor_Nice_Slider](https://www.fltk.org/doc-1.3/classFl__Hor__Nice__Slider.html), [Fl_Slider](https://www.fltk.org/doc-1.3/classFl__Slider.html), [Fl_Fill_Slider](https://www.fltk.org/doc-1.3/classFl__Fill__Slider.html) and [Fl_Nice_Slider](https://www.fltk.org/doc-1.3/classFl__Nice__Slider.html) valuators.
 * [Spinner](Controls/Spinner/README.md) shows how to create a spinner with [Fl_Spinner](https://www.fltk.org/doc-1.3/classFl__Spinner.html) widget.
-* [Table](Controls/Table/README.md) shows how to use a table with Fl_Table widget.
+* [Table](Controls/Table/README.md) shows how to use a table with [Fl_Table](javascript:searchResults.Toggle("SR_fl_5ftable_582")) widget.
 * [Text_Display](Controls/Text_Display/README.md) shows how to use a text display with Fl_Text_Display widget.
 * [Text_Editor](Controls/Text_Editor) shows how to use a text display with Fl_Text_Editor widget.
 * [Toggle_Button](Controls/Toggle_Button/README.md) shows how to create a toggle button with Fl_Toggle_Button widget.
