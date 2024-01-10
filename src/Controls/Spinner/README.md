@@ -1,6 +1,6 @@
 # Spinner
 
-Shows how to create a spinner with Fl_Spinner widget.
+Shows how to create a spinner with [Fl_Spinner](https://www.fltk.org/doc-1.3/classFl__Spinner.html) widget.
 
 ## Source
 
