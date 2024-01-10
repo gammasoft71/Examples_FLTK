@@ -1,6 +1,6 @@
 # Slider
 
-Shows how to create sliders with [Fl_Hor_Slider](https://www.fltk.org/doc-1.3/classFl__Hor__Slider.html), [Fl_Hor_Fill_Slider](https://www.fltk.org/doc-1.3/classFl__Hor__Fill__Slider.html), [Fl_Hor_Nice_Slider](https://www.fltk.org/doc-1.3/classFl__Hor__Nice__Slider.html), Fl_Slider, Fl_Fill_Slider and [Fl_Nice_Slider](https://www.fltk.org/doc-1.3/classFl__Nice__Slider.html) valuators.
+Shows how to create sliders with [Fl_Hor_Slider](https://www.fltk.org/doc-1.3/classFl__Hor__Slider.html), [Fl_Hor_Fill_Slider](https://www.fltk.org/doc-1.3/classFl__Hor__Fill__Slider.html), [Fl_Hor_Nice_Slider](https://www.fltk.org/doc-1.3/classFl__Hor__Nice__Slider.html), [Fl_Slider](https://www.fltk.org/doc-1.3/classFl__Slider.html), Fl_Fill_Slider and [Fl_Nice_Slider](https://www.fltk.org/doc-1.3/classFl__Nice__Slider.html) valuators.
 
 ## Source
 
