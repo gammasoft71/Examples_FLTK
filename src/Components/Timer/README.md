@@ -1,6 +1,6 @@
 # Timer
 
-Shows how to create a timer with [Fl::add_timeout](https://www.fltk.org/doc-1.3/classFl.html#a23e63eb7cec3a27fa360e66c6e2b2e52), [Fl::remove_timeout](https://www.fltk.org/doc-1.3/classFl.html#a9a950f0585de6416eb4fee2365a1578f) and Fl::repeat_timeout methods.
+Shows how to create a timer with [Fl::add_timeout](https://www.fltk.org/doc-1.3/classFl.html#a23e63eb7cec3a27fa360e66c6e2b2e52), [Fl::remove_timeout](https://www.fltk.org/doc-1.3/classFl.html#a9a950f0585de6416eb4fee2365a1578f) and [Fl::repeat_timeout](https://www.fltk.org/doc-1.3/classFl.html#ae5373d1d50c2b0ba38280d78bb6d2628) methods.
 
 ## Source
 
