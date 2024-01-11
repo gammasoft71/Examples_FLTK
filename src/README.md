@@ -131,7 +131,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 
 * [Check_Box](User_Controls/Check_Box/README.md) shows how to create a check box with own [Fl_Check_Box](User_Controls/Check_Box/Fl_Check_Box.h) widget.
 * [Combo_Box](User_Controls/Combo_Box/README.md) shows how to create Combo boxes with own [Fl_Combo_Box](User_Controls/Combo_Box/Fl_Combo_Box) widgets.
-* [Progress_Bar](User_Controls/Progress_Bar/README.md) shows how to create a progress bar with own Fl_Progress_Bar widget.
+* [Progress_Bar](User_Controls/Progress_Bar/README.md) shows how to create a progress bar with own [Fl_Progress_Bar](User_Controls/Progress_Bar/Fl_Progress_Bar.h) widget.
 * [Radio_Toggle_Button](User_Controls/Radio_Toggle_Button/README.md) shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
 
 ## [User Components](User_Components/README.md)

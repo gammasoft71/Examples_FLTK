@@ -1,6 +1,6 @@
 # Progress_Bar
 
-Shows how to create a progress bar with own Fl_Progress_Bar widget.
+Shows how to create a progress bar with own [Fl_Progress_Bar](Fl_Progress_Bar.h) widget.
 
 ## Source
 
