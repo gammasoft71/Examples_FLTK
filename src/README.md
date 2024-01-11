@@ -137,7 +137,7 @@ Shows how to use [FLTK](https://www.fltk.org) controls only by programming code 
 ## [User Components](User_Components/README.md)
 
 * [Scheme_Modes](User_Components/Scheme_Modes/README.md) shows how to use own scheme modes with own [fl_scheme_mode](User_Components/Scheme_Modes/Fl_Scheme_Mode.h) methods.
-* [Use_Wait_Cursor](User_Components/Use_Wait_Cursor/README.md) shows how to use own Fl_Use_Wait_cursor component or own fl_use_wait_cursor method.
+* [Use_Wait_Cursor](User_Components/Use_Wait_Cursor/README.md) shows how to use own Fl_Use_Wait_cursor component or own [User_Components/Use_Wait_Cursor/fl_use_wait_cursor](Fl_Use_Wait_Cursor.h) method.
 
 ## [Others](Others/README.md)
 

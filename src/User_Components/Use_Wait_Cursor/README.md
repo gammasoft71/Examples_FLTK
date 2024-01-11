@@ -1,6 +1,6 @@
 # Use_Wait_Cursor
 
-Shows how to use own Fl_Use_Wait_cursor component or own fl_use_wait_cursor method.
+Shows how to use own Fl_Use_Wait_cursor component or own [fl_use_wait_cursor](Fl_Use_Wait_Cursor.h) method.
 
 ## Source
 
