@@ -1,6 +1,6 @@
 # Check_Box
 
-Shows how to create a check box with own Fl_Check_Box widget.
+Shows how to create a check box with own [Fl_Check_Box](Fl_Check_Box.h) widget.
 
 ## Source
 
