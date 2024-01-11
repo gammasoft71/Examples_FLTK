@@ -1,6 +1,6 @@
 # Scheme_Modes
 
-Shows how to use own scheme modes with own fl_scheme_mode methods.
+Shows how to use own scheme modes with own [fl_scheme_mode](Fl_Scheme_Mode.h) methods.
 
 ## Source
 
