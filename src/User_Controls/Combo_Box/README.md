@@ -1,6 +1,6 @@
 # Combo_Box
 
-Shows how to create Combo boxes with own Fl_Combo_Box widgets.
+Shows how to create Combo boxes with own [Fl_Combo_Box](Fl_Combo_Box) widgets.
 
 ## Source
 
