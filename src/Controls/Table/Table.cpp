@@ -9,8 +9,8 @@ namespace Examples {
   class Start_Trek_Character_Table : public Fl_Table {
   public:
     Start_Trek_Character_Table(int x, int y, int width, int height) : Fl_Table(x, y, width, height) {
-      rows(cells.size());
-      cols(cells[0].size());
+      rows(static_cast<int>(cells.size()));
+      cols(static_cast<int>(cells[0].size()));
       col_header(true);
       col_width(0, 130);
       col_width(1, 80);

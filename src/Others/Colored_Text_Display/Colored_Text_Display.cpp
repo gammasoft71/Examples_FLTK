@@ -9,7 +9,7 @@ namespace Examples {
     Main_Window() : Fl_Window(200, 100, 450, 300, "Colored text display example") {
       resizable(text_display);
       text_display.buffer(&text_buffer);
-      text_display.highlight_data(&style_buffer, style_table.data(), style_table.size(), 'A', 0, 0);
+      text_display.highlight_data(&style_buffer, style_table.data(), static_cast<int>(style_table.size()), 'A', 0, 0);
       text_buffer.append("Default line\n");
       style_buffer.append("AAAAAAAAAAAA\n");
       text_buffer.append("Red line\n");
