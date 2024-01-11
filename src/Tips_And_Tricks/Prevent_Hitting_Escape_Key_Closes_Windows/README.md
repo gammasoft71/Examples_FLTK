@@ -1,6 +1,6 @@
 # Prevent_Hitting_Escape_Key_Closes_Windows
 
-Shows how to prevent hitting 'Escape' key closes Windows.
+Shows how to prevent hitting 'Escape' key ([FL_Escape](https://www.fltk.org/doc-1.3/Enumerations_8H.html#a91b983ebe4cd86393e2addb8ab40a326)) closes Windows with [Fl::add_handler](https://www.fltk.org/doc-1.3/group__fl__events.html#gae2d39bda7362e444afa41166c478b904) method.
 
 ## Source
 
