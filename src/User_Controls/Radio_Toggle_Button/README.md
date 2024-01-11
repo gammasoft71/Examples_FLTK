@@ -1,6 +1,6 @@
 # Radio_Toggle_Button
 
-Shows how to create a radio button with own Fl_Radio_Toggle_Button widget.
+Shows how to create a radio button with own [Fl_Radio_Toggle_Button](Fl_Radio_Toggle_Button.h) widget.
 
 ## Source
 
