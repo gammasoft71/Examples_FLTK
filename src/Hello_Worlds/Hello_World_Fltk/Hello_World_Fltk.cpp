@@ -2,9 +2,9 @@
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Window.H>
 
-int main(int argc, char *argv[]) {
-  Fl_Window window(340, 180);
-  Fl_Box box(20, 40, 300, 100, "Hello, World!");
+auto main() -> int {
+  auto window = Fl_Window {340, 180};
+  auto box = Fl_Box {20, 40, 300, 100, "Hello, World!"};
   box.box(FL_UP_BOX);
   box.labelfont(FL_BOLD + FL_ITALIC);
   box.labelsize(36);
