@@ -5,7 +5,7 @@
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Hello world (box)") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Hello world (box)"} {
       box1.align(FL_ALIGN_CENTER | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
       box1.labelfont(box1.labelfont() | FL_BOLD | FL_ITALIC);
       box1.labelsize(36);
@@ -21,8 +21,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }
