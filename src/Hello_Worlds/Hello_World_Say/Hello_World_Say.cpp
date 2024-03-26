@@ -16,7 +16,7 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window {200, 100, 300, 300, "Hello world (say)"} {
-      auto file = ofstream {temp_directory_path()/"say.cmd"};
+      auto file = ofstream {temp_directory_path() / "say.cmd"};
 #if _WIN32
       file << "@echo Set Speaker=CreateObject(\"sapi.spvoice\") > %TEMP%\\say.vbs\n@echo Speaker.Speak %* >> %TEMP%\\say.vbs\n@%TEMP%\\say.vbs";
 #elif __APPLE__
