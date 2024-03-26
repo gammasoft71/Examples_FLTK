@@ -17,7 +17,7 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 330, 300, "") {
+    Main_Window() : Fl_Window {200, 100, 330, 300, ""} {
       box1.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_CLIP | FL_ALIGN_INSIDE);
       
       button1.callback([](Fl_Widget* sender, void* window) {
@@ -50,10 +50,10 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
+auto main(int argc, char *argv[]) -> int {
   fl_message_hotspot(false);
   fl_message_icon()->labelfont(FL_HELVETICA_BOLD);
-  Examples::Main_Window window;
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   struct Fl_Enable_Light_Mode {
     Fl_Enable_Light_Mode() {

@@ -7,9 +7,9 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Application and exception example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Application and exception example"} {
       // uncomment to throw error
-      //throw overflow_error("Creation object error");
+      //throw overflow_error {"Creation object error"};
       
       generate_handled_exception_button.callback(Main_Window::generate_handled_exception, this);
       
@@ -21,13 +21,13 @@ namespace Examples {
   private:
     static void generate_handled_exception(Fl_Widget* sender, void* window) {
       try {
-        throw invalid_argument("Exception handled generated.");
+        throw invalid_argument {"Exception handled generated."};
       } catch (const exception& e) {
         fl_message_title("Exception handled");
         fl_message("%s", e.what());
       }
     }
-    static void generate_exception(Fl_Widget* sender, void* window) {throw invalid_argument("Exception generated");}
+    static void generate_exception(Fl_Widget* sender, void* window) {throw invalid_argument {"Exception generated"};}
     static void generate_unknown_exception(Fl_Widget* sender, void* window) {throw "Unknown exception generated";}
 
     Fl_Button generate_handled_exception_button {10, 10, 220, 25, "Generate handled exception"};
@@ -36,9 +36,9 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
+auto main(int argc, char *argv[]) -> int {
   try {
-    Fl_Application::run(argc, argv, Examples::Main_Window());
+    Fl_Application::run(argc, argv, Examples::Main_Window {});
   } catch(const exception& e) {
     Fl_Application::show_exception_error("Exception occured", e);
   } catch(...) {
