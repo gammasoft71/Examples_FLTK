@@ -15,8 +15,8 @@ using namespace std::filesystem;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Hello world (say)") {
-      std::ofstream file(temp_directory_path()/"say.cmd");
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Hello world (say)"} {
+      auto file = ofstream {temp_directory_path()/"say.cmd"};
 #if _WIN32
       file << "@echo Set Speaker=CreateObject(\"sapi.spvoice\") > %TEMP%\\say.vbs\n@echo Speaker.Speak %* >> %TEMP%\\say.vbs\n@%TEMP%\\say.vbs";
 #elif __APPLE__
@@ -24,10 +24,10 @@ namespace Examples {
 #else
       file << "spd-say $*";
 #endif
-      permissions(temp_directory_path()/"say.cmd", perms::owner_all);
+      permissions(temp_directory_path() / "say.cmd", perms::owner_all);
 
       button1.callback([](Fl_Widget* sender, void* window) {
-        popen(((temp_directory_path()/"say.cmd").string() + " \"Hello, World!\"").c_str(), "r");
+        popen(((temp_directory_path() / "say.cmd").string() + " \"Hello, World!\"").c_str(), "r");
       }, this);
     }
     
@@ -36,8 +36,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

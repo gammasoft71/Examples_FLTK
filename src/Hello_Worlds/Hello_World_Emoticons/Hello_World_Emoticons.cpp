@@ -6,7 +6,7 @@
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Hello world (emoticons)") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Hello world (emoticons)"} {
       box1.labelsize(72);
       auto text_width = 0;
       auto text_height = 0;
@@ -21,8 +21,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

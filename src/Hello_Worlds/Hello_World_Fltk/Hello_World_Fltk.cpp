@@ -2,7 +2,7 @@
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Window.H>
 
-auto main() -> int {
+auto main(int argc, char *argv[]) -> int {
   auto window = Fl_Window {340, 180};
   auto box = Fl_Box {20, 40, 300, 100, "Hello, World!"};
   box.box(FL_UP_BOX);
