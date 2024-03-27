@@ -1,16 +1,15 @@
-#include <limits>
-#include <string>
 #include <FL/Fl.H>
 #include <FL/Fl_Text_Display.H>
 #include <FL/Fl_Sys_Menu_Bar.H>
 #include <FL/Fl_Window.H>
+#include <limits>
 
 using namespace std;
 
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Sys menu bar example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Sys menu bar example"} {
       resizable(text_display);
 
       text_display.buffer(&text_buffer);
@@ -58,13 +57,15 @@ namespace Examples {
     }
     
   private:
-    static void on_menu_item_click(Fl_Widget* sender, void* window) {reinterpret_cast<Main_Window*>(window)->on_menu_item_click(dynamic_cast<Fl_Sys_Menu_Bar&>(*sender));}
-    void on_menu_item_click(Fl_Sys_Menu_Bar& menu) {
-      text_buffer.append(menu.mvalue()->label());
-      text_buffer.append("\n");
-      text_display.scroll(std::numeric_limits<int>::max(), 0);
-      menu.value(0);
+    static void on_menu_item_click(Fl_Widget* sender, void* data) {
+      auto menu = dynamic_cast<Fl_Sys_Menu_Bar*>(sender);
+      auto window = reinterpret_cast<Main_Window*>(data);
+      window->text_buffer.append(menu->mvalue()->label());
+      window->text_buffer.append("\n");
+      window->text_display.scroll(numeric_limits<int>::max(), 0);
+      menu->value(0);
     }
+
     Fl_Text_Buffer text_buffer;
     Fl_Sys_Menu_Bar sys_menu_bar {0, 0, 300, 30, nullptr};
 #if __APPLE__
@@ -75,8 +76,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }
