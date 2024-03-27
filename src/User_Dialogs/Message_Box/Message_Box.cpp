@@ -15,15 +15,15 @@ namespace Examples {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 185, "Message box example") {
       end();
-      caption_Box.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
+      caption_Box.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
       caption_Input.value("FLTK");
-      text_Box.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
+      text_Box.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
       text_Input.value("It's fantastic !");
-      buttons_Box.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
+      buttons_Box.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
       for (auto item : initializer_list<string> {"Ok", "Ok_Cancel", "Abort_Retry_Ignore", "Yes_No_Cancel", "Yes_No", "Retry_Cancel"})
         buttons_choice.add(item.c_str());
       buttons_choice.value(0);
-      icon_Box.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
+      icon_Box.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
       for (auto item : initializer_list<string> {"None", "Hand", "Stop", "Error", "Question", "Exclamation", "Warning", "Asterisk", "Information"})
         icon_choice.add(item.c_str());
       icon_choice.value(0);
@@ -32,7 +32,7 @@ namespace Examples {
         window->result_Box.label("Result = ");
         window->result_Box.copy_label(("Result = " + to_string(fl_message_box(window->text_Input.value(), window->caption_Input.value(), static_cast<Message_Box_Buttons>(window->buttons_choice.value()), to_icon(window->icon_choice.text(window->icon_choice.value()))))).c_str());
       }, this);
-      result_Box.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
+      result_Box.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
     }
     
   private:
@@ -50,7 +50,7 @@ namespace Examples {
     
     Fl_Box caption_Box {10, 13, 70, 20, "Caption :"};
     Fl_Input caption_Input {90, 10, 200, 25};
-    Fl_Box text_Box {10, 48, 70, 20, "Message :"};
+    Fl_Box text_Box {10, 43, 70, 20, "Message :"};
     Fl_Input text_Input {90, 40, 200, 25};
     Fl_Box buttons_Box {10, 83, 70, 20, "Butttons :"};
     Fl_Choice buttons_choice {90, 80, 200, 25};

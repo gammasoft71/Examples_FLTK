@@ -19,7 +19,7 @@ namespace Examples {
         else Fl::remove_timeout(on_timer_tick, data);
       }, this);
       
-      box.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
+      box.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
       box.labelfont(FL_HELVETICA_ITALIC);
       box.labelsize(64);
       box.labelcolor(fl_rgb_color(30, 144, 255));

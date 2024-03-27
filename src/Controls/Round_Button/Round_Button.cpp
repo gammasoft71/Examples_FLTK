@@ -24,7 +24,7 @@ namespace Examples {
       
       round_button3.when(FL_WHEN_CHANGED);
       
-      box1.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+      box1.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
     }
     
   private:

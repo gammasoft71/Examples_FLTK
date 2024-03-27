@@ -23,7 +23,7 @@ namespace Examples {
         if (dialog.show() == 0) reinterpret_cast<Main_Window*>(window)->label.copy_label((string {"File = "} + dialog.filename()).c_str());
       }, this);
 
-      label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+      label.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
     }
     
   private:

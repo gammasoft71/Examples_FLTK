@@ -18,7 +18,7 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window {200, 100, 330, 300, ""} {
-      box1.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_CLIP | FL_ALIGN_INSIDE);
+      box1.align(FL_ALIGN_LEFT | FL_ALIGN_CLIP | FL_ALIGN_INSIDE);
       
       button1.callback([](Fl_Widget* sender, void* window) {
         fl_message_icon()->box(FL_ROUND_UP_BOX);

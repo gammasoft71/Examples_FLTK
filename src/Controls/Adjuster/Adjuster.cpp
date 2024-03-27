@@ -9,7 +9,7 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Adjuster example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Adjuster example"} {
       adjuster1.bounds(0, 1);
       adjuster1.value(0.5);
       adjuster1.soft(false);
@@ -40,8 +40,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char* argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char* argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   Fl::run();
 }

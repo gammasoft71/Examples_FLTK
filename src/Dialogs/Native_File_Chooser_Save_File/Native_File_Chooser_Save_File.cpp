@@ -25,7 +25,7 @@ namespace Examples {
         if (saveFileDialog.show() == 0) reinterpret_cast<Main_Window*>(window)->box.copy_label((string {"File = "} + saveFileDialog.filename()).c_str());
       }, this);
 
-      box.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
+      box.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
     }
     
   private:

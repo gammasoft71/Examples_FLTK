@@ -16,7 +16,7 @@ namespace Examples {
         window->box_result.copy_label(fl_choice("Can you answer the question ?", fl_no, fl_yes, nullptr) == 0 ? "Result = No" : "Result = Yes");
       }, this);
 
-      box_result.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
+      box_result.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
     }
     
   private:

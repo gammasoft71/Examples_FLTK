@@ -22,7 +22,7 @@ namespace Examples {
         if (result != nullptr) reinterpret_cast<Main_Window*>(form)->box.copy_label((string {"File = "} + result).c_str());
       }, this);
 
-      box.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
+      box.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
     }
     
   private:

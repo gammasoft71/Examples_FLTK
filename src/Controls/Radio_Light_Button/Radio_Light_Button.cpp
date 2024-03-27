@@ -28,7 +28,7 @@ namespace Examples {
         reinterpret_cast<Main_Window*>(window)->box1.label("Radio 4 is checked");
       }, this);
 
-      box1.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
+      box1.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP | FL_ALIGN_WRAP);
     }
     
   private:

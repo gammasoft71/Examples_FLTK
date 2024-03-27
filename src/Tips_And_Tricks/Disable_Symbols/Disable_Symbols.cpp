@@ -11,8 +11,8 @@ namespace Examples {
     Main_Window() : Fl_Window(200, 100, 300, 300, "Disable symbols examples") {
       Fl::set_labeltype(FL_NORMAL_LABEL, owner_draw, owner_measure);
 
-      box1.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
-      box2.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
+      box1.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
+      box2.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
 
       use_symbols_button.value(use_symbols);
       use_symbols_button.callback([](Fl_Widget* sender, void* data) {

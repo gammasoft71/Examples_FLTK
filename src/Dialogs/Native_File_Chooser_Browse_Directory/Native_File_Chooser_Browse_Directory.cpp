@@ -25,7 +25,7 @@ namespace Examples {
         if (dialog.show() == 0) reinterpret_cast<Main_Window*>(window)->label.copy_label((string {"Path = "} + dialog.filename()).c_str());
       }, this);
 
-      label.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
+      label.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
     }
     
   private:
