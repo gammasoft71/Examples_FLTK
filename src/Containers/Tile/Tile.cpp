@@ -1,15 +1,12 @@
-#include <memory>
 #include <FL/Fl.H>
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Tile.H>
 #include <FL/Fl_Window.H>
 
-using namespace std;
-
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 200, "Tile example") {
+    Main_Window() : Fl_Window {200, 100, 300, 200, "Tile example"} {
       size_range(300, 200);
       resizable(tile);
       
@@ -36,8 +33,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

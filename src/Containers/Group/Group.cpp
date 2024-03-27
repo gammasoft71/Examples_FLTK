@@ -1,14 +1,11 @@
-#include <memory>
 #include <FL/Fl.H>
 #include <FL/Fl_Group.H>
 #include <FL/Fl_Window.H>
 
-using namespace std;
-
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 640, 480, "Group example") {
+    Main_Window() : Fl_Window {200, 100, 640, 480, "Group example"} {
       group1.align(FL_ALIGN_INSIDE | FL_ALIGN_TOP | FL_ALIGN_LEFT);
       group1.box(FL_BORDER_BOX);
 
@@ -24,8 +21,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }
