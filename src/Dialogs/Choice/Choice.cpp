@@ -8,15 +8,12 @@
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Choice example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Choice example"} {
       button_show_choice.callback([](Fl_Widget* sender, void* data) {
         auto window = reinterpret_cast<Main_Window*>(data);
         window->box_result.copy_label("Result = ");
         fl_message_title("Choice");
-        if (fl_choice("Can you answer the question ?", fl_no, fl_yes, nullptr) == 1)
-          window->box_result.copy_label("Result = Yes");
-        else
-          window->box_result.copy_label("Result = No");
+        window->box_result.copy_label(fl_choice("Can you answer the question ?", fl_no, fl_yes, nullptr) == 0 ? "Result = No" : "Result = Yes");
       }, this);
 
       box_result.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
@@ -28,8 +25,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

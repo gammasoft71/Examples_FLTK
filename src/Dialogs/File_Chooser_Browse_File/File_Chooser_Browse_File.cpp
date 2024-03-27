@@ -10,17 +10,16 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "File Chooser browse file example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "File Chooser browse file example"} {
       button.callback([](Fl_Widget* sender, void* form) {
         reinterpret_cast<Main_Window*>(form)->box.copy_label("File = (none)");
         #if defined(_WIN32)
-          std::string directory = (string(getenv("HOMEPATH")) + "\\Desktop");
+        auto directory = string {getenv("HOMEPATH")} + "\\Desktop";
         #else
-          std::string directory = (string(getenv("HOME")) + "/Desktop");
+        auto directory = string {getenv("HOME")} + "/Desktop";
         #endif
-        const char* result = fl_file_chooser("Open File", "Text File (*.txt)", directory.c_str());
-        if (result != nullptr)
-          reinterpret_cast<Main_Window*>(form)->box.copy_label((string("File = ") + string(result)).c_str());
+        auto result = fl_file_chooser("Open File", "Text File (*.txt)", directory.c_str());
+        if (result != nullptr) reinterpret_cast<Main_Window*>(form)->box.copy_label((string {"File = "} + result).c_str());
       }, this);
 
       box.align(FL_ALIGN_LEFT | FL_ALIGN_TOP | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
@@ -32,9 +31,9 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
+auto main(int argc, char *argv[]) -> int {
   Fl_File_Icon::load_system_icons();
-  Examples::Main_Window window;
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

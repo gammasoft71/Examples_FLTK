@@ -8,7 +8,7 @@
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Input dialog example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Input dialog example"} {
       button_show_message.callback([](Fl_Widget* sender, void* data) {
         auto window = reinterpret_cast<Main_Window*>(data);
         auto result = fl_input("Message text:", window->box_result.label());
@@ -24,8 +24,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }
