@@ -16,7 +16,7 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 340, "Value Slider example") {
+    Main_Window() : Fl_Window {200, 100, 300, 340, "Value Slider example"} {
       value_hor_slider1.maximum(100);
       value_hor_slider1.callback(on_value_changed, &box1);
       value_hor_slider1.value(25);
@@ -62,7 +62,7 @@ namespace Examples {
     }
     
   private:
-    static void on_value_changed(Fl_Widget* sender, void* data) {
+    static void on_value_changed(Fl_Widget* sender, void* data) noexcept {
       reinterpret_cast<Fl_Widget*>(data)->copy_label(to_string(static_cast<int>(dynamic_cast<Fl_Slider*>(sender)->value())).c_str());
     }
     
@@ -81,8 +81,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

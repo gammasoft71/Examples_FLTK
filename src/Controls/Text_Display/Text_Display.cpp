@@ -5,7 +5,7 @@
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 450, 300, "Text display example") {
+    Main_Window() : Fl_Window {200, 100, 450, 300, "Text display example"} {
       resizable(text_display);
       text_display.buffer(&text_buffer);
       text_buffer.append("Line 1\n");
@@ -26,8 +26,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

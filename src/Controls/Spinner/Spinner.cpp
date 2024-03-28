@@ -1,17 +1,17 @@
-#include <iomanip>
-#include <iostream>
-#include <string>
 #include <FL/Fl.H>
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Spinner.H>
 #include <FL/Fl_Window.H>
+#include <iomanip>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Spinner example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Spinner example"} {
       spinner1.range(0, 100);
       spinner1.value(50);
       spinner1.callback([](Fl_Widget* sender, void* data) {
@@ -39,8 +39,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

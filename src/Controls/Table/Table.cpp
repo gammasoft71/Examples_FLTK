@@ -8,7 +8,7 @@
 namespace Examples {
   class Start_Trek_Character_Table : public Fl_Table {
   public:
-    Start_Trek_Character_Table(int x, int y, int width, int height) : Fl_Table(x, y, width, height) {
+    Start_Trek_Character_Table(int x, int y, int width, int height) : Fl_Table {x, y, width, height} {
       rows(static_cast<int>(cells.size()));
       cols(static_cast<int>(cells[0].size()));
       col_header(true);
@@ -21,7 +21,7 @@ namespace Examples {
     }
 
   private:
-    static void draw_column_header(const std::string& value, int x, int y, int width, int height) {
+    static void draw_column_header(const std::string& value, int x, int y, int width, int height) noexcept {
       fl_push_clip(x, y, width, height);
       fl_draw_box(FL_THIN_UP_BOX, x, y, width, height, FL_BACKGROUND_COLOR);
       fl_color(FL_FOREGROUND_COLOR);
@@ -30,7 +30,7 @@ namespace Examples {
       fl_pop_clip();
     }
 
-    static void draw_cell(const std::string& value, int x, int y, int width, int height) {
+    static void draw_cell(const std::string& value, int x, int y, int width, int height) noexcept {
       fl_push_clip(x, y, width, height);
       fl_color(FL_BACKGROUND2_COLOR);
       fl_rectf(x, y, width, height);
@@ -42,7 +42,7 @@ namespace Examples {
       fl_pop_clip();
     }
 
-    void draw_cell(TableContext context, int row = 0, int column = 0, int x = 0, int y = 0, int width = 0, int height = 0) override {
+    void draw_cell(TableContext context, int row = 0, int column = 0, int x = 0, int y = 0, int width = 0, int height = 0) noexcept override {
       Fl_Table::draw_cell(context, row, column, x, y, width, height);
       switch (context) {
         case CONTEXT_COL_HEADER: draw_column_header(column_header_datas[column], x, y, width, height);  return;
@@ -65,7 +65,7 @@ namespace Examples {
   
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 792, 215, "Table example") {
+    Main_Window() : Fl_Window {200, 100, 792, 215, "Table example"} {
       resizable(table);
     }
     
@@ -74,8 +74,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }
