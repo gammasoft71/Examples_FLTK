@@ -7,12 +7,11 @@
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Box with picture example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Box with picture example"} {
       resizable(box1);
 
       box1.align(FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
-      box1.box(Fl_Boxtype::FL_BORDER_BOX);
-      box1.box(FL_GTK_UP_BOX);
+      box1.box(FL_GTK_DOWN_BOX);
       box1.image(&picture);
     }
     
@@ -22,8 +21,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

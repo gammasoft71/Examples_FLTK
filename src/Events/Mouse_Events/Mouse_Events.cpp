@@ -13,7 +13,7 @@ namespace Examples {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Mouse events example") {}
     
-    int handle(int event) override {
+    auto handle(int event) -> int override {
       if (Fl::event_inside(0, 0, w(), h())) {
         if (event == FL_PUSH) trace.append_line(mouse_event_to_string("Push").c_str());
         if (event == FL_DRAG) trace.append_line(mouse_event_to_string("Drag").c_str());

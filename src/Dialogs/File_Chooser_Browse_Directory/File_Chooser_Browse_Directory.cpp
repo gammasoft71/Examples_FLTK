@@ -11,15 +11,15 @@ namespace Examples {
   class Main_Window : public Fl_Window {
   public:
     Main_Window() : Fl_Window {200, 100, 300, 300, "File Chooser browse directory example"} {
-      button.callback([](Fl_Widget* sender, void* form) {
-        reinterpret_cast<Main_Window*>(form)->box.copy_label("Path = (none)");
+      button.callback([](Fl_Widget* sender, void* window) {
+        reinterpret_cast<Main_Window*>(window)->box.copy_label("Path = (none)");
         #if defined(_WIN32)
         auto directory = string {getenv("HOMEPATH")} + "\\Desktop";
         #else
         auto directory = string {getenv("HOME")} + "/Desktop";
         #endif
         auto result = fl_dir_chooser("Directory browse", directory.c_str());
-        if (result != nullptr) reinterpret_cast<Main_Window*>(form)->box.copy_label((string {"Path = "} + result).c_str());
+        if (result != nullptr) reinterpret_cast<Main_Window*>(window)->box.copy_label((string {"Path = "} + result).c_str());
       }, this);
 
       box.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);

@@ -13,7 +13,7 @@ namespace Examples {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Key events example") {}
     
-    int handle(int event) override {
+    auto handle(int event) -> int override {
       if (event == FL_KEYDOWN) trace.append_line(("Key_Down = "s + key_to_string()).c_str());
       if (event == FL_KEYDOWN && Fl::event_length() != 0) trace.append_line(("Key_Press = "s + key_char_to_string()).c_str());
       if (event == FL_KEYUP) {

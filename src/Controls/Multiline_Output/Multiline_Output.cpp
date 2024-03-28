@@ -5,7 +5,7 @@
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Multiline output example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Multiline output example"} {
       output1.value("Line 1\nLine 2\nLine 3\n...");
     }
     
@@ -14,8 +14,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

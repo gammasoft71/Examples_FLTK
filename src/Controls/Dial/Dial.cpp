@@ -11,7 +11,7 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Dial example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Dial example"} {
       dial1.bounds(0, 1);
       dial1.value(0.5);
       dial1.callback(on_value_changed, &box1);
@@ -33,9 +33,9 @@ namespace Examples {
     }
     
   private:
-    static void on_value_changed(Fl_Widget* sender, void* box) {
-      static string result(' ', 128);
-      dynamic_cast<Fl_Valuator*>(sender)->format(result.data());
+    static void on_value_changed(Fl_Widget* sender, void* box) noexcept {
+      static auto result = string(' ', 128);
+      static_cast<Fl_Valuator*>(sender)->format(result.data());
       reinterpret_cast<Fl_Widget*>(box)->copy_label(result.c_str());
     }
 
@@ -48,8 +48,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char* argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char* argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   Fl::run();
 }

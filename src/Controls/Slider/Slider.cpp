@@ -74,7 +74,7 @@ namespace Examples {
 }
 
 int main(int argc, char *argv[]) {
-  Examples::Main_Window form;
-  form.show(argc, argv);
+  Examples::Main_Window window;
+  window.show(argc, argv);
   return Fl::run();
 }

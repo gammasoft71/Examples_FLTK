@@ -7,7 +7,7 @@ namespace Examples {
   public:
     Main_Window() : Fl_Window(200, 100, 300, 300, "Click anywhere on the window") {}
     
-    int handle(int event) override {
+    auto handle(int event) -> int override {
       if (event == FL_RELEASE && Fl::event_button() == FL_LEFT_MOUSE) {
         fl_message_hotspot(false);
         fl_message_title("Main_Window_Click");

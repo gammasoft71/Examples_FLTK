@@ -14,7 +14,7 @@ namespace Examples {
       box.align(FL_ALIGN_LEFT | FL_ALIGN_CLIP | FL_ALIGN_INSIDE);
     }
     
-    int handle(int event) override {
+    auto handle(int event) -> int override {
       if (event == FL_MOVE) {
         if (Fl::belowmouse() == &button) {
           Fl_Tooltip::enter_area(&button, 10, 10, 75, 25, "Button tooltip...");

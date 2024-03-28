@@ -6,7 +6,7 @@
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 220, 220, "Color chooser example") {
+    Main_Window() : Fl_Window {200, 100, 220, 220, "Color chooser example"} {
       uchar red = 0, green = 0, blue = 0;
       Fl::get_color(test_color_box.color(), red, green, blue);
       
@@ -28,8 +28,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

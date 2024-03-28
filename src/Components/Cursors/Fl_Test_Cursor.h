@@ -9,7 +9,7 @@ public:
 
   void cursor(Fl_Cursor cursor) {cursor_ = cursor;}
 
-  int handle(int event) override {
+  auto handle(int event) -> int override {
     if (event == FL_ENTER) fl_cursor(cursor_);
     if (event == FL_LEAVE) fl_cursor(FL_CURSOR_DEFAULT);
     return Fl_Scroll::handle(event);
