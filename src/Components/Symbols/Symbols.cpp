@@ -1,17 +1,17 @@
-#include <memory>
-#include <string>
-#include <vector>
 #include <FL/Fl.H>
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Hor_Value_Slider.H>
 #include <FL/Fl_Window.H>
+#include <memory>
+#include <string>
+#include <vector>
 
 using namespace std;
 
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 420, 480, "Symbols example") {
+    Main_Window() : Fl_Window {200, 100, 420, 480, "Symbols example"} {
       resizable(this);
       for (auto index = 0; index < symbols.size(); ++index) {
         auto symbol = make_shared<Fl_Box>(10 + (70*(index%6)), 10 + (70*(index/6)), 50, 50);
@@ -43,7 +43,7 @@ namespace Examples {
     }
 
   private:
-    static void on_slider_value_changed(Fl_Widget* sender, void* data) {
+    static void on_slider_value_changed(Fl_Widget* sender, void* data) noexcept {
       auto window = reinterpret_cast<Main_Window*>(data);
       for (auto index = 0; index < window->boxes.size(); index += 2) {
         window->boxes[index]->copy_label(window->make_label(window->symbols[index / 2]).c_str());
@@ -51,7 +51,7 @@ namespace Examples {
       }
     }
     
-    string make_label(const string& base_label) {
+    string make_label(const string& base_label) noexcept {
       string label = string(1, base_label[0]);
       if (size_slider.value() > 0) label += "+" + to_string(static_cast<int>(size_slider.value()));
       if (size_slider.value() < 0) label += to_string(static_cast<int>(size_slider.value()));
@@ -67,8 +67,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

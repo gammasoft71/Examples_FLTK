@@ -1,16 +1,16 @@
-#include <iomanip>
-#include <sstream>
 #include <FL/Fl.H>
 #include <FL/Fl_Box.H>
 #include <FL/Fl_Button.H>
 #include <FL/Fl_Window.H>
+#include <iomanip>
+#include <sstream>
 
 using namespace std;
 
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 230, 130, "Timer example") {
+    Main_Window() : Fl_Window {200, 100, 230, 130, "Timer example"} {
       button.callback([](Fl_Widget* sender, void* data) {
         auto window = reinterpret_cast<Main_Window*>(data);
         window->enable_timer = !window->enable_timer;
@@ -26,7 +26,7 @@ namespace Examples {
     }
     
   private:
-    static void on_timer_tick(void* data) {
+    static void on_timer_tick(void* data) noexcept {
       auto window = reinterpret_cast<Main_Window*>(data);
       stringstream stream;
       stream << fixed << setprecision(1) << static_cast<double>(++window->timer) / 10;
@@ -41,8 +41,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }
