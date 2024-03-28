@@ -8,7 +8,7 @@ namespace Examples {
 
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Disable symbols examples") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Disable symbols examples"} {
       Fl::set_labeltype(FL_NORMAL_LABEL, owner_draw, owner_measure);
 
       box1.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
@@ -22,13 +22,13 @@ namespace Examples {
     }
     
   private:
-    static void owner_draw(const Fl_Label* label, int x, int y, int width, int height, Fl_Align align) {
+    static void owner_draw(const Fl_Label* label, int x, int y, int width, int height, Fl_Align align) noexcept {
       fl_font(label->font, label->size);
       fl_color(label->color);
       fl_draw(label->value, x, y, width, height, align, label->image, use_symbols);
     }
     
-    static void owner_measure(const Fl_Label* label, int &width, int &height) {
+    static void owner_measure(const Fl_Label* label, int &width, int &height) noexcept {
       fl_font(label->font, label->size);
       fl_measure(label->value, width, height, use_symbols);
     }
@@ -42,8 +42,8 @@ namespace Examples {
   bool Main_Window::use_symbols = true;
 }
 
-int main(int argc, char* argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char* argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   Fl::run();
 }

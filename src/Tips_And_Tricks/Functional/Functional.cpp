@@ -11,7 +11,7 @@ using namespace std::placeholders;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Functional example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Functional example"} {
       fl_functional(button1, bind(&Main_Window::on_click, this, _1, _2), *this);
       fl_functional(button2, bind(&Main_Window::on_click2, this, _1));
       fl_functional(button3, [&](Fl_Widget& sender) {
@@ -20,11 +20,11 @@ namespace Examples {
     }
     
   private:
-    void on_click(Fl_Widget& sender, Main_Window& data) {
+    void on_click(Fl_Widget& sender, Main_Window& data) noexcept {
       cout << "clicked " << ++count << " times" << endl;
     }
     
-    void on_click2(Fl_Widget& sender) {
+    void on_click2(Fl_Widget& sender) noexcept {
       cout << "clicked " << ++count << " times" << endl;
     }
     
@@ -35,8 +35,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char* argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char* argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   Fl::run();
 }
