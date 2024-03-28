@@ -1,15 +1,15 @@
-#include <string>
 #include <FL/Fl.H>
-#include <FL/Fl_Round_Button.H>
 #include <FL/Fl_Box.H>
+#include <FL/Fl_Round_Button.H>
 #include <FL/Fl_Window.H>
+#include <string>
 
 using namespace std::literals;
 
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Round button example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Round button example"} {
       round_button1.when(FL_WHEN_CHANGED);
       round_button1.callback([](Fl_Widget* sender, void* window) {
         reinterpret_cast<Fl_Light_Button*>(sender)->value(false);
@@ -35,9 +35,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
-  
   return Fl::run();
 }
