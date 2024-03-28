@@ -28,7 +28,7 @@ namespace Examples {
   private:
     static void on_timer_tick(void* data) noexcept {
       auto window = reinterpret_cast<Main_Window*>(data);
-      stringstream stream;
+      auto stream = stringstream {};
       stream << fixed << setprecision(1) << static_cast<double>(++window->timer) / 10;
       window->box.copy_label(stream.str().c_str());
       if (window->enable_timer) Fl::repeat_timeout(0.1, on_timer_tick, data);

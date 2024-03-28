@@ -11,9 +11,9 @@ using namespace std::literals;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Mouse events example") {}
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Mouse events example"} {}
     
-    auto handle(int event) -> int override {
+    auto handle(int event) noexcept -> int override {
       if (Fl::event_inside(0, 0, w(), h())) {
         if (event == FL_PUSH) trace.append_line(mouse_event_to_string("Push").c_str());
         if (event == FL_DRAG) trace.append_line(mouse_event_to_string("Drag").c_str());
@@ -30,15 +30,13 @@ namespace Examples {
     }
     
   private:
-    static string mouse_event_to_string(const std::string& event_name) {
+    static string mouse_event_to_string(const std::string& event_name) noexcept {
       return event_name + mouse_to_string();
     }
     
-    static string mouse_to_string() {
-      return "{button=" + mouse_button_to_string() + ", click_count = " + to_string(Fl::event_clicks()) + ", vertical_wheel_delta = " + to_string(Fl::event_dy()) + ", horizontal_wheel_delta = " + to_string(Fl::event_dx()) + ", location = [" + to_string(Fl::event_x()) + ", " + to_string(Fl::event_y()) + "], modifiers=" + modifiers_to_string() + "}";
-    }
+    static string mouse_to_string() noexcept {return "{button=" + mouse_button_to_string() + ", click_count = " + to_string(Fl::event_clicks()) + ", vertical_wheel_delta = " + to_string(Fl::event_dy()) + ", horizontal_wheel_delta = " + to_string(Fl::event_dx()) + ", location = [" + to_string(Fl::event_x()) + ", " + to_string(Fl::event_y()) + "], modifiers=" + modifiers_to_string() + "}";}
     
-    static string mouse_button_to_string() {
+    static string mouse_button_to_string() noexcept {
       switch (Fl::event_button()) {
         case FL_LEFT_MOUSE: return "left";
         case FL_RIGHT_MOUSE: return "right";
@@ -47,8 +45,8 @@ namespace Examples {
       }
     }
     
-    static string modifiers_to_string() {
-      string result;
+    static string modifiers_to_string() noexcept {
+      auto result = string {};
       if (Fl::event_shift()) result += "shift, ";
       if (Fl::event_ctrl()) result += "control, ";
       if (Fl::event_alt()) result += "alt, ";
@@ -63,9 +61,9 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Fl::add_handler([](int event)->int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  Fl::add_handler([](int event) -> int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

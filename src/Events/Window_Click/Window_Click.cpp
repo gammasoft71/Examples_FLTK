@@ -5,9 +5,9 @@
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Click anywhere on the window") {}
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Click anywhere on the window"} {}
     
-    auto handle(int event) -> int override {
+    auto handle(int event) noexcept -> int override {
       if (event == FL_RELEASE && Fl::event_button() == FL_LEFT_MOUSE) {
         fl_message_hotspot(false);
         fl_message_title("Main_Window_Click");
@@ -18,8 +18,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

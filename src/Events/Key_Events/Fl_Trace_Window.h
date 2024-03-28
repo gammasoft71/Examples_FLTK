@@ -1,15 +1,15 @@
 #pragma once
+#include <FL/Fl.H>
+#include <FL/Fl_Text_Display.H>
+#include <FL/Fl_Window.H>
 #include <ctime>
 #include <iomanip>
 #include <iostream>
 #include <sstream>
-#include <FL/Fl.H>
-#include <FL/Fl_Text_Display.H>
-#include <FL/Fl_Window.H>
 
 class Fl_Trace_Window : public Fl_Window {
 public:
-  Fl_Trace_Window() : Fl_Window(0, 0, "Debug") {
+  Fl_Trace_Window() : Fl_Window {0, 0, "Debug"} {
     resizable(this);
     auto screen_num = Fl::screen_num(x(), y());
     auto screen_x = 0, screen_y = 0, screen_width = 0, screen_height = 0;
@@ -21,7 +21,7 @@ public:
 #endif
   }
   
-  void append(const char* value) {
+  void append(const char* value) noexcept {
 #if defined(TRACE)
     if (need_header) write_header();
     text_buffer.append(value);
@@ -30,7 +30,7 @@ public:
 #endif
   }
   
-  void append_line(const char* value) {
+  void append_line(const char* value) noexcept {
 #if defined(TRACE)
     if (need_header) write_header();
     text_buffer.append(value);
@@ -42,18 +42,18 @@ public:
 #endif
   }
   
-  void hide() override {iconize();}
+  void hide() noexcept override {iconize();}
   
-  void resize(int x, int y, int width, int height) override {
+  void resize(int x, int y, int width, int height) noexcept override {
     Fl_Window::resize(x, y, width, height);
     text_display.resize(0, 0, w(), h());
   }
   
 private:
-  void write_header() {
+  void write_header() noexcept {
     auto current_time = time(nullptr);
     auto current_tm = localtime(&current_time);
-    std::stringstream ss;
+    auto ss = std::stringstream {};
     ss << std::put_time(current_tm, "%Y-%m-%d %H:%M:%S - ");
     text_buffer.append(ss.str().c_str());
     std::cerr << ss.str();
