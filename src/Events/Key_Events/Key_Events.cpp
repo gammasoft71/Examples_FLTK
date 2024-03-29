@@ -54,7 +54,7 @@ namespace Examples {
 }
 
 auto main(int argc, char *argv[]) -> int {
-  Fl::add_handler([](int event) - >int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
+  Fl::add_handler([](int event) -> int {return event == FL_SHORTCUT && Fl::event_key() == FL_Escape;});
   auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
