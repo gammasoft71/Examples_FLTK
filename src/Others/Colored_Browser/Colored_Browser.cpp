@@ -1,14 +1,14 @@
-#include <initializer_list>
 #include <FL/Fl.H>
 #include <FL/Fl_Browser.H>
 #include <FL/Fl_Window.H>
+#include <initializer_list>
 
 using namespace std;
 
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 240, 340, "Colored browser example") {
+    Main_Window() : Fl_Window {200, 100, 240, 340, "Colored browser example"} {
       browser.type(FL_HOLD_BROWSER);
       for (auto item : {"@C0Black text", "@C1Red text", "@C2Green text", "@C3Blue text", "@C4Yellow text", "@C5Magenta text", "@C6Cyan text", "@C7White text", "@C8Dark gray text", "@C9Dark red text", "@C10Dark green text", "@C11Dark blue text", "@C12Dark yellow text", "@C13Dark magenta text", "@C14Dark cyan text"})
         browser.add(item);
@@ -21,8 +21,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

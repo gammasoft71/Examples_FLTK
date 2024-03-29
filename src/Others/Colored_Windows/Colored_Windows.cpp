@@ -11,7 +11,7 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(0, 0, 300, 300, "Colored windows") {
+    Main_Window() : Fl_Window {0, 0, 300, 300, "Colored windows"} {
       auto screen_x = 0, screen_y = 0, screen_w = 0, screen_h = 0;
       Fl::screen_xywh(screen_x, screen_y, screen_w, screen_h);
       position(screen_w - 360, 60);
@@ -46,8 +46,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

@@ -1,17 +1,17 @@
+#include <FL/Fl.H>
+#include <FL/Fl_Window.H>
+#include <FL/Fl_Box.H>
 #include <memory>
 #include <string>
 #include <utility>
 #include <vector>
-#include <FL/Fl.H>
-#include <FL/Fl_Window.H>
-#include <FL/Fl_Box.H>
 
 using namespace std;
 
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 420, 350, "Box and unicode text example") {
+    Main_Window() : Fl_Window {200, 100, 420, 350, "Box and unicode text example"} {
       color(FL_DARK_CYAN);
       labelcolor(FL_BLACK);
       for (auto index = 0U; index < languages.size(); ++index) {
@@ -42,8 +42,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char* argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char* argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   Fl::run();
 }
