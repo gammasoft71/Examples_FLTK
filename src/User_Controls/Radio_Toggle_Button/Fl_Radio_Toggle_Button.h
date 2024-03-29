@@ -8,7 +8,7 @@ static constexpr int FL_CHECKED = 1;
 
 class Fl_Radio_Toggle_Button : public Fl_Radio_Round_Button {
 public:
-  Fl_Radio_Toggle_Button(int x, int y, int w, int h, const char* l = 0) : Fl_Radio_Round_Button(x, y, w, h, l) {toggle_button(false);}
+  Fl_Radio_Toggle_Button(int x, int y, int w, int h, const char* l = 0) : Fl_Radio_Round_Button {x, y, w, h, l} {toggle_button(false);}
   
   bool auto_check() const {return auto_check_;}
   void auto_check(bool auto_check) {auto_check_ = auto_check;}
@@ -60,10 +60,8 @@ public:
   }
   
   void draw() override {
-    if (toggle_button() == true)
-      Fl_Button::draw();
-    else
-      Fl_Radio_Round_Button::draw();
+    if (toggle_button() == true) Fl_Button::draw();
+    else Fl_Radio_Round_Button::draw();
   }
   
 private:

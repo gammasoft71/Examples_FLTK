@@ -9,7 +9,7 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Radio toggle button example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Radio toggle button example"} {
       radioButton1.auto_check(false);
       radioButton1.state(FL_CHECKED);
       radioButton1.callback([](Fl_Widget* sender, void* window) {
@@ -21,7 +21,7 @@ namespace Examples {
 
       radioButton3.when(FL_WHEN_CHANGED);
       radioButton3.callback([](Fl_Widget* sender, void* window) {
-        stringstream ss;
+        auto ss = stringstream {};
         ss << "Radio 3 checked = " << boolalpha << (dynamic_cast<Fl_Radio_Toggle_Button*>(sender)->state() == FL_CHECKED);
         reinterpret_cast<Main_Window*>(window)->box1.copy_label(ss.str().c_str());
       }, this);
@@ -50,8 +50,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window{};
   window.show(argc, argv);
   return Fl::run();
 }

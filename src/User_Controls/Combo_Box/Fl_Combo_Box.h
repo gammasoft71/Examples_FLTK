@@ -14,7 +14,7 @@
 // Minimal implementation for example. Needs to be completed
 class Fl_Combo_Box : public Fl_Group {
 public:
-  Fl_Combo_Box(int x, int y, int width, int height, const char* label = nullptr) : Fl_Group(x, y, width, height), drop_down_(std::make_unique<Fl_Input_Choice>(x, y, width, 25, label)), label_(label) {
+  Fl_Combo_Box(int x, int y, int width, int height, const char* label = nullptr) : Fl_Group {x, y, width, height}, drop_down_ {std::make_unique<Fl_Input_Choice>(x, y, width, 25, label)}, label_ {label} {
     end();
     drop_down_->callback(on_callback, this);
   }
@@ -113,7 +113,7 @@ public:
 private:
   class Fl_Drop_Down_List : public Fl_Group {
   public:
-    Fl_Drop_Down_List(int x, int y, int width, int height, const char* label) : Fl_Group(x, y, width, height), input_(x, y, width, 25, label), browser_(x, y + 25, width, height - 25) {
+    Fl_Drop_Down_List(int x, int y, int width, int height, const char* label) : Fl_Group {x, y, width, height}, input_ {x, y, width, 25, label}, browser_ {x, y + 25, width, height - 25} {
       end();
       when(FL_WHEN_CHANGED);
       browser_.type(FL_HOLD_BROWSER);

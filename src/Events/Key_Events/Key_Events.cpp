@@ -30,7 +30,7 @@ namespace Examples {
     
   private:
     static string key_to_string() noexcept {
-      stringstream ss;
+      auto ss = stringstream {};
       ss << "{key_code=0x" << hex << setfill('0') << setw(4) << Fl::event_key() << ", modifiers=" << modifiers_to_string() << "}";
       return ss.str();
     }

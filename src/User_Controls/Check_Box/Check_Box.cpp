@@ -8,7 +8,7 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Check box example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Check box example"} {
       check_box1.auto_check(false);
       check_box1.state(FL_UNCHECKED);
       check_box1.callback([](Fl_Widget* sender, void* window) {
@@ -43,21 +43,21 @@ namespace Examples {
     }
     
   private:
+    static const char* state_to_string(int state) noexcept {
+      static auto states = map<int, const char*> {{FL_UNCHECKED, "Unchecked"}, {FL_CHECKED, "Checked"}, {FL_INDETERMINATE, "Indeterminate"}};
+      return states[state];
+    }
+
     Fl_Check_Box check_box1 {30, 30, 110, 23, "Unchecked"};
     Fl_Check_Box check_box2 {30, 60, 110, 23, "Checked"};
     Fl_Check_Box check_box3 {30, 90, 110, 23, "Indeterminate"};
     Fl_Check_Box check_box4 {30, 120, 110, 23, "Checked"};
     Fl_Check_Box check_box5 {30, 150, 110, 23, "Unchecked"};
-    
-    static const char* state_to_string(int state) {
-      static map<int, const char*> states = {{FL_UNCHECKED, "Unchecked"}, {FL_CHECKED, "Checked"}, {FL_INDETERMINATE, "Indeterminate"}};
-      return states[state];
-    }
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

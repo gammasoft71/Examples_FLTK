@@ -8,16 +8,16 @@ static constexpr int FL_INDETERMINATE = 2;
 
 class Fl_Check_Box : public Fl_Check_Button {
 public:
-  Fl_Check_Box(int x, int y, int w, int h, const char* l = 0) : Fl_Check_Button(x, y, w, h, l) {toggle_button(false);}
+  Fl_Check_Box(int x, int y, int w, int h, const char* l = 0) : Fl_Check_Button {x, y, w, h, l} {toggle_button(false);}
   
-  bool auto_check() const {return auto_check_;}
-  void auto_check(bool auto_check) {auto_check_ = auto_check;}
+  bool auto_check() const noexcept {return auto_check_;}
+  void auto_check(bool auto_check) noexcept {auto_check_ = auto_check;}
   
-  bool three_state() const {return three_state_;}
-  void three_state(bool three_state) {three_state_ = three_state;}
+  bool three_state() const noexcept {return three_state_;}
+  void three_state(bool three_state) noexcept {three_state_ = three_state;}
   
-  bool toggle_button() const {return toggle_button_;}
-  void toggle_button(bool toggle_button) {
+  bool toggle_button() const noexcept {return toggle_button_;}
+  void toggle_button(bool toggle_button) noexcept {
     toggle_button_ = toggle_button;
     if (toggle_button_) {
       box(FL_UP_BOX);
@@ -32,8 +32,8 @@ public:
     }
   }
 
-  int state() const {return state_;}
-  void state(int state) {
+  int state() const noexcept {return state_;}
+  void state(int state) noexcept {
     if (state_ != state) {
       state_ = state > 2 ? 2 : state;
       value(state != 0);
@@ -42,7 +42,7 @@ public:
     }
   }
 
-  int handle (int event) override {
+  auto handle (int event) noexcept -> int override {
     if (event == FL_PUSH || event == FL_DRAG) return true;
     if (event == FL_RELEASE || (event == FL_KEYBOARD && Fl::focus() == this && Fl::event_key() == ' ' && !(Fl::event_state() & (FL_SHIFT | FL_CTRL | FL_ALT | FL_META)))) {
       if (auto_check_) {
