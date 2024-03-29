@@ -8,12 +8,12 @@ namespace Examples {
   public:
     Main_Window() : Fl_Window {200, 100, 300, 160, "Group and radio round button example"} {
       group1.align(FL_ALIGN_TOP | FL_ALIGN_LEFT);
-      group1.box(FL_BORDER_BOX);
+      group1.box(FL_GTK_DOWN_BOX);
       
       radio1.value(1);
 
       group2.align(FL_ALIGN_TOP | FL_ALIGN_LEFT);
-      group2.box(FL_BORDER_BOX);
+      group2.box(FL_GTK_DOWN_BOX);
 
       radio5.value(1);
     }
