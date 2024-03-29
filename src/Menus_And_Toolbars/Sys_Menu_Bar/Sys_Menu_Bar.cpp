@@ -2,6 +2,7 @@
 #include <FL/Fl_Text_Display.H>
 #include <FL/Fl_Sys_Menu_Bar.H>
 #include <FL/Fl_Window.H>
+#undef max
 #include <limits>
 
 using namespace std;
