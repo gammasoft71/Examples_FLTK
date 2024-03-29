@@ -13,7 +13,7 @@ using namespace std::literals;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 185, "Message box example") {
+    Main_Window() : Fl_Window {200, 100, 300, 185, "Message box example"} {
       end();
       caption_Box.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
       caption_Input.value("FLTK");
@@ -24,7 +24,7 @@ namespace Examples {
         buttons_choice.add(item.c_str());
       buttons_choice.value(0);
       icon_Box.align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE | FL_ALIGN_CLIP);
-      for (auto item : initializer_list<string> {"None", "Hand", "Stop", "Error", "Question", "Exclamation", "Warning", "Asterisk", "Information"})
+      for (auto item : initializer_list<string> {"None", "Error", "Question", "Warning", "Information", "Hand", "Stop", "Exclamation", "Asterisk"})
         icon_choice.add(item.c_str());
       icon_choice.value(0);
       button_show_message.callback([](Fl_Widget* sender, void* data) {
@@ -37,13 +37,13 @@ namespace Examples {
     
   private:
     static string to_string(Dialog_Result result) {
-      static map<Dialog_Result, string> results {{Dialog_Result::None, "None"}, {Dialog_Result::Ok, "Ok"}, {Dialog_Result::Cancel, "Cancel"}, {Dialog_Result::Abort, "Abort"}, {Dialog_Result::Retry, "Retry"}, {Dialog_Result::Ignore, "Ignore"}, {Dialog_Result::Yes, "Yes"}, {Dialog_Result::No, "No"}};
+      static auto results = map<Dialog_Result, string> {{Dialog_Result::None, "None"}, {Dialog_Result::Ok, "Ok"}, {Dialog_Result::Cancel, "Cancel"}, {Dialog_Result::Abort, "Abort"}, {Dialog_Result::Retry, "Retry"}, {Dialog_Result::Ignore, "Ignore"}, {Dialog_Result::Yes, "Yes"}, {Dialog_Result::No, "No"}};
       auto it = results.find(result);
       return it != results.end() ? it->second : "(unknown)";
     }
     
     static Message_Box_Icon to_icon(const string& icon) {
-      static map<string, Message_Box_Icon> icons {{"None", Message_Box_Icon::None}, {"Hand", Message_Box_Icon::Hand}, {"Stop", Message_Box_Icon::Stop}, {"Error", Message_Box_Icon::Error}, {"Question", Message_Box_Icon::Question}, {"Exclamation", Message_Box_Icon::Exclamation}, {"Warning", Message_Box_Icon::Warning}, {"Asterisk", Message_Box_Icon::Asterisk}, {"Information", Message_Box_Icon::Information}};
+      static auto icons = map<string, Message_Box_Icon> {{"None", Message_Box_Icon::None}, {"Hand", Message_Box_Icon::Hand}, {"Stop", Message_Box_Icon::Stop}, {"Error", Message_Box_Icon::Error}, {"Question", Message_Box_Icon::Question}, {"Exclamation", Message_Box_Icon::Exclamation}, {"Warning", Message_Box_Icon::Warning}, {"Asterisk", Message_Box_Icon::Asterisk}, {"Information", Message_Box_Icon::Information}};
       auto it = icons.find(icon);
       return it != icons.end() ? it->second : Message_Box_Icon::None;
     }
@@ -61,10 +61,10 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
+auto main(int argc, char *argv[]) -> int {
   fl_message_hotspot(false);
   fl_message_icon()->labelfont(FL_HELVETICA_BOLD);
-  Examples::Main_Window window;
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

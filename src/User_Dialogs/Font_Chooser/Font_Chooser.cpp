@@ -6,18 +6,18 @@
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 400, 400, "Font chooser example") {
+    Main_Window() : Fl_Window {200, 100, 400, 400, "Font chooser example"} {
       resizable(this);
 
       button.callback([](Fl_Widget* sender, void* window) {
-        Fl_Font font = ((Main_Window*)window)->label.labelfont();
-        int size = ((Main_Window*)window)->label.labelsize();
-        Fl_Color color = ((Main_Window*)window)->label.labelcolor();
+        auto font = static_cast<Main_Window*>(window)->label.labelfont();
+        auto size = static_cast<Main_Window*>(window)->label.labelsize();
+        auto color = static_cast<Main_Window*>(window)->label.labelcolor();
         if (fl_font_chooser("Font", font, size, color) == 1) {
-          reinterpret_cast<Main_Window*>(window)->label.labelfont(font);
-          reinterpret_cast<Main_Window*>(window)->label.labelsize(size);
-          reinterpret_cast<Main_Window*>(window)->label.labelcolor(color);
-          reinterpret_cast<Main_Window*>(window)->label.redraw();
+          static_cast<Main_Window*>(window)->label.labelfont(font);
+          static_cast<Main_Window*>(window)->label.labelsize(size);
+          static_cast<Main_Window*>(window)->label.labelcolor(color);
+          static_cast<Main_Window*>(window)->label.redraw();
         }
       }, this);
 
@@ -40,8 +40,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char *argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }
