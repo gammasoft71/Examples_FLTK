@@ -12,7 +12,7 @@ using namespace std::this_thread;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 300, 300, "Use wait cursor example") {
+    Main_Window() : Fl_Window {200, 100, 300, 300, "Use wait cursor example"} {
       button1.callback([](Fl_Widget* sender, void* data) {
         fl_use_wait_cursor(true);
         cout << "use_wait_cursor = " << std::boolalpha << fl_use_wait_cursor() << endl;
@@ -39,8 +39,8 @@ namespace Examples {
   };
 }
 
-int main(int argc, char* argv[]) {
-  Examples::Main_Window window;
+auto main(int argc, char* argv[]) -> int {
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   Fl::run();
 }

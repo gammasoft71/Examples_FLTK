@@ -28,7 +28,7 @@ using namespace std;
 namespace Examples {
   class Main_Window : public Fl_Window {
   public:
-    Main_Window() : Fl_Window(200, 100, 450, 350, "Scheme modes example") {
+    Main_Window() : Fl_Window {200, 100, 450, 350, "Scheme modes example"} {
       resizable(this);
 
       button1.callback([](Fl_Widget* sender, void* window) {
@@ -171,10 +171,10 @@ namespace Examples {
   };
 }
 
-int main(int argc, char *argv[]) {
+auto main(int argc, char *argv[]) -> int {
   fl_message_hotspot(false);
   fl_message_icon()->labelfont(FL_HELVETICA_BOLD);
-  Examples::Main_Window window;
+  auto window = Examples::Main_Window {};
   window.show(argc, argv);
   return Fl::run();
 }

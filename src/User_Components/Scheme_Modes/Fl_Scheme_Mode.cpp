@@ -7,11 +7,11 @@
 using namespace std;
 
 namespace {
-  optional<Fl_Color> original_background_color_;
-  optional<Fl_Color> original_background2_color_;
-  optional<Fl_Color> original_foreground_color_;
-  optional<Fl_Color> original_selection_color_;
-  Fl_Scheme_Mode scheme_mode_ = Fl_Scheme_Mode::default_mode;
+  auto original_background_color_ = optional<Fl_Color> {};
+  auto original_background2_color_ = optional<Fl_Color> {};
+  auto original_foreground_color_ = optional<Fl_Color> {};
+  auto original_selection_color_ = optional<Fl_Color> {};
+  auto scheme_mode_ = Fl_Scheme_Mode::default_mode;
   
   void init_original_colors() {
     if (!original_background_color_.has_value()) original_background_color_ = Fl::get_color(FL_BACKGROUND_COLOR);
@@ -117,7 +117,7 @@ namespace {
 
 void fl_scheme_mode(Fl_Scheme_Mode scheme_mode) {
   init_original_colors();
-  static map<Fl_Scheme_Mode, std::function<void()>> set_modes {{Fl_Scheme_Mode::default_mode, set_scheme_default_mode}, {Fl_Scheme_Mode::dark, set_scheme_dark_mode}, {Fl_Scheme_Mode::light, set_scheme_light_mode}, {Fl_Scheme_Mode::white, set_scheme_white_mode}, {Fl_Scheme_Mode::black, set_scheme_black_mode}, {Fl_Scheme_Mode::red, set_scheme_red_mode}, {Fl_Scheme_Mode::green, set_scheme_green_mode}, {Fl_Scheme_Mode::blue, set_scheme_blue_mode}};
+  static auto set_modes = map<Fl_Scheme_Mode, std::function<void()>> {{Fl_Scheme_Mode::default_mode, set_scheme_default_mode}, {Fl_Scheme_Mode::dark, set_scheme_dark_mode}, {Fl_Scheme_Mode::light, set_scheme_light_mode}, {Fl_Scheme_Mode::white, set_scheme_white_mode}, {Fl_Scheme_Mode::black, set_scheme_black_mode}, {Fl_Scheme_Mode::red, set_scheme_red_mode}, {Fl_Scheme_Mode::green, set_scheme_green_mode}, {Fl_Scheme_Mode::blue, set_scheme_blue_mode}};
   if (scheme_mode_ != scheme_mode) {
     scheme_mode_ = scheme_mode;
     set_modes[scheme_mode_]();
