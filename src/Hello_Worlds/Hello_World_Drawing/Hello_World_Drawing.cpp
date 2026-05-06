@@ -34,9 +34,9 @@ namespace Examples {
       auto font = FL_HELVETICA_BOLD_ITALIC;
       auto font_size = Fl_Fontsize(42);
       auto [text_x, text_y] = get_text_location(text, font, font_size);
-      fl_draw_box(FL_FLAT_BOX, 0, 0, w(), h(), fl_rgb_color(0x0, 0x20, 0x10));
-      draw_text(text, text_x + 2, text_y + 2, fl_rgb_color(0x00, 0x55, 0x29), font, font_size);
-      draw_text(text, text_x - 2, text_y - 2, fl_rgb_color(0x00, 0xFF, 0x7F), font, font_size);
+      fl_draw_box(FL_FLAT_BOX, 0, 0, w(), h(), fl_rgb_color(0xAD, 0xD8, 0xE6));
+      draw_text(text, text_x + 2, text_y + 2, fl_rgb_color(0x73, 0x90, 0x99), font, font_size);
+      draw_text(text, text_x - 2, text_y - 2, fl_rgb_color(0x00, 0x00, 0x8B), font, font_size);
     }
   };
 }
