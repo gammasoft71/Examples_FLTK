@@ -1,7 +1,7 @@
 
 # FLTK examples
 
-Shows how to use [FLTK](https://www.fltk.org) controls only by programming code ([c++17](https://en.cppreference.com/w/)).
+A large collections of [FLTK](https://www.fltk.org) examples in modern ([C++17](https://en.cppreference.com/w/)).
 
 [![fltk](docs/Pictures/fltk_header.png)](https://www.fltk.org)
 
